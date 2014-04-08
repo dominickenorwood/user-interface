@@ -1,0 +1,135 @@
+//@import "bourbon";
+@import "mixins";
+@import "variables";
+
+#wrapper.deltapine
+{
+	color: $deltapine-base;
+
+	h1 { color: $deltapine-primary; }
+	h2 { color: $deltapine-secondary; }
+	h3 { color: $deltapine-accent; }
+	h4 { color: $deltapine-base; }
+	p, ul, ol
+	{
+		a { color: $deltapine-accent; }
+	}
+
+	.accent { color: $deltapine-accent; }
+
+	// padded container with background color and border
+	.panel
+	{
+		background-color: $deltapine-light;
+		border-color: #d9d2ce;
+	}
+
+	// alernate background-color
+	.striped li:nth-child(even),
+	.striped div:nth-child(even)
+	{
+		background-color: $deltapine-light;
+	}
+
+	// buttons
+	.button
+	{
+		background-color: $deltapine-primary;
+		&.medium
+		{
+			background-color: $deltapine-accent;
+			color: #fff;
+		}
+		&.small
+		{
+			color: $deltapine-accent;
+			background-color: #f7f3f0;
+			border: 1px solid #d9d2ce;
+		}
+
+		&.text { color: $deltapine-primary; background-color: transparent; }
+	}
+
+	// social footer
+	footer.social
+	{
+		background-color: $deltapine-primary;
+
+		li.icon { background-color: $deltapine-accent; }
+	}
+
+	// tables
+	table.styled,
+	.asgrow table
+	{
+		border: 1px solid #d9d2ce;
+
+		th
+		{
+			background-color: $deltapine-accent;
+			color: #fff;
+			border-left: 1px solid #b34410;
+			border-top: 1px solid $deltapine-accent;
+		}
+
+		td
+		{
+			border-color: #d9d2ce;
+		}
+
+		.focused { background-color: #d9d6d4; }
+		.hover { background-color: $deltapine-light; }
+
+		.emphasis,
+		.em
+		{
+			color: $deltapine-primary;
+		}
+	}
+
+	// forms
+	.form
+	{
+		input
+		{
+			&[type="text"] { border-color: #d9d2ce; }
+
+			&[type="checkbox"] { border-color: #d9d2ce; }
+			&[type="radio"] { border-color: #d9d2ce; }
+
+			&[type="checkbox"]:checked:after { color: $deltapine-primary; }
+			&[type="radio"]:checked:after { background-color: $deltapine-primary; }
+
+			&[type="checkbox"]:disabled,
+			&[type="radio"]:disabled
+			{
+				background-color: $deltapine-light;
+				border: 1px solid #d9d2ce;
+			}
+		}
+
+		textarea { border-color: #d9d2ce; }
+
+		.custom-select
+		{
+			border-color: #d9d2ce;
+
+			select
+			{
+				border-color: #d9d2ce;
+			}
+
+			span
+			{
+				background-color: $deltapine-light;
+				border-color: #d9d2ce;
+			}
+		}
+	}
+
+	#main
+	{
+		background: url('/style library/aganytime/img/deltapine/bkg_top.png') repeat-x center top;
+	}
+
+}

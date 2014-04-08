@@ -1,0 +1,426 @@
+// build out font faces
+@include font-face('ProximaNova', 'fonts/proximanovaregular', normal, normal);
+@include font-face('ProximaNovaBold', 'fonts/proximanovabold', normal, normal);
+@include font-face('ProximaNovaItalic', 'fonts/proximanovaregularitalic', normal, normal);
+@include font-face('ProximaNovaThin', 'fonts/proximanovathin', normal, normal);
+@include font-face('ProximaNovaSemiBoldItalic', 'fonts/proximanovasemibolditalic', normal, normal);
+
+@include font-face('Entypo', 'fonts/entypo', normal, normal);
+@include font-face('Entypo-Social', 'fonts/entypo-social', normal, normal);
+
+// "body" styles
+#wrapper
+{
+	font-family: $proxima;
+	color: $dark-brown;
+	font-size: 1.4em;
+	line-height: 1.875em;
+
+	@include breakpoint(medium) { font-size: 1.5em; }
+	@include breakpoint(large) { font-size: 1.6em; }
+}
+
+
+// Headers
+h1, .h1
+{
+	font-size: 3em;
+	line-height: .9em;
+	font-weight: normal;
+	margin: 0 0 .5em 0;
+	font-family: $proxima-bold;
+	display: block;
+}
+
+h2, .h2
+{
+	font-size: 2.25em;
+	line-height: 1em;
+	font-weight: normal;
+	margin: 0 0 .25em 0;
+	font-family: $proxima-bold;
+	display: block;
+}
+
+h3, .h3
+{
+	font-size: 1em;
+	line-height: 1.15em;
+	font-weight: normal;
+	margin: .25em 0 .75em 0;
+	font-family: $proxima-bold;
+	text-transform: uppercase;
+	display: block;
+	color: $light-brown;
+}
+
+h4, .h4
+{
+	font-size: 1.0625em;
+	margin: 0 0 1em 0;
+	line-height: 1.25em;
+	font-weight: normal;
+	font-family: $proxima-bold;
+	display: block;
+}
+
+// Body copy
+p
+{
+	font-size: inherit;
+	line-height: inherit;
+	margin: 0 0 1.5em 0;
+	padding: 0;
+	display: block;
+
+	.text-center &,
+	&.text-center { margin: 0 auto 1.25em auto; }
+
+	&.large
+	{
+		margin: 0 0 1.6em 0;
+		font-size: 1.15em;
+		line-height: 1.25em;
+
+		.text-center &,
+		&.text-center { margin: 0 auto 1.6em auto; }
+
+		@include breakpoint(large)
+		{
+			font-size: 1.25em;
+			line-height: 1.5em;
+		}
+	}
+
+	&.x-large
+	{
+		font-size: 1.15em;
+		margin: 0 0 1.28em 0;
+		line-height: 1.2em;
+
+		@include breakpoint(large)
+		{
+			font-size: 1.625em;
+			line-height: 1.25em;
+		}
+	}
+
+	a
+	{
+		color: $orange;
+		text-decoration: underline;
+		font-family: $proxima-bold;
+	}
+}
+
+ul, ol
+{
+	font-size: inherit;
+	line-height: inherit;
+	margin: 0 0 1.25em 0;
+	display: block;
+	margin: 0 0 2em 1.1875em;
+	padding: 0 0 0 1em;
+
+	li
+	{
+		margin: 0 0 .75em 0;
+	}
+	ul, ol {
+		margin-bottom: 0; /*sk*/
+		li {
+			margin-bottom: 0;
+		}
+	}
+}
+
+ul { list-style: disc outside; } /* sk */
+ul.inline
+{
+	padding: 0 0 1em 0;
+	margin-left: 0;
+	@include clearfix;
+
+	li
+	{
+		display: inline-block;
+		float: left;
+		margin-bottom: 0;
+		margin-right: .1em;
+	}
+}
+ol, ol li { list-style: decimal outside; } /* sk */
+
+blockquote,
+.quote
+{
+	margin: 0 0 1.5em 0;
+	padding: 0;
+	font-family: $proxima-bold-italic;
+	font-size: 1.15em;
+
+	&:before,
+	&:after
+	{
+		font-size: 1.5em;
+		line-height: 0;
+		position: relative;
+		top: .15em;
+	}
+	&:before { content: '\201C'; margin-left: -.5em; }
+	&:after { content: '\201D'; }
+}
+
+small,
+.small,
+.footnote
+{
+	font-size: .75em;
+	// line-height: 2em; /*sk*/
+	line-height:1.5;
+}
+
+em,
+.em
+{
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.25em;
+	line-height: 1.9em;
+	font-family: $proxima-bold;
+}
+
+hr
+{
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid $light-gray;
+	margin: 1em auto 2em auto;
+	padding: 0;
+
+	&.span-80 { width: 80%; }
+}
+
+// pagination
+ul.pagination
+{
+	margin: 4em auto 0 auto;
+	list-style: none;
+	text-align: center;
+	display: table;
+	@include clearfix;
+
+	li
+	{
+		font-family: $proxima-bold;
+		display: inline-block;
+		float: left;
+		padding: .75em 1.25em;
+		background-color: #4d4436;
+		margin: 0;
+		color: $light-brown;
+		border-left: 1px solid $light-brown;
+
+		&.icon { padding: .65em .675em; }
+	}
+}
+
+// lists with dividers
+ul.dividers
+{
+	margin: 0 0 1em; /* added by sk to fix asgrow class of 15 */
+	padding: 0;
+	list-style: none;
+
+	li
+	{
+		padding: 1em;
+		margin: 0;
+		border-bottom: 1px solid $light-gray;
+
+		&:first-child { border-top: 1px solid $light-gray; }
+		&.header { @extend .header; }
+
+		@include breakpoint(medium)
+		{
+			padding: 1em 1.5em;
+		}
+	}
+
+	&.compact li
+	{
+		padding: .5em;
+		@include breakpoint(medium)
+		{
+			padding: .5em 1.5em;
+		}
+	}
+}
+
+.striped li:nth-child(even),
+.striped div:nth-child(even)
+{
+	background-color: $light;
+}
+
+// icons
+.icon-after:after,
+.icon-before:before,
+.arrow-after:after
+{
+	content: attr(data-icon);
+	font-family: $entypo;
+	font-size: 1.75em;
+	line-height: .5em;
+	display: inline-block;
+	position: relative;
+	top: .1em;
+}
+.icon-before:before { margin-right: .15em; }
+.icon-after:after { margin-left: .15em; }
+
+.arrow-after:after
+{
+	content: "";
+	margin-left: .15em;
+}
+
+.icon-before.no-content:before,
+.icon-after.no-content:after { margin: 0; }
+
+.icon
+{
+	font-family: $entypo;
+	font-size: 4em;
+	&.social { font-family: $entypo-social; }
+}
+
+img.icon
+{
+	width: 24px;
+	top: -2px;
+
+	@include breakpoint(large)
+	{
+		width: 28px;
+	}
+
+	@include breakpoint(x-large)
+	{
+		width: 32px;
+	}
+}
+
+
+// buttons
+.button
+{
+	display: block;
+	padding: 1.1875em;
+	min-width: 100%;
+	text-transform: uppercase;
+	color: #fff;
+	background-color: $orange;
+	border: none;
+	text-align: center;
+	font-family: $proxima-bold;
+	line-height: 1em;
+	margin: 0 0 1.5em 0;
+	@include transition(all 2s ease-out);
+
+	@include breakpoint(small)
+	{
+		display: inline-block;
+		margin-right: .5em;
+		min-width: 180px;
+	}
+
+	&.full-width { display: block; width: 100%; }
+
+	&:hover
+	{
+		@include transition(all .5s ease-out);
+		background-color: darken($orange, 5%);
+	}
+
+	&.medium
+	{
+		font-size: .85em;
+		padding: 1.153846154em;
+		background-color: $dark-brown;
+		min-width: 160px;
+	}
+
+	&.small
+	{
+		background-color: #faf8f6;
+		color: $light-brown;
+		text-transform: none;
+		font-size: .875em;
+		border: 1px solid $light-brown;
+		min-width: 0;
+		padding: 1em;
+	}
+
+	&.text
+	{
+		display: inline-block;
+		background-color: inherit;
+		color: $light-brown;
+		text-transform: none;
+		font-family: $proxima-bold-italic;
+		min-width: 0;
+		padding: 0;
+		text-decoration: none;
+	}
+
+	&.round
+	{
+		display: inline-block;
+		border-radius: 50%;
+		min-width: 0;
+		padding: 1.25em .5em;
+	}
+
+	&.small-round
+	{
+		font-size: .6875em;
+		min-width: 0;
+		border-radius: 50%;
+		padding: .6em .35em;
+		display: inline-block;
+	}
+}
+
+// misc
+// -------------------------------
+
+// text
+.float-right 			{ float: right; }
+img.float-right {margin: 0 0 20px 20px;}
+.float-left 			{ float: left; }
+img.float-left {margin: 0 20px 20px 0;}
+.text-center 			{ text-align: center !important;
+	img {
+		margin-left:auto;
+		margin-right:auto;
+		display:inline-block;
+	}
+}
+.text-right 			{ text-align: right !important; }
+.text-left  			{ text-align: left !important; }
+.upper 					{ text-transform: uppercase; }
+.no-margin 				{ margin: 0 !important; }
+.remove-bottom 			{ margin-bottom: 0 !important; }
+.bold, b				{ font-family: $proxima-bold; font-weight: 400; }
+.accent 				{ color: $orange; }
+
+@include breakpoint(medium) {
+	.text-right-medium { text-align: right; }
+}
+
+// color
+.white 					{ color: #fff; }
+.light-brown 			{ color: $light-brown; }
+.orange 				{ color: $orange; }

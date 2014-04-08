@@ -1,0 +1,61 @@
+// footer
+#foot
+{
+	border-top: .666666667em solid #776d5e;
+	background-color: #4d4436;
+	padding: 2em 1em;
+	text-align: center;
+	color: $light-brown;
+	position: relative;
+	z-index: 990;
+
+	.back-to-top
+	{
+		color: #fff;
+		font-size: 1.333333333em;
+		text-transform: uppercase;
+		font-family: $proxima-bold;
+	}
+
+	ul
+	{
+		list-style: none;
+		margin: 1em 0;
+		padding: 0;
+		font-size: .866666667em;
+		text-transform: uppercase;
+		font-family: $proxima-bold;
+		@include clearfix;
+
+		li
+		{
+			width: 50%;
+			display: inline-block;
+			float: left;
+		}
+
+		a
+		{
+			color: $light-brown !important;
+		}
+	}
+
+	p { margin-bottom: 0; }
+
+	@include breakpoint(medium)
+	{
+		text-align: left;
+		padding: 2em;
+
+		ul
+		{
+			li
+			{
+				width: auto;
+				margin-right: 1.5em;
+			}
+		}
+
+		.back-to-top { font-size: 1em; }
+	}
+}

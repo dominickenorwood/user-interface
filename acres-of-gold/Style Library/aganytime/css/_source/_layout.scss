@@ -1,0 +1,320 @@
+// allows access to which size breakpoint
+// we're at in js
+head
+{
+	font-family: "mobile";
+	@include breakpoint(small) { font-family: "small"; }
+	@include breakpoint(medium) { font-family: "medium"; }
+	@include breakpoint(large) { font-family: "large"; }
+	@include breakpoint(x-large) { font-family: "x-large"; }
+}
+
+
+#wrapper
+{
+	background-color: #fff;
+}
+
+html.menu-open,
+body.menu-open
+{
+	overflow: hidden;
+	@include breakpoint(small) { overflow-y: visible; }
+}
+
+// toggles
+.js .toggle
+{
+	max-height: 0;
+	overflow: hidden;
+
+	&.open
+	{
+		max-height: none;
+	}
+
+	&.small-only { @include breakpoint(small) { max-height: none; overflow: visible; } }
+	&.medium-only { @include breakpoint(medium) { max-height: none; overflow: visible; } }
+	&.large-only { @include breakpoint(large) { max-height: none; overflow: visible; } }
+	&.x-large-only { @include breakpoint(x-large) { max-height: none; overflow: visible; } }
+}
+
+.toggle-controller
+{
+	span.closed { display: inline-block; }
+	span.open { display: none; }
+
+	&.active
+	{
+		span.closed { display: none; }
+		span.open { display: inline-block; }
+	}
+}
+
+// makes element pop over the top of what is below it
+.drop-down
+{
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	z-index: 500;
+
+	&.small-only { @include breakpoint(small) { position: relative; } }
+}
+
+// utility class for padded containers
+.content
+{
+	padding: 1em;
+
+	&.compact
+	{
+		padding: .5em;
+	}
+
+	@include breakpoint(medium)
+	{
+		padding: 1.5em;
+
+		&.compact
+		{
+			padding: .75em;
+		}
+	}
+
+	@include breakpoint(large)
+	{
+		padding: 2em;
+
+		&.compact
+		{
+			padding: 1em;
+		}
+	}
+}
+
+.panel
+{
+	@extend .content;
+	background-color: $light;
+	border: 1px solid $light-gray;
+	margin-bottom: 2em;
+
+	&.compact
+	{
+		margin-bottom: 1em;
+	}
+}
+
+// flexible width-videos
+#main .video
+{
+	position: relative;
+	padding-bottom: 56.25%;
+
+	.player
+	{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+
+		iframe
+		{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+
+// no search results
+.search-results
+{
+	div.corn { border-left: .35em solid $dekalb-accent; }
+	div.soybeans { border-left: .35em solid $asgrow-primary; }
+	div.cotton { border-left: .35em solid $deltapine-accent; }
+	div.other-crops { border-left: .35em solid $other-crops-color; }
+
+	.no-results
+	{
+		padding: 4em;
+		text-align: center;
+
+		.icon
+		{
+			font-size: 12em;
+			color: lighten($dark-brown, 60%);
+			margin: 0 0 10px 0;
+		}
+	}
+}
+
+footer.social
+{
+	text-align: center;
+	color: #fff;
+	padding: .5em 0;
+	font-family: $proxima-bold;
+
+	ul
+	{
+		margin: 0;
+	}
+
+	li
+	{
+		display: inline-block;
+		margin: 0;
+		vertical-align: middle;
+
+		&.icon
+		{
+			font-family: $entypo-social;
+			font-size: 2.25em;
+			margin: 0 .05em;
+			border-radius: 50%;
+			width: 30px;
+			height: 30px;
+			line-height: 30px;
+
+			a { color: #fff !important; }
+		}
+	}
+}
+
+.vert-center,
+%vert-center
+{
+	position: relative;
+	top: 50%;
+	@include transform(translateY(-50%));
+	zoom: 1;
+}
+
+.quick-nav
+{
+	font-family: $proxima-bold;
+	border: 1px solid $light-gray;
+	margin: 2em 0;
+
+	.header
+	{
+		padding: .75em;
+		margin: 0;
+		line-height: inherit;
+		white-space: nowrap;
+		text-align: center;
+	}
+
+	li
+	{
+		padding: 1em 1.5em !important;
+
+		&:last-child { border-bottom: 0; }
+	}
+}
+
+.top-stories
+{
+	.media
+	{
+		width: 75px;
+
+		@include breakpoint(medium) { width: 100px; }
+		@include breakpoint(large) { width: 150px; }
+	}
+
+	.text
+	{
+		margin-left: 90px;
+		@include breakpoint(large) { margin-left: 180px; }
+	}
+
+	.hero-story
+	{
+		position: relative;
+		padding: 0;
+
+		@include breakpoint(medium) { padding: 1.5em; }
+		@include breakpoint(large) { padding: 2em; }
+
+		.media,
+		.media img
+		{
+			width: 100%;
+		}
+
+		.text
+		{
+			margin-left: 0;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			z-index: 100;
+			padding: 0 1em;
+
+			@include linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75));
+
+			h2
+			{
+				color: #fff;
+				font-size: 1.25em;
+
+				@include breakpoint(medium)
+				{
+					color: inherit;
+					font-size: 2.25em;
+				}
+			}
+
+			@include breakpoint(medium)
+			{
+				position: relative;
+				background: none;
+				padding: 0;
+			}
+		}
+
+		.link
+		{
+			display: none;
+
+			@include breakpoint(medium) { display: block; }
+		}
+	}
+}
+
+.agtools .section { margin: 8% 0 10% 0; }
+
+// utility
+.show-for-medium { display: none; @include breakpoint(medium) { display: inline-block !important; } }
+.hide-for-large { @include breakpoint(large) { display: none !important; } }
+.hide-for-x-large { @include breakpoint(x-large) { display: none !important; } }
+
+img.center 	{ margin: 0 auto; }
+img.inline 	{ display: inline-block; }
+img.media 	{ margin-right: 1em; }
+
+// borders
+.ba { border: 1px solid $light-gray; }
+.bt { border-top: 1px solid $light-gray; }
+.br { border-right: 1px solid $light-gray; }
+.bb { border-bottom: 1px solid $light-gray; }
+.bl { border-left: 1px solid $light-gray; }
+
+// background colors
+.bg-light { background-color: $light; }
+.bg-white { background-color: #fff; }
+
+// margins
+.bump-down { margin-top: 1em !important; }
+.bump-down-more { margin-top: 3em !important; }
+.add-bottom { margin-bottom: 1em !important; }
+.space-around { margin: 3em 0; }
+.space-above { margin-top: 3em; }

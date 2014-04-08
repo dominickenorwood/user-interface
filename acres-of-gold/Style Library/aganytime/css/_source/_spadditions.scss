@@ -1,0 +1,133 @@
+/* --------------------------------------------------------------- */
+/* -------------------- CUSTOM ADDITIONS ------------------------- */
+/* --------------------------------------------------------------- */
+  
+/* SharePoint */
+body #s4-bodyContainer { min-width: 0px; }
+#s4-ribbonrow { display: none; }
+.ms-WPBody { font-family: "ProximaNova", sans-serif; font-size: inherit; }
+.ms-WPBody a:link { color: inherit; }
+.ms-WPBody a:visited { color: inherit; }
+.ms-WPBody a:hover { text-decoration: none; }
+.ms-WPBody a.button:link, .ms-WPBody a.button:visited, a.button:link, a.button:visited,
+.ms-WPBody p a.button:link, .ms-WPBody p a.button:visited, p a.button:link, p a.button:visited { color: #fff; }
+.ms-WPBody h1 { font-size: 3em; font-weight: normal; }
+.ms-WPBody h2 { font-size: 2.25em; font-weight: normal; }
+.ms-WPBody h3 { font-size: 1em; font-weight: normal; }
+.ms-WPBody h4 { font-size: 1.0625em; font-weight: normal; }
+.item { clear: inherit; }
+  
+table.custom{ text-align:center; font-size:16px; color:#9c937c; border:1px solid #d6d3c9;border-bottom:none;margin: 40px 0;}
+table.custom .table-header{ text-align:left; font-size:16px; background: none repeat scroll 0 0 #9C937C;font-family: 'ProximaNovaBoldBold',arial,sans-serif !important; color:#fff;text-shadow: 1px 2px 2px #7C7563;}
+table.custom th{ color:#666051; font-weight:normal;background-color:#f2efe6;}
+table.custom td { font-family: 'ProximaNovaRegularRegular', arial, sans-serif; font-size: 16px;}
+table.custom td, table.custom th{border-right:1px solid #d6d3c9;border-bottom: 1px solid #D6D3C9;padding: 15px;} 
+table.custom .tableCol-1{width:240px}
+table.custom .tableCol-last{ border-right:none;}
+  
+/* Misc */
+a:link, a:visited { color: inherit; }
+p a:link, p a:visited { color: #8d340b; }
+.button:hover { text-decoration: none !important; }
+.image-center { text-align: center; }
+.image-center img { display: inline; }
+.hidden { display: none; }
+.center { text-align: center; }
+.error { color: #C60F13; }
+
+/* Global Navigation */
+#sub-nav-list li li .icon-after:after { text-indent: -99999em; }
+
+/* Page Layouts */
+#wrapper .hiddenByDefault h1, #wrapper .hiddenByDefault h2, #wrapper .hiddenByDefault h4, #wrapper .hiddenByDefault h3 { display: none; }
+#wrapper .centered { text-align: left; }
+#wrapper .centered.text-center { text-align: center; }
+
+/* Change Location */
+#change-location .error { margin: -1.5em 0 1.5em 0; }
+  
+/* Advanced Search */
+.search .list a { color: #fff; }
+#results-loading img { display: inline-block; }
+
+/* Articles */
+.pdf.bb p a { color: #8d340b; }
+.article .small { font-family: "ProximaNova",sans-serif; }
+
+/* Weather Tabs */
+div.tab-nav { margin:30px; display:block; }
+#weather #commodities-info { margin-top: -13px; }
+#wrapper #weather #commodities-info table td { font-size: 14px; }
+#wrapper #weather p { font-family: "ProximaNova",sans-serif; }
+#wrapper #weather p a { font-family: "ProximaNovaBold",sans-serif; color: #8d340b; text-decoration: underline; }
+
+/* Fixed Menu */
+#menu-fixed { position: fixed; right: 0; top: 50%; width: 269px; z-index: 1000; }
+#menu-fixed img { display: block; margin: 0 0 9px 12px; }
+#menu-fixed ul { background-color: #40382d; list-style: none outside none; padding: 15px 0 15px 15px; }
+#menu-fixed ul li { background-color: #fff; line-height: 16px; margin: 0; padding: 10px; border-bottom: 1px solid #ebe7df; }
+#menu-fixed ul li a { color: #8f8472; font-size: 16px; font-weight: normal !important; background: url("/Style%20Library/AgAnytime/IMG/arrow-brown.png") no-repeat scroll right center transparent; display: block; }
+
+/* Financing Offers */
+.farmflex h1 { color: #8D340B; font-size: 42px; font-weight: normal; line-height: 40px; margin: 0 0 20px; text-align: left;  }
+.farmflex h1 span { color: #7F7565; display: block; font-size: 26px; line-height: 32px; }
+.farmflex .button-row { margin: 16px 0; }
+.farmflex .button.farm-flex { float: right; padding: 11px 35px 8px 35px; text-align: center; }
+.farmflex .button.farm-flex span { display: block; font-size: 12px; }
+.farmflex .pdf-icon { display: inline; margin-right: 8px; }
+
+/* Newsroom */
+#newsroomTop { margin-bottom: 36px; }
+
+/* Contact Us */
+.contact-search .search-box { margin-bottom: 18px; }
+.form.contact-us .custom-select { margin: -1.125em 0 1.5em 0 !important; }
+
+/* Testimonials */
+.testimonials .testimonialCount { margin-bottom: 1.25em; }
+.testimonial { margin-bottom: 1.25em; }
+.testimonial .name { margin-bottom: 0; }
+
+/* Planter Settings */
+#planter-settings .has-note input { margin-bottom: 0 !important; }
+#planter-settings .has-note .small { display: block; margin-bottom: 1.5em; }
+
+/* Search Results */
+#wrapper .srch-results { max-width: 100%; padding: 2em; }
+#wrapper .srch-Icon { display : none; }
+#wrapper .srch-Title3 { padding: 0; }
+#wrapper .srch-Description2 { font-size: inherit; color: inherit; max-width: 100%; }
+#wrapper .srch-Metadata2 { color: inherit; padding: 0; }
+
+/* sub-nav */
+@media all and (min-width: 1140px) {#wrapper .sub-nav, #wrapper .sub-nav div.contain { height: 60px; } }
+@media all and (min-width: 768px) {#wrapper .sub-nav #wrapper .sub-nav div.contain { height: 48px; } }
+
+/* sign-up */
+.form .no-margin { margin:0; }
+.signup label { margin: 1.5em 0 0; }
+#select-one-top { font-size: 100%; font-weight: bolder; color: red; display: none; }
+#requiredInfoMissing { float: left; font-size: 100%; font-weight: bolder; color: red; display: none; clear: both; padding-bottom: 20px; }
+.signup .grid-row.bb { margin-bottom: 1.5em; padding-bottom: 1.5em; }
+/* Start Counties Styles */
+.removeCounty{ background: url("/Style%20Library/AgAnytime/IMG/remove.png") no-repeat scroll right center; float: right; width: 18px; height: 18px; border: none; margin: 4px 8px; cursor: pointer; }
+
+
+/* ====================================
+.counties { overflow: hidden; margin-bottom: 24px; }
+.counties select { background-color: transparent; border: none; color: #8F8472; font-family: 'ProximaNovaRegularItalicIt',arial,sans-serif; font-size: 14px; height: 34px; margin: 0; padding: 2px; width: 226px; }
+.counties .field { background-color: #E6E6E6; border: none; color: #8F8472; font-family: "ProximaNovaRegularItalicIt"; float: left; font-size: 14px; height: 17px; margin: 0; padding: 9px 10px 7px 10px; text-transform: none; width: 220px; }                   
+.counties .submit-button { background: url("/Style%20Library/AgAnytime/IMG/white-link.png") no-repeat scroll 177px 19px #8D340B; border: none; color: #FFFFFF; float: none; font-family: 'ProximaNovaBoldBold'; font-size: 20px; height: 44px; padding: 0 17px 0 0; width: 230px; }
+.counties-table{ line-height: 28px; font-size: 16px; width: 580px; padding: 10px 0; }
+.counties .select-box{ background: url("/Style%20Library/AgAnytime/IMG/select-arrow.png") no-repeat scroll right center #E6E6E6; height: 33px; overflow: hidden; width: 186px; float: left; margin-right: 8px; }
+.counties-results{ float: left; }
+.county-selected{ background-color: #f9f9f9; width: 472px; padding: 0 3px; }
+.county-selected.even{ background-color: #e6e6e6; }
+.removeCounty{ background: url("/Style%20Library/AgAnytime/IMG/remove.png") no-repeat scroll right center; float: right; width: 18px; height: 18px; border: none; margin: 4px 8px; cursor: pointer; }
+.counties-results{ border: #e3e3e3 thin solid; }
+#addCounty{ float: left; background: #8D340B; height: 33px; color: #fff; font-family: 'ProximaNovaBoldBold'; font-size: 14px; padding: 0 4px; border: none; }
+.counties-sub-header{ font-style: italic; font-size:13px; margin-top: 0.8em; }
+.consent span.required{ margin-top:0px; }
+.consent span { margin:0 0 0 10px; float:left;}
+======================================= */
+/* End Counties Styles */

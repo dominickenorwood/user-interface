@@ -1,0 +1,59 @@
+// @font-faces
+@mixin font-face($font-family, $url, $weight, $style) {
+	@font-face {
+		font-family: '#{$font-family}';
+		src: url('#{$url}.eot');
+		src: url('#{$url}.eot?#iefix') format('embedded-opentype'),
+		url('#{$url}.woff#') format('woff'),
+		url('#{$url}.ttf#') format('truetype'),
+		url('#{$url}.svg##{$font-family}') format('svg');
+		font-weight: $weight;
+		font-style: $style;
+	}
+}
+
+// Font-size for REM font-sizing
+@mixin font-size($sizeValue: 1.6)
+{
+	font-size: $sizeValue + px;
+	font-size: ($sizeValue / 10) + rem;
+}
+
+// Breakpoints
+@mixin breakpoint($point) {
+	@if $point == small-only
+	{
+		@media all and (max-width: 700px) { @content; }
+	}
+	@else if $point == small {
+		@media all and (min-width: 650px) { @content; }
+	}
+	@else if $point == medium {
+		@media all and (min-width: 768px) { @content; }
+	}
+	@else if $point == large {
+		@media all and (min-width: 1024px)  { @content; }
+	}
+	@else if $point == x-large {
+		@media all and (min-width: 1140px)  { @content; }
+	}
+}
+
+@mixin clearfix(){
+	clear:both;
+}
+@mixin transition($transition){
+	
+}
+@mixin transform($transform){
+	
+}
+@mixin linear-gradient($colora,$colorb){
+	
+}
+@mixin appearance($state){
+	
+}
+@mixin user-select($state){
+	
+}

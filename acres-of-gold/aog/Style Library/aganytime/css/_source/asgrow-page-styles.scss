@@ -1,0 +1,3174 @@
+@import "bourbon";
+@import "mixins";
+@import "variables";
+
+// 4P System
+
+%grid-row
+{
+    @include clearfix;
+    margin: 0 auto;
+
+    &.section { padding: 5% 0; }
+
+    @include breakpoint(medium) {
+      &.span-70-medium { width: 70%; }
+      &.span-80-medium { width: 80%; }
+      &.span-90-medium { width: 90%; }
+  }
+}
+
+%col
+{
+    float: left;
+    display: block;
+    width: 100%;
+
+    .reverse &
+    {
+      float: right;
+  }
+}
+
+// 4p styles
+
+.cl { @include clearfix; }
+
+.asgrow-4psystem.asgrow.cms-wrap
+{
+    width: 90%;
+    margin: 0 auto;
+    background: transparent;
+    @include breakpoint(large) {  width: 80%; }
+    @include breakpoint(x-large) {  width: 70%; }
+}
+
+.asgrow-4psystem.asgrow.cms-wrap #main { border: none; }
+
+.asgrow-4psystem.asgrow.cms-wrap .col-2 {
+    @extend %col;
+
+    @include breakpoint(small) {
+        width: 70%;
+    }
+}
+
+.asgrow.cms-wrap .row {
+    @extend %row;
+}
+
+.asgrow-4psystem.asgrow.cms-wrap .row {
+    @extend %row;
+    padding-bottom: 0px;
+    position: relative;
+    // margin: 0 108px;
+}
+
+.asgrow.cms-wrap .left {
+    @extend %col;
+
+    img { margin: 1em auto; }
+
+    @include breakpoint(small) {
+        float: right;
+        width: 30%;
+        padding: 0 2.5%;
+    }
+}
+
+.asgrow.cms-wrap .right {
+    padding: 0;
+    margin: 0;
+    display: block;
+
+    @extend %col;
+
+    @include breakpoint(small) {
+        width: 70%;
+        float: right;
+        padding: 0 2.5%;
+    }
+}
+
+.asgrow-4psystem.asgrow.cms-wrap .steps {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.asgrow-4psystem.asgrow.cms-wrap .steps.step-right {
+    right: 0;
+    left: inherit;
+}
+
+.asgrow-4psystem.asgrow.cms-wrap .step-copy {
+    padding: 66px 0 0 109px;
+    // width: 370px;
+}
+
+.asgrow-4psystem.asgrow.cms-wrap .right.step-copy {
+    padding: 65px 101px 0 0;
+    text-align: right;
+}
+
+.asgrow-4psystem.asgrow.cms-wrap .step-copy p {
+    padding-bottom: 25px;
+}
+
+.asgrow-4psystem.asgrow.cms-wrap .learn-more {
+    background-position: 305px 17px;
+    color: #FFFFFF;
+    padding-left: 26px;
+    // width: 312px;
+    margin: 0 auto;
+}
+
+.asgrow-4psystem.asgrow.cms-wrap.perform .learn-more {
+    background-position: 276px 17px;
+    // width: 285px;
+}
+
+.asgrow-4psystem.asgrow.cms-wrap.plan .learn-more {
+    background-position: 280px 17px;
+    // width: 287px;
+}
+
+.asgrow-4psystem.asgrow.cms-wrap.overview .learn-more {
+    margin: 0px;
+    background-position: 202px 16px;
+    color: #FFFFFF;
+    padding-left: 26px;
+    // width: 208px;
+}
+
+.asgrow-4psystem.asgrow.cms-wrap .plan-row .step-copy .learn-more {
+    background-position: 171px 16px;
+    padding-left: 57px;
+    width: 178px;
+}
+
+.banner-4p-system {
+    background: none repeat scroll 0 center transparent;
+    margin: 120px auto 100px;
+    text-align: center;
+    max-width: 850px;
+}
+
+.banner-4p-system img {
+    margin: 0 auto 30px auto;
+}
+
+/*4P System Step*/
+.asgrow-4psystem.asgrow.cms-wrap.step .step-copy {
+    padding: 0 0 0 20px;
+}
+
+.asgrow-4psystem.asgrow.cms-wrap.step .right.step-copy { padding: 0 0px; }
+
+.asgrow-4psystem.asgrow.cms-wrap.step .right.step-copy h2,
+.asgrow-4psystem.asgrow.cms-wrap.step .right.step-copy h4 {
+    text-align: right;
+}
+
+.asgrow-4psystem.asgrow.cms-wrap.step .row-1 .step-copy {
+    padding-top: 39px;
+}
+
+.asgrow-4psystem.asgrow.cms-wrap.step .no-pad-top {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.asgrow-4psystem.asgrow.cms-wrap.step .app-links a {
+    display: inline-block;
+    float: left;
+    margin: 25px 3px 0;
+}
+
+.asgrow-4psystem.asgrow.cms-wrap.step .padding-bot {
+    padding-bottom: 25px;
+}
+
+.asgrow-4psystem.asgrow.cms-wrap.step .right .app-links a {
+    float: right;
+}
+
+/* skennon added 5/2013 */
+
+.asgrow-4psystem.asgrow.cms-wrap.step.plan .row-practices .step-copy p {
+    padding-bottom: 25px;
+}
+
+.asgrow-4psystem.asgrow.cms-wrap.step.plan .row-practices .step-img {
+    position: absolute;
+    right: -48px;
+    top: 37px;
+}
+
+.asgrow-4psystem.asgrow.cms-wrap.step.plan .row-evaluate .step-copy {
+    padding: 0 0 0 20px;
+}
+
+.asgrow-4psystem.asgrow.cms-wrap.step.plan .row-evaluate .step-img {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+
+.asgrow-4psystem.asgrow.cms-wrap.step.plan .row-rockstar .step-copy {
+    float: none;
+    height: 210px;
+    padding-top: 45px;
+}
+
+.asgrow-4psystem.asgrow.cms-wrap.step.plan .row-rockstar .step-img {
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 1px;
+}
+
+.asgrow-4psystem.asgrow.cms-wrap.step.plan .row-rockstar hr.no-padding {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.asgrow-4psystem.asgrow.cms-wrap.step.plan .row-protection {
+    height: 153px;
+}
+
+.asgrow-4psystem.asgrow.cms-wrap.step.plan .row-protection .step-img {
+    bottom: 0;
+}
+
+.asgrow-4psystem.asgrow.cms-wrap.step.plant .row-time .left {
+    top: 1px;
+    position: absolute;
+    left: 30px;
+}
+
+.asgrow-4psystem.asgrow.cms-wrap.step.plant .row-success p a img {
+    display: inline;
+}
+
+.asgrow-4psystem.asgrow.cms-wrap.step.plant .row-time .no-pad-top {
+    margin-top: 0;
+}
+
+.asgrow-4psystem.asgrow.cms-wrap.step.plant .row-rate .step-copy {
+    // width: 442px;
+}
+
+.asgrow.cms-wrap .row-maturity h2 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.asgrow.cms-wrap .row p.nobottom,
+.asgrow.cms-wrap .row-maturity p.nobottom {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.cms-wrap p.note {
+    font-size: 12px;
+    line-height: 130%;
+    max-width: 70%;
+    padding-bottom: 20px;
+}
+
+.asgrow-4psystem.asgrow.cms-wrap.step.perform .row .step-copy {
+    width: 495px;
+}
+
+.asgrow-4psystem.asgrow.cms-wrap.step.perform .row-weedmgmt .step-copy,
+.asgrow-4psystem.asgrow.cms-wrap.step.perform .row-yieldchasers .step-copy {
+    width: 395px;
+}
+
+.asgrow-4psystem.asgrow.cms-wrap.step.perform .row-tuneup {
+    background: url("/asgrow/PublishingImages/tuneup-equipment.jpg") no-repeat scroll center bottom transparent;
+    padding-bottom: 100px;
+}
+
+.asgrow-4psystem.asgrow.cms-wrap.step.perform .row-storage hr.noPadNoMar {
+    margin-bottom: 0px;
+}
+
+.asgrow-4psystem.asgrow.cms-wrap.step.perform .row-storage .step-copy {
+    padding-top: 50px;
+    width: 400px;
+}
+
+.asgrow-4psystem.asgrow.cms-wrap.step.perform .row-storage .step-img {
+    margin-top: 5px;
+}
+
+.asgrow-4psystem.asgrow.cms-wrap.step.perform .row-rockstar .step-img {
+    bottom: 0;
+    position: absolute;
+    right: 0;
+}
+
+.asgrow-4psystem.asgrow.cms-wrap.step.perform .row-rockstar .step-copy {
+    padding-top: 50px;
+}
+
+.asgrow-4psystem.asgrow.cms-wrap.step.perform .row-prosper {
+    clear: both;
+    padding-top: 50px;
+}
+
+.perform #slide-13 .row img.alignRight {
+    float: right;
+    margin: 0 0 50px 50px;
+}
+
+.pipeline-2012 {
+    padding-top: 110px;
+}
+
+#pipeline-wrap .pipeline-top {
+    padding: 40px 0 15px;
+}
+
+#pipeline-wrap .pipeline-top div {
+    float: left;
+}
+
+#pipeline-wrap .pipeline-top div span {
+    width: 40px;
+    height: 30px;
+    float: left;
+}
+
+#pipeline-wrap .pipeline-top div p {
+    font-size: 18px;
+    color: #9c937c;
+    font-family: 'ProximaNovaBoldBold';
+    line-height: 0;
+    margin: 14px 40px 0 10px;
+    float: left;
+}
+
+#pipeline-wrap .pipeline-top .biotech span {
+    background-color: #bfbaac;
+}
+
+#pipeline-wrap .pipeline-top .agronomic span {
+    background-color: #ffcb08;
+}
+
+#pipeline-wrap .pipeline-top .breeding span {
+    background-color: #00733c;
+}
+
+#pipeline-wrap .pipeline-top .agronomic p {
+    margin-right: 0px;
+}
+
+#pipeline-wrap .accordion-arrows {
+    background-image: url("images/accordion-arrows.png");
+    background-position: center -10px;
+    height: 10px;
+    left: inherit;
+    right: 25px;
+    margin-top: -3px;
+}
+
+#pipeline-wrap .accordion-arrows-active {
+    background-image: url("images/accordion-arrows.png");
+    height: 10px;
+    left: inherit;
+    right: 25px;
+    margin-top: -3px;
+}
+
+#pipeline-wrap .pipelines h3 {
+    font-size: 18px;
+    text-transform: none;
+    background-image: none;
+    height: 60px;
+    line-height: 61px;
+    margin: 2px 0 0;
+    padding: 0 0 0 25px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    text-shadow: 0 1px 1px #666666;
+}
+
+#pipeline-wrap .pipelines h3.biotech {
+    background-color: #bfbaac;
+    color: #ffffff;
+}
+
+#pipeline-wrap .pipelines h3.agronomic {
+    background-color: #ffcb08;
+    color: #696354;
+}
+
+#pipeline-wrap .pipelines h3.breeding {
+    background-color: #00733c;
+    color: #ffffff;
+}
+
+#pipeline-wrap .pipelines p {
+    font-size: 16px;
+    padding-bottom: 0px;
+    line-height: 23px;
+    color: #666051;
+}
+
+#pipeline-wrap .ui-accordion .ui-accordion-content {
+    padding: 25px 25px 40px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-color: #e1e1e1;
+}
+
+.asgrow.cms-wrap #pipeline-wrap .pipelines h3.biotech {
+    background-color: #adccd9;
+    color: #ffffff;
+}
+
+.asgrow.cms-wrap #pipeline-wrap .pipelines h3.agronomic {
+    background-color: #48819a;
+    color: #ffffff;
+}
+
+.asgrow.cms-wrap #pipeline-wrap .pipelines h3.breeding {
+    background-color: #01a651;
+    color: #ffffff;
+}
+
+.asgrow.cms-wrap #pipeline-wrap .pipeline-top .biotech span {
+    background-color: #adccd9;
+}
+
+.asgrow.cms-wrap #pipeline-wrap .pipeline-top .agronomic span {
+    background-color: #48819a;
+}
+
+.asgrow.cms-wrap #pipeline-wrap .pipeline-top .breeding span {
+    background-color: #01a651;
+}
+
+.asgrow.cms-wrap.asgrow-4psystem .fourP.page-head.main-banner .shell {
+    background: no-repeat scroll center center transparent;
+    height: 501px;
+    width: 100%;
+    position: relative;
+}
+
+.asgrow.cms-wrap.asgrow-4psystem .fourP .shell .fourPHeaderText h1 {
+    color: #FFFFFF;
+    text-align: left;
+    font-family: OpenSansSemiboldItalic;
+    font-size: 35px;
+    padding: 0;
+    margin-bottom: 10px;
+    text-indent: 0;
+    text-shadow: 2px 4px 3px rgba(0,
+                                  0,
+                                  0,
+                                  0.15);
+    font-weight: bold;
+}
+
+.asgrow.cms-wrap.asgrow-4psystem .fourP .shell .fourPHeaderWrap {
+    height: 501px;
+    margin: 0 auto;
+    position: relative;
+    width: 1240px;
+}
+
+.asgrow.cms-wrap.asgrow-4psystem.plan .fourP.page-head.main-banner .shell {
+    background: url("/asgrow/Plan/PublishingImages/4p_plan_header_fade.jpg") no-repeat scroll center center transparent;
+    position: relative;
+}
+
+.asgrow.cms-wrap.asgrow-4psystem.plant .fourP.page-head.main-banner .shell {
+    background: url("/asgrow/Plant/PublishingImages/4p_plant_header_fade.jpg") no-repeat scroll center center transparent;
+}
+
+.asgrow.cms-wrap.asgrow-4psystem.plant .fourP .shell .fourPHeaderText p {
+    width: 550px;
+}
+
+.asgrow.cms-wrap.asgrow-4psystem.protect .fourP.page-head.main-banner .shell {
+    background: url("/asgrow/Protect/PublishingImages/4p_protect_header_fade.jpg") no-repeat scroll center center transparent;
+}
+
+.asgrow.cms-wrap.asgrow-4psystem.protect .fourP .shell .fourPHeaderText {
+    top: 10px;
+}
+
+.asgrow.cms-wrap.asgrow-4psystem.protect .fourP .shell .fourPHeaderText h1 {
+    margin-bottom: 5px;
+}
+
+.asgrow.cms-wrap.protect .shell .step-copy p img {
+    display: inline;
+}
+
+.asgrow.cms-wrap.asgrow-4psystem.perform .fourP.page-head.main-banner .shell {
+    background: url("/asgrow/Perform/PublishingImages/4p_perfrom_header_fade.jpg") no-repeat scroll center center transparent;
+}
+
+.asgrow.cms-wrap.asgrow-4psystem.perform .fourP .shell .fourPHeaderText {
+    left: 47px;
+    top: 47px;
+}
+
+.asgrow.cms-wrap.asgrow-4psystem.perform .fourP .shell .fourPHeaderText p {
+    width: 420px;
+}
+
+.asgrow.cms-wrap.asgrow-4psystem.perform .fourP .shell .deepLinksBox {
+    background: url("/asgrow/Protect/PublishingImages/deep_links_perform_dots.png") no-repeat scroll 50% bottom transparent;
+    margin: 0 auto;
+    width: 1270px;
+}
+
+.asgrow.cms-wrap.asgrow-4psystem.perform .fourP .shell .deepLinks a {
+    font-family: proximanovaregularregular;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0 4px;
+    text-align: center;
+    width: 101px;
+    vertical-align: middle;
+}
+
+.asgrow-4psystem.perform .fourP .shell .deepLinks a.last {
+    margin-right: 0;
+}
+
+a.modal-open {
+    display: block;
+    background: url("/asgrow/Plan/PublishingImages/modal-dot.png") no-repeat 0 0 transparent;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    z-index: 100; /*modified by sk*/
+}
+
+a.modal-open.active {
+    background-position: 0 -45px;
+}
+
+.modal {
+    display: none;
+    height: 197px;
+    position: absolute;
+    width: 176px;
+    transform: rotate(0deg);
+    text-align: center;
+    z-index: 250; /*sk*/
+}
+
+.modal div {
+    color: #40728B;
+    font-family: 'DroidSansBold','Droid Sans', Arial, Helvetica, sans-serif;
+    // font-size: 14px;
+    padding: 0 10px;
+    position: relative;
+    top: 40%;
+    @include transform(translateY(-50%));
+    zoom: 1;
+}
+
+.modal .circle-bg {
+    background: url("/asgrow/Plan/PublishingImages/circle-tooltip.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 197px;
+    left: 2px;
+    position: absolute;
+    top: 0;
+    width: 187px;
+    z-index: -1;
+}
+
+.modal-site {
+    position: relative;
+    // height: 457px;
+}
+
+.modal-site a.info-1 {
+    left: 467px;
+    top: 345px;
+}
+
+.modal-site #info-1 {
+    left: 334px;
+    top: 174px;
+}
+
+.modal#info-1 .circle-bg {
+    left: -4px;
+}
+
+.modal-site a.info-2 {
+    left: 674px;
+    top: 134px;
+}
+
+.modal-site #info-2 {
+    left: 484px;
+    top: 64px;
+}
+
+.modal#info-2 .circle-bg {
+    -moz-transform: rotate(-61deg);
+    -o-transform: rotate(-61deg);
+    -webkit-transform: rotate(-61deg);
+    transform: rotate(-61deg);
+}
+
+.modal-site a.info-3 {
+    left: 667px;
+    top: 345px;
+}
+
+.modal-site #info-3 {
+    left: 672px;
+    top: 175px;
+}
+
+.modal#info-3 .circle-bg {
+    left: -12px;
+    transform: rotate(65deg);
+    -moz-transform: rotate(65deg);
+    -o-transform: rotate(65deg);
+    -webkit-transform: rotate(65deg);
+    transform: rotate(65deg);
+}
+
+/* plant stress modal*/
+.modal .circle-bg {
+    background: url("/asgrow/Plan/PublishingImages/circle-tooltip.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 197px;
+    left: 2px;
+    position: absolute;
+    top: 0;
+    width: 187px;
+    z-index: -1;
+}
+
+.plantStress .modal-site {
+    position: relative;
+    // height: 457px;
+    max-width: 745px;
+    margin: 0 auto 2em auto;
+}
+
+.plantStress .modal-site #info-1 {
+    left: 44%;
+    top: 80%;
+}
+
+.plantStress .modal-site a.info-1 {
+    left: 467px;
+    top: 345px;
+}
+
+.modal#info-1 .circle-bg {
+    left: -4px;
+}
+
+.plantStress .modal-site #info-2 {
+    left: 72%;
+    top: 30%;
+}
+
+.plantStress .modal-site a.info-2 {
+    left: 674px;
+    top: 134px;
+}
+
+.modal#info-2 .circle-bg {
+    -webkit-transform: rotate(-61deg);
+    -moz-transform: rotate(-61deg);
+    -o-transform: rotate(-61deg);
+    -ms-transform: rotate(-61deg);
+    transform: rotate(-61deg);
+}
+
+.plantStress .modal-site #info-3 {
+    left: 70%;
+    top: 82%;
+}
+
+.plantStress .modal-site a.info-3 {
+    left: 667px;
+    top: 345px;
+}
+
+h6 {
+    font-family: 'ProximaNovaLightLight';
+    font-size: 12px;
+    line-height: 18px;
+    color: #666051;
+    font-weight: normal;
+    padding: 0 0 10px 0;
+}
+
+.cms-wrap ul ul,
+.cms-wrap ol ul {
+    padding-bottom: 0;
+}
+
+.cms-wrap ul ul li,
+.cms-wrap ol ul li {
+    list-style-type: disc;
+}
+
+.cms-wrap .col-1 {
+    /*padding:    0 40px 0 100px; */
+    padding: 0 40px 0 0;
+    // width: 330px;
+    min-height: 10px;
+    @extend %col;
+
+    > img { margin: 0 auto; }
+
+    @include breakpoint(small) {
+        width: 30%;
+        float: left;
+    }
+}
+
+.col-1 p.aRight {
+    padding: 0;
+
+    img { display: inline-block; }
+}
+
+.aRight {
+    text-align: right;
+}
+
+.red {
+    color: #8d340b;
+}
+
+.floatP {
+    float: left;
+    padding-left: 60px;
+}
+
+.botBorder {
+    border-bottom: solid 1px #ebe9e5;
+    width: 1000px;
+    height: 1px;
+    margin: 0 auto 50px auto;
+}
+
+.dekalb.cms-wrap .learn-more {
+    background-color: #B71D21;
+    background-position: 163px 16px;
+    color: #FFFFFF;
+    padding-left: 57px;
+    width: 177px;
+}
+
+.floatL {
+    float: left;
+}
+
+.floatR {
+    float: right;
+}
+
+.floatC {
+    margin: 0 auto !important;
+}
+
+/*4p Styles////////////////////*/
+.asgrow-4psystem .fourP {
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF !important;
+}
+
+.shell .deepLinks {
+    padding: 15px 0 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: url(/asgrow/Plan/PublishingImages/deep_links_bkg.png) repeat left top;
+    width: 100%;
+}
+
+.asgrow-4psystem .fourP .shell .deepLinks a {
+    color: #FFF;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    font-family: proximanovaregularregular;
+    display: inline-block;
+    width: 130px;
+    margin: 0 15px;
+    padding-bottom: 30px;
+    vertical-align: middle;
+}
+
+.asgrow-4psystem .fourP .shell.plan .deepLinks a:first-child {
+    width: 170px;
+    margin: 0 3px !important;
+}
+
+.deepLinksBox {
+    background: url(/asgrow/Perform/PublishingImages/deep_links_protect_dots.png) no-repeat 50% bottom;
+    margin: 0 auto;
+    width: 1270px;
+    text-align: center;
+}
+
+.deepLinksBox.deepPlant {
+    background: url(/asgrow/Plan/PublishingImages/deep_links_plant_dots.png) no-repeat 50% bottom;
+}
+
+.asgrow-4psystem .fourP .shell .deepLinks .deepLinksBox.deepPlant a {
+    margin: 0 22px;
+}
+
+.asgrow.cms-wrap .landingPage {
+    padding-top: 50px !important;
+}
+
+.asgrow.cms-wrap .landingPage .adjustTopMargin {
+    margin-top: -50px;
+}
+
+.asgrow-4psystem.asgrow.cms-wrap .landingPage h2 a {
+    color: #00A651;
+    font-family: proximanovalightlight;
+}
+
+.fourPHeaderText {
+    position: absolute;
+    top: 22px;
+    left: 609px;
+}
+
+.plan .fourPHeaderText {
+    left: 100px;
+    text-align: left;
+    top: 40px;
+    width: 420px;
+}
+
+.fourP .shell .fourPHeaderText p {
+    padding: 5px 0;
+    margin: 0;
+    text-align: left;
+    font-size: 14px;
+    line-height: 20px;
+    width: 450px;
+    color: #FFFFFF;
+    font-family: 'ProximaNovaSemiboldDemibold',
+    arial,
+    sans-serif;
+}
+
+.asgrow.cms-wrap .mainFourP .left {
+    padding: 0;
+    margin: 0;
+}
+
+.asgrow.cms-wrap .mainFourP .row .footnote,
+.row p.footnote {
+    // font-size: 12px;
+    // line-height: 18px;
+    // margin: 15px 0;
+}
+
+.asgrow.cms-wrap .mainFourP .row .footnote sup,
+.row p.footnote sup {
+    font-size: 80%;
+    letter-spacing: 1px;
+}
+
+.asgrow.cms-wrap .mainFourP .row .footnote.pullUp,
+.row p.footnote.pullUp {
+    // margin-top: -20px;
+    // padding-bottom: 20px;
+}
+
+.row .center { text-align: center; }
+
+.row .center img .asgrow.cms-wrap .mainTuneUp .row .center img,
+.asgrow-4psystem.asgrow.cms-wrap .row .center img {
+    display: inline !important;
+}
+
+.anchorBar {
+    padding-top: 10px;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    display: none;
+
+    @include breakpoint(medium) {
+        display: block;
+    }
+
+    &.seedRate p
+    {
+        max-width: 700px;
+        margin: 0 auto 20px auto;
+    }
+
+    a
+    {
+        display: inline-block;
+        margin: 1em;
+    }
+
+    @include breakpoint(x-large)
+    {
+        &.seedRate
+        {
+            width: 125%;
+            margin-left: -12.5%;
+            p { max-width: none; }
+        }
+    }
+}
+
+.anchorBar.scout {
+    width: 100%;
+    margin-left: auto;
+    padding-top: 20px;
+    text-align: center;
+    display: none;
+    @include breakpoint(medium) {
+        display: block;
+    }
+}
+
+.row.tenPixelBottomPad {
+    background-color: #069;
+}
+
+hr.adjustedMargin {
+    margin-top: 40px;
+}
+
+hr.medMargin {
+    margin-top: 30px;
+}
+
+.asgrow.cms-wrap .mainFourP .scoutEarly .right {
+
+    @extend %col;
+    @include breakpoint(medium) {
+        float: right;
+        width: 45%;
+    }
+}
+
+.asgrow.cms-wrap .mainFourP .scoutEarly .left {
+    @extend %col;
+    @include breakpoint(medium) {
+        width: 55%;
+        padding-right: 5%;
+    }
+}
+
+.asgrow.cms-wrap .mainFourP .plantStress .right {
+    // width: 420px;
+    @extend %col;
+    @include breakpoint(medium) {
+        width: 70%;
+    }
+}
+
+.asgrow.cms-wrap .mainFourP .plantStress .left,
+.asgrow.cms-wrap .mainFourP .plantStress .right {
+    text-align: center;
+    img { display: inline-block; }
+}
+
+.asgrow.cms-wrap .mainFourP .noPadNoMar {
+    padding: 0;
+    margin: 0;
+}
+
+.asgrow.cms-wrap .mainFourP .alignCenter,
+.asgrow.cms-wrap .row .alignCenter {
+    text-align: center;
+}
+
+.asgrow.cms-wrap .mainFourP .alignCenter img,
+.asgrow.cms-wrap .row .alignCenter img {
+    display: inline;
+}
+
+.asgrow.cms-wrap .mainFourP .alignCenter .marginTop {
+    margin-top: 1.5em;
+}
+
+.marginTop {
+    margin-top: 1.5em;
+}
+
+.asgrow.cms-wrap .mainFourP p.fivePxBotMargin {
+    margin-bottom: 5px;
+}
+
+.asgrow.cms-wrap .mainFourP ul.fivePxBotMargin {
+    margin-bottom: 5px;
+    padding-bottom: 0;
+}
+
+.asgrow.cms-wrap .mainFourP h3.brownH {
+    color: #A84D0F;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+}
+
+.row .innerLeft {
+    // float: left;
+    // width: 400px;
+}
+
+.row .innerRight {
+    // float: right;
+    // width: 460px;
+}
+
+.row .innerBox {
+    // width: 900px;
+}
+
+.asgrow.cms-wrap .mainFourP .innerLeft ul {
+    margin-left: 15px;
+}
+
+.controlWeeds.agTablets {
+    position: relative;
+}
+
+.controlWeeds.agTablets .cwBox {
+    // width: 377px;
+    @include clearfix;
+    @include breakpoint(large) {
+        width: 1081px;
+    }
+}
+
+.controlWeeds.agTablets .cwBox p {
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.agTablets .cwBox .absoluteRight
+{
+    margin: 0 auto;
+    max-width: 655px;
+}
+
+.controlWeeds.agTablets .cwBox .absoluteRight {
+    // bottom: -119px;
+    // left: 377px;
+    // position: absolute;
+    // z-index: 1;
+
+    @include breakpoint(large) {
+        float: right;
+        width: 715px;
+    }
+}
+
+a.appStore {
+    display: block;
+    width: 168px;
+    height: 56px;
+    float: left;
+    margin: 30px 5px 10px 0;
+    text-indent: -9999px;
+}
+
+a.appStore.marginTop {
+    margin-top: 60px;
+}
+
+a.iphone {
+    background: url(/asgrow/Plant/PublishingImages/app_store_btn.gif) no-repeat left top;
+}
+
+a.android {
+    background: url(/asgrow/Plant/PublishingImages/google_play_btn.gif) no-repeat left top;
+}
+
+.controlWeeds.agTablets .cwBox a.brown {
+    color: #A84D0F;
+}
+
+.controlWeeds.agTablets .cwBox a.brown:hover {
+    text-decoration: underline;
+}
+
+.pushDown {
+    position: relative;
+    z-index: 2;
+    margin-top: 80px;
+}
+
+.controlWeeds.agTablets .modal-site {
+    position: relative;
+    // height: 581px;
+}
+
+.controlWeeds.agTablets .modal-site a.info-1 {
+    left: 177px;
+    top: 70px;
+}
+
+.controlWeeds.agTablets .modal-site #info-1 {
+    left: 237px;
+    top: 7px;
+}
+
+.controlWeeds.agTablets .modal#info-1 .circle-bg {
+    left: -11px;
+    top: -15px;
+    transform: rotate(122deg);
+}
+
+.controlWeeds.agTablets .modal-site a.info-2 {
+    left: 258px;
+    top: 350px;
+}
+
+.controlWeeds.agTablets .modal-site #info-2 {
+    left: 192px;
+    top: 156px;
+}
+
+.controlWeeds.agTablets .modal#info-2 .circle-bg {
+    left: -11px;
+    transform: rotate(30deg);
+    top: 3px;
+}
+
+.controlWeeds.agTablets .modal-site a.info-3 {
+    left: 395px;
+    top: 390px;
+}
+
+.controlWeeds.agTablets .modal-site #info-3 {
+    left: 329px;
+    top: 195px;
+}
+
+.controlWeeds.agTablets .modal#info-3 .circle-bg {
+    left: -11px;
+    top: 5px;
+    transform: rotate(30deg);
+}
+
+.customizeFields.agTablets .cwBox-text {
+    @include breakpoint(large) {
+        width: 366px;
+        float: left;
+    }
+}
+
+.customizeFields.agTablets .cwBox .absoluteRight {
+    top: -45px;
+    z-index: 2;
+
+    @include breakpoint(large) {
+        float: right;
+        width: 715px;
+    }
+}
+
+.customizeFields.agTablets .modal-site {
+    position: relative;
+    // height: 552px;
+    max-width: 711px;
+    margin: 0 auto;
+}
+
+.customizeFields.agTablets .modal-site a.info-1 {
+    left: 30%;
+    top: 9%;
+}
+
+.customizeFields.agTablets .modal-site #info-1 {
+    left: 47px;
+    top: 58px;
+}
+
+.customizeFields.agTablets .modal#info-1 .circle-bg {
+    left: -3px;
+    top: -25px;
+    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+}
+
+.customizeFields.agTablets .modal-site a.info-2 {
+    left: 50%;
+    top: 18%;
+}
+
+.customizeFields.agTablets .modal-site #info-2 {
+    left: 200px;
+    top: 131px;
+}
+
+.customizeFields.agTablets .modal#info-2 .circle-bg {
+    left: 3px;
+    top: -27px;
+    transform: rotate(-108deg);
+    -webkit-transform: rotate(-108deg);
+    -moz-transform: rotate(-108deg);
+    -o-transform: rotate(-108deg);
+    -ms-transform: rotate(-108deg);
+}
+
+.customizeFields.agTablets .modal-site a.info-3 {
+    left: 410px;
+    top: 125px;
+}
+
+.customizeFields.agTablets .modal-site #info-3 {
+    left: 472px;
+    top: 23px;
+}
+
+.customizeFields.agTablets .modal#info-3 .circle-bg {
+    left: -11px;
+    top: 0px;
+    transform: rotate(110deg);
+}
+
+.customizeFields.agTablets .modal-site a.info-4 {
+    left: 58%;
+    top: 48%;
+}
+
+.customizeFields.agTablets .modal-site #info-4 {
+    left: 437px;
+    top: 230px;
+}
+
+.customizeFields.agTablets .modal#info-4 .circle-bg {
+    left: -11px;
+    top: -15px;
+    transform: rotate(150deg);
+    -webkit-transform: rotate(150deg);
+    -moz-transform: rotate(150deg);
+    -o-transform: rotate(150deg);
+    -ms-transform: rotate(150deg);
+}
+
+.plantDepth {
+    width: 111%;
+    margin-left: -5.5%;
+}
+
+.plantDepthBox {
+    width: 100%;
+    margin: 0 auto;
+    height: 530px;
+    background: url(/asgrow/Plant/PublishingImages/planting_depth_bkg.jpg) no-repeat left top;
+    position: relative;
+}
+
+#main.noBotPad {
+    padding-bottom: 0;
+}
+
+.plantDepthBox a {
+    display: block;
+    width: 100%;
+    font-size: 13px;
+    color: #4D6167 !important;
+    overflow: hidden;
+    text-indent: 25px;
+
+    &.current { color: #78A5B1 !important; }
+}
+
+.plantDepthBox a.tooShallow {
+    height: 224px;
+    line-height: 224px;
+    background: url(/asgrow/Plant/PublishingImages/too_shallow_bkg.png) no-repeat 170px 20px;
+
+    &.current { background-position: 170px -230px; }
+}
+
+.plantDepthBox a.sweetSpot {
+    height: 118px;
+    line-height: 118px;
+    background: url(/asgrow/Plant/PublishingImages/sweet_spot_bkg.png) no-repeat -136px 8px;
+
+    &.current { background-position: -136px -135px; }
+}
+
+.plantDepthBox a.tooDeep {
+    height: 188px;
+    line-height: 188px;
+    background: url(/asgrow/Plant/PublishingImages/too_deep_bkg.png) no-repeat 170px 5px;
+
+    &.current { background-position: 170px -219px; }
+}
+
+.pdPaper {
+    width: 579px;
+    height: 415px;
+    background: url(/asgrow/Plant/PublishingImages/planting_depth_paper.png) no-repeat left top;
+    position: absolute;
+    top: 70px;
+    left: 45%;
+
+    @include breakpoint(large) { left: 35%; }
+}
+
+.pdPaper .pdFrame {
+    position: relative;
+}
+
+.pdPaper .pdFrame h4 {
+    color: #1a3546;
+    font-size: 16px;
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+}
+
+.pdPaper .pdFrame h1 {
+    margin: 8px 0 20px 0;
+    padding: 0;
+    font-size: 20px;
+    text-indent: -9999px;
+}
+
+.pdPaper .pdFrame h1.tooShallow {
+    width: 397px;
+    height: 39px;
+    background: url(/asgrow/Plant/PublishingImages/shallower_than_one_inch.png) no-repeat left top;
+}
+
+.pdPaper .pdFrame h1.sweetSpot {
+    width: 342px;
+    height: 39px;
+    background: url(/asgrow/Plant/PublishingImages/between_one_and_half.png) no-repeat left top;
+}
+
+.pdPaper .pdFrame h1.tooDeep {
+    width: 375px;
+    height: 51px;
+    background: url(/asgrow/Plant/PublishingImages/deeper_than_one_half.png) no-repeat left top;
+    margin-bottom: 7px;
+}
+
+.pdPaper .pdFrame h3 {
+    padding: 0;
+    margin: 0;
+    color: #311910;
+    font-size: 22px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.pdPaper .pdFrame h3.red {
+    color: #AD2C0B;
+}
+
+.pdPaper .pdFrame p {
+    margin: 0;
+    padding: 0;
+    color: #311910;
+}
+
+.pdPaper .pdBox {
+    position: absolute;
+    top: 70px;
+    left: 70px;
+    width: 425px;
+}
+
+.pdPaper .boxTwo,
+.pdPaper .boxThree {
+    display: none;
+}
+
+.planProtectNumber {
+    width: 100%;
+    height: 87px;
+    text-indent: -9999px;
+    background: url(/asgrow/Plan/PublishingImages/plan_protection_number.png) no-repeat center top;
+    margin: 0 auto;
+    .backgroundsize & { background-size: contain; }
+}
+
+.protectionLinks {
+    @include clearfix;
+    text-align: center;
+}
+
+.protectionLinks.marginTop {
+    margin-top: 50px;
+}
+
+.protectionLinks.centered {
+    width: 120%;
+    margin-left: -10%;
+}
+
+.protectionLinks a {
+    background: url("/asgrow/Plan/PublishingImages/disease-anthracnose.jpg") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 207px;
+    margin: 1em auto;
+    text-indent: -9999px;
+    width: 207px;
+    @media all and (min-width: 450px) { margin: 1em; }
+}
+
+.protectionLinks a span {
+    color: #666051;
+    display: inline-block;
+    font-family: proximanovaregularregular;
+    font-size: 12px;
+    margin: 194px auto 0;
+    position: absolute;
+    text-align: center;
+    text-indent: 0;
+    width: 207px;
+    z-index: 10000;
+}
+
+.protectionLinks a.disease-1 { background: url("/asgrow/Plan/PublishingImages/disease-anthracnose.jpg"); }
+.protectionLinks a.disease-2 { background: url("/asgrow/Plan/PublishingImages/disease-cyst-nematode.jpg"); }
+.protectionLinks a.disease-3 { background: url("/asgrow/Plan/PublishingImages/disease-fusarium-root-rot.jpg"); }
+.protectionLinks a.disease-4 { background: url("/asgrow/Plan/PublishingImages/disease-phomopis-seed-rot.jpg"); }
+.protectionLinks a.disease-5 { background: url("/asgrow/Plan/PublishingImages/disease-pod-and-stem-blight.jpg"); }
+.protectionLinks a.disease-6 { background: url("/asgrow/Plan/PublishingImages/disease-purple-seed-stain.jpg"); }
+.protectionLinks a.disease-7 { background: url("/asgrow/Plan/PublishingImages/disease-rhizoctonia.jpg"); }
+.protectionLinks a.disease-8 { background: url("/asgrow/Plan/PublishingImages/disease-sclerotinia-stem-rot.jpg"); }
+.protectionLinks a.disease-9 { background: url("/asgrow/Plan/PublishingImages/disease-stem-cranker.jpg"); }
+.protectionLinks a.disease-10 { background: url("/asgrow/Plan/PublishingImages/disease-brown-stem-rot.jpg"); }
+.protectionLinks a.disease-11 { background: url("/asgrow/Plan/PublishingImages/disease-charcoal-rot.jpg"); }
+.protectionLinks a.disease-12 { background: url("/asgrow/Plan/PublishingImages/disease-downy-mildew.jpg"); }
+.protectionLinks a.disease-13 { background: url("/asgrow/Plan/PublishingImages/disease-frog-leaf-spot.jpg"); }
+.protectionLinks a.disease-14 { background: url("/asgrow/Plan/PublishingImages/disease-phytophtora.jpg"); }
+.protectionLinks a.disease-15 { background: url("/asgrow/Plan/PublishingImages/disease-septoria-brown-spot.jpg"); }
+.protectionLinks a.disease-16 { background: url("/asgrow/Plan/PublishingImages/disease-sudden-death.jpg"); }
+
+.protectionLinks a:hover,
+.protectionLinks a:active {
+    background-position: 0 bottom;
+}
+
+.protectionLinks.single {
+    width: 230px;
+    margin: 40px auto 0 auto;
+}
+
+.rockStarRow {text-align: center;margin:0 auto;}
+.rockStarRow .rockStarImg {
+    display:inline-block;
+    margin: 0 10px;
+    position: relative;
+}
+
+.rockStarRow.centered {
+    width: 850px;
+    margin: 20px auto 0 auto;
+}
+
+.rockStarRow .modal.circularPopuUp {
+    background: url(/asgrow/Plan/PublishingImages/rockstar_popup_bkg.png) no-repeat left top transparent;
+    border: none;
+    padding: 0;
+    width: 694px;
+    height: 695px;
+    z-index: 300;
+    left: 180px;
+}
+
+.circularBox {
+    width: 280px;
+    margin: 50px auto;
+    text-align: left;
+}
+
+.asgrow.cms-wrap .mainFourP .circularBox h2 {
+    font-family: paktblack;
+    font-size: 55px;
+    margin: 20px auto;
+    padding: 0;
+    text-align: left;
+}
+
+.asgrow.cms-wrap .mainFourP .circularBox ul {
+    padding: 0;
+    margin: 0 0 0 10px;
+    font-family: DroidSansRegular;
+}
+
+.asgrow.cms-wrap .mainFourP .circularBox ul li {
+    color: #393636;
+    font-size: 12px;
+    font-weight: normal !important;
+    padding: 0;
+    margin: 0 0 10px 0;
+    line-height: 18px;
+    font-family: Arial,
+    Helvetica,
+    sans-serif;
+}
+
+.asgrow.cms-wrap .mainFourP .circularBox ul ul {
+    /*margin: 5px 0 20px 25px;*/
+    margin: 5px 0 10px 25px;
+}
+
+/* updated 8-7 */
+.asgrow.cms-wrap .mainFourP .circularBox ul ul li {
+    list-style: none;
+    margin-bottom: 0;
+}
+
+/* updated 8-7 */
+hr.bigMargin {
+    margin-bottom: 200px;
+}
+
+.nextBtn {
+    display: block;
+    text-indent: -9999px;
+    margin: 0 auto;
+}
+
+.cropProtect {
+    background: url(/asgrow/Plan/PublishingImages/crop_protection_recommendations_btn.png) no-repeat left top;
+    width: 213px;
+    height: 39px;
+}
+
+.prodDetails {
+    display: block;
+    text-indent: -9999px;
+    margin: 5px auto 0;
+    background: url(/asgrow/Plan/PublishingImages/product_char_btn.png) no-repeat left top;
+    width: 213px;
+    height: 39px;
+}
+
+/* added 8-7 */
+ul + .prodDetails {
+    margin-top: 10px;
+}
+
+.characteristics {
+    background: url(/asgrow/Plan/PublishingImages/characteristics_btn.jpg) no-repeat left top;
+    width: 182px;
+    height: 39px;
+}
+
+.asgrow.cms-wrap .mainFourP .circularBox .circularBoxSlide {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 190px;
+    left: 210px;
+    width: 280px;
+}
+
+.circularBoxSlide.hide {
+    display: none;
+}
+
+.asgrow.cms-wrap .mainFourP .modal .close.redCircle {
+    background: url(/asgrow/Plan/PublishingImages/rockstar_popup_close_btn.png) no-repeat left top;
+    width: 71px;
+    height: 71px;
+    display: block;
+    text-indent: -9999px;
+    right: 5px;
+    top: 40px;
+}
+
+.asgrow.cms-wrap .mainFourP .circularBox h6 {
+    font-family: droidsansbold;
+    font-size: 14px;
+    color: #666051;
+    line-height: 20px;
+}
+
+.asgrow.cms-wrap .mainFourP .circularBox p {
+    color: #393636;
+    font-family: DroidSansRegular;
+    font-size: 14px;
+    margin: 0;
+    padding: 0 0 5px;
+}
+
+.asgrow.cms-wrap .mainFourP .circularBox ul.marginLeft {
+    margin-left: 40px;
+    margin-bottom: 50px;
+    font-family: DroidSansRegular;
+}
+
+/* HIGH YIELD MANAGEMENT */
+.asgrow.cms-wrap.highyield .row h2 {
+    margin-bottom: 0;
+}
+
+.asgrow.cms-wrap.highyield .row p + h2 {
+    padding-top: 20px;
+}
+
+.asgrow.cms-wrap.highyield .row hr + h2 {
+    padding-top: 0;
+}
+
+.asgrow.cms-wrap.highyield .row h4.alignCenter + p {
+    padding-top: 20px;
+}
+
+.asgrow.cms-wrap.highyield .row .nobottom,
+.asgrow.cms-wrap.highyield .row hr + h2 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* PERFORM ROCK STAR MODAL */
+.rockStarRow .modal-open {
+    right: 20px;
+    top: 5px;
+}
+
+.rockStarRow .modal {
+    background: none repeat scroll 0 0 #fff;
+    border: 1px solid #CCCCCC;
+    height: auto;
+    left: 29px;
+    padding: 50px 80px;
+    top: 79px;
+    width: 800px;
+}
+
+#wrapper .rockStarRow .modal h2 {
+    color: #AD2C0B;
+    // font-family: proximanovasemiboldititdemibd;
+    font-size: 28px;
+    text-align: center;
+}
+
+.rockStarRow .modal table {
+    border: 1px solid #78A6B2;
+    text-align: center;
+    margin: 20px 0;
+}
+
+#wrapper .rockStarRow .modal table th {
+    // background-color: #78A6B2;
+    // border: medium none;
+    // color: #0D232E;
+    // font-size: 16px;
+    font-size:1em;
+}
+
+#wrapper .rockStarRow .modal {font-size:1em;}
+#wrapper .rockStarRow .modal table td {
+    // border-bottom: 1px solid #78A6B2;
+    // border-right: 1px solid #78A6B2;
+    // padding: 14px;
+    // font-size: 28px;
+    // color: #78A6B2;
+}
+
+.rockStarRow .modal table tr .red,
+.rockStarRow .modal p .red {
+    color: #AD2C0B;
+}
+
+.rockStarRow .modal table td.last {
+    border-right: none;
+}
+
+.rockStarRow .modal p {
+    font-size: 16px;
+    line-height: 21px;
+    text-align: left;
+}
+
+.rockStarRow .modal .close {
+    color: #78A6B2;
+    cursor: pointer;
+    font-size: 28px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+/* TUNE UP MODAL */
+// .modal-site.modal-tuneup {
+//     background: url("/asgrow/PublishingImages/combine.jpg") no-repeat scroll center bottom transparent;
+// }
+
+.modal-tuneup .modal-open {
+    position: absolute;
+    z-index: 200;
+}
+
+.modal-tuneup .modal {
+    z-index: 100;
+    width: 205px;
+    height: 205px;
+}
+
+.modal-tuneup .tuneupImg {
+    height: 240px;
+    position: absolute;
+    width: 210px;
+}
+
+.modal-tuneup .tuneup-1 {
+    height: 210px;
+    // left: 20px;
+    // top: 150px;
+    left: 0;
+    top: 35%;
+}
+
+.modal-tuneup .tuneup-2 {
+    // left: 223px;
+    // top: 134px;
+    height: 210px;
+    left: 19%;
+    top: 31%;
+}
+
+.modal-tuneup .tuneup-3 {
+    height: 240px;
+    // left: 395px;
+    // top: 305px;
+    left: 37%;
+    top: 71%;
+}
+
+.modal-tuneup .tuneup-4 {
+    // left: 538px;
+    // top: 32px;
+    left: 52%;
+    top: 12%;
+}
+
+.modal-tuneup .tuneup-5 {
+    // left: 335px;
+    // top: -30px;
+    height: 235px;
+    left: 29%;
+    top: -1%;
+}
+
+.modal-tuneup .tuneup-6 {
+    // top: 288px;
+    // right: 229px;
+    left: 57%;
+    top: 66%;
+}
+
+.modal-tuneup .tuneup-7 {
+    /* height: 210px; */
+    // right: 40px;
+    // top: 151px;
+    left: 75%;
+    top: 35%;
+}
+
+.modal-tuneup .tuneupImg .modal div {
+    font-size: 13px;
+}
+
+.modal-tuneup .tuneup-1 .modal div {
+    line-height: 150%;
+    padding: 24px 21px 0;
+}
+
+.modal-tuneup .tuneup-3 .modal div,
+.modal-tuneup .tuneup-4 .modal div,
+.modal-tuneup .tuneup-6 .modal div {
+    padding-top: 75px;
+}
+
+.modal-tuneup .tuneup-5 .modal div {
+    padding-top: 60px;
+}
+
+.modal-tuneup .tuneup-1 a.modal-open {
+    bottom: 0;
+    left: 159px;
+}
+
+.modal-tuneup .tuneup-2 a.modal-open {
+    bottom: 0;
+    right: 10px;
+}
+
+.modal-tuneup .tuneup-3 a.modal-open {
+    left: 82px;
+    top: -37px;
+}
+
+.modal-tuneup .tuneup-4 a.modal-open {
+    bottom: 30px;
+    left: 0;
+}
+
+.modal-tuneup .tuneup-5 a.modal-open {
+    bottom: 0;
+    right: 27px;
+}
+
+.modal-tuneup .tuneup-6 a.modal-open {
+    top: 0;
+    left: 0;
+}
+
+.modal-tuneup .tuneup-7 a.modal-open {
+    bottom: 28px;
+    left: 8px;
+}
+
+.modal-tuneup .tuneupImg .circle-bg {
+    background-image: url("/asgrow/PublishingImages/tuneup-bg.png");
+    width: 205px;
+    height: 205px;
+}
+
+.modal-tuneup .tuneup-1 .modal .circle-bg {
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    transform: rotate(5deg);
+}
+
+.modal-tuneup .tuneup-2 .modal .circle-bg {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.modal-tuneup .tuneup-3 .modal .circle-bg {
+    -webkit-transform: rotate(-132deg);
+    -moz-transform: rotate(-132deg);
+    -o-transform: rotate(-132deg);
+    -ms-transform: rotate(-132deg);
+    transform: rotate(-132deg);
+}
+
+.modal-tuneup .tuneup-4 .modal .circle-bg {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.modal-tuneup .tuneup-5 .modal .circle-bg {
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    transform: rotate(20deg);
+}
+
+.modal-tuneup .tuneup-6 .modal .circle-bg {
+    -webkit-transform: rotate(182deg);
+    -moz-transform: rotate(182deg);
+    -o-transform: rotate(182deg);
+    -ms-transform: rotate(182deg);
+    transform: rotate(182deg);
+}
+
+.modal-tuneup .tuneup-7 .modal .circle-bg {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+/* REDUCE LOSS MODAL */
+.reduceLossRow.modal-site {
+    height: auto;
+    margin: 20px auto 0;
+    text-align: center;
+    max-width: 715px;
+}
+
+.reduceLossRow.modal-site.centered {
+    max-width: 538px;
+}
+
+.reduceLossRow .modal-open {
+    right: 20px;
+    top: 5px;
+    z-index: 2;
+}
+
+.reduceLossRow .reduceLossImg {
+    float: left;
+    padding: 0 7px;
+    position: relative;
+    width: 50%;
+    max-width: 178px;
+}
+
+.reduceLossRow.modal-site .modal {
+    left: 38px;
+    top: 3px;
+    z-index: 1;
+}
+
+.reduceLossRow.modal-site .modal div {
+    font-size: 13px;
+    line-height: 22px;
+    padding: 34px 14px 0;
+}
+
+.reduceLossRow.modal-site .modal .circle-bg {
+    height: 213px;
+    width: 213px;
+    background: url("/asgrow/Plan/PublishingImages/circle-tooltip-2.png") no-repeat scroll 0 0 transparent;
+    left: -18px;
+    top: 5px;
+    transform: rotate(157deg);
+}
+
+.reduceLossRow.modal-site a.reduceLoss-1 {
+    left: 0;
+    top: 26px;
+}
+
+.reduceLossRow.modal-site #reduceLoss-1 {
+    left: 45px;
+    top: 19px;
+}
+
+.reduceLossRow.modal-site #reduceLoss-1 {
+    left: 45px;
+    top: 24px;
+}
+
+.reduceLossRow.modal-site #reduceLoss-1 div,
+.modal-site.reduceLossRow #reduceLoss-1 DIV {
+    padding: 38px 5px 0;
+    /* 58px 5px 0 */
+}
+
+@-moz-document url-prefix() {
+    .reduceLossRow.modal-site #reduceLoss-1 {
+      top: -2px;
+  }
+}
+
+.reduceLossRow.modal-site #reduceLoss-1 .circle-bg {
+    left: -18px;
+    top: -12px;
+    -moz-transform: rotate(157deg);
+    -o-transform: rotate(157deg);
+    -webkit-transform: rotate(157deg);
+    transform: rotate(157deg);
+}
+
+@-moz-document url-prefix() {
+    .reduceLossRow.modal-site #reduceLoss-1 .circle-bg {
+      top: 10px;
+  }
+}
+
+.reduceLossRow.modal-site a.reduceLoss-2 {
+    right: 0;
+}
+
+.reduceLossRow.modal-site #reduceLoss-2 {
+    top: 53px;
+}
+
+.reduceLossRow.modal-site #reduceLoss-2 .circle-bg {
+    left: -12px;
+    top: -6px;
+    -moz-transform: rotate(-141deg);
+    -o-transform: rotate(-141deg);
+    -webkit-transform: rotate(-141deg);
+    transform: rotate(-141deg);
+}
+
+.reduceLossRow.modal-site a.reduceLoss-3 {
+    right: 60px;
+    top: 72px;
+}
+
+.reduceLossRow.modal-site #reduceLoss-3 {
+    left: 48px;
+    top: -126px;
+}
+
+.reduceLossRow.modal-site #reduceLoss-3 .circle-bg {
+    left: -21px;
+    top: -4px;
+    transform: rotate(56deg);
+}
+
+.reduceLossRow.modal-site #reduceLoss-4 {
+    top: 54px;
+}
+
+.reduceLossRow.modal-site #reduceLoss-4 .circle-bg {
+    top: -5px;
+    transform: rotate(-148deg);
+}
+
+.reduceLossRow.modal-site a.reduceLoss-5 {
+    left: 68px;
+    top: 97px;
+}
+
+.reduceLossRow.modal-site #reduceLoss-5 {
+    left: 9px;
+    top: -103px;
+}
+
+.reduceLossRow.modal-site #reduceLoss-5 .circle-bg {
+    left: -20px;
+    top: -9px;
+    transform: rotate(38deg);
+}
+
+.reduceLossRow.modal-site a.reduceLoss-6 {
+    top: 66px;
+}
+
+.reduceLossRow.modal-site #reduceLoss-6 {
+    left: -72px;
+    top: -81px;
+}
+
+.reduceLossRow.modal-site #reduceLoss-6 .circle-bg {
+    top: -10px;
+    transform: rotate(-18deg);
+}
+
+.reduceLossRow.modal-site a.reduceLoss-7 {
+    left: 27px;
+    top: 76px;
+}
+
+.reduceLossRow.modal-site #reduceLoss-7 {
+    top: -117px;
+}
+
+.reduceLossRow.modal-site #reduceLoss-7 .circle-bg {
+    left: -21px;
+    top: 6px;
+    transform: rotate(70deg);
+}
+
+.agTablets .cwBox {
+    position: relative;
+    @include clearfix;
+
+    @include breakpoint(large) {
+        width: 1081px;
+    }
+}
+
+.agTablets .cwBox-text {
+    width: 100%;
+    z-index: 1;
+    margin-bottom: 2em;
+
+    @include breakpoint(large) {
+        width: 366px;
+        float: left;
+        // border-bottom: 1px solid #efeeea;
+        // padding-bottom: 34px;
+    }
+}
+
+.agTablets .cwBox p {
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.agTablets .cwBox .absoluteRight {
+    @include breakpoint(large) {
+        float: right;
+        width: 715px;
+    }
+}
+
+.agTablets .modal-site {
+    position: relative;
+    // height: 581px;
+}
+
+.agTablets .modal-site a.info-1 {
+    left: 19.1131498%;
+    top: 13.0597015%;
+}
+
+.agTablets .modal-site .modal-info-1 {
+    left: 24.11315%;
+    top: -10.940299%;
+}
+
+.agTablets .modal .circle-bg {
+    left: -11px;
+    top: -15px;
+    transform: rotate(85deg);
+    -moz-transform: rotate(85deg);
+    -webkit-transform: rotate(85deg);
+    -o-transform: rotate(85deg);
+    -ms-transform: rotate(85deg);
+}
+
+.agTablets .modal-site a.info-2 {
+    left: 30.5810398%;
+    top: 47.0149254%;
+}
+
+.agTablets .modal-site .modal-info-2 {
+    left: 243px;
+    top: 286px;
+}
+
+.agTablets .modal-info-2 .circle-bg {
+    left: -7px;
+    top: -11px;
+    -moz-transform: rotate(162deg);
+    -o-transform: rotate(162deg);
+    -webkit-transform: rotate(162deg);
+    transform: rotate(162deg);
+}
+
+.agTablets .modal-site a.info-3 {
+    left: 59.0214067%;
+    top: 38.4328358%;
+}
+
+.agTablets .modal-site .modal-info-3 {
+    left: 49%;
+    top: 6%;
+}
+
+.agTablets .modal-info-3 .circle-bg {
+    /*left: -4px; top: -15px;*/
+    -webkit-transform: rotate(29deg);
+    -moz-transform: rotate(29deg);
+    -o-transform: rotate(29deg);
+    -ms-transform: rotate(29deg);
+    transform: rotate(29deg);
+}
+
+.agTablets.stay-informed .modal-site .modal-info-2 {
+    left: 34.58104%;
+    top: 49.014925%;
+}
+
+.storage {
+    position: relative;
+    // height: 590px;
+}
+
+.storage .cwBox-text {
+    width: auto;
+    // position: absolute;
+}
+
+.storage .absoluteRight {
+    // bottom: -51px;
+    // position: absolute;
+    // right: 0;
+    position: relative;
+}
+
+.storage ul {
+    margin: 0;
+    padding: 0;
+}
+
+.storage ul li {
+    font-size: 12px;
+    line-height: 16px;
+    list-style: none outside none;
+    padding-bottom: 15px;
+}
+
+.storage .absoluteRight .modal-site {
+    // height: 521px;
+    height: auto;
+    margin-bottom: 3em;
+}
+
+.storage .absoluteRight .modal-site a.modal-open {
+    z-index: 2;
+}
+
+.storage .absoluteRight .modal-site .modal {
+    bottom: 102px;
+    z-index: 1;
+}
+
+.storage .absoluteRight .modal-site .modal div {
+    font-size: 13px;
+    line-height: 22px;
+}
+
+.storage .absoluteRight .modal-site .modal .circle-bg {
+    height: 272px;
+    width: 229px;
+    background: url("/asgrow/Plan/PublishingImages/circle-tooltip-3.png") no-repeat scroll 0 0 transparent;
+    left: -29px;
+    top: 25px;
+    transform: rotate(1deg);
+}
+
+.storage .absoluteRight .modal-site a.info-1 {
+    // left: 62px;
+    // top: 455px;
+    left: 6%;
+    top: 78%;
+}
+.storage .absoluteRight .modal-site .modal-info-1 {
+    left: 0;
+    top: 40%;
+}
+
+.storage .absoluteRight .modal-site .modal-info-1 .circle-bg {
+    top: 2px;
+}
+
+.storage .absoluteRight .modal-site a.info-2 {
+    // left: 200px;
+    // top: 343px;
+    left: 20%;
+    top: 68%;
+}
+
+.storage .absoluteRight .modal-site .modal-info-2 {
+    // left: 140px;
+    // top: 81px;
+    left: 14%;
+    top: 16%;
+}
+
+.storage .absoluteRight .modal-site .modal-info-2 div {
+    padding: 58px 8px 0;
+}
+
+.storage .absoluteRight .modal-site a.info-3 {
+    // left: 437px;
+    // top: 214px;
+    left: 43%;
+    top: 41%;
+}
+
+.storage .absoluteRight .modal-site .modal-info-3 {
+    // left: 369px;
+    // top: 276px;
+    left: 36.3%;
+    top: 56%;
+}
+
+.storage .absoluteRight .modal-site .modal-info-3 .circle-bg {
+    left: -24px;
+    top: -55px;
+    transform: rotate(-180deg);
+}
+
+.storage .absoluteRight .modal-site a.info-4 {
+    // right: 380px;
+    // top: 263px;
+    left: 58%;
+    top: 51%;
+}
+
+.storage .absoluteRight .modal-site .modal-info-4 {
+    // right: 312px;
+    // top: 20px;
+    left: 51.7%;
+    top: 5%;
+}
+
+.storage .absoluteRight .modal-site .modal-info-4 .circle-bg {
+    left: -27px;
+    top: -7px;
+}
+
+.storage .absoluteRight .modal-site a.info-5 {
+    // right: 249px;
+    // top: 200px;
+    left: 71%;
+    top: 38%;
+}
+
+.storage .absoluteRight .modal-site .modal-info-5 {
+    // bottom: 41px;
+    // right: 185px;
+    left: 64.3%;
+    top: 54%;
+}
+
+.storage .absoluteRight .modal-site .modal-info-5 .circle-bg {
+    left: -24px;
+    top: -69px;
+    transform: rotate(180deg);
+}
+
+.page-testimonials.outerShell {
+    width: 100%;
+    background-color: #ffc300;
+    margin: 49px auto 0;
+    text-align: center;
+    max-width: 730px;
+}
+
+.page-testimonials #testimonialsTop {
+    margin: 0 0 20px 187px;
+}
+
+.page-testimonials #testimonialsTop .search-box {
+    float: left;
+    padding: 0;
+}
+
+.page-testimonials #testimonialsTop .search-box form {
+    height: 44px;
+    width: 381px;
+    border: medium none;
+}
+
+.page-testimonials #testimonialsTop .search-box .field {
+    background-color: #E6E6E6;
+    color: #332e25;
+    font-family: "ProximaNovaRegularItalicIt";
+    font-size: 14px;
+    height: 17px;
+    margin: 8px 0 0;
+    padding: 9px 20px 7px;
+    width: 200px;
+}
+
+.page-testimonials #testimonialsTop .search-box .submit-button {
+    background: url("/Style%20Library/AgAnytime/IMG/white2-link.png") no-repeat scroll 94px 17px #8d340b;
+    color: #FFFFFF;
+    font-family: 'ProximaNovaBoldBold';
+    font-size: 20px;
+    height: 44px;
+    padding: 0 0 1px;
+    width: 118px;
+}
+
+.page-testimonials .testimonialCount {
+    float: left;
+    margin: 11px 0 0 25px;
+}
+
+.page-testimonials .red {
+    color: #b71d21;
+    font-family: 'ProximaNovaBoldBold';
+}
+
+.page-testimonials #content {
+    width: 760px;
+    float: left;
+}
+
+.page-testimonials #sidebar.inner-sidebar {
+    display: block;
+    float: right;
+    width: 400px;
+}
+
+.page-testimonials #testimonialsTop .search-box .form {
+    border: medium none;
+    height: 44px;
+    width: 381px;
+}
+
+.success-stories {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.success-story {
+    // float: left;
+    display:inline-block;
+    text-align: center;
+    margin: 0 15px 35px;
+}
+
+.success-story img {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.success-story .name {
+    display: block;
+    color: #1f3b47;
+}
+
+.success-story .location {
+    display: block;
+    font-size: 16px;
+    color: #1f3b47;
+}
+
+ul.app-req {
+    margin: 25px 0 0;
+    padding: 0;
+    text-align: center;
+}
+
+.app-req li {
+    float: left;
+    list-style: none outside none !important;
+    margin: 0 36px 45px;
+    text-align: center;
+    width: 200px;
+}
+
+.app-req li .req-icon {
+    background: url("/asgrow/Perform/PublishingImages/app-req-bg.png") no-repeat 0 0 transparent;
+    height: 127px;
+    width: 124px;
+    margin: 0 auto;
+}
+
+.app-req li.req-1 {
+    margin-left: 0;
+}
+
+.app-req li.req-2 .req-icon {
+    background-position: 0 -127px;
+}
+
+.app-req li.req-3 .req-icon {
+    background-position: 0 -254px;
+}
+
+.app-req li.req-4 {
+    margin-right: 0;
+}
+
+.app-req li.req-4 .req-icon {
+    background-position: 0 -381px;
+}
+
+.app-req li.req-5 {
+    margin-left: 134px;
+}
+
+.app-req li.req-5 .req-icon {
+    background-position: 0 -508px;
+}
+
+.app-req li.req-6 .req-icon {
+    background-position: 0 -635px;
+}
+
+.app-req li.req-7 .req-icon {
+    background-position: 0 -762px;
+}
+
+.cms-wrap .mainFourP .col-1 {
+    padding: 0 40px 0 15px;
+    width: 200px;
+    margin-right: 0;
+}
+
+.cms-wrap .mainFourP .col-2 ul {
+    padding-left: 16px;
+}
+
+.cms-wrap .mainFourP .col-2 ul li {
+    padding-bottom: 15px;
+}
+
+.text-shadow {
+    color: #000000;
+    font-weight: bold;
+    margin-left: 27px;
+    text-shadow: 2px 1px 7px #000000;
+}
+
+h4 a {
+    margin-top: -1px;
+}
+
+#contestSlider {
+    width: 533px;
+    margin: 0 auto;
+}
+
+#yield-contest-gallery-wrap {
+    height: 400px;
+}
+
+.rsSlide.rsActiveSlide .slide {
+    display: block !important;
+}
+
+.rsDefault .rsArrow {
+    position: fixed;
+}
+
+.rsArrow {
+    background-color: transparent;
+    height: 100%;
+    position: fixed;
+    width: 32px;
+    top: 50%;
+    z-index: 10000;
+}
+
+.rsArrow.rsArrowLeft {
+    left: 15px;
+}
+
+.rsArrow.rsArrowRight {
+    right: 15px;
+}
+
+.rsArrowIcn {
+    width: 32px;
+    height: 51px;
+    background: url("/asgrow/Plan/PublishingImages/page-arrows.png") no-repeat 0 0 transparent;
+}
+
+.rsArrow.rsArrowRight .rsArrowIcn {
+    background-position: -30px 0;
+}
+
+.cms-wrap table.table-2 {
+    margin-left: 183px;
+    width: 700px;
+    border: 1px solid #F0F0F0;
+}
+
+.cms-wrap table.table-2 tr.grey {
+    background-color: #F0F0F0;
+}
+
+.cms-wrap table.table-2 tr td {
+    border: 0 none;
+    color: #666051;
+    font-size: 17px;
+    text-align: left;
+}
+
+.page-testimonials.asgrow.outerShell {
+    background-color: #fff;
+}
+
+/*
+.page-testimonials.asgrow.outerShell { background-color: #417C96; }
+.page-testimonials.asgrow.outerShell .page-head { background-color: #417C96; padding-bottom: 0; }
+.page-testimonials.asgrow .inner-testimonial { background-color: #77BBD9; } */
+.page-testimonials.asgrow #testimonialsTop .search-box .submit-button {
+    background-color: #00A651;
+    float: right;
+}
+
+// .page-testimonials.asgrow .wrap-testimonials span {
+//     color: #8d340b;
+// }
+
+// .page-testimonials.asgrow .wrap-testimonials h3 {
+//     color: #00733C;
+// }
+
+// .page-testimonials.asgrow .wrap-testimonials p {
+//     color: #666051;
+// }
+
+/* .page-testimonials.asgrow .wrap-testimonials span { color: #fff; }
+.page-testimonials.asgrow .wrap-testimonials h3 { color: #1f3b47; }
+.page-testimonials.asgrow .wrap-testimonials p { color: #fff; } */
+.page-testimonials.asgrow .testimonialCount,
+.page-testimonials.asgrow .tesimonialName {
+    color: #fff;
+}
+
+.page-testimonials.asgrow .testimonialCount span,
+.page-testimonials.asgrow .tesimonialName span {
+    color: #1f3b47;
+    padding: 0;
+}
+
+.page-testimonials.asgrow .testimonials .inner-testimonial .carrot {
+    background: url("/Style%20Library/AgAnytime/IMG/asgrowTestimonialCarrot.gif") no-repeat scroll 0 0 transparent;
+}
+
+.story-profile .back-link {
+    background: url("/asgrow/Perform/PublishingImages/success-stories/back-link-red.gif") no-repeat scroll 0 6px transparent;
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding-left: 14px;
+    text-transform: uppercase;
+    width: 70px;
+}
+
+.story-profile .profile-name {
+    font-size: 26px;
+    color: #9e9e9e;
+    margin-bottom: 10px;
+}
+
+.story-profile .video {
+    margin-bottom: 40px;
+}
+
+.story-profile.dekalb h1.quote {
+    color: #B71D21 !important;
+}
+
+.story-profile.asgrow h1.quote {
+    color: #48819a !important;
+}
+
+/* skennon updates */
+.rsSlide .slide table.texttable th,
+.rsSlide .slide table.texttable td {
+    text-align: left;
+    vertical-align: top;
+}
+
+/* 4P Nozzles */
+#asgrow-4pnozzles a.modal-open {
+    display: block;
+    background: url("/asgrow/Plan/PublishingImages/modal-dot.png") no-repeat 0 0 transparent;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    z-index: 400;
+    top: 0;
+    left: 5px;
+    cursor: pointer;
+}
+
+#asgrow-4pnozzles a.modal-open.active {
+    background-position: 0 -45px;
+}
+
+#asgrow-4pnozzles .modal {
+    display: none;
+    height: 225px;
+    position: absolute;
+    width: 180px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    text-align: center;
+    z-index: 300;
+}
+
+#asgrow-4pnozzles.modal-site {
+    position: relative;
+    text-align: center;
+    // height: 483px;
+    // width: 1115px;
+
+    > div
+    {
+        position: relative;
+        display: inline-block;
+        margin: 1em;
+        width: 175px;
+
+        img:first-child { margin: 0 auto; }
+    }
+}
+
+#asgrow-4pnozzles .modal p {
+    color: #40728B;
+    font: bold 14px/21px 'Droid Sans', 'DroidSansBold', Arial, Helvetica, sans-serif;
+    margin: 109px 5% 0;
+    padding: 0;
+    width: 140px;
+}
+
+/* nozzle img */
+// #asgrow-4pnozzles.modal-site img#nozzle-1 {
+//     position: absolute;
+//     left: 135px;
+//     top: 18px;
+// }
+
+// #asgrow-4pnozzles.modal-site img#nozzle-2 {
+//     position: absolute;
+//     left: 332px;
+//     top: 20px;
+// }
+
+// #asgrow-4pnozzles.modal-site img#nozzle-3 {
+//     position: absolute;
+//     left: 513px;
+//     top: 36px;
+// }
+
+// #asgrow-4pnozzles.modal-site img#nozzle-4 {
+//     position: absolute;
+//     left: 692px;
+//     top: 11px;
+// }
+
+// #asgrow-4pnozzles.modal-site img#nozzle-5 {
+//     position: absolute;
+//     left: 865px;
+//     top: 6px;
+// }
+
+// #asgrow-4pnozzles.modal-site img#nozzle-6 {
+//     position: absolute;
+//     left: 242px;
+//     bottom: 101px;
+// }
+
+// #asgrow-4pnozzles.modal-site img#nozzle-7 {
+//     position: absolute;
+//     left: 437px;
+//     bottom: 103px;
+// }
+
+// #asgrow-4pnozzles.modal-site img#nozzle-8 {
+//     position: absolute;
+//     left: 623px;
+//     bottom: 101px;
+// }
+
+// #asgrow-4pnozzles.modal-site img#nozzle-9 {
+//     position: absolute;
+//     left: 786px;
+//     bottom: 101px;
+// }
+
+/* popup */
+#asgrow-4pnozzles.modal-site #nozinfo-1 {
+    left: 8px;
+    top: 15px;
+}
+
+#asgrow-4pnozzles.modal-site #nozinfo-2 {
+    left: 245px;
+    top: 14px;
+    height: 237px;
+}
+
+#asgrow-4pnozzles.modal-site #nozinfo-3 {
+    left: 484px;
+    top: 14px;
+    height: 239px;
+}
+
+#asgrow-4pnozzles.modal-site #nozinfo-4 {
+    left: 672px;
+    top: 14px;
+}
+
+#asgrow-4pnozzles.modal-site #nozinfo-5 {
+    left: 891px;
+    top: 5px;
+    height: 180px;
+    width: 211px;
+}
+
+#asgrow-4pnozzles.modal-site #nozinfo-6 {
+    left: 110px;
+    top: 235px;
+}
+
+#asgrow-4pnozzles.modal-site #nozinfo-7 {
+    left: 373px;
+    top: 243px;
+    height: 237px;
+}
+
+#asgrow-4pnozzles.modal-site #nozinfo-8 {
+    left: 619px;
+    top: 257px;
+}
+
+#asgrow-4pnozzles.modal-site #nozinfo-9 {
+    left: 835px;
+    top: 224px;
+    height: 180px;
+    width: 211px;
+}
+
+/*button */
+// #asgrow-4pnozzles.modal-site .nozzle-1 a {
+//     left: 126px;
+//     top: 14px;
+// }
+
+// #asgrow-4pnozzles.modal-site .nozzle-2 a {
+//     left: 339px;
+//     top: 14px;
+// }
+
+// #asgrow-4pnozzles.modal-site .nozzle-3 a {
+//     left: 537px;
+//     top: 14px;
+// }
+
+// #asgrow-4pnozzles.modal-site .nozzle-4 a {
+//     left: 688px;
+//     top: 14px;
+// }
+
+// #asgrow-4pnozzles.modal-site .nozzle-5 a {
+//     left: 892px;
+//     top: 14px;
+// }
+
+// #asgrow-4pnozzles.modal-site .nozzle-6 a {
+//     left: 243px;
+//     top: 243px;
+// }
+
+// #asgrow-4pnozzles.modal-site .nozzle-7 a {
+//     left: 456px;
+//     top: 243px;
+// }
+
+// #asgrow-4pnozzles.modal-site .nozzle-8 a {
+//     left: 641px;
+//     top: 257px;
+// }
+
+// #asgrow-4pnozzles.modal-site .nozzle-9 a {
+//     left: 835px;
+//     top: 237px;
+// }
+
+/* text */
+#asgrow-4pnozzles.modal-site #nozinfo-2 p {
+    margin: 85px 10% 0;
+}
+
+#asgrow-4pnozzles.modal-site #nozinfo-3 p {
+    padding: 14px 10px;
+}
+
+#asgrow-4pnozzles.modal-site #nozinfo-4 p {
+    padding: 0 17px;
+}
+
+#asgrow-4pnozzles.modal-site #nozinfo-5 p,
+.modal-site #nozinfo-9 p {
+    margin: 58px 5% 0 65px;
+}
+
+#asgrow-4pnozzles.modal-site #nozinfo-7 p {
+    padding: 10px 4px;
+}
+
+#asgrow-4pnozzles.modal-site #nozinfo-8 p {
+    padding: 5px 16px;
+}
+
+/* bg */
+#asgrow-4pnozzles .modal .nozzle-bg {
+    background: url("/asgrow/Plant/PublishingImages/nozzle-bg.png") no-repeat scroll 0 0 transparent;
+    bottom: 0;
+    display: block;
+    height: 218px;
+    right: 0;
+    position: absolute;
+    width: 178px;
+    z-index: -1;
+}
+
+#asgrow-4pnozzles .modal#nozinfo-1 .nozzle-bg {
+    -webkit-transform: rotate(35deg);
+    -moz-transform: rotate(35deg);
+    -o-transform: rotate(35deg);
+    -ms-transform: rotate(35deg);
+    transform: rotate(35deg);
+}
+
+#asgrow-4pnozzles .modal#nozinfo-2 .nozzle-bg {
+    -webkit-transform: rotate(21deg);
+    -moz-transform: rotate(21deg);
+    -o-transform: rotate(21deg);
+    -ms-transform: rotate(21deg);
+    transform: rotate(21deg);
+}
+
+#asgrow-4pnozzles .modal#nozinfo-3 .nozzle-bg {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+#asgrow-4pnozzles .modal#nozinfo-4 .nozzle-bg {
+    -webkit-transform: rotate(-21deg);
+    -moz-transform: rotate(-21deg);
+    -o-transform: rotate(-21deg);
+    -ms-transform: rotate(-21deg);
+    transform: rotate(-21deg);
+}
+
+#asgrow-4pnozzles .modal#nozinfo-5 .nozzle-bg {
+    -webkit-transform: rotate(-64deg);
+    -moz-transform: rotate(-64deg);
+    -o-transform: rotate(-64deg);
+    -ms-transform: rotate(-64deg);
+    transform: rotate(-64deg);
+}
+
+#asgrow-4pnozzles .modal#nozinfo-6 .nozzle-bg {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#asgrow-4pnozzles .modal#nozinfo-7 .nozzle-bg {
+    -webkit-transform: rotate(16deg);
+    -moz-transform: rotate(16deg);
+    -o-transform: rotate(16deg);
+    -ms-transform: rotate(16deg);
+    transform: rotate(16deg);
+}
+
+#asgrow-4pnozzles .modal#nozinfo-8 .nozzle-bg {
+    -webkit-transform: rotate(-18deg);
+    -moz-transform: rotate(-18deg);
+    -o-transform: rotate(-18deg);
+    -ms-transform: rotate(-18deg);
+    transform: rotate(-18deg);
+}
+
+#asgrow-4pnozzles .modal#nozinfo-9 .nozzle-bg {
+    -webkit-transform: rotate(-64deg);
+    -moz-transform: rotate(-64deg);
+    -o-transform: rotate(-64deg);
+    -ms-transform: rotate(-64deg);
+    transform: rotate(-64deg);
+}
+
+.asgrow-4psystem.asgrow.cms-wrap .row .appReq {
+    text-align: center;
+    @include clearfix;
+
+    @include breakpoint(x-large) {
+        // width: 125%;
+        // margin-left: -12.5%;
+    }
+}
+
+.asgrow-4psystem.asgrow.cms-wrap .row .appReq div {
+    display: inline-block;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    vertical-align: top;
+    float: left;
+
+    @include breakpoint(small) { width: 50%; }
+    @include breakpoint(large) { width: 25%; }
+
+    img { display: inline; }
+}
+
+.asgrow.cms-wrap .slider4p {
+    text-align: center;
+}
+
+.asgrow.cms-wrap .slider4p .toch {
+    background: url(/asgrow/Plant/PublishingImages/slider4p-horizontal-tg.png) no-repeat 26px top;
+    height: 100px;
+    position: relative;
+    display: inline-block;
+    z-index: 500;
+    width: 1100px;
+    margin: auto;
+}
+
+.asgrow.cms-wrap .slider4p .toch ul {
+    height: auto;
+    list-style: none outside none;
+    margin: 0 0 0 5px;
+    padding: 0;
+    width: 100%;
+}
+
+.asgrow.cms-wrap .slider4p .toch ul li {
+    list-style: none outside;
+    float: left;
+    display: block;
+    /* width: 82.5px;padding:    0 34px 0 25px;*/
+    position: relative;
+    width: 73px;
+}
+
+.asgrow.cms-wrap .slider4p .toch ul li img {
+    display: inline;
+}
+
+.asgrow.cms-wrap .slider4p .toch ul li a {
+    background: none;
+    width: 24px;
+    height: 24px;
+}
+
+.asgrow.cms-wrap .slider4p .toch ul li div.btn {
+    cursor: pointer;
+    text-decoration: none;
+    width: 24px;
+    height: 24px;
+    margin-left: 25px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.asgrow.cms-wrap .slider4p .navCnt {
+    width: 1024px;
+    position: relative;
+    margin: 0 auto;
+    height: 725px;
+}
+
+.asgrow.cms-wrap .slider4p .brand {
+    background: url(/asgrow/Plant/PublishingImages/slider4p-stagebg.png) no-repeat center center;
+    display: inline-block;
+    height: 500px;
+    margin: auto;
+    padding: 0;
+    width: 100%;
+}
+
+.asgrow.cms-wrap .slider4p #soybeangrowth {
+    background-image: url(/asgrow/Plant/PublishingImages/slider4p-bg.png);
+}
+
+.transition {
+    -webkit-transition: all 250ms ease-out;
+    -moz-transition: all 250ms ease-out;
+    -o-transition: all 250ms ease-out;
+    -ms-transition: all 250ms ease-out;
+    transition: all 250ms ease-out;
+}
+
+.scaleDown {
+    -webkit-transform: scale(0, 1);
+    -moz-transform: scale(0, 1);
+    -o-transform: scale(0, 1);
+    -ms-transform: scale(0, 1);
+    transform: scale(0, 1);
+}
+
+.scaleUp {
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -webkit-transition: all 500ms ease-out;
+    -moz-transition: all 500ms ease-out;
+    -o-transition: all 500ms ease-out;
+    -ms-transition: all 500ms ease-out;
+    transition: all 500ms ease-out;
+}
+
+.asgrow.cms-wrap .slider4p .brand h4 {
+    padding-top: 35% !important;
+}
+
+.asgrow.cms-wrap .slider4p .brand h2,
+.asgrow.cms-wrap .slider4p .brand h4 {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+}
+
+.asgrow.cms-wrap .slider4p .brand p {
+    width: 60%;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.asgrow.cms-wrap .slider4p #toggleAnim {
+    background: url(/asgrow/Plant/PublishingImages/slider4p-toggle.png) no-repeat center center;
+    width: 38px;
+    height: 38px;
+    position: absolute;
+    cursor: pointer;
+    top: -10px;
+}
+
+.asgrow.cms-wrap .slider4p #asgrowImg,
+.asgrow.cms-wrap .slider4p .bName {
+    margin-top: 14px;
+    margin-top: 1rem;
+    cursor: pointer;
+    line-height: 31px;
+    /* height of #asgrowImg */
+    font-size: 20px;
+}
+
+.asgrow.cms-wrap .slider4p .bName {
+    color: #A84D0F;
+    font-weight: bold;
+    text-align: center;
+}
+
+.asgrow.cms-wrap .slider4p .brands {
+    height: 500px;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+    position: relative;
+    z-index: 500;
+}
+
+.asgrow.cms-wrap ol {
+    line-height: 30px;
+    list-style: disc outside none;
+    padding-bottom: 40px;
+    padding-left: 50px;
+}
+
+.internal ol {
+    text-indent: -16px;
+}
+
+.internal .cms-wrap ol > li {
+    list-style: decimal outside none;
+    text-indent: 0;
+}

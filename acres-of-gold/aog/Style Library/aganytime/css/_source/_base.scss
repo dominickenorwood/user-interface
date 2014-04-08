@@ -1,0 +1,81 @@
+/* =======================
+/* Fixes - From HTML5 BP
+/* ======================= */
+
+/* Reset - Fix for whitespace on right bug in FF */
+html,body
+{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden; 
+}
+
+/* apply a natural box layout model to all elements - Danny Smith 1 Oct 12 */
+*, *:before, *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* Windows 8 Snap Mode Fix - http://timkadlec.com/2012/10/ie10-snap-mode-and-responsive-design/ */
+@-ms-viewport{
+	width: device-width;
+}
+
+::-moz-selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+::selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+html, button, input, select, textarea {
+	color: $dark-brown;
+}
+
+body {
+	font-size: 62.5%; // drop from default of 16 to 10(makes math easier)
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+img
+{
+	vertical-align: middle;
+	max-width: 100%;
+	position: relative;
+	display: block;
+	height: auto;
+}
+
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+textarea {
+	resize: vertical;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: " ";
+}
+
+.clearfix:after {
+  clear: both;
+}
+/* @end */

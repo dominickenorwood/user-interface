@@ -1,0 +1,112 @@
+#sidebar
+{
+	width: 100%;
+	position: relative;
+
+	.header
+	{
+		padding: .875em;
+		background: $light;
+		margin: 0;
+		border-bottom: 1px solid $light-gray;
+	}
+
+	ul
+	{
+		background-color: #fff;
+		margin: 0;
+		padding: 0;
+
+		li
+		{
+			display: block;
+			padding: 1em;
+			font-family: $proxima-bold;
+			text-transform: uppercase;
+			box-shadow: 0px 1px 0px $light-gray; // bottom-border
+			margin: 0;
+			white-space: nowrap;
+			border-left: .25em solid;
+
+			&.dekalb-theme { border-left-color: $dekalb-accent; }
+			&.asgrow-theme { border-left-color: $asgrow-primary; }
+			&.deltapine-theme { border-left-color: $deltapine-primary; }
+			&.other-crops-theme { border-left-color: $other-crops-color; }
+			
+			img
+			{
+				margin-right: .5em;
+				top: -.15em;
+				width: 24px;
+				
+				&.active { display: none; }
+				@include breakpoint(x-large) { width: 32px; }
+			}
+
+			&.dekalb-theme.active
+			{
+				background-color: $dekalb-accent;
+				h3 { color: #fff; }
+				img { display: none; }
+				img.active { display: inline-block; }
+			}
+		}
+	}
+
+	@include breakpoint(small)
+	{
+		.header { display: none; }
+
+		ul
+		{
+			@include clearfix;
+			li
+			{
+				display: inline-block;
+				padding: 1em;
+				width: 25%;
+				float: left;
+				border-left-width: .4em;
+			}
+		}
+	}
+
+	@include breakpoint(x-large)
+	{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 20%;
+		background-color: #fff;
+		border-left: 1px solid $light-gray;
+		margin-bottom: -99999px;
+		padding-bottom: 99999px;
+
+		.header
+		{
+			text-align: center;
+		}
+
+		ul
+		{
+			li
+			{
+				display: block;
+				padding: 1.5em;
+				width: 100%;
+				position: relative;
+				
+				// .active,
+				.corn-landing &.dekalb-color
+				{
+					background-color: $dekalb-accent;
+					color: #fff;
+					border-left-color: transparent;
+
+					img { display: none; }
+					img.hover { display: inline-block; }
+				}
+			}
+		}
+	}
+}

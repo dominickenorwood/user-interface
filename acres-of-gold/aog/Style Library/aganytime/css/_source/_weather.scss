@@ -1,0 +1,199 @@
+#weather
+{
+	display: block;
+	@include clearfix;
+
+	.tab-header a
+	{
+		font-size: 1.25em;
+		font-family: $proxima-bold;
+		background-color: $light;
+		display: inline-block;
+		float: left;
+		padding: .7em;
+		position: relative;
+		z-index: 200;
+		width: 50%;
+		text-align: center;
+		border: 1px solid $light-gray;
+
+		&.active { color: $orange; border-bottom-color: #fff; background-color: #fff; }
+		&.weather { border-right: 0; } 
+	}
+
+	.tabs
+	{
+		position: relative;
+		height: 100%;
+
+		> div { @include clearfix; }
+	}
+
+	.tab
+	{
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: auto;
+		z-index: 110;
+		margin-top: -1px;
+		border: 1px solid $light-gray;
+		display: none;
+
+		padding: 1.5em;
+
+		&.open { z-index: 110; background-color: #fff; display: block; }
+	}
+
+
+	p { margin-bottom: 0; }
+
+	.weather-icon
+	{
+		display: inline-block;
+
+		@include breakpoint(large)
+		{
+			width: 150px;
+		}
+	}
+
+	.location
+	{
+		color: $orange;
+		font-family: $proxima-bold;
+		text-transform: uppercase;
+		font-size: 1.125em;
+	}
+
+	.current-temp
+	{
+		font-size: 4.3125em;
+		display: inline-block;
+		position: relative;
+		top: .35em;
+		left: .25em;
+		color: $orange;
+		font-family: $proxima-bold;
+
+		@include breakpoint(small)
+		{
+			font-size: 3.25em;
+			top: .35em;
+		}
+
+		@include breakpoint(medium)
+		{
+			font-size: 4.3125em;
+			top: .35em;
+		}
+	}
+
+	.current-conditions
+	{
+		font-family: $proxima-bold;
+		margin-bottom: 1em;
+
+		@include breakpoint(x-large) { text-align: center; }
+	}
+
+	.day
+	{
+		border: solid $light-gray;
+		border-width: 0 1px 1px 1px;
+		text-align: center;
+		padding: 1em 0;
+		width: 100%;
+		&:first-child { border-top: 1px solid $light-gray; }
+
+		@include breakpoint(x-large)
+		{
+			width: 100%;
+			border-width: 0 1px 1px 1px;
+
+			&:first-child { border-top: 1px solid $light-gray; }
+		}
+
+		.title
+		{
+			font-family: $proxima-bold;
+			text-transform: uppercase;
+			margin-bottom: 1.5em;
+			display: inline-block;
+			width: 100%;
+		}
+
+		.icon
+		{
+			width: 85px;
+			height: auto;
+			float: left;
+			top: -.5em;
+			margin-left: 10%;
+
+			@include breakpoint(large)
+			{
+				width: 105px;
+			}
+		}
+
+		.temps
+		{
+			display: inline-block;
+			margin-left: .5em;
+
+			@include breakpoint(large)
+			{
+				margin-left: 0;
+				font-size: 1.25em;
+			}
+
+			span
+			{
+				display: block;
+				font-family: $proxima-bold;
+				font-size: 1.5em;
+
+				&.high
+				{
+					color: $orange;
+				}
+			}
+		}
+	}
+
+	#commodities-info
+	{
+		font-size: .875em;
+
+		table
+		{
+			width: 100%;
+			text-align: left;
+			margin-bottom: 1em;
+
+			th
+			{
+				text-transform: uppercase;
+				font-family: $proxima-bold;
+				padding: .5em;
+			}
+
+			tr
+			{
+				border-bottom: 1px solid $light-gray;
+				&.even { background-color: $light; }
+			}
+
+			td
+			{
+				padding: .25em .5em;
+				
+				&.crop { font-family: $proxima-bold; }
+				&.neg { color: red; }
+				&.pos { color: green; }
+			}
+		}
+
+	}
+}

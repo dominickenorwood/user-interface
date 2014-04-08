@@ -1,0 +1,79 @@
+.slider
+{
+	position: relative;
+
+	.slides
+	{
+		position: relative;
+		overflow: hidden;
+
+		ul
+		{
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			white-space: nowrap;
+			position: relative;
+			font-size: 0;
+
+			li
+			{
+				display: inline-block;
+				width: 100%;
+				white-space: normal;
+				margin: 0;
+
+				> img { width: 100%; }
+			}
+		}
+	}
+
+	nav
+	{
+		position: absolute;
+		bottom: 15px;
+		left: 0;
+		width: 100%;
+		text-align: center;
+		z-index: 100;
+
+		@include breakpoint(medium) { bottom: 2em; }
+
+		span
+		{
+			display: inline-block;
+			overflow: hidden;
+			border-radius: 50%;
+			text-indent: 100%;
+			width: .75em;
+			height: .75em;
+			background-color: rgba(255, 255, 255, 0.25);
+			margin: 0 .15em;
+			cursor: pointer;
+			@include transition(background-color .25s ease-out);
+
+			&.active { background-color: rgba(255, 255, 255, 1); }
+		}
+	}
+
+	.arrow
+	{
+		position: absolute;
+		top: 50%;
+		z-index: 200;
+		width: 30px;
+		height: 51px;
+		cursor: pointer;
+		margin-top: -25px;
+		color: transparent;
+		display: none;
+		@include user-select(none);
+
+		@include breakpoint(medium) { display: block; }
+
+		&.inactive { opacity: .5; cursor: default; }
+		&.left { left: 2em; }
+		&.right { right: 2em; }
+	}
+
+}

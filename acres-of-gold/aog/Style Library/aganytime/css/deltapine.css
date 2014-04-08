@@ -1,0 +1,83 @@
+#wrapper.deltapine {
+  color: #4d423d; }
+  #wrapper.deltapine h1 {
+    color: #008349; }
+  #wrapper.deltapine h2 {
+    color: #998f8a; }
+  #wrapper.deltapine h3 {
+    color: #8d340c; }
+  #wrapper.deltapine h4 {
+    color: #4d423d; }
+  #wrapper.deltapine p a, #wrapper.deltapine ul a, #wrapper.deltapine ol a {
+    color: #8d340c; }
+  #wrapper.deltapine .accent {
+    color: #8d340c; }
+  #wrapper.deltapine .panel {
+    background-color: #f2efed;
+    border-color: #d9d2ce; }
+  #wrapper.deltapine .striped li:nth-child(even),
+  #wrapper.deltapine .striped div:nth-child(even) {
+    background-color: #f2efed; }
+  #wrapper.deltapine .button {
+    background-color: #008349; }
+    #wrapper.deltapine .button.medium {
+      background-color: #8d340c;
+      color: #fff; }
+    #wrapper.deltapine .button.small {
+      color: #8d340c;
+      background-color: #f7f3f0;
+      border: 1px solid #d9d2ce; }
+    #wrapper.deltapine .button.text {
+      color: #008349;
+      background-color: transparent; }
+  #wrapper.deltapine footer.social {
+    background-color: #008349; }
+    #wrapper.deltapine footer.social li.icon {
+      background-color: #8d340c; }
+  #wrapper.deltapine table.styled,
+  #wrapper.deltapine .asgrow table {
+    border: 1px solid #d9d2ce; }
+    #wrapper.deltapine table.styled th,
+    #wrapper.deltapine .asgrow table th {
+      background-color: #8d340c;
+      color: #fff;
+      border-left: 1px solid #b34410;
+      border-top: 1px solid #8d340c; }
+    #wrapper.deltapine table.styled td,
+    #wrapper.deltapine .asgrow table td {
+      border-color: #d9d2ce; }
+    #wrapper.deltapine table.styled .focused,
+    #wrapper.deltapine .asgrow table .focused {
+      background-color: #d9d6d4; }
+    #wrapper.deltapine table.styled .hover,
+    #wrapper.deltapine .asgrow table .hover {
+      background-color: #f2efed; }
+    #wrapper.deltapine table.styled .emphasis,
+    #wrapper.deltapine table.styled .em,
+    #wrapper.deltapine .asgrow table .emphasis,
+    #wrapper.deltapine .asgrow table .em {
+      color: #008349; }
+  #wrapper.deltapine .form input[type="text"] {
+    border-color: #d9d2ce; }
+  #wrapper.deltapine .form input[type="checkbox"] {
+    border-color: #d9d2ce; }
+  #wrapper.deltapine .form input[type="radio"] {
+    border-color: #d9d2ce; }
+  #wrapper.deltapine .form input[type="checkbox"]:checked:after {
+    color: #008349; }
+  #wrapper.deltapine .form input[type="radio"]:checked:after {
+    background-color: #008349; }
+  #wrapper.deltapine .form input[type="checkbox"]:disabled, #wrapper.deltapine .form input[type="radio"]:disabled {
+    background-color: #f2efed;
+    border: 1px solid #d9d2ce; }
+  #wrapper.deltapine .form textarea {
+    border-color: #d9d2ce; }
+  #wrapper.deltapine .form .custom-select {
+    border-color: #d9d2ce; }
+    #wrapper.deltapine .form .custom-select select {
+      border-color: #d9d2ce; }
+    #wrapper.deltapine .form .custom-select span {
+      background-color: #f2efed;
+      border-color: #d9d2ce; }
+  #wrapper.deltapine #main {
+    background: url("/style library/aganytime/img/deltapine/bkg_top.png") repeat-x center top; }

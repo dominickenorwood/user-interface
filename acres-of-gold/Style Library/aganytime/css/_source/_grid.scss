@@ -1,0 +1,233 @@
+#wrapper
+{
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 46px;
+	background-color: $light;
+	overflow: hidden;
+
+	@include breakpoint(small)
+	{
+		padding-top: 0;
+	}
+}
+
+.contain
+{
+	width: 100%;
+	max-width: $max-width;
+	position: relative;
+	@include clearfix;
+
+	@include breakpoint(large)
+	{
+		margin: 0 auto;
+	}
+}
+
+#main
+{
+	padding-top: 0;
+	width: 100%;
+	background-color: #fff;
+
+	.deltapine &,
+	.asgrow & { padding-top: 5%; }
+
+	@include breakpoint(x-large)
+	{
+		border: solid $light-gray;
+		border-width: 0 1px;
+
+		.has-sidebar &
+		{
+			width: 80%;
+			margin-left: 20%;
+			padding-right: 0;
+		}
+
+		.two-col &
+		{
+			padding-top: 5em;
+			padding-right: 15%;
+		}
+
+		.one-col &
+		{
+			padding: 5em 0 0 0;
+		}
+	}
+
+	.article &
+	{
+		@include breakpoint(medium) { padding-right: 30%; }
+		@include breakpoint(large) { padding-right: 20%; }
+	}
+}
+
+.grid-row
+{
+	@include clearfix;
+	margin: 0 auto;
+
+	&.section { padding: 5% 0; }
+
+	@include breakpoint(medium) {
+		&.span-70-medium { width: 70%; }
+		&.span-80-medium { width: 80%; }
+		&.span-90-medium { width: 90%; }
+	}
+}
+
+.col
+{
+	float: left;
+	display: block;
+	width: 100%;
+	
+	.reverse &
+	{
+		float: right;
+	}
+
+	&.full-height { padding-bottom: 9999px; margin-bottom: -9999px; }
+
+	&.centered,
+	&.center
+	{
+		display: block;
+		margin: 0 auto;
+		float: none;
+	}
+	
+	@include breakpoint(small)
+	{		
+		display: inline;
+
+		// build out 10 column grid
+		@for $i from 1 through 10
+		{
+			&.span-#{$i} { width: 10% * $i};
+		}
+
+		@for $i from 1 through 10
+		{
+			&.span-#{$i}-small { width: 10% * $i};
+		}
+
+		&.span-one-fourth { width: 25%; }
+		&.span-one-third { width: percentage(1/3); }
+		&.span-two-thirds { width: (percentage(1/3) * 2); }
+
+		&.span-one-fourth-small { width: 25%; }
+		&.span-one-third-small { width: percentage(1/3); }
+		&.span-two-thirds-small { width: (percentage(1/3) * 2); }
+
+		.padded & 
+		{
+			padding-left: 2.5%;
+			&:first-child { padding-left: 0; }
+		}
+
+		.padded.reverse &
+		{
+			padding-right: 2.5%;
+			padding-left: 0;
+			&:first-child { padding-right: 0; }
+		}
+	}
+
+	@include breakpoint(small-only)
+	{
+		// build out 10 column grid
+		@for $i from 1 through 10
+		{
+			&.span-#{$i}-mobile { width: 10% * $i};
+		}
+
+		&.span-one-fourth-mobile { width: 25%; }
+		&.span-one-third-mobile { width: percentage(1/3); }
+		&.span-two-thirds-mobile { width: (percentage(1/3) * 2); }
+	}
+
+	@include breakpoint(medium)
+	{
+		// build out 10 column grid
+		@for $i from 1 through 10
+		{
+			&.span-#{$i}-medium { width: 10% * $i};
+		}
+
+		&.span-one-fourth-medium { width: 25%; }
+		&.span-one-third-medium { width: percentage(1/3); }
+		&.span-two-thirds-medium { width: (percentage(1/3) * 2); }
+
+		.padded-medium & 
+		{
+			padding-left: 2.5%;
+			&:first-child { margin-left: -2.5%; }
+		}
+
+		.padded-medium.reverse &
+		{
+			padding-right: 2.5%;
+			padding-left: 0;
+			&:first-child { padding-right: 0; }
+		}
+	}
+
+	@include breakpoint(large)
+	{
+		// build out 10 column grid
+		@for $i from 1 through 10
+		{
+			&.span-#{$i}-large { width: 10% * $i};
+		}
+
+		&.span-one-fourth-large { width: 25%; }
+		&.span-one-third-large { width: percentage(1/3); }
+		&.span-two-thirds-large { width: (percentage(1/3) * 2); }
+
+		.padded-large & 
+		{
+			padding-left: 2.5%;
+			&:first-child { padding-left: 0; }
+		}
+
+		.padded-large.reverse &
+		{
+			padding-right: 2.5%;
+			padding-left: 0;
+			&:first-child { padding-right: 0; }
+		}
+	}
+
+	@include breakpoint(x-large)
+	{
+		// build out 10 column grid
+		@for $i from 1 through 10
+		{
+			&.span-#{$i}-x-large { width: 10% * $i};
+		}
+
+		&.span-one-fourth-x-large { width: 25%; }
+		&.span-one-third-x-large { width: percentage(1/3); }
+		&.span-two-thirds-x-large { width: (percentage(1/3) * 2); }
+
+		.padded-x-large & 
+		{
+			padding-left: 2.5%;
+			&:first-child { padding-left: 0; }
+		}
+
+		.padded-x-large.reverse &
+		{
+			padding-right: 2.5%;
+			padding-left: 0;
+			&:first-child { padding-right: 0; }
+		}
+	}
+}
+
+// misc
+.clear { @include clearfix; }

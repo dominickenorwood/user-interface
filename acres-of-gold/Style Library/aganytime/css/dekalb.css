@@ -1,0 +1,81 @@
+#wrapper.dekalb {
+  color: #4d4d4d; }
+  #wrapper.dekalb h1 {
+    color: #4d4d4d; }
+  #wrapper.dekalb h2 {
+    color: #999999; }
+  #wrapper.dekalb h3 {
+    color: #f3c10a; }
+  #wrapper.dekalb h4 {
+    color: #4d4d4d; }
+  #wrapper.dekalb p a, #wrapper.dekalb ul a, #wrapper.dekalb ol a {
+    color: #f3c10a; }
+  #wrapper.dekalb .accent {
+    color: #f3c10a; }
+  #wrapper.dekalb .panel {
+    background-color: #f2f2f2;
+    border-color: #cccccc; }
+  #wrapper.dekalb .striped li:nth-child(even),
+  #wrapper.dekalb .striped div:nth-child(even) {
+    background-color: #f2f2f2; }
+  #wrapper.dekalb .button {
+    background-color: #f3c10a; }
+    #wrapper.dekalb .button.medium {
+      background-color: #4d4d4d;
+      color: #f3c10a; }
+    #wrapper.dekalb .button.small {
+      color: #999999;
+      background-color: #f7f7f7;
+      border: 1px solid #999999; }
+    #wrapper.dekalb .button.text {
+      color: #999999;
+      background-color: transparent; }
+  #wrapper.dekalb footer.social {
+    background-color: #f3c10a; }
+    #wrapper.dekalb footer.social li.icon {
+      background-color: #4d4d4d; }
+  #wrapper.dekalb table.styled,
+  #wrapper.dekalb .dekalb table {
+    border: 1px solid #cccccc; }
+    #wrapper.dekalb table.styled th,
+    #wrapper.dekalb .dekalb table th {
+      background-color: #4d4d4d;
+      color: #999999;
+      border-left: 1px solid #737373;
+      border-top: 1px solid #4d4d4d; }
+    #wrapper.dekalb table.styled td,
+    #wrapper.dekalb .dekalb table td {
+      border-color: #cccccc; }
+    #wrapper.dekalb table.styled .focused,
+    #wrapper.dekalb .dekalb table .focused {
+      background-color: #d9d9d9; }
+    #wrapper.dekalb table.styled .hover,
+    #wrapper.dekalb .dekalb table .hover {
+      background-color: #f2f2f2; }
+    #wrapper.dekalb table.styled .emphasis,
+    #wrapper.dekalb table.styled .em,
+    #wrapper.dekalb .dekalb table .emphasis,
+    #wrapper.dekalb .dekalb table .em {
+      color: #f3c10a; }
+  #wrapper.dekalb .form input[type="text"] {
+    border-color: #cccccc; }
+  #wrapper.dekalb .form input[type="checkbox"] {
+    border-color: #cccccc; }
+  #wrapper.dekalb .form input[type="radio"] {
+    border-color: #cccccc; }
+  #wrapper.dekalb .form input[type="checkbox"]:checked:after {
+    color: #f3c10a; }
+  #wrapper.dekalb .form input[type="radio"]:checked:after {
+    background-color: #f3c10a; }
+  #wrapper.dekalb .form input[type="checkbox"]:disabled, #wrapper.dekalb .form input[type="radio"]:disabled {
+    background-color: #f2f2f2;
+    border: 1px solid #cccccc; }
+  #wrapper.dekalb .form textarea {
+    border-color: #cccccc; }
+  #wrapper.dekalb .form .custom-select {
+    border-color: #cccccc; }
+    #wrapper.dekalb .form .custom-select select {
+      border-color: #cccccc; }
+    #wrapper.dekalb .form .custom-select span {
+      background-color: #f2f2f2;
+      border-color: #cccccc; }

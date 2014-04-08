@@ -1,0 +1,140 @@
+// sub-navigation
+.sub-nav
+{
+	// margin-top: -1px;
+
+	@include breakpoint(large)
+	{
+		position: static;
+	}
+
+	.contain
+	{
+		z-index: 900;
+	}
+
+	.dekalb &,
+	.dekalb & ul
+	{
+		background-color: $dekalb-primary;
+		a { color: #fff !important; }
+	}
+
+	.asgrow &,
+	.asgrow & ul
+	{
+		background-color: $asgrow-primary;
+		a { color: #fff !important; }
+	}
+
+	.deltapine &,
+	.deltapine & ul
+	{
+		background-color: $deltapine-primary;
+		a { color: #fff !important; }
+	}
+
+	h3
+	{
+		text-align: center;
+		padding: 1em;
+		margin: 0;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+		@include breakpoint(x-large) { display: none; }
+	}
+
+	ul.sub-nav-list
+	{
+		position: absolute;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		text-align: left;
+		width: 100%;
+		font-size: .95em;
+		@include clearfix;
+
+		@include breakpoint(x-large) { position: static; }
+
+		li
+		{
+			border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+			padding: .75em 1.5em;
+			display: block;
+			margin-bottom: 0;
+			text-transform: uppercase;
+			font-family: $proxima-bold;
+
+			// sub navs
+			ul
+			{
+				position: relative;
+				padding: 0;
+				margin: 0;
+
+				li
+				{
+					padding: 1em 0;
+					border: none;
+					display: block;
+					width: 100%;
+					text-transform: none;
+				}
+			}
+
+			@include breakpoint(x-large)
+			{
+				display: inline-block;
+				float: left;
+				border: none;
+				padding: 1em 1.5em;
+				position: relative;
+
+				&:hover
+				{
+					background-color: rgba(0, 0, 0, 0.1);
+
+					ul { display: block; }
+				}
+
+				ul
+				{
+					position: absolute;
+					top: 100%;
+					left: 0;
+					min-width: 300px;
+					display: none;
+
+					li
+					{
+						padding: 1em 1.5em;
+						background-color: rgba(0, 0, 0, 0.1);
+
+						&:hover { background-color: rgba(0, 0, 0, 0.25); }
+					}
+
+					&.two-col
+					{
+						min-width: 600px;
+						@include clearfix;
+
+						li
+						{
+							float: left;
+							width: 50%;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#wrapper.dekalb .sub-nav
+{
+	a
+	{
+		color: #fff;
+	}
+}

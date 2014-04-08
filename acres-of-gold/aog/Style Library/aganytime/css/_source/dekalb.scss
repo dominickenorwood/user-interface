@@ -1,0 +1,129 @@
+//@import "bourbon";
+@import "mixins";
+@import "variables";
+
+#wrapper.dekalb
+{
+	color: $dekalb-base;
+
+	h1 { color: $dekalb-primary; }
+	h2 { color: $dekalb-secondary; }
+	h3 { color: $dekalb-accent; }
+	h4 { color: $dekalb-primary; }
+	p, ul, ol
+	{
+		a { color: $dekalb-accent; }
+	}
+
+	.accent { color: $dekalb-accent; }
+
+	// padded container with background color and border
+	.panel
+	{
+		background-color: $dekalb-light;
+		border-color: #cccccc;
+	}
+
+	// alernate background-color
+	.striped li:nth-child(even),
+	.striped div:nth-child(even)
+	{
+		background-color: $dekalb-light;
+	}
+
+	// buttons
+	.button
+	{
+		background-color: $dekalb-accent;
+		&.medium
+		{
+			background-color: $dekalb-primary;
+			color: $dekalb-accent;
+		}
+		&.small
+		{
+			color: $dekalb-secondary;
+			background-color: #f7f7f7;
+			border: 1px solid $dekalb-secondary;
+		}
+
+		&.text { color: $dekalb-secondary; background-color: transparent; }
+	}
+
+	// social footer
+	footer.social
+	{
+		background-color: $dekalb-accent;
+
+		li.icon { background-color: $dekalb-base; }
+	}
+
+	// tables
+	table.styled,
+	.dekalb table
+	{
+		border: 1px solid #cccccc;
+
+		th
+		{
+			background-color: $dekalb-primary;
+			color: $dekalb-secondary;
+			border-left: 1px solid #737373;
+			border-top: 1px solid $dekalb-primary;
+		}
+
+		td
+		{
+			border-color: #cccccc;
+		}
+
+		.focused { background-color: #d9d9d9; }
+		.hover { background-color: $dekalb-light; }
+
+		.emphasis,
+		.em
+		{
+			color: $dekalb-accent;
+		}
+	}
+	
+	// forms
+	.form
+	{
+		input
+		{
+			&[type="text"] { border-color: #cccccc; }
+
+			&[type="checkbox"] { border-color: #cccccc; }
+			&[type="radio"] { border-color: #cccccc; }
+
+			&[type="checkbox"]:checked:after { color: $dekalb-accent; }
+			&[type="radio"]:checked:after { background-color: $dekalb-accent; }
+
+			&[type="checkbox"]:disabled,
+			&[type="radio"]:disabled
+			{
+				background-color: $dekalb-light;
+				border: 1px solid #cccccc;
+			}
+		}
+
+		textarea { border-color: #cccccc; }
+
+		.custom-select
+		{
+			border-color: #cccccc;
+
+			select
+			{
+				border-color: #cccccc;
+			}
+
+			span
+			{
+				background-color: $dekalb-light;
+				border-color: #cccccc;
+			}
+		}
+	}
+}

@@ -1,0 +1,137 @@
+//@import "bourbon";
+@import "mixins";
+@import "variables";
+
+#wrapper.asgrow
+{
+	color: $asgrow-base;
+
+	h1 { color: $asgrow-primary; }
+	h2 { color: $asgrow-secondary; margin: 0 0 .5em 0; }
+	h3 { color: $asgrow-accent; }
+	h4 { color: $asgrow-primary; }
+	p, ul, ol
+	{
+		a { color: $asgrow-accent; }
+	}
+
+	.accent { color: $asgrow-accent; }
+
+	.panel
+	{
+		background-color: $asgrow-light;
+		border-color: #bcc7cc;
+	}
+
+	// alernate background-color
+	.striped li:nth-child(even),
+	.striped div:nth-child(even)
+	{
+		background-color: $asgrow-light;
+	}
+
+	// buttons
+	.button
+	{
+		background-color: $asgrow-accent;
+
+		&.medium
+		{
+			background-color: $asgrow-primary;
+			color: #fff;
+		}
+
+		&.small
+		{
+			color: $asgrow-base;
+			background-color: $asgrow-light;
+			border: 1px solid #c2c8cc;
+		}
+
+		&.text { color: $asgrow-base; background: none; }
+	}
+
+	// social footer
+	footer.social
+	{
+		background-color: $asgrow-primary;
+
+		li.icon { background-color: $asgrow-accent; }
+	}
+
+	// tables
+	.header {
+		background-color: $asgrow-primary;
+		color: #fff;
+		border-left: 1px solid #737373;
+		border-top: 1px solid $asgrow-primary;
+	}
+	table.styled,
+	.asgrow table
+	{
+		border: 1px solid #cccccc;
+
+		th
+		{
+			@extend .header;
+			// background-color: $asgrow-primary;
+			// color: #fff;
+			// border-left: 1px solid #737373;
+			// border-top: 1px solid $asgrow-primary;
+		}
+
+		td
+		{
+			border-color: #bcc7cc;
+		}
+
+		.focused { background-color: #ced5d9; }
+		.hover { background-color: #e6eef2; }
+
+		.emphasis,
+		.em
+		{
+			color: $asgrow-accent;
+		}
+	}
+
+	// forms
+	.form
+	{
+		input
+		{
+			&[type="text"] { border-color: #bcc7cc; }
+
+			&[type="checkbox"] { border-color: #bcc7cc; }
+			&[type="radio"] { border-color: #bcc7cc; }
+
+			&[type="checkbox"]:checked:after { color: $asgrow-accent; }
+			&[type="radio"]:checked:after { background-color: $asgrow-accent; }
+
+			&[type="checkbox"]:disabled,
+			&[type="radio"]:disabled
+			{
+				background-color: $asgrow-light;
+				border: 1px solid #bcc7cc;
+			}
+		}
+
+		textarea { border-color: #bcc7cc; }
+
+		.custom-select
+		{
+			border-color: #bcc7cc;
+
+			select
+			{
+				border-color: #bcc7cc;
+			}
+
+			span
+			{
+				background-color: $asgrow-light;
+				border-color: #bcc7cc;
+			}
+		}
+	}
+}

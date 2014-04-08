@@ -1,0 +1,1948 @@
+/* ==========================================================================
+   Main Styles
+   ========================================================================== */
+body, html {
+    height: 100%;
+    min-width: 1240px;
+    width: 100%;
+}
+
+
+
+#wrapper {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+#wrapper .dekalb.cms-wrap #main {
+    /* padding-top:0px !important; */
+    color: #2c2c2c;
+    font-size: 16px;
+
+}
+
+.oh {
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    background-color: #3b3b3b;
+    border: 0px solid red;
+    width: 100%;
+
+    width: 100%;
+
+}
+
+.topImage {
+    margin-top: -44px;
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+    margin: 0 auto;
+}
+
+#fixscrollTo {
+    border: 0px solid blue;
+    width: 100%;
+}
+
+/* reset some styles */
+
+.ui-accordion .ui-accordion-content {
+    padding: 0px;
+}
+
+.accordionWrapper .ui-accordion .ui-accordion-content {
+    padding: 0px;
+    width: 100%;
+}
+
+.brand-internal h3 {
+    padding: 0px;
+}
+
+#wrapper .dekalb.cms-wrap  h3 {
+    margin: 0px;
+}
+
+.dekalb #header .subNav {
+    z-index: 10000
+}
+
+#footer-push {
+    height: 280px;
+    top: 0px;
+}
+
+.pipeline-wrap {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.wrap.cms-wrap.dekalb{ margin-top: 0; padding-top: 0;}
+/* hides extra sharepoint generated divs */
+.page-head, #adv-search-wrapper, .bot-banner, #footer-push, #main{ display: none;}
+
+
+/* ==========================================================================
+   Breeding Header Section
+   ========================================================================== */
+
+.BreedingHQHeader {
+    /*background-color: #3b3b3b;
+    background-image: url('/dekalb/breeding/PublishingImages/BreedingHQ-Header.jpg');
+
+    width: 1440px;
+    height: 522px;
+    margin: 0px auto;
+    padding: 0px;
+
+    position: relative;
+    top: 0px;*/
+    width: 100%;
+    height: 482px;
+    padding-top: 70px;
+    background: #3b3b3b url(/dekalb/breeding/PublishingImages/hq_header/BreedingHQ-Header.jpg) no-repeat scroll 50% 50%;
+    background-size: cover;
+}
+
+.BreedingHQHeader h1 {
+    width: 407px;
+    height: 120px;
+    background: url(/dekalb/breeding/PublishingImages/hq_header/breeding_hq_title.png) no-repeat left top;
+    margin: 0 auto !important;
+    text-indent: -9999px;
+    background-size: cover;
+    padding: 0 !important;
+}
+
+.BreedingHQHeader h2 {
+    padding: 0 !important;
+    margin: -30px 0 0 0 !important;
+    text-align: center;
+    color: #CFCFCF !important;
+    font-size: 20px !important;
+    letter-spacing: 3px;
+}
+
+.BreedingHQHeader p {
+    width: 60%;
+    font-size: 22px !important;
+    color: #CFCFCF !important;
+    padding: 50px 0 60px 0 !important;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.breedingVideo {
+    width: 800px;
+    /*width:640px;*/
+    height: 400px;
+    margin: 0px auto;
+}
+
+#rockStar-1 {
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.95);
+    border: 1px solid #CCCCCC;
+    height: auto;
+    width: 800px;
+    /*width:640px;*/
+    height: 400px;
+    margin: 0px auto;
+}
+
+.breedingVideo .modal .close {
+    color: black;
+    cursor: pointer;
+    /*font-family: proximanovaboldbold;*/
+    font-size: 28px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+.modal div {
+
+    padding: 25px 19px 0;
+}
+
+.watchTheVideoButton {
+    display: block;
+    width: 208px;
+    padding: 15px 20px 15px 10px;
+    text-align: center;
+    color: #4C4C4C !important;
+    /*font-family: "ProximaNovaBoldBold" !important;*/
+    font-size: 20px;
+    background: #F3C10A url(/dekalb/breeding/PublishingImages/hq_header/header_video_btn_bkg.gif) no-repeat scroll 87% 53%;
+    margin: 0 auto;
+    /*display: block;
+    background: url('/dekalb/breeding/PublishingImages/watchTheVideoButton.png') no-repeat scroll top left;
+    width: 238px;
+    height: 44px;
+    background-position: top;
+    text-indent: -9999px;
+    position: relative;
+    top: 382px;
+    left: 600px;*/
+}
+
+.inner {
+    position: absolute;
+}
+
+.watchTheVideoButton2 {
+
+    z-index: 11;
+}
+
+#closeIcon {
+    cursor: pointer;
+}
+
+
+/* ==========================================================================
+   Accordion Styles
+   ========================================================================== */
+
+#wrapper .dekalb.cms-wrap #accordion h3.accordion-header {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-image: none;
+    border-color: -moz-use-text-color -moz-use-text-color #3B3B3B;
+    border-image: none;
+    border-radius: 0 0 0 0;
+    border-style: none none solid;
+    border-width: 0 0 2px;
+    color: white;
+    /*font-family: ProximaNovaThin;*/
+    font-size: 48px;
+    height: 140px;
+    line-height: 142px;
+    margin: 0;
+    padding: 0 0 0 150px;
+    text-shadow: 0 0 0 #666666;
+    text-transform: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+#wrapper .dekalb.cms-wrap #accordion h3.accordion-header .accordion-plus-minus {
+    background-image: url("/dekalb/breeding/PublishingImages/accordion/accordion-plus-minus.png");
+    background-position: 0 0;
+    height: 48px;
+    left: inherit;
+    margin-top: -24px;
+    right: 225px;
+    width: 48px;
+}
+
+#wrapper .dekalb.cms-wrap #accordion h3.accordion-header .accordion-plus-minus-active {
+    background-image: url("/dekalb/breeding/PublishingImages/accordion/accordion-plus-minus.png");
+    background-position: 0 -48px;
+    height: 48px;
+    left: inherit;
+    margin-top: -24px;
+    right: 225px;
+    width: 48px;
+}
+
+#wrapper .dekalb.cms-wrap #accordion h3.breedingfastfacts {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+#wrapper .dekalb.cms-wrap #accordion h3.globalGerplasm {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+#wrapper .dekalb.cms-wrap #accordion h3.oubreeders {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+#wrapper .dekalb.cms-wrap #accordion h3.technology {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+#wrapper .dekalb.cms-wrap #accordion h3.future {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+#wrapper .dekalb.cms-wrap .ui-accordion .ui-accordion-content {
+    padding: 0;
+}
+
+#wrapper .dekalb.cms-wrap .ui-accordion-header.s1 {
+    background: #1f1f1f url('/dekalb/breeding/PublishingImages/accordion/section1NumberHeaderOff.png') no-repeat !important;
+    width: 100%;
+    height: 142px;
+    border-bottom: 2px solid #3b3b3b;
+    z-index: 10;
+
+}
+
+#wrapper .dekalb.cms-wrap .ui-accordion-header-active.s1 {
+    background: white url('/dekalb/breeding/PublishingImages/accordion/section1NumberHeader.png') no-repeat !important;
+    width: 100%;
+    height: 140px;
+    border-bottom: 2px solid #3b3b3b;
+    z-index: 10;
+
+}
+
+#wrapper .dekalb.cms-wrap .ui-accordion-header.s2 {
+    background: #1f1f1f url('/dekalb/breeding/PublishingImages/accordion/section2NumberHeaderOff.png') no-repeat !important;
+    width: 100%;
+    height: 140px;
+    border-bottom: 2px solid #3b3b3b;
+    z-index: 10;
+
+}
+
+#wrapper .dekalb.cms-wrap .ui-accordion-header-active.s2 {
+    background: black url('/dekalb/breeding/PublishingImages/accordion/section2NumberHeader.png') no-repeat !important;
+    width: 100%;
+    height: 140px;
+    border-bottom: 2px solid #3b3b3b;
+    z-index: 10;
+
+}
+
+#wrapper .dekalb.cms-wrap .ui-accordion-header.s3 {
+    background: #1f1f1f url('/dekalb/breeding/PublishingImages/accordion/section3NumberHeaderOff.png') no-repeat !important;
+    width: 100%;
+    height: 140px;
+    border-bottom: 2px solid #3b3b3b;
+    z-index: 10;
+
+}
+
+#wrapper .dekalb.cms-wrap .ui-accordion-header-active.s3 {
+    background: white url('/dekalb/breeding/PublishingImages/accordion/section3NumberHeader.png') no-repeat !important;
+    width: 100%;
+    height: 140px;
+    border-bottom: 2px solid #3b3b3b;
+    z-index: 10;
+
+}
+
+#wrapper .dekalb.cms-wrap .ui-accordion-header.s4 {
+    background: #1f1f1f url('/dekalb/breeding/PublishingImages/accordion/section4NumberHeaderOff.png') no-repeat !important;
+    width: 100%;
+    height: 140px;
+    border-bottom: 2px solid #3b3b3b;
+    z-index: 10;
+
+}
+
+#wrapper .dekalb.cms-wrap .ui-accordion-header-active.s4 {
+    background: white url('/dekalb/breeding/PublishingImages/accordion/section4NumberHeader.png') no-repeat !important;
+    width: 100%;
+    height: 140px;
+    border-bottom: 2px solid #3b3b3b;
+    z-index: 10;
+
+}
+
+#wrapper .dekalb.cms-wrap .ui-accordion-header.s5 {
+    background: #1f1f1f url('/dekalb/breeding/PublishingImages/accordion/section5NumberHeaderOff.png') no-repeat !important;
+    width: 100%;
+    height: 140px;
+    border-bottom: 2px solid #3b3b3b;
+    z-index: 10;
+
+}
+
+#wrapper .dekalb.cms-wrap .ui-accordion-header-active.s5 {
+    background: white url('/dekalb/breeding/PublishingImages/accordion/section5NumberHeader.png') no-repeat !important;
+    width: 100%;
+    height: 140px;
+    border-bottom: 2px solid #3b3b3b;
+    z-index: 10;
+
+}
+
+#wrapper .dekalb.cms-wrap .ui-accordion-header.s6 {
+    background: #1f1f1f url('/dekalb/breeding/PublishingImages/accordion/section6NumberHeaderOff.png') no-repeat !important;
+    width: 100%;
+    height: 140px;
+    border-bottom: 2px solid #3b3b3b;
+    z-index: 10;
+
+}
+
+#wrapper .dekalb.cms-wrap .ui-accordion-header-active.s6 {
+    background: white url('/dekalb/breeding/PublishingImages/accordion/section6NumberHeader.png') no-repeat !important;
+    width: 100%;
+    height: 140px;
+    border-bottom: 2px solid #3b3b3b;
+    z-index: 10;
+
+}
+
+#wrapper .dekalb.cms-wrap .accordion-plus-minus {
+    background-image: url("/dekalb/breeding/PublishingImages/accordion/accordion-plus-minus.png");
+    background-position: 0px 0px;
+    height: 48px;
+    width: 48px;
+
+    left: inherit;
+    right: 225px;
+    margin-top: -24px;
+}
+
+#wrapper .dekalb.cms-wrap .accordion-plus-minus-active {
+    background-image: url("/dekalb/breeding/PublishingImages/accordion/accordion-plus-minus.png");
+    background-position: 0px -48px;
+    height: 48px;
+    width: 48px;
+    left: inherit;
+    right: 225px;
+    margin-top: -24px;
+
+}
+
+/* ==========================================================================
+    SLIDER STYLES
+   ========================================================================== */
+
+.rsContent {
+    height: 708px !important;
+    position: relative;
+    width: 100%;
+}
+
+.sectionSlider {
+    float: left;
+    height: 708px;
+    margin: 0px auto 0;
+    width: 82%;
+}
+
+.sections-wrap .arrows {
+    float: left;
+    width: 9%;
+    top: 0;
+    position: relative;
+}
+
+.sections-wrap .ArrowLeft {
+}
+
+.rsArrow.rsArrowLeft {
+    width: 100% !important;
+    left: 0;
+    top: 0;
+}
+
+.sections-wrap .ArrowRight {
+
+}
+
+.rsArrow.rsArrowRight {
+    width: 100% !important;
+    left: 0;
+    top: 0;
+}
+
+.rsArrow {
+    background: url("/dekalb/breeding/PublishingImages/slider/arrow-bg-active.png") no-repeat 0px 0 transparent;
+    height: 708px;
+    display: block !important;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 100% 708px !important;
+}
+.no-backgroundsize .rsArrow { background-image: url("/dekalb/breeding/PublishingImages/slider/arrow-bg-active-nobsize.png") }
+
+.rsArrow.rsArrowDisabled {
+    height: 708px;
+    background: url("/dekalb/breeding/PublishingImages/slider/arrow-bg-inactive.png") no-repeat 0px 0 transparent;
+    cursor: auto;
+}
+.no-backgroundsize .rsArrow.rsArrowDisabled { background-image: url("/dekalb/breeding/PublishingImages/slider/arrow-bg-inactive-nobsize.png") }
+
+.rsArrowIcn {
+    position: absolute;
+    top: 41%;
+    left: 50%;
+    cursor: pointer;
+
+}
+
+.rsArrow .rsArrowIcn {
+    height: 163px;
+    width: 61px;
+    left: 25%;
+
+}
+
+.rsArrow.rsArrowLeft .rsArrowIcn {
+    background: url("/dekalb/breeding/PublishingImages/slider/arrow-left.png") no-repeat scroll 0 0 transparent;
+
+}
+
+.rsArrow.rsArrowRight .rsArrowIcn {
+    background: url("/dekalb/breeding/PublishingImages/slider/arrow-right.png") no-repeat 0px 0 transparent;
+}
+
+.rsArrow .rsArrowIcn:hover {
+    background-position: 0 -163px !important;
+}
+
+.rsArrow.rsArrowDisabled .rsArrowIcn {
+    background-position: 0 -163px !important;
+    cursor: auto;
+}
+
+/* ==========================================================================
+   SECTIONS General Styles
+   ========================================================================== */
+.sectionContent {
+
+}
+
+.pageTriangle {
+    background: url("/dekalb/breeding/PublishingImages/sections/pageTriangle.png") no-repeat scroll left top transparent;
+    height: 24px;
+    position: absolute;
+    top: 0;
+    width: 48px;
+}
+
+.sectionContent .pageTriangle {
+    left: -25px;
+    z-index: 2;
+}
+
+.ArrowLeft .pageTriangle {
+    left: inherit;
+    right: -23px;
+}
+
+a.expand.btn {
+    background-color: #434343;
+    color: #F3C10A !important;
+    display: block;
+    /*font-family: "ProximaNovaBoldBold";*/
+    font-size: 20px;
+    line-height: 26px;
+    margin: 0 auto;
+    min-width: 86px;
+    padding: 10px;
+    width: 20%;
+}
+a.expand.btn-play {
+
+}
+a.expand.btn-play img {
+    max-width: 55px;
+    width: 20%;
+}
+
+.expanded {
+    background-color: #F3C10A;
+    height: 708px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 101%;
+    text-align: center;
+    overflow: hidden;
+    z-index: 2;
+}
+
+#multi-season {
+    background: #F3C10A url("/dekalb/breeding/PublishingImages/section_three/multi_season_bkg.jpg") no-repeat scroll 50% top;
+}
+
+#wrapper .dekalb.cms-wrap .expanded a.close {
+    background: url("/dekalb/breeding/PublishingImages/sections/close_btn.png") no-repeat scroll right 50% transparent;
+    color: #FFFFFF;
+    display: block;
+    /*font-family: "ProximaNovaBoldBold";*/
+    font-size: 15px;
+    line-height: 21px;
+    margin: 15px;
+    padding: 10px 50px 10px 0;
+    position: absolute;
+    right: 10px;
+    text-transform: uppercase;
+    top: 0;
+    z-index: 1;
+}
+
+.expanded .closeVideo a.btn{color:#000 !important;padding:10px;}
+
+.expanded .section-bg {
+    float: none;
+    margin: 0 auto;
+    max-width: 1160px;
+    width: 100%;
+}
+
+.sections-wrap {
+    height: 708px;
+    margin: 0 auto;
+    min-width: 1024px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.sectionContent .stage-wrap {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    cursor: inherit;
+}
+
+.stage-wrap img {
+}
+
+.stage-wrap h4 {
+    font-size: 24px;
+    /*font-family: proximanovasemibolddemibold;*/
+    color: #2c2c2c;
+    line-height: 30px;
+    text-transform: none;
+}
+
+.stage-wrap h4 em {
+    display: block;
+    /*font-family: ProximaNovaThin;*/
+
+}
+
+.stage-wrap p {
+    color: #2c2c2c;
+    font-size: 16px;
+    /*font-family: proximanovaregularregular;*/
+    z-index: 2;
+    position: relative;
+    display: block;
+   padding-bottom: 20px;
+}
+
+.row-fluid {
+}
+
+.span-fixed {
+    display: block;
+    float: left;
+    height: 708px;
+    min-width: 610px;
+    top: 0;
+    width: 67%;
+    background-size: cover;
+    position: relative;
+
+}
+.span-full {
+    display: block;
+    height: 708px;
+    min-width: 610px;
+    top: 0;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+
+}
+.span-full .full-wrap {
+    margin: 0 auto;
+    width: 80%;
+    position: relative;
+    z-index: 1;
+}
+
+.span-fluid {
+    text-align: center;
+    float: left;
+    height: 708px;
+    width: 33%;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.span-fluid img.snapshot {
+    margin: 200px auto 8%;
+    max-width: 25%;
+    min-width: 94px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.span-fluid h3 {
+    color: #FBFBFB !important;
+    /*font-family: proximanovaboldbold;*/
+    font-size: 40px;
+    padding: 0 5% 12% !important;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.span-fluid .btn {
+    position: relative;
+    z-index: 1;
+}
+
+.span-fluid .btn-play{position: relative;
+    z-index: 1;}
+
+.span-fixed .fixed-wrap {
+    margin: 0 auto;
+    width: 80%;
+    position: relative;
+    z-index: 1;
+}
+
+.span-fixed {
+    z-index: 1;
+    position: relative;
+}
+
+.bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    z-index: 1 \9;
+}
+
+/* Yellow Heaeder (A/B/C) */
+.section-header {
+    margin: 0 auto;
+    padding: 50px 0;
+    position: relative;
+    width: 100%;;
+    text-align: center
+}
+
+.section-header .letter {
+    margin: 0 auto;
+}
+
+.section-header .line {
+    background-color: #F3C10A;
+    height: 1px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 76px;
+    width: 36.6%;
+}
+
+.section-header .line-left {
+    left: 0;
+}
+
+.section-header .line-right {
+    right: 0;
+}
+
+.span-fixed .header-img {
+    display: block;
+    margin: 0 auto;
+    padding: 40px 0 20px;
+}
+
+.span-fixed.section-text h4 {
+    padding: 0 0px 30px;
+    text-align: left;
+}
+
+.span-fixed.section-text p {
+    padding: 0 0px 20px;
+}
+
+/* Snapshot with TOP AND BOTTOM */
+.span-fluid .top {
+    width: 100%;
+    height: 355px;
+    position: relative;
+}
+
+.span-fluid .bottom {
+    width: 100%;
+    height: 355px;
+    position: relative;
+}
+
+.span-fluid .top img.snapshot, .span-fluid .bottom img.snapshot {
+    margin: 42px auto 5%;
+
+}
+
+.span-fluid .top h3, .span-fluid .bottom h3 {
+    padding:  0 5% 4% !important;
+
+}
+
+.span-fluid .bottom h3 {
+}
+
+
+
+.accordionWrapper .pipeline-wrap .stage {
+    width: 100%;
+    height: 708px;
+    position: relative;
+    overflow: hidden;
+}
+
+.stage p {
+    padding: 10px 0;
+    /*font-family: "ProximaNovaRegularRegular";*/
+    font-size: 16px;
+    line-height: 24px;
+    color: #373939;
+    z-index: 100;
+    position: relative;
+}
+
+#wrapper .dekalb.cms-wrap .accordionWrapper .pipeline-wrap .stage h3 {
+    padding: 10px 0;
+    /*font-family: "ProximaNovaSemiboldDemibold";*/
+    font-size: 24px;
+    line-height: 30px;
+    color: #373939;
+    z-index: 1;
+}
+
+.grid-title {
+    /*font-family: 'ProximaNovaThin';*/
+    font-size: 25px;
+    line-height: 40px;
+    font-weight: normal;
+    text-align: left;
+    margin-bottom: 10px;
+    text-transform: none;
+    color: #3b3b3b !important;
+    margin: 40px auto;
+    width: 100%;
+    text-align: center;
+}
+
+/* ==========================================================================
+   .section-1
+   ========================================================================== */
+
+/* 1A */
+
+.section-1A .span-fixed {
+
+}
+
+.section-1A .span-fluid {
+
+}
+
+/* 3D FLIP */
+#card1 .front {
+    background: url("/dekalb/breeding/PublishingImages/section_one/flip/card01_face.png") no-repeat scroll 50% 50% #F3C10A;
+}
+
+#card2 .front {
+    background: url("/dekalb/breeding/PublishingImages/section_one/flip/card02_face.png") no-repeat scroll 50% 50% #F3C10A;
+}
+
+#card3 .front {
+    background: url("/dekalb/breeding/PublishingImages/section_one/flip/card03_face.png") no-repeat scroll 50% 50% #F3C10A;
+}
+
+#card4 .front {
+    background: url("/dekalb/breeding/PublishingImages/section_one/flip/card04_face.png") no-repeat scroll 50% 50% #F3C10A;
+}
+
+#card5 .front {
+    background: url("/dekalb/breeding/PublishingImages/section_one/flip/card05_face.png") no-repeat scroll 50% 50% #F3C10A;
+}
+
+#card6 .front {
+    background: url("/dekalb/breeding/PublishingImages/section_one/flip/card06_face.png") no-repeat scroll 50% 50% #F3C10A;
+}
+
+#card7 .front {
+    background: url("/dekalb/breeding/PublishingImages/section_one/flip/card07_face.png") no-repeat scroll 50% 50% #F3C10A;
+}
+
+#card8 .front {
+    background: url("/dekalb/breeding/PublishingImages/section_one/flip/card08_face.png") no-repeat scroll 50% 50% #F3C10A;
+}
+
+#card1 .back {
+    background: url("/dekalb/breeding/PublishingImages/section_one/flip/card01_back.gif") no-repeat scroll #FFFFFF;
+}
+
+#card2 .back {
+    background: url("/dekalb/breeding/PublishingImages/section_one/flip/card02_back.gif") no-repeat scroll #FFFFFF;
+}
+
+#card3 .back {
+    background: url("/dekalb/breeding/PublishingImages/section_one/flip/card03_back.gif") no-repeat scroll #FFFFFF;
+}
+
+#card4 .back {
+    background: url("/dekalb/breeding/PublishingImages/section_one/flip/card04_back.gif") no-repeat scroll #FFFFFF;
+}
+
+#card5 .back {
+    background: url("/dekalb/breeding/PublishingImages/section_one/flip/card05_back.gif") no-repeat scroll #FFFFFF;
+}
+
+#card6 .back {
+    background: url("/dekalb/breeding/PublishingImages/section_one/flip/card06_back.gif") no-repeat scroll #FFFFFF;
+}
+
+#card7 .back {
+    background: url("/dekalb/breeding/PublishingImages/section_one/flip/card07_back.gif") no-repeat scroll #FFFFFF;
+}
+
+#card8 .back {
+    background: url("/dekalb/breeding/PublishingImages/section_one/flip/card08_back.gif") no-repeat scroll #FFFFFF;
+}
+
+/* 1B */
+.section-1B .span-fluid {
+}
+
+/* ==========================================================================
+   .section-2
+   ========================================================================== */
+.section2 .section-header {
+    padding: 0 0 10px;
+}
+
+.section2 .section-header .line {
+    top: 27px;
+}
+
+.stageA {
+}
+
+#stageACopy {
+    width: 40%;
+    position: absolute;
+    top: 195px;
+    left: 617px;
+    z-index: 1;
+}
+
+#stageACopy p.copyHead {
+    text-align: center;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+#world {
+    position: absolute;
+    top: 82px;
+    left: 62px;
+    z-index: 1;
+}
+
+#farmScape{
+	position: absolute;
+    top: 182px;
+    left: 56px;
+    z-index: 1;
+}
+
+.stageB {
+}
+
+#stageBCopy {
+    position: absolute;
+    right: 51%;
+    top: 194px;
+    width: 40%;
+    max-width: 32%;
+    z-index: 1;
+}
+
+#sign {
+    position: absolute;
+    top: 81px;
+    right: 0px;
+    z-index: 1;
+}
+
+#halfWorld {
+    position: absolute;
+    bottom: 45px;
+    right: 55px;
+    z-index: 1;
+}
+
+#stageBCopy p.copyHead {
+    text-align: center;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.stageC {
+}
+
+#stageCCopy {
+    width: 40%;
+    position: absolute;
+    top: 92px;
+    left: 30%;
+    z-index: 1;
+}
+
+#stageCCopy p.copyHead {
+    text-align: center;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+#kicker {
+    position: absolute;
+    top: 367px;
+    z-index: 2;
+    left: 43%;
+    width: 15%;
+    height: auto;
+}
+
+#field {
+    position: absolute;
+    top: 287px;
+    z-index: 1;
+    left: 15%;
+    width: 70%;
+    height: auto;
+}
+
+#kernels{
+	position: absolute;
+    bottom:93px;
+    z-index: 1;
+    left: 23%;
+    width: 55%;
+    height: auto;
+}
+
+.stageD {
+}
+
+#stageDCopy {
+    width: 40%;
+    position: absolute;
+    top: 195px;
+    left: 135px;
+    z-index: 1;
+}
+
+#stageDCopy p.copyHead {
+    text-align: center;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+#number {
+    position: absolute;
+    top: 379px;
+    right: 80px;
+    z-index: 1;
+}
+
+#pool {
+    position: absolute;
+    top: 173px;
+    right: 50px;
+    z-index: 1;
+}
+
+/* ==========================================================================
+   .section-3
+   ========================================================================== */
+
+#wrapper .dekalb.cms-wrap .section3 .expanded h2 {
+    /*font-family: "ProximaNovaThin";*/
+    font-size: 36px;
+    line-height: 40px;
+    padding: 40px 0;
+    position: absolute;
+    color: #373939;
+    z-index: 2;
+}
+
+#wrapper .dekalb.cms-wrap .section3 .section-1A .expanded h2 {
+    left: 32%;
+    position: absolute;
+    text-align: center;
+    top: -5px;
+}
+
+/* Germplasm Locations Map*/
+#wrapper .dekalb.cms-wrap #germpasm-map {
+    margin: 107px auto 0;
+    max-height: 574px;
+    max-width: 1015px;
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url("/dekalb/breeding/PublishingImages/section_three/locations_bg_1.png") no-repeat 0 0 transparent;
+    background-size: 100% 574px;
+}
+
+#wrapper .dekalb.cms-wrap #germpasm-map.map2 {
+    background-image: url("/dekalb/breeding/PublishingImages/section_three/locations_bg_2.png")
+}
+
+#wrapper .dekalb.cms-wrap #germpasm-map.map3 {
+    background-image: url("/dekalb/breeding/PublishingImages/section_three/locations_bg_3.png")
+}
+
+#wrapper .dekalb.cms-wrap #germpasm-map.map4 {
+    background-image: url("/dekalb/breeding/PublishingImages/section_three/locations_bg_4.png")
+}
+
+#wrapper .dekalb.cms-wrap #germpasm-map.map5 {
+    background-image: url("/dekalb/breeding/PublishingImages/section_three/locations_bg_5.png")
+}
+
+#wrapper .dekalb.cms-wrap #germpasm-map.map6 {
+    background-image: url("/dekalb/breeding/PublishingImages/section_three/locations_bg_6.png")
+}
+
+#wrapper .dekalb.cms-wrap #germpasm-map.map7 {
+    background-image: url("/dekalb/breeding/PublishingImages/section_three/locations_bg_7.png")
+}
+
+#wrapper .dekalb.cms-wrap #germpasm-map .germpasm-map-bg {
+    margin: 0 auto;
+    position: absolute;
+    left: -20000px;
+}
+
+#wrapper .dekalb.cms-wrap #germpasm-map .germpasm-map-bg {
+    display: none;
+}
+
+#wrapper .dekalb.cms-wrap #germpasm-map .map-country {
+    z-index: 1000;
+}
+
+#wrapper .dekalb.cms-wrap #germpasm-map .map-country .map-over {
+    position: absolute;
+    cursor: pointer;
+    z-index: 1000;
+    filter: alpha(opacity=0);
+    overflow: hidden;
+}
+
+#wrapper .dekalb.cms-wrap #germpasm-map .map-country .map-tooltip {
+    background-color: #FFFFFF;
+    color: #FFFFFF;
+    display: none;
+    /*font-family: "SolexRegular";*/
+    font-size: 18px;
+    height: auto;
+    list-style: none outside none;
+    position: absolute;
+    top: 0;
+    width: 55%;
+    z-index: 1000;
+}
+
+#wrapper .dekalb.cms-wrap #germpasm-map .map-country .map-tooltip h4 {
+    background-color: #515153;
+    color: #FFFFFF;
+    display: block;
+    /*font-family: "SolexRegular";*/
+    font-size: 32px;
+    margin-bottom: 25px;
+    padding: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    min-width: 350px;
+}
+
+#wrapper .dekalb.cms-wrap #germpasm-map .map-country .map-tooltip .list-wrap {
+    padding: 0 10% 5%;
+}
+
+#wrapper .dekalb.cms-wrap #germpasm-map .map-country .map-tooltip ul {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0 15px 20px;
+    text-indent: 0;
+    color: #3B3B3B;
+    font-size: 18px;
+}
+
+#wrapper .dekalb.cms-wrap #germpasm-map .map-country .map-tooltip ul.left {
+}
+
+#wrapper .dekalb.cms-wrap #germpasm-map .map-country .map-tooltip ul.right {
+}
+
+#wrapper .dekalb.cms-wrap #germpasm-map .map-country .map-tooltip lh {
+    font-size: 24px;
+}
+
+#wrapper .dekalb.cms-wrap #germpasm-map .map-country .map-tooltip li {
+    color: #3B3B3B;
+    padding: 3px 10px;
+    list-style: none;
+}
+
+#wrapper .dekalb.cms-wrap #germpasm-map .map-country .map-tooltip li a {
+    color: #FFFFFF;
+    /*font-family: 'ProximaNovaBoldBold';*/
+}
+
+#wrapper .dekalb.cms-wrap #germpasm-map .map-country .map-tooltip .close {
+    /*font-family: 'ProximaNovaThin';*/
+    font-size: 25px;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    cursor: pointer;
+}
+
+#wrapper .dekalb.cms-wrap #germpasm-map .map-country .map-tooltip .carrot-bot {
+    bottom: -29px;
+    left: 37%;
+    position: absolute;
+}
+
+#wrapper .dekalb.cms-wrap #germpasm-map .map-country .map-tooltip .carrot-left {
+    left: -29px;
+    position: absolute;
+    top: 42%;
+}
+
+#wrapper .dekalb.cms-wrap #germpasm-map .map-country .map-tooltip .carrot-right {
+    right: -29px;
+    position: absolute;
+    top: 42%;
+}
+
+#wrapper .dekalb.cms-wrap #germpasm-map #nAmerica .map-over {
+    height: 53%;
+    right: 68.5%;
+    top: 0;
+    width: 24%;
+}
+
+#wrapper .dekalb.cms-wrap #germpasm-map #nAmerica .map-tooltip {
+
+    right: 9%;
+    top: 10%;
+}
+
+#wrapper .dekalb.cms-wrap #germpasm-map #cAmerica .map-over {
+    height: 4%;
+    left: 21%;
+    top: 56%;
+    width: 9%;
+}
+
+#wrapper .dekalb.cms-wrap #germpasm-map #cAmerica .map-tooltip {
+    right: 13%;
+    top: 31%;
+    width: 55%;
+
+}
+
+#wrapper .dekalb.cms-wrap #germpasm-map #sAmerica .map-over {
+    height: 36%;
+    right: 62%;
+    top: 61%;
+    width: 13%;
+}
+
+#wrapper .dekalb.cms-wrap #germpasm-map #sAmerica .map-tooltip {
+    right: 5%;
+    top: 45%;
+}
+
+#wrapper .dekalb.cms-wrap #germpasm-map #africa .map-over {
+    height: 11%;
+    right: 44%;
+    top: 74%;
+    width: 7%;
+}
+
+#wrapper .dekalb.cms-wrap #germpasm-map #africa .map-tooltip {
+    right: 51%;
+    top: 42%;
+}
+
+#wrapper .dekalb.cms-wrap #germpasm-map #europe .map-over {
+    height: 78px;
+    right: 47.5%;
+    top: 33%;
+    width: 8%;
+}
+
+#wrapper .dekalb.cms-wrap #germpasm-map #europe .map-tooltip {
+    right: 58%;
+    top: 10%;
+
+}
+
+#wrapper .dekalb.cms-wrap #germpasm-map #asia .map-over {
+    height: 30%;
+    right: 16%;
+    top: 34%;
+    width: 21%;
+}
+
+#wrapper .dekalb.cms-wrap #germpasm-map #asia .map-tooltip {
+    right: 40%;
+    top: 18%;
+}
+
+#wrapper .dekalb.cms-wrap #germpasm-map #asia .map-tooltip .carrot {
+    right: -10px;
+    left: auto;
+}
+
+#playGlobal {
+
+}
+
+.section3 .section-1B .expanded h2 {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+}
+
+/* ==========================================================================
+   .section-4
+   ========================================================================== */
+.contentSection4ABox1 h4 {
+    font-size: 22px;
+    word-spacing: -1px;
+}
+
+.contentSection4ABox1 p {
+    line-height: 24px;
+    font-size: 16px;
+}
+
+.span-fluid2 {
+    width: 452px;
+}
+
+.contentSection4ABox2 {
+    background-color: #FFF;
+    height: 708px;
+    color: #FFF;
+}
+
+.breederPicture {
+    float: left;
+}
+
+.breederBio {
+    width: 100%;
+}
+
+.breederTitle {
+    background-color: #eebd0a;
+    color: #444;
+    /*height: 72px;*/
+    width: 100%;
+    padding: 20px 0 0px 480px;
+    /*font-family: ProximaNovaThin;*/
+    font-size: 36px;
+    text-align: left;
+}
+
+.breederStats {
+    background-color: #444;
+    padding: 10px;
+    color: #FFF;
+    font-size: 14px;
+    height: 708px;
+    float: left;
+    width: 22%;
+    text-align: left;
+}
+
+.breederStats2 {
+    background-color: #eebd0a;
+    padding: 20px;
+    color: #FFF;
+    font-size: 16px;
+    height: 708px;
+    padding-left: 452px;
+    text-align: left;
+	margin-right:-10px;
+	line-height:20px;
+}
+
+.breederStats2 .left{background-color:#444;float:left;width:50%;height:100%;padding-top:10px;}
+.breederStats2 .left .content{padding:0px 30px 20px 30px;font-size:12px;line-height:18px;}
+.breederStats2 .right{background-color:#FFF;float:left;width:50%;height:100%;}
+/*.breederStats2 .right p{color:#444;font-size:28px;line-height:34px;padding:30px; font-style:normal;font-family: ProximaNovaThin;}*/
+
+.breederStats h6 {
+    margin: 30px 0 0 0;
+    color: #eebd0a;
+    font-size: 20px;
+    padding: 0;
+}
+
+.breederStats2 h6 {
+    margin: 20px 0 0 0;
+    color: #f0bf0a;
+    font-size: 18px;
+    padding: 0 0 3px 0;
+}
+
+.breederQuote {
+    color: #444;
+    /*font-family: ProximaNovaThin;*/
+    text-align: center;
+}
+
+.breederQuote p {
+    text-align: left;
+    font-size: 20px;
+    line-height: 36px;
+    padding: 15px 0;
+    float: left;
+    width: 18%;
+}
+
+.breederStats2 p {
+    text-align: left;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 15px 0;
+    color: #FFF;
+    font-style: italic;
+}
+
+.breederStats2 .right p {
+	font-size: 24px;
+    text-align: left;
+}
+
+.breederProfile {
+}
+
+.section4 .section-B .span-fixed {
+    width: 100%;
+    float: none;
+}
+
+.section4 .section-B .span-fixed a.expand img {
+    margin: 0 1%;
+    width: 21%;
+}
+
+.contentSectionProfiles {
+    background: none repeat scroll 0 0 transparent;
+    height: 708px;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+.contentSectionProfiles .header-img {
+    padding: 100px 0 40px;
+}
+
+#wrapper .dekalb.cms-wrap .section4 .section-B .contentSectionProfiles h4 {
+    /*font-family: ProximaNovaThin;*/
+    font-size: 36px;
+    padding: 0 0 65px;
+    text-align: center !important;
+    text-transform: none;
+    color: #444444 !important;
+}
+
+.section4 .section-B .section-header {
+    width: 91%;
+}
+
+.contentSectionProfiles a {
+    display: inline;
+}
+
+/* ==========================================================================
+   .section-5
+   ========================================================================== */
+
+.span-full .full-wrap {width:60%}
+.section5 .span-fluid {
+    background-color: #f3c10a;
+}
+
+.technologyAtWork .stageB {
+}
+
+.technologyAtWork .head {
+    margin: 5% auto 0;
+    text-align: center;
+    width: 60%;
+}
+
+.technologyAtWork .timeLinks {
+    margin: 2% auto 0;
+    width: 320px;
+}
+
+#wrapper .dekalb.cms-wrap .technologyAtWork .timeLinks a {
+    background-color: #B8B8B8;
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    /*font-family: "ProximaNovaBoldBold";*/
+    font-size: 20px;
+    line-height: 26px;
+    padding: 10px 0;
+    text-align: center;
+    width: 160px;
+}
+
+#wrapper .dekalb.cms-wrap .technologyAtWork .timeLinks a.current {
+    background-color: #3B3B3B;
+}
+
+.technologyAtWork .timeStage {
+    height: 238px;
+    margin: 4% auto 0;
+    position: relative;
+    width: 80%;
+}
+
+.technologyAtWork .timeStage .container {
+    /*margin: 0 auto;
+    width: 100%;*/
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.technologyAtWork .techBox {
+    display: table-cell;
+    height: 238px;
+    vertical-align: middle;
+    width: 21%;
+}
+
+.technologyAtWork .techBox.alignRight {
+    text-align: right;
+}
+
+.technologyAtWork .techBox.circle {
+    background: url("/dekalb/breeding/PublishingImages/section_five/yellow_circle.png") no-repeat scroll 50% 50% transparent;
+    color: #FFFFFF;
+    padding: 0 15px;
+    text-align: center;
+    width: 238px;
+}
+
+.technologyAtWork .circle .top {
+    color: #FFFFFF;
+    font-size: 18px;
+    padding: 0 0 10px 0;
+    text-transform: uppercase;
+}
+
+.technologyAtWork .circle .mid {
+    color: #3B3B3B;
+    font-size: 55px;
+}
+
+.technologyAtWork .circle .bot {
+    color: #FFFFFF;
+    font-size: 30px;
+    padding: 10px 0 0;
+}
+
+.technologyAtWork .techBox b {
+    /*font-family: "ProximaNovaBoldBold";*/
+}
+
+#wrapper .dekalb.cms-wrap .section5 .section-5C .expanded h2 {
+    background-color: #444444;
+    color: #FFFFFF;
+    /*font-family: "ProximaNovaThin";*/
+    font-size: 36px;
+    line-height: 40px;
+    padding: 23px 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 0;
+}
+
+/* ==========================================================================
+   .section-6
+   ========================================================================== */
+
+.span-fixed-section-6 {
+}
+
+.stage6A {
+}
+
+.stage6A .span-fluid{ background-color: #f3c10a;}
+
+.section-6B .span-fluid {
+
+}
+
+#flip-card-section6b-1 .front {
+    background: url(/dekalb/breeding/PublishingImages/section_six/flip/card01_face.png) no-repeat 50% 50% #F3C10A;
+}
+
+#flip-card-section6b-2 .front {
+    background: url(/dekalb/breeding/PublishingImages/section_six/flip/card02_face.png) no-repeat 50% 50% #F3C10A;
+}
+
+#flip-card-section6b-3 .front {
+    background: url(/dekalb/breeding/PublishingImages/section_six/flip/card03_face.png) no-repeat 50% 50% #F3C10A;
+}
+
+#flip-card-section6b-4 .front {
+    background: url(/dekalb/breeding/PublishingImages/section_six/flip/card04_face.png) no-repeat 50% 50% #F3C10A;
+}
+
+#flip-card-section6b-5 .front {
+    background: url(/dekalb/breeding/PublishingImages/section_six/flip/card05_face.png) no-repeat 50% 50% #F3C10A;
+}
+
+#flip-card-section6b-6 .front {
+    background: url(/dekalb/breeding/PublishingImages/section_six/flip/card06_face.png) no-repeat 50% 50% #F3C10A;
+}
+
+#flip-card-section6b-7 .front {
+    background: url(/dekalb/breeding/PublishingImages/section_six/flip/card07_face.png) no-repeat 50% 50% #F3C10A;
+}
+
+#flip-card-section6b-8 .front {
+    background: url(/dekalb/breeding/PublishingImages/section_six/flip/card08_face.png) no-repeat 50% 50% #F3C10A;
+}
+
+#flip-card-section6b-1 .back {
+    background: url(/dekalb/breeding/PublishingImages/section_one/flip/card01_back.gif) no-repeat #FFF;
+}
+
+#flip-card-section6b-2 .back {
+    background: url(/dekalb/breeding/PublishingImages/section_one/flip/card02_back.gif) no-repeat #FFF;
+}
+
+#flip-card-section6b-3 .back {
+    background: url(/dekalb/breeding/PublishingImages/section_one/flip/card03_back.gif) no-repeat #FFF;
+}
+
+#flip-card-section6b-4 .back {
+    background: url(/dekalb/breeding/PublishingImages/section_one/flip/card04_back.gif) no-repeat #FFF;
+}
+
+#flip-card-section6b-5 .back {
+    background: url(/dekalb/breeding/PublishingImages/section_one/flip/card05_back.gif) no-repeat #FFF;
+}
+
+#flip-card-section6b-6 .back {
+    background: url(/dekalb/breeding/PublishingImages/section_one/flip/card06_back.gif) no-repeat #FFF;
+}
+
+#flip-card-section6b-7 .back {
+    background: url(/dekalb/breeding/PublishingImages/section_one/flip/card07_back.gif) no-repeat #FFF;
+}
+
+#flip-card-section6b-8 .back {
+    background: url(/dekalb/breeding/PublishingImages/section_one/flip/card08_back.gif) no-repeat #FFF;
+}
+
+#flip-card1 .back {
+    background: url(/dekalb/breeding/PublishingImages/section_one/flip/card01_back.gif) no-repeat #FFF;
+}
+
+#flip-card2 .back {
+    background: url(/dekalb/breeding/PublishingImages/section_one/flip/card02_back.gif) no-repeat #FFF;
+}
+
+#flip-card3 .back {
+    background: url(/dekalb/breeding/PublishingImages/section_one/flip/card03_back.gif) no-repeat #FFF;
+}
+
+#flip-card4 .back {
+    background: url(/dekalb/breeding/PublishingImages/section_one/flip/card04_back.gif) no-repeat #FFF;
+}
+
+#flip-card5 .back {
+    background: url(/dekalb/breeding/PublishingImages/section_one/flip/card05_back.gif) no-repeat #FFF;
+}
+
+#flip-card6 .back {
+    background: url(/dekalb/breeding/PublishingImages/section_one/flip/card06_back.gif) no-repeat #FFF;
+}
+
+#flip-card7 .back {
+    background: url(/dekalb/breeding/PublishingImages/section_one/flip/card07_back.gif) no-repeat #FFF;
+}
+
+#flip-card8 .back {
+    background: url(/dekalb/breeding/PublishingImages/section_one/flip/card08_back.gif) no-repeat #FFF;
+}
+
+.span-fluid .bottom a.expand { background-color: #f3c10a; color: #484848 !important;
+}
+.span-fluid .bottom a.expand.btn-play { background-color: transparent;
+}
+#section6 .span-fluid .top  img.snapshot{ margin-bottom: 2%;}
+#section6 .span-fluid .top h3{
+    padding-bottom: 3% !important;
+}
+/* ==========================================================================
+   FLIP BOX
+   ========================================================================== */
+
+.flip-stage {
+    width: 96%;
+    height: 708px;
+    padding: 0 2%;
+    overflow: hidden;
+}
+
+.flip-box {
+    width: 22%;
+    height: 34%;
+    /*max-width:239px;
+    max-height:239px;
+    border:solid 1px #FFF;*/
+    position: relative;
+    float: left;
+    margin: 1.5%;
+    cursor: pointer;
+    -webkit-perspective: 800px;
+    -moz-perspective: 800px;
+    -o-perspective: 800px;
+    perspective: 800px;
+}
+
+.flip-card {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: -webkit-transform 1s;
+    -moz-transition: -moz-transform 1s;
+    -o-transition: -o-transform 1s;
+    transition: transform 1s;
+}
+
+.flip-card.flipped {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.flip-card figure {
+    height: 100%;
+    width: 100%;
+    border: solid 1px #FFF;
+    /*line-height: 239px;*/
+    color: white;
+    text-align: center;
+    /*font-weight: bold;
+    font-size: 24px;*/
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card figure:hover {
+    /*border-color:#404041;*/
+}
+
+#wrapper .dekalb.cms-wrap .flip-card h2.flipped-title {
+    color: #3B3B3B !important;
+    /*font-family: "ProximaNovaThin";*/
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 20px;
+    margin-bottom: 0;
+    padding: 19% 5% 3%;
+    text-align: center;
+}
+
+#wrapper .dekalb.cms-wrap .flip-card p {
+    /*font-family: ProximaNovaThin;*/
+    font-size: 14px;
+    line-height: 17px;
+    margin: 0 5%;
+    padding: 0;
+}
+
+figure.front {
+    background-color: #F00;
+}
+
+figure.back {
+    background-color: #FFF;
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    background-position: 50% 7% !important
+}
+
+.no-csstransforms3d figure.back {
+    display: none;
+}
+
+/* ==========================================================================
+   Media Screen 1375px and under
+   ========================================================================== */
+@media screen and (max-width:1375px) {
+    .span-fluid {
+        width: 25%;
+    }
+
+    .span-fluid h3 {
+        font-size: 29px;
+        line-height: 30px;
+        padding-left: 4% !important;
+        padding-right: 4% !important;
+    }
+
+    .span-fixed {
+        width: 75%;
+
+    }
+
+    .span-fixed .fixed-wrap {
+        margin: 0 auto;
+        width: 95%;
+    }
+
+    .span-fixed .header-img {
+        padding-top: 6%
+    }
+
+    .span-fixed.section-text h4, .span-fixed.section-text p {
+
+    }
+
+    .section3 .section-1A .expanded .section-bg {
+        padding-top: 6%;
+    }
+
+    #world {
+        height: auto;
+        left: 30px;
+        top: 125px;
+        width: 47%;
+    }
+    #farmScape{
+		/*position: absolute;*/
+		top: 192px;
+		left: 36px;
+		width: 47%;
+		height: auto;
+	}
+    #stageACopy {
+        left: 55%;
+        top: 211px;
+    }
+
+    #stageBCopy {
+        max-width: 40%
+    }
+
+    #sign {
+        height: auto;
+        top: 100px;
+        width: 45%;
+    }
+	
+	#halfWorld {
+		bottom: 65px;
+		right: 25px;
+		width: 45%;
+		height: auto;
+	}
+	
+    #kicker {
+        top: 367px;
+    }
+
+    #field {
+        top: 310px;
+    }
+
+    #number {
+        width: 30%;
+        height: auto;
+        top: 350px;
+        right: 55px;
+    }
+
+    #pool {
+        width: 30%;
+        height: auto;
+        top: 213px;
+    }
+
+    .technologyAtWork .timeStage {
+        width: 98%;
+    }
+
+    .technologyAtWork .techBox {
+        width: 18%;
+    }
+
+    #wrapper .dekalb.cms-wrap .flip-card h2.flipped-title {
+        font-size: 18px;
+    }
+    #wrapper .dekalb.cms-wrap .flip-card p {
+        font-size: 12px;
+    }
+	
+	#wrapper .dekalb.cms-wrap #germpasm-map .map-country .map-tooltip {
+		background-color: #FFFFFF;
+		color: #FFFFFF;
+		display: none;
+		font-family: "SolexRegular";
+		font-size: 18px;
+		height: auto;
+		list-style: none outside none;
+		position: absolute;
+		top: 0;
+		width: 40%;
+		/*z-index: 1000;*/
+	}
+	#wrapper .dekalb.cms-wrap #germpasm-map .map-country .map-tooltip .list-wrap {
+		padding: 0 5% 5%;
+	}
+
+}

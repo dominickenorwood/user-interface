@@ -1,0 +1,366 @@
+$spacing: 1.5em;
+
+.form
+{
+	position: relative;
+
+	fieldset
+	{
+		display: block;
+		width: 100%;
+		margin: 2em 0;
+	}
+
+	button, input, select, textarea
+	{
+	  font-family : inherit;
+	  font-size   : 1.125em;
+	}
+
+	input
+	{
+		color: #7f7565;
+		position: relative;
+
+		&:focus { outline: none; }
+		&.large { font-size: 1.5em; }
+
+		&[type="text"]
+		{
+			@include appearance(none);
+			border: 1px solid $light-gray;
+			width: 100%;
+			margin: 0 0 $spacing 0;
+			padding: ($spacing * .75);
+			border-radius: 0;
+		}
+
+		&[type="radio"],
+		&[type="checkbox"]
+		{
+			@include appearance(none);
+			margin: 0 .5em;
+			border: 1px solid $light-gray;
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+			text-align: center;
+			vertical-align: middle;
+			background-color: #fff;
+
+			&:disabled
+			{
+				border: 1px solid #ccc9c4;
+				background-color: #f1eee8;
+			}
+
+			&[type="checkbox"] { border-radius: 0; }
+
+			&[type="radio"]:checked:after
+			{
+				content: ' ';
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin-top: -7px;
+				margin-left: -7px;
+				width: 14px;
+				height: 14px;
+				background-color: $orange;
+				border-radius: 50%;
+			}
+
+			&[type="checkbox"]:checked:after
+			{
+				content: '\2713';
+				font-family: $entypo;
+				font-size: 40px;
+				position: absolute;
+				// top: 50%;
+				left: 0;
+				width: 100%;
+				color: $orange;
+				// @include transform(translateY(-50%));
+				zoom: 1;
+				height: 30px;
+				line-height: 15px;
+			}
+		}
+	}
+
+	textarea
+	{
+		display: block;
+		width: 100%;
+		border: 1px solid $light-gray;
+		padding: ($spacing * .75);
+		min-height: 225px;
+
+
+		&:focus { outline: none; }
+	}
+	
+	.custom-select
+	{
+		position: relative;
+		margin-bottom: $spacing;
+
+		span
+		{
+			display: block;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			width: 40px;
+			background-color: #f1eee8;
+			text-align: center;
+			pointer-events: none;
+			border: 1px solid $light-gray;
+			z-index: 100;
+
+			&:after
+			{
+				content: '\E74F';
+				font-family: $entypo;
+				font-size: 40px;
+				position: absolute;
+				left: 0;
+				top: 50%;
+				text-align: center;
+				width: 100%;
+				color: inherit;
+				@include transform(translateY(-50%));
+				zoom: 1;
+			}
+		}
+
+		select
+		{
+			@include appearance(none);
+			border: 1px solid $light-gray;
+			width: 100%;
+			padding: ($spacing * .75);
+			border-radius: 0;
+
+			&:focus
+			{
+				outline: none;
+			}
+		}
+	}
+
+	label
+	{
+		display: inline-block;
+		margin: 0 0 $spacing 0;
+	}
+
+	// adjust-o-matic
+	input + label , textarea + label , .custom-select + label,
+	label + input, label + textarea, label + .custom-select
+	{
+		display: block;
+		margin: ($spacing * -.75) 0 $spacing 0 !important;
+	}
+
+	// compact-er form styles
+	&.compact
+	{
+		font-size: .875em;
+
+		input[type="text"] { padding: ($spacing * .5); }
+		input[type="radio"],
+		input[type="checkbox"]
+		{
+			width: 20px;
+			height: 20px;
+
+			&[type="radio"]:checked:after
+			{
+				margin-top: -5px;
+				margin-left: -5px;
+				width: 10px;
+				height: 10px;
+			}
+
+			&[type="checkbox"]:checked:after
+			{
+				font-size: 28px;
+			}
+		}
+
+		.custom-select
+		{
+			select { padding: ($spacing * .5); }
+		}
+	}
+
+	::-webkit-input-placeholder 	{ color: $dark-brown; font-weight: 400; }
+	:-moz-placeholder  				{ color: $dark-brown; font-weight: 400; }
+	::-moz-placeholder 				{ color: $dark-brown; font-weight: 400; }
+	:-ms-input-placeholder 			{ color: $dark-brown; font-weight: 400; }
+}
+
+.search
+{
+	padding: 1.5em 1em;
+	background-color: $dark-brown;
+
+	.form input {
+		font-size: .97em;
+		max-height: 54px;
+	}
+
+	#selected-items
+	{
+		margin-bottom: 2em;
+
+		.item
+		{
+			display: inline-block;
+			padding: .5em 3.5em .5em .75em;
+			margin-right: 1em;
+			margin-bottom: 1em;
+			float: left;
+			position: relative;
+			min-width: 7em;
+			cursor: pointer;
+			background-color: $light-brown;
+			color: #fff;
+			font-family: $proxima-bold;
+			text-transform: uppercase;
+
+			&:after
+			{
+				content: "❌";
+				font-family: "Entypo";
+				font-size: 2.25em;
+				line-height: 0;
+				position: absolute;
+				top: 0;
+				right: 0;
+				height: 100%;
+				border-left: 1px solid $light-brown;
+				background-color: $orange;
+				color: #fff;
+				width: 1.125em;
+				text-align: center;
+				padding-top: .6em;
+			}
+		}
+	}
+
+	#advanced-search
+	{
+		&.open { margin-bottom: 1em; }
+
+		.form .submit
+		{
+			position: absolute;
+			z-index: 100;
+			top: .175em;
+			right: .175em;
+			font-family: "Entypo";
+			font-size: 2.5em;
+			color: #fff;
+			background-color: $orange;
+			text-align: center;
+			padding: 0.05em .1875em;
+			cursor: pointer;
+			border-radius: 50%;
+		}
+	}
+
+
+	.list
+	{
+		border-bottom: 1px solid $light-brown;
+		margin-bottom: 2em;
+		padding-bottom: 2em;
+
+		a
+		{
+			display: block;
+			margin-top: 1px;
+			padding: .5em .75em;
+			position: relative;
+			color: #fff;
+			text-transform: uppercase;
+			font-family: $proxima-bold;
+			background: darken($dark-brown, 7%);
+			text-decoration: none;
+
+			&:after
+			{
+				content: "➕";
+				font-family: "Entypo";
+				font-size: 2.25em;
+				line-height: 0;
+				position: absolute;
+				top: 0;
+				right: 0;
+				height: 100%;
+				background-color: lighten($dark-brown, 7%);
+				width: 1.125em;
+				text-align: center;
+				padding-top: .6em;
+			}
+
+			&.selected
+			{
+				background-color: $light-brown;
+
+				&:after{
+					content: "❌";
+					font-family: "Entypo";
+					font-size: 2.25em;
+					line-height: 0;
+					position: absolute;
+					top: 0;
+					right: 0;
+					height: 100%;
+					background-color: $orange;
+					color: #fff;
+					width: 1.125em;
+					text-align: center;
+					padding-top: .6em;
+				}
+			}
+		}
+	}
+
+	@include breakpoint(medium)
+	{
+		.list
+		{
+			border-bottom: 0;
+			border-right: 1px solid $light-brown;
+			padding: 0 10% 9999px;
+			margin-bottom: -9999px;
+		}
+
+		.col:last-child .list { border: 0; }
+
+		.wrap
+		{
+			position: relative;
+			margin-right: 210px;
+		}
+
+		input.large
+		{
+			float: left;
+			margin-bottom: 1em;
+			// padding: .875em;
+		}
+
+		.button { margin: 0 0 0 10px; }
+		.col h3 { margin: 1em 10%; }
+
+		.toggle-controller.active { margin-top: 1em; display: inline-block; }
+	}
+
+	@include breakpoint(large) { padding: 2em; }
+	
+}
