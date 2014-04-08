@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>jQuery Mobile Application</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> <!--Set the scale of browser window for consistent font size-->
+<!--STYLESHEETS START-->
+<link rel="stylesheet" href="/sites/monsanto_mobile/stylesheets/jquery.mobile.structure-1.0.1.css" /> <!--Jquery Mobile styles-->
+<link rel="stylesheet" href="/sites/monsanto_mobile/stylesheets/index.css" /> <!--Monsanto styles-->
+<!--STYLESHEETS END-->
+<!--JAVASCRIPT START-->
+<script src="/sites/monsanto_mobile/js/jquery-1.7.1.min.js"></script> <!--Jquery Library-->
+<script src="/sites/monsanto_mobile/js/jquery.mobile-1.0.1.min.js"></script> <!--Jquery Mobile Library-->
+<script src="/sites/monsanto_mobile/js/scripts.js"></script> <!--Monsanto Scripts-->
+<!--JAVASCRIPT END-->
+</head>
+<body>
+  <!-- HOME START -->
+  <section id="page1" data-role="page"> <!--Page Declaration, JQ Mobile creates a page with data-role="page". JQ mobile uses the same data-role attribute to create the rest of its elements-->
+    <header data-role="header"><div></div></header> <!--Top Header with logos, header created using data-role="header"-->
+    <div data-role="content" class="content"> <!--Page Content, created using data-role="content"-->
+      <form action="">
+        <table>
+          <tbody>
+            <tr>
+              <td>
+                <label>Your ZIP Code</label>
+              </td>
+              <td class="monHomeZip">
+                <input type="text"  value="" size="" maxlength="5" class="error"  />
+              </td>
+              <td>
+                <a href="#page2"><input value="&#187;" type="submit" /></a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p>Please enter valid ZIP code.</p>
+      </form>
+    </div>
+    <footer data-role="footer"> <!--Page Footer, created using data-role="footer"-->
+      <ul class="monFootMenu">
+        <li><a href="#">Full Site</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Legal Notice</a></li>
+        <li class="last"><a href="#">deltapinemobile.com</a></li>
+      </ul>
+      <div style="clear:both;"></div>
+      <ul class="monFacebook">
+        <li><a href="#">Find Asgrow<br />on Facebook</a></li>
+        <li><a href="#">Find DEKALB&reg;<br />on Facebook</a></li>
+      </ul>
+    </footer>
+  </section>
+  <!-- HOME END -->
+  <!-- SOYBEANS START -->
+  <section id="page2" data-role="page">
+    <header data-role="header"><div></div></header>
+    <nav data-role="navbar"> <!--JQ Mobile navigation bar created with the attribute data-role="navbar"-->
+      <ul>
+        <li><a href="#" class="monCurrent">Soybeans</a></li>
+        <li><a href="#page3">Corn</a></li>
+        <li><a href="#page4">News</a></li>
+      </ul>
+    </nav>
+    <div data-role="content" class="content">
+      <div class="monContent">
+        <div class="monWeather"> <!--Local Weather-->
+          <table>
+            <tbody>
+              <tr>
+                <td class="left">Des Moines, <span>Iowa</span><br/><span>High:</span> 60 / <span>Low:</span> 42</td>
+                <td class="middle">52<span>&deg;</span></td>
+                <td class="right"><a href="#page1">Change<br/>Zip Code</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="monAccordian"> <!--Accordian Wrapper-->
+          <div class="monAcBox"> <!--Main accordian block-->  
+            <h1><a href="#">Product and Yield Finder</a></h1> <!--LEVEL 1 accordian link, opens LEVEL 1 content-->
+            <div class="monAcCon"> <!--LEVEL 1 content-->
+              <h3><a href="#">DKC61-49 Brand (GENVT2P) <span>&gt;&gt;</span></a></h3> <!--LEVEL 2 accordian link, opens LEVEL 2 content-->
+              <div class="monAcInner"> <!--LEVEL 2 conetent-->
+                <h6>1 = Excellent, 9 = Poor</h6>
+                <div class="monInBox"> <!--Double padding block-->
+                  <ul> <!--List can also be replace with a table styles are commented out in stylesheet-->
+                    <li>Emergence <span>3</span></li>
+                    <li>Root Strength <span>4</span></li>
+                    <li>Stalk Strength <span>3</span></li>
+                    <li>Drought Tolerance <span>3</span></li>
+                    <li>Drydown <span>4</span></li>
+                    <li>Yield <span>179.02 Bu/A</span></li>
+                  </ul>
+                  <h6>*Current 2011 yield data</h6>
+                </div>
+              </div>
+              <h3><a href="#">DKC61-71 Brand (GENVT2P) <span>&gt;&gt;</span></a></h3>
+              <div class="monAcInner">
+                <h6>1 = Excellent, 9 = Poor</h6>
+                <div class="monInBox">
+                  <ul>
+                    <li>Emergence <span>3</span></li>
+                    <li>Root Strength <span>4</span></li>
+                    <li>Stalk Strength <span>3</span></li>
+                    <li>Drought Tolerance <span>3</span></li>
+                    <li>Drydown <span>4</span></li>
+                    <li>Yield <span>179.02 Bu/A</span></li>
+                  </ul>
+                  <h6>*Current 2011 yield data</h6>
+                </div>
+              </div>
+              <h3><a href="#">DKC62-13 Brand (GENVT2P) <span>&gt;&gt;</span></a></h3>
+              <div class="monAcInner">
+                <h6>1 = Excellent, 9 = Poor</h6>
+                <div class="monInBox">
+                  <ul>
+                    <li>Emergence <span>3</span></li>
+                    <li>Root Strength <span>4</span></li>
+                    <li>Stalk Strength <span>3</span></li>
+                    <li>Drought Tolerance <span>3</span></li>
+                    <li>Drydown <span>4</span></li>
+                    <li>Yield <span>179.02 Bu/A</span></li>
+                  </ul>
+                  <h6>*Current 2011 yield data</h6>
+                </div>
+              </div>
+              <h3><a href="#">DKC621-97 Brand (BENVT2P) <span>&gt;&gt;</span></a></h3>
+              <div class="monAcInner">
+                <h6>1 = Excellent, 9 = Poor</h6>
+                <div class="monInBox">
+                  <ul>
+                    <li>Emergence <span>3</span></li>
+                    <li>Root Strength <span>4</span></li>
+                    <li>Stalk Strength <span>3</span></li>
+                    <li>Drought Tolerance <span>3</span></li>
+                    <li>Drydown <span>4</span></li>
+                    <li>Yield <span>179.02 Bu/A</span></li>
+                  </ul>
+                  <h6>*Current 2011 yield data</h6>
+                </div>
+              </div>
+              <div class="monSearchBox"> <!--Accordian Search Box-->
+                <form action="">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td class="left">
+                          <label>Search by Brand</label>
+                        </td>
+                        <td class="middle">
+                          <input type="text"  value="" size="" maxlength="99" class="error" />
+                          <p style="display:none;">*Error Message Here</p> <!--Error message set to display:none at the moment-->
+                        </td>
+                        <td class="right">
+                          <span>&gt;&gt;</span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="monAcBox">
+            <h1><a href="#">Agronomic Information</a></h1>
+            <div class="monAcCon">
+              <h2>Latest Alerts</h2>
+              <h3><a href="#">Crown Rot in Corn <span>&gt;&gt;</span></a></h3>
+              <div class="monAcInner">
+                <p>Early-season seedling diseases have caused some stalk rot issues in area corn fields. Fields that endured wet growing conditions this spring may have been infected by Fusarium species. This infection may have developed into crown rot, which is currently being observed as stalk lodging.</p>
+                <h4>Disease Development & Symptoms</h4>
+                <p>Crown rot infections are usually caused by Fusarium species, but the fungus that causes anthracnose (Colletotrichum) may also be a factor1. While the crown of a healthy plant should be a fleshy, white-green color, a tan-to-brown crown is observed with a Fusarium infection. The discoloration is affected by the level of infection. More severe infections are darker brown, and the crown tissue becomes quite rotted. This extensive infection disrupts the “plumbing” of the plant and may cause stunting, leaf yellowing, wilting, and even death. Stalk cannibalization occurs when the corn plant is not able to complete ear fill without remobilizing nutrients and energy from lower leaves and stalks to meet the demand from the developing kernels.</p>
+                <p>The stress of wet soils this spring were conducive for disease infection. Other stresses may include cold temperatures, soil compaction, fertility issues, or herbicide injury2. In previous years, the stress combination of a wet spring followed by an extended dry period led to crown rot infection.
+                <p>While crown rot infections have their beginnings in early-season plant infections, they can persist much longer, eventually resulting in stalk rot and potential yield loss.</p>
+                <h4>Harvest Concerns & Yield Impact</h4>
+                <p>A crown rot infection that results in stalk rot may also lead to lodging. Typical symptoms of Fusarium stalk rot include whitish-pink to salmon discoloration of tissue at the nodes, while plants infected with anthracnose tend to have shiny black blotches or streaks on the outer stalk. Monitor fields closely to schedule harvest while there is still enough stalk strength left to help facilitate harvest. Fields with considerable lodging should be harvested early to minimize the risk of increased lodging. Although drying cost is a concern when harvesting wet grain, this expense will likely be a better option compared to potential yield loss from lodging.</p>
+                <p>Test weights may be lighter due to the impact from crown rot and/or lodging on the ability of corn to finish transporting carbohydrates to the kernel.</p>
+              </div>
+              <h3><a href="#">Identifying And Managing Gross Wilt <span>&gt;&gt;</span></a></h3>
+              <div class="monAcInner">
+                <p>Early-season seedling diseases have caused some stalk rot issues in area corn fields. Fields that endured wet growing conditions this spring may have been infected by Fusarium species. This infection may have developed into crown rot, which is currently being observed as stalk lodging.</p>
+                <h4>Disease Development & Symptoms</h4>
+                <p>Crown rot infections are usually caused by Fusarium species, but the fungus that causes anthracnose (Colletotrichum) may also be a factor1. While the crown of a healthy plant should be a fleshy, white-green color, a tan-to-brown crown is observed with a Fusarium infection. The discoloration is affected by the level of infection. More severe infections are darker brown, and the crown tissue becomes quite rotted. This extensive infection disrupts the “plumbing” of the plant and may cause stunting, leaf yellowing, wilting, and even death. Stalk cannibalization occurs when the corn plant is not able to complete ear fill without remobilizing nutrients and energy from lower leaves and stalks to meet the demand from the developing kernels.</p>
+              </div>
+              <h2>Agronomic Spotlights</h2>
+              <h3><a href="#">Benefits of a Timely Corn Harvest <span>&gt;&gt;</span></a></h3>
+              <div class="monAcInner">
+                <h4>Harvest Concerns & Yield Impact</h4>
+                <p>A crown rot infection that results in stalk rot may also lead to lodging. Typical symptoms of Fusarium stalk rot include whitish-pink to salmon discoloration of tissue at the nodes, while plants infected with anthracnose tend to have shiny black blotches or streaks on the outer stalk. Monitor fields closely to schedule harvest while there is still enough stalk strength left to help facilitate harvest. Fields with considerable lodging should be harvested early to minimize the risk of increased lodging. Although drying cost is a concern when harvesting wet grain, this expense will likely be a better option compared to potential yield loss from lodging.</p>
+              </div>
+            </div>
+          </div>
+          <div class="monAcBox">
+            <h1><a href="#">Planting Population Calculator</a></h1>
+            <div class="monAcCon">
+              <div class="monBox"> <!--Normal Padded Box for content in LEVEL 1 Accordian-->
+                <h1>Kitchen Sink</h1>
+                <p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
+              </div>
+              <h2>Header Level 2</h2>
+              <div class="monBox">
+                <ol>
+                  <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+                  <li>Aliquam tincidunt mauris eu risus.</li>
+                </ol>
+                <h3>Header Level 3</h3>
+                <blockquote>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p>
+                </blockquote>
+                <h4>Header Level 4</h4>
+                <ul>
+                  <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+                  <li>Aliquam tincidunt mauris eu risus.</li>
+                </ul>
+                <h5>Header Level 5</h5>
+                <p>Netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.</p>
+                
+                <h6>Header Level 6</h6>
+                
+                <p>Netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.</p>
+                </div>
+            </div>
+          </div>
+          <div class="monAcBox">
+            <h1><a href="#">GDD Calculator</a></h1>
+            <div class="monAcCon">
+              <div class="monBox">
+                <p>Esimated 2011 Growing Degree Days since May 1st 2011 is:</p>
+                <h5><span>4296.7 <span>GDD</span></span></h5>
+                <h5><span>+483.0 <span>Variance</span></span></h5>
+                <p>for season vs. 10 yr avg<br />(Calc = Base 50 for grain)</p>
+              </div>
+            </div>
+          </div>
+          <div class="monAcBox">
+            <h1><a href="#">Rep Locator</a></h1>
+            <div class="monAcCon">
+              <div class="monBox">
+                <p><span class="monBig">Megan McQuoid</span><br/><span class="monBig">Territory Sales Manager</span><br/>Saint Louis, MO 63126</p>
+                <p>Business Phone: <span>314-540-0088</span><br/>Cell Phone: <span>314-540-0088</span></p>
+                <p><a href="mailto:megan.l.mcquoid@monsanto.com">megan.l.mcquoid@monsanto.com</a></p>
+              </div>
+            </div>
+          </div>
+        </div>       
+      </div>
+    </div>
+    <footer data-role="footer">
+      <ul class="monFootMenu">
+        <li><a href="#">Full Site</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Legal Notice</a></li>
+        <li class="last"><a href="#">deltapinemobile.com</a></li>
+      </ul>
+      <div style="clear:both;"></div>
+      <ul class="monFacebook">
+        <li><a href="#">Find Asgrow<br />on Facebook</a></li>
+        <li><a href="#">Find DEKALB&reg;<br />on Facebook</a></li>
+      </ul> 
+    </footer> 
+  </section>
+  <!-- SOYBEANS END -->
+  <!-- CORN START -->
+  <section id="page3" data-role="page">
+    <header data-role="header"><div></div></header>
+    <nav data-role="navbar">
+      <ul>
+        <li><a href="#page2">Soybeans</a></li>
+        <li><a href="#" class="monCurrent">Corn</a></li>
+        <li><a href="#page4">News</a></li>
+      </ul>
+    </nav>
+    <div data-role="content" class="content">
+      <div class="monContent">
+        <div class="monWeather">
+          <table>
+            <tbody>
+              <tr>
+                <td class="left">Des Moines, <span>Iowa</span><br/><span>High:</span> 60 / <span>Low:</span> 42</td>
+                <td class="middle">52<span>&deg;</span></td>
+                <td class="right"><a href="#page1">Change<br/>Zip Code</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="monAccordian">
+          <div class="monAcBox">
+            <h1><a href="#">Product and Yield Finder</a></h1>
+            <div class="monAcCon">
+              <h3><a href="#">DKC61-49 Brand (GENVT2P) <span>&gt;&gt;</span></a></h3>
+              <div class="monAcInner">
+                <h6>1 = Excellent, 9 = Poor</h6>
+                <div class="monInBox">
+                  <ul>
+                    <li>Emergence <span>3</span></li>
+                    <li>Root Strength <span>4</span></li>
+                    <li>Stalk Strength <span>3</span></li>
+                    <li>Drought Tolerance <span>3</span></li>
+                    <li>Drydown <span>4</span></li>
+                    <li>Yield <span>179.02 Bu/A</span></li>
+                  </ul>
+                  <h6>*Current 2011 yield data</h6>
+                </div>
+              </div>
+              <h3><a href="#">DKC61-71 Brand (GENVT2P) <span>&gt;&gt;</span></a></h3>
+              <div class="monAcInner">
+                <h6>1 = Excellent, 9 = Poor</h6>
+                <div class="monInBox">
+                  <ul>
+                    <li>Emergence <span>3</span></li>
+                    <li>Root Strength <span>4</span></li>
+                    <li>Stalk Strength <span>3</span></li>
+                    <li>Drought Tolerance <span>3</span></li>
+                    <li>Drydown <span>4</span></li>
+                    <li>Yield <span>179.02 Bu/A</span></li>
+                  </ul>
+                  <h6>*Current 2011 yield data</h6>
+                </div>
+              </div>
+              <h3><a href="#">DKC62-13 Brand (GENVT2P) <span>&gt;&gt;</span></a></h3>
+              <div class="monAcInner">
+                <h6>1 = Excellent, 9 = Poor</h6>
+                <div class="monInBox">
+                  <ul>
+                    <li>Emergence <span>3</span></li>
+                    <li>Root Strength <span>4</span></li>
+                    <li>Stalk Strength <span>3</span></li>
+                    <li>Drought Tolerance <span>3</span></li>
+                    <li>Drydown <span>4</span></li>
+                    <li>Yield <span>179.02 Bu/A</span></li>
+                  </ul>
+                  <h6>*Current 2011 yield data</h6>
+                </div>
+              </div>
+              <h3><a href="#">DKC621-97 Brand (BENVT2P) <span>&gt;&gt;</span></a></h3>
+              <div class="monAcInner">
+                <h6>1 = Excellent, 9 = Poor</h6>
+                <div class="monInBox">
+                  <ul>
+                    <li>Emergence <span>3</span></li>
+                    <li>Root Strength <span>4</span></li>
+                    <li>Stalk Strength <span>3</span></li>
+                    <li>Drought Tolerance <span>3</span></li>
+                    <li>Drydown <span>4</span></li>
+                    <li>Yield <span>179.02 Bu/A</span></li>
+                  </ul>
+                  <h6>*Current 2011 yield data</h6>
+                </div>
+              </div>
+              <div class="monSearchBox">
+                <form action="">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td class="left">
+                          <label>Search by Brand</label>
+                        </td>
+                        <td class="middle">
+                          <input type="text"  value="" size="" maxlength="99" class="error" />
+                          <p style="display:none;">*Error Message Here</p> <!--Error message set to display:none at the moment-->
+                        </td>
+                        <td class="right">
+                          <span>&gt;&gt;</span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="monAcBox">
+            <h1><a href="#">Agronomic Information</a></h1>
+            <div class="monAcCon">
+              <h2>Latest Alerts</h2>
+              <h3><a href="#">Crown Rot in Corn <span>&gt;&gt;</span></a></h3>
+              <div class="monAcInner">
+                <p>Early-season seedling diseases have caused some stalk rot issues in area corn fields. Fields that endured wet growing conditions this spring may have been infected by Fusarium species. This infection may have developed into crown rot, which is currently being observed as stalk lodging.</p>
+                <h4>Disease Development & Symptoms</h4>
+                <p>Crown rot infections are usually caused by Fusarium species, but the fungus that causes anthracnose (Colletotrichum) may also be a factor1. While the crown of a healthy plant should be a fleshy, white-green color, a tan-to-brown crown is observed with a Fusarium infection. The discoloration is affected by the level of infection. More severe infections are darker brown, and the crown tissue becomes quite rotted. This extensive infection disrupts the “plumbing” of the plant and may cause stunting, leaf yellowing, wilting, and even death. Stalk cannibalization occurs when the corn plant is not able to complete ear fill without remobilizing nutrients and energy from lower leaves and stalks to meet the demand from the developing kernels.</p>
+                <p>The stress of wet soils this spring were conducive for disease infection. Other stresses may include cold temperatures, soil compaction, fertility issues, or herbicide injury2. In previous years, the stress combination of a wet spring followed by an extended dry period led to crown rot infection.
+                <p>While crown rot infections have their beginnings in early-season plant infections, they can persist much longer, eventually resulting in stalk rot and potential yield loss.</p>
+                <h4>Harvest Concerns & Yield Impact</h4>
+                <p>A crown rot infection that results in stalk rot may also lead to lodging. Typical symptoms of Fusarium stalk rot include whitish-pink to salmon discoloration of tissue at the nodes, while plants infected with anthracnose tend to have shiny black blotches or streaks on the outer stalk. Monitor fields closely to schedule harvest while there is still enough stalk strength left to help facilitate harvest. Fields with considerable lodging should be harvested early to minimize the risk of increased lodging. Although drying cost is a concern when harvesting wet grain, this expense will likely be a better option compared to potential yield loss from lodging.</p>
+                <p>Test weights may be lighter due to the impact from crown rot and/or lodging on the ability of corn to finish transporting carbohydrates to the kernel.</p>
+              </div>
+              <h3><a href="#">Identifying And Managing Gross Wilt <span>&gt;&gt;</span></a></h3>
+              <div class="monAcInner">
+                <p>Early-season seedling diseases have caused some stalk rot issues in area corn fields. Fields that endured wet growing conditions this spring may have been infected by Fusarium species. This infection may have developed into crown rot, which is currently being observed as stalk lodging.</p>
+                <h4>Disease Development & Symptoms</h4>
+                <p>Crown rot infections are usually caused by Fusarium species, but the fungus that causes anthracnose (Colletotrichum) may also be a factor1. While the crown of a healthy plant should be a fleshy, white-green color, a tan-to-brown crown is observed with a Fusarium infection. The discoloration is affected by the level of infection. More severe infections are darker brown, and the crown tissue becomes quite rotted. This extensive infection disrupts the “plumbing” of the plant and may cause stunting, leaf yellowing, wilting, and even death. Stalk cannibalization occurs when the corn plant is not able to complete ear fill without remobilizing nutrients and energy from lower leaves and stalks to meet the demand from the developing kernels.</p>
+              </div>
+              <h2>Agronomic Spotlights</h2>
+              <h3><a href="#">Benefits of a Timely Corn Harvest <span>&gt;&gt;</span></a></h3>
+              <div class="monAcInner">
+                <h4>Harvest Concerns & Yield Impact</h4>
+                <p>A crown rot infection that results in stalk rot may also lead to lodging. Typical symptoms of Fusarium stalk rot include whitish-pink to salmon discoloration of tissue at the nodes, while plants infected with anthracnose tend to have shiny black blotches or streaks on the outer stalk. Monitor fields closely to schedule harvest while there is still enough stalk strength left to help facilitate harvest. Fields with considerable lodging should be harvested early to minimize the risk of increased lodging. Although drying cost is a concern when harvesting wet grain, this expense will likely be a better option compared to potential yield loss from lodging.</p>
+              </div>
+            </div>
+          </div>
+          <div class="monAcBox">
+            <h1><a href="#">Planting Population Calculator</a></h1>
+            <div class="monAcCon">
+              <div class="monBox">
+                <h1>Kitchen Sink</h1>
+                <p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
+              </div>
+              <h2>Header Level 2</h2>
+              <div class="monBox">
+                <ol>
+                  <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+                  <li>Aliquam tincidunt mauris eu risus.</li>
+                </ol>
+                <h3>Header Level 3</h3>
+                <blockquote>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p>
+                </blockquote>
+                <h4>Header Level 4</h4>
+                <ul>
+                  <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+                  <li>Aliquam tincidunt mauris eu risus.</li>
+                </ul>
+                <h5>Header Level 5</h5>
+                <p>Netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.</p>
+                
+                <h6>Header Level 6</h6>
+                
+                <p>Netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.</p>
+                </div>
+            </div>
+          </div>
+          <div class="monAcBox">
+            <h1><a href="#">GDD Calculator</a></h1>
+            <div class="monAcCon">
+              <div class="monBox">
+                <p>Esimated 2011 Growing Degree Days since May 1st 2011 is:</p>
+                <h5><span>4296.7 <span>GDD</span></span></h5>
+                <h5><span>+483.0 <span>Variance</span></span></h5>
+                <p>for season vs. 10 yr avg<br />(Calc = Base 50 for grain)</p>
+              </div>
+            </div>
+          </div>
+          <div class="monAcBox">
+            <h1><a href="#">Rep Locator</a></h1>
+            <div class="monAcCon">
+              <div class="monBox">
+                <p><span class="monBig">Megan McQuoid</span><br/><span class="monBig">Territory Sales Manager</span><br/>Saint Louis, MO 63126</p>
+                <p>Business Phone: <span>314-540-0088</span><br/>Cell Phone: <span>314-540-0088</span></p>
+                <p><a href="mailto:megan.l.mcquoid@monsanto.com">megan.l.mcquoid@monsanto.com</a></p>
+              </div>
+            </div>
+          </div>
+        </div>       
+      </div>
+    </div>
+    <footer data-role="footer">
+      <ul class="monFootMenu">
+        <li><a href="#">Full Site</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Legal Notice</a></li>
+        <li class="last"><a href="#">deltapinemobile.com</a></li>
+      </ul>
+      <div style="clear:both;"></div>
+      <ul class="monFacebook">
+        <li><a href="#">Find Asgrow<br />on Facebook</a></li>
+        <li><a href="#">Find DEKALB&reg;<br />on Facebook</a></li>
+      </ul> 
+    </footer> 
+  </section>
+  <!-- CORN END -->
+  <!-- NEWS START -->
+  <section id="page4" data-role="page">
+    <header data-role="header"><div></div></header>
+    <nav data-role="navbar">
+      <ul>
+        <li><a href="#page2">Soybeans</a></li>
+        <li><a href="#page3">Corn</a></li>
+        <li><a href="#" class="monCurrent">News</a></li>
+      </ul>
+    </nav>
+    <div data-role="content" class="content">
+      <div class="monContent">
+        <div class="monWeather">
+          <table>
+            <tbody>
+              <tr>
+                <td class="left">Des Moines, <span>Iowa</span><br/><span>High:</span> 60 / <span>Low:</span> 42</td>
+                <td class="middle">52<span>&deg;</span></td>
+                <td class="right"><a href="#page1">Change<br/>Zip Code</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="monAccordian">
+          <div class="monAcBox">
+            <h1><a href="#">Asgrow Updates</a></h1>
+            <div class="monAcCon">
+                <h1>Kitchen Sink</h1>
+                <p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
+              <h2>Header Level 2</h2>
+                <ol>
+                  <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+                  <li>Aliquam tincidunt mauris eu risus.</li>
+                </ol>
+                <h3>Header Level 3</h3>
+                <blockquote>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p>
+                </blockquote>
+                <h4>Header Level 4</h4>
+                <ul>
+                  <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+                  <li>Aliquam tincidunt mauris eu risus.</li>
+                </ul>
+                <h5>Header Level 5</h5>
+                <p>Netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.</p>
+                
+                <h6>Header Level 6</h6>
+                
+                <p>Netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.</p>
+            </div>
+          </div>
+          <div class="monAcBox">
+            <h1><a href="#">DEKALB Updates</a></h1>
+            <div class="monAcCon">
+              <p>The stress of wet soils this spring were conducive for disease infection. Other stresses may include cold temperatures, soil compaction, fertility issues, or herbicide injury2. In previous years, the stress combination of a wet spring followed by an extended dry period led to crown rot infection.
+                <p>While crown rot infections have their beginnings in early-season plant infections, they can persist much longer, eventually resulting in stalk rot and potential yield loss.</p>
+                <h4>Harvest Concerns & Yield Impact</h4>
+                <p>A crown rot infection that results in stalk rot may also lead to lodging. Typical symptoms of Fusarium stalk rot include whitish-pink to salmon discoloration of tissue at the nodes, while plants infected with anthracnose tend to have shiny black blotches or streaks on the outer stalk. Monitor fields closely to schedule harvest while there is still enough stalk strength left to help facilitate harvest. Fields with considerable lodging should be harvested early to minimize the risk of increased lodging. Although drying cost is a concern when harvesting wet grain, this expense will likely be a better option compared to potential yield loss from lodging.</p>
+                <p>Test weights may be lighter due to the impact from crown rot and/or lodging on the ability of corn to finish transporting carbohydrates to the kernel.</p>
+            </div>
+          </div>
+          <div class="monAcBox">
+            <h1><a href="#">Commodities</a></h1>
+            <div class="monAcCon">
+              <p>Early-season seedling diseases have caused some stalk rot issues in area corn fields. Fields that endured wet growing conditions this spring may have been infected by Fusarium species. This infection may have developed into crown rot, which is currently being observed as stalk lodging.</p>
+            </div>
+          </div>
+          <div class="monAcBox">
+            <h1><a href="#">Sign up for Text Alerts</a></h1>
+            <div class="monAcCon">
+              <p>Sign up for text updates on seasonal yield results for your county, agronomic alerts, commodity/marketing updates and other Asgrow/DEKALB information. A verification message will be sent to your cell phone.</p>
+              <form action="" class="monTxtForm"> <!--Sign up form-->
+                <div>
+                  <label>First Name</label>
+                  <input type="text"  value="" size="" maxlength="99"/>
+                </div>
+                <div>
+                  <label>Last Name</label>
+                  <input type="text"  value="" size="" maxlength="99"/>
+                </div>
+                <div>
+                  <label>Email</label>
+                  <input type="text"  value="" size="" maxlength="99"/>
+                </div>
+                <div>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <label>Zip Code</label>
+                          <input type="text"  value="" size="" maxlength="99"/>
+                        </td>
+                        <td>
+                          <label>Mobile Number (5551239876)</label>
+                    	  <input type="text"  value="" size="" maxlength="99"/>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>           
+                </div>
+                <div>
+                  <select>
+      				<option selected>Select a Crop</option>
+                    <option>Soybeans</option>
+                    <option>Corn</option>
+                  </select>
+                </div>
+                <div>
+                  <input type="checkbox" />
+                  <p>I consent to the transfer of my personal information. Text messaging service powered by and user consents to receive messages from Commodity Update LLC. A verification message will be sent to your phone. Standard text messaging charges from your cell phone carrier may apply.</p>
+                </div>
+                <div style="clear:both;"></div>
+                <div class="monTxtSub">
+                  <input type="submit" value="Submit &#187;" />
+                </div>
+                <div style="clear:both;"></div>
+              </form>
+            </div>
+          </div>
+        </div>       
+      </div>
+    </div>
+    <p class="monBookmark"><a href="#page5">Add Site to your Home Screen</a></p>
+    <footer data-role="footer">
+      <ul class="monFootMenu">
+        <li><a href="#">Full Site</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Legal Notice</a></li>
+        <li class="last"><a href="#">deltapinemobile.com</a></li>
+      </ul>
+      <div style="clear:both;"></div>
+      <ul class="monFacebook">
+        <li><a href="#">Find Asgrow<br />on Facebook</a></li>
+        <li><a href="#">Find DEKALB&reg;<br />on Facebook</a></li>
+      </ul> 
+    </footer>
+  </section>
+  <!-- NEWS END -->
+  <!-- BOOKMARK START -->
+  <section id="page5" data-role="page">
+    <div data-role="content" class="content">
+      <p class="monBookmark"><a href="#page4">Add Site to your Home Screen <span>x</span></a></p>
+      <div class="monBookBox">
+        <p><b>Follow these instructions for a smart phone:</b></p>
+        <ol>
+          <li>Hit "Menu" on your phone and then select the "Add Bookmark" button.</li>
+          <li>We have pre-populated the options menu with our icon and name, press "Done".</li>
+          <li>In the thumbnail list press and hold the Asgrow/DEKALB Mobile thumbnail for one second.</li>
+          <li>This will open an options menu. Choose "Add shortcut to Home".</li>
+          <li>Hit your devices "Home" button, and navigate to see the Asgrow/DEKALB icon. Hit this at any time to open the site.</li>
+	    </ol>
+      </div>
+    </div>
+  </section>
+  <!-- BOOKMARK END -->
+</body>
+</html>

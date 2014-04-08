@@ -1,0 +1,352 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Odile</title>
+<!--STYLESHEETS START-->
+<link rel="stylesheet" type="text/css" media="all" href="/sites/odile_mocks/stylesheets/index.css" />
+<!--STYLESHEETS END-->
+<!--JAVASCRIPT START-->
+<script type="text/javascript" src="/sites/odile_mocks/js/jquery-1.5.2.min.js"></script>
+<script type="text/javascript" src="/sites/odile_mocks/js/jquery.dd.js"></script>
+<script type="text/javascript" src="/sites/odile_mocks/js/jquery.validate.js"></script>
+<script type="text/javascript" src="/sites/odile_mocks/js/scripts.js"></script>
+<!--JAVASCRIPT END-->
+</head>
+<body>
+  <!--FEEDBACK START-->
+  <div id="feedback">
+    <div class="left">
+      <a href="#" title="feedback">Feedback</a>
+    </div>
+    <div class="right">
+      <h2>How was the Checkout?</h2>
+      <p>Help us improve the ease and pace of your shopping experience by leaving some feedback. Thanks!</p>
+      <form action="">
+        <div>
+          <label>Your Email Address</label>
+          <input type="text"  value="" size="" maxlength="99" class="text" />
+        </div>
+        <div>
+          <label>Your Feedback</label>
+          <textarea cols="35" rows="5"></textarea>
+        </div>
+          <input type="submit"  name="op" value="Sign Up" class="button" />
+      </form>
+      <div class="message">
+        <p>Thank you for your submission&hellip;</p>
+        <h3>We appreciate your feedback!</h3>
+      </div>
+    </div>
+  </div>
+  <!--FEEDBACK END-->
+  <div id="wrapper">
+    <!--HEADER START-->
+    <div id="header">
+      <div id="headerL">
+        <div id="logo">
+          <a href="/sites/odile_mocks/" title="Odile">Odile</a>
+        </div>
+      </div>
+      <div id="headerR">
+        <div id="headerRT">
+          <div id="cart">
+              <a href="#" class="cartBtn"><span>0</span> Items in your Shopping Bag</a>
+              <div class="frame">
+                <form action="">
+                  <table id="cartTbl">
+                    <thead>
+                      <tr>
+                        <th class="prod">Products</th>
+                       <th>Size</th>
+                        <th>QTY</th>
+                        <th>Price</th>
+                        <th>&nbsp;</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="prod">Girls Berta Dress</td>
+                        <td>S</td>
+                        <td><input type="text"  value="1" size="" maxlength="99" class="text" /></td>
+                        <td>$80</td>
+                        <td><a href="#" title="Delete Item" class="delete">Delete Item</a></td>
+                      </tr>
+                      <tr>
+                        <td class="prod">Girls Berta Dress</td>
+                        <td>S</td>
+                        <td><input type="text"  value="1" size="" maxlength="99" class="text" /></td>
+                        <td>$80</td>
+                        <td><a href="#" title="Delete Item" class="delete">Delete Item</a></td>
+                      </tr>
+                      <tr class="subtotal">
+                        <td>&nbsp;</td>
+                        <td colspan="4">Subtotal $160.00</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <input value="Check Out" type="submit" class="button" />
+                </form>
+              </div>
+          </div>
+          <div style="clear:both;"></div>
+        </div>
+        <div id="headerRB">
+          <!--NAVIGATION START-->
+          <div id="navigation">
+            <ul>
+              <li><a href="/sites/odile_mocks/parent.html" class="current">Baby</a></li>
+              <li><a href="/sites/odile_mocks/subcategory.html">Girl</a></li>
+              <li><a href="/sites/odile_mocks/sku.html">Boy</a></li>
+              <li><a href="/sites/odile_mocks/shipping.html">Gifts</a></li>
+              <li class="caps"><a href="/sites/odile_mocks/sale.html">Sale</a></li>
+            </ul>
+          </div>
+          <div id="userNav">
+            <ul>
+              <li><a href="/sites/odile_mocks/">Pensées  (our Blog)</a></li>
+              <li><a href="/sites/odile_mocks/">My Account</a></li>
+            </ul>
+          </div>
+          <!--NAVIGATION END-->
+          <div style="clear:both;"></div>
+        </div>
+      </div>
+      <div style="clear:both;"></div>
+    </div>
+    <!--CONTENT START-->
+    <div id="content">
+      <div id="decorBkg">
+        <div id="checkout">
+          <p id="steps"><img src="/sites/odile_mocks/images/step01_billing.gif" /></p>
+          <form id="postForm" method="post">
+          <div class="box">
+            <h2>Your Information</h2>
+              <table>
+                <tbody>
+                  <tr>
+                    <td>
+                      <label>Email</label>
+                      <input type="text"  value="" size="" maxlength="99" class="text email" />
+                    </td>
+                    <td>
+                      <label>Phone</label>
+                      <input type="text"  value="" size="" maxlength="99" class="text required" />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
+          <div class="box">
+            <table class="billShip">
+              <tbody>
+                <tr>
+                  <td class="billingInfo">
+                  <h2>Billing Information</h2>
+                    <table>
+                      <tbody>
+                        <tr>
+                          <td class="left">
+                            <label>First Name</label>
+                            <input type="text"  value="" size="" maxlength="99" class="text fn  required" />
+                          </td>
+                          <td class="middle">
+                            <label>Middle</label>
+                            <input type="text"  value="" size="" maxlength="1" class="text mn" />
+                          </td>
+                          <td class="right">
+                            <label>Last Name</label>
+                            <input type="text"  value="" size="" maxlength="99" class="text ln  required" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="3">
+                            <label>Address</label>
+                            <input type="text"  value="" size="" maxlength="99" class="text address  required" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="3">
+                            <label>Suite, Floor, etc.</label>
+                            <input type="text"  value="" size="" maxlength="99" class="text suite" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="left">
+                            <label>City</label>
+                            <input type="text"  value="" size="" maxlength="99" class="text city  required" />
+                          </td>
+                          <td class="middle">
+                            <label>State</label>
+                           <select class="state nonzero">
+                              <option value="0">--</option>
+                              <option value="Illinois">IL</option>
+                              <option value="Missouri">MO</option>
+                              <option value="California">CA</option>
+                            </select>
+                          </td>
+                          <td class="right">
+                            <label>Zip Code</label>
+                            <input type="text"  value="" size="" maxlength="5" class="text zip  required" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="3">
+                            <label>Country</label>
+                            <select class="country">
+                              <option value="">United States</option>
+                              <option value="Canada">Canada</option>
+                              <option value="Mexico">Mexico</option>
+                            </select>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                  <td class="shippingInfo">
+                    <h2>Shipping Information</h2>
+                    <table>
+                      <tbody>
+                        <tr>
+                          <td class="left">
+                            <label>First Name</label>
+                            <input type="text"  value="" size="" maxlength="99" class="text" />
+                          </td>
+                          <td class="middle">
+                            <label>Middle</label>
+                            <input type="text"  value="" size="" maxlength="99" class="text" />
+                          </td>
+                          <td class="right">
+                            <label>Last Name</label>
+                            <input type="text"  value="" size="" maxlength="99" class="text" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="3">
+                            <label>Address</label>
+                            <input type="text"  value="" size="" maxlength="99" class="text" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="3">
+                            <label>Suite, Floor, etc.</label>
+                            <input type="text"  value="" size="" maxlength="99" class="text" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="left">
+                            <label>City</label>
+                            <input type="text"  value="" size="" maxlength="99" class="text" />
+                          </td>
+                          <td class="middle">
+                            <label>State</label>
+                            <select class="state">
+                              <option value="">--</option>
+                              <option value="Illinois">IL</option>
+                              <option value="Missouri">MO</option>
+                              <option value="California">CA</option>
+                            </select>
+                          </td>
+                          <td class="right">
+                            <label>Zip Code</label>
+                            <input type="text"  value="" size="" maxlength="99" class="text" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="3">
+                            <label>Country</label>
+                            <select class="country">
+                              <option value="">United States</option>
+                              <option value="Canada">Canada</option>
+                              <option value="Mexico">Mexico</option>
+                            </select>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                  <td class="colorBkg">
+                    <h6>Your package will ship to&hellip;</h6>
+                    <p>
+                      <span class="fn"></span>
+                      <span class="mn"></span>
+                      <span class="ln"></span><br/>
+                      <span class="address"></span>
+                      <span class="suite"></span><br/>
+                      <span class="city"></span>
+                      <span class="state"></span>
+                      <span class="zip"></span>
+                      <span class="country"></span>
+                    </p>
+                    <a href="#" class="btn">Change Shipping Address</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="submitBox">
+            <table>
+              <tbody>
+                <tr>
+                  <td class="left">
+                    <p>Please make sure you've entered your data correctly. When you're ready, proceed to the Checkout page, or <a href="#">Continue Shopping</a></p>
+                  </td>
+                  <td class="right">
+                    <input value="Continue" type="submit" class="continue" />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          </form>
+        </div>       
+      </div>
+    </div>
+    <!--CONTENT END-->
+    <!--USER FOOTER START-->
+    <div id="userFoot">
+      <div id="userFootL">
+        <div class="box">
+          <h2>Sign up <span>(we won’t share it)</span></h2>
+          <p>Be the first to hear about our offers, sales and news:</p>
+          <div class="newsletter">
+          <form action="">
+            <div class="email">
+              <input type="text" id="email" name="name" value="Email Address" size="15" maxlength="60" class="text required" onfocus="if(this.value==this.defaultValue) this.value='';" onblur="if(this.value=='') this.value=this.defaultValue;"/>
+            </div>
+            <div class="btn">
+              <input type="submit" id="logIn" name="op" value="Sign Up" class="formSubmit" />
+            </div>
+            <div style="clear:both;"></div>
+          </form>
+          </div>
+        </div>
+      </div>
+      <div id="userFootR">
+        <div class="box">
+          <h2>Pensées <span>(our Blog)</span></h2>
+          <p>Read the tales from our latest adventure to Florence!</p>
+          <div class="facebook">
+            <img src="/sites/odile_mocks/images/facebook_fpo.gif" />
+          </div>
+        </div>
+      </div>
+      <div style="clear:both;"></div>
+    </div>
+    <!--USER FOOTER END-->
+    <!--FOOTER START-->
+    <div id="footer">
+      <ul>
+        <li><a href="/sites/odile_mocks/about.html">About Odile</a></li>
+        <li><a href="/sites/odile_mocks/contact.html">Contact Us</a></li>
+        <li><a href="/sites/odile_mocks/overview.html">Shipping &amp; Returns</a></li>
+        <li><a href="/sites/odile_mocks/complete_order.html">Privacy Policy</a></li>
+        <li><a href="/sites/odile_mocks/terms.html">Terms of Use</a></li>
+        <li>&copy; 2011 Odile. All Rights Reserved.</li>
+      </ul>
+    </div>
+    <!--FOOTER END-->
+  </div>
+  
+</body>
+</html>

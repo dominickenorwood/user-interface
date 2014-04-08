@@ -1,0 +1,801 @@
+
+
+$(document).ready(function() {	 
+	/*YIELD CALCULATOR START///////////////////////////////////////////////*/
+var regionid;  //a number 
+var irrigationMethod;  //2 or 3
+var competitorSelectionID;
+var deltapineSelectionID;
+var datapointID;
+var competitorYield;
+var deltapineYield;
+var valueDiff;
+var farmAcresValue;
+var farmValue;
+var farmValueAsString;
+var yieldDiff;
+var totalFarmRevenuePotential;
+var totalFarmRevenuePotentialAsString;
+var revPotential;
+
+//competitor brands
+var brand1 = false;
+var brand15 = false;
+var brand16 = false;
+var brand17 = false;
+var brand18 = false;
+var brand19 = false;
+var brand20 = false;
+var brand21 = false;
+var brand22 = false;
+var brand25 = false;
+var brand26 = false;
+var brand27 = false;
+var brand14 = false;
+var brand13 = false;
+var brand28 = false;
+var brand29 = false;
+var brand30 = false;
+var brand31 = false;
+var brand32 = false;
+
+//deltapine brands
+var brand11 = false;
+var brand2 = false;
+var brand3 = false;
+var brand4 = false;
+var brand24 = false;
+var brand23 = false;
+var brand5 = false;
+var brand12 = false;
+var brand7 = false;
+var brand8 = false;
+var brand9 = false;
+var brand10 = false;
+var brand6 = false;
+
+	
+	
+	/*
+function clearForm(form) {
+	  // iterate over all of the inputs for the form
+	  // element that was passed in
+	  $(':input', form).each(function() {
+	    var type = this.type;
+	    var tag = this.tagName.toLowerCase(); // normalize case
+	    // it's ok to reset the value attr of text inputs,
+	    // password inputs, and textareas
+	    if (type == 'text' || type == 'password' || tag == 'textarea')
+	      this.value = "";
+	    // checkboxes and radios need to have their checked state cleared
+	    // but should *not* have their 'value' changed
+	    else if (type == 'checkbox' || type == 'radio')
+	      this.checked = false;
+	    // select elements need to have their 'selectedIndex' property set to -1
+	    // (this works for both single and multiple select elements)
+	    else if (tag == 'select')
+	      this.selectedIndex = -1;
+	  });
+	};
+*/
+
+	
+	disableSelects();
+	
+	if (!NREUMQ.f) { NREUMQ.f=function() {
+	  NREUMQ.push(["load",new Date().getTime()]);
+	  var e=document.createElement("script");
+	  e.type="text/javascript";e.async=true;e.src="https://d1ros97qkrwjf5.cloudfront.net/30/eum/rum.js";
+	  document.body.appendChild(e);
+	  if(NREUMQ.a)NREUMQ.a();
+	};
+	
+	  NREUMQ.a=window.onload;window.onload=NREUMQ.f;
+	};
+	NREUMQ.push(["nrfj","beacon-1.newrelic.com","9dfe439095",8763,"Il9dRhNbCVtVQhgXQgBTVkFOWgpTVUMYF1oORw==",0.0,30,new Date().getTime(),"","","","",""])// JavaScript Document
+
+	$('#irrigatedDryland').change(function() {
+	  setIrrigation();
+	});
+	
+	$('#competitorVariety').change(function() {
+	  setCompetitor();
+	});
+	
+	$('#deltapineVariety').change(function() {
+	  setDeltapine();
+	  //alert('change');
+	});
+	$('#yield-calculator').submit(function(event) {
+			event.preventDefault();
+				
+			
+				farmValueAsString = formatCurrency(farmValue);
+				//console.log('hey, prevent this form from submitting');
+				var htmlstring = "<p>Potential Farm Value: ";
+				htmlstring = htmlstring + farmValueAsString + '<br/>';
+				htmlstring = htmlstring + 'Yield Advantage: ' + yieldDiff;
+				htmlstring = htmlstring + 'lbs / acre</p>';
+				
+				if (!isNaN(farmValue)) {
+					//YIELD CALCULATOR RESULTS
+					//$("#results").html(htmlstring);
+					$('.calResults .textField').val('');
+					$('.calResults #resYieldZip').val($('#yield-calculator #zip').val());
+					$('.calResults #resYieldFieldType').val($('#yield-calculator #irrigatedDryland option:selected').text());
+					$('.calResults #resYieldAcres').val($('#yield-calculator #totalAcres').val());
+					$('.calResults #resYieldDeltProd').val($('#yield-calculator #deltapineVariety option:selected').text());
+					$('.calResults #resYieldEstYield').val(deltapineYield + ' lbs / acre');
+					$('.calResults #resYieldCompProd').val($('#yield-calculator #competitorVariety option:selected').text());
+<<<<<<< .mine
+					$('.calResults #resYieldEstYield2').val(competitorYield + ' lbs / acre');//competitorYield
+					$('.calResults #resYieldFarmVal').val(totalFarmRevenuePotentialAsString);
+=======
+					$('.calResults #resYieldCropAdv').val(yieldDiff + ' lbs / acre');
+					$('.calResults #resYieldFarmVal').val(farmValueAsString);
+					$('.calResults #resYieldEstYield2').val(competitorYield + ' lbs / acre');
+>>>>>>> .r436
+	
+				}
+				console.log('submit clicked');
+	});
+	
+	// resets the form
+	function clearResults() {
+		$(".calResults :input").each(function(){
+			var type = this.type;
+			var tag = this.tagName.toLowerCase();
+			if (type == 'text')
+				this.value = "";
+				
+				competitorYield = "";
+				deltapineYield = "";
+				valueDiff = "";
+				farmAcresValue = "";
+				farmValue = "";
+				farmValueAsString = "";
+				yieldDiff = "";
+				totalFarmRevenuePotential = "";
+				totalFarmRevenuePotentialAsString = "";
+			
+		});
+	}
+	$(".restart").click(function(event) {
+		clearResults();
+	});
+	
+	$("#zip").focusout(function(e) {
+			console.log('zip focus');
+			getZips();
+			// make a loader
+			$("#progress").css({'display':'block'});
+			return true;
+			}
+		);
+		
+	
+	function getZips() {
+			
+			$.ajax({
+				type: "GET",
+				url: "xml/deltapine_zips_regions.xml",
+				dataType: "xml",
+				success: xmlParser
+			}).done();//turn off loader
+			
+		}
+	
+	function xmlParser(xml) {
+			var zipmatch = false;
+			regionid = "";
+			console.log(parseFloat($("#zip").val()));
+			$(xml).find("zip").each(function () {
+				if(parseFloat($("#zip").val()) == parseFloat($(this).find("name").text())) {
+					zipmatch = true;
+					
+					regionid = $(this).find("regionid").text();
+					//console.log('regionid='+regionid);
+					return;	
+				}
+			}); 
+			if(zipmatch == false) {
+				alert('Data is not available for the zip code you entered. Please try another zip code.');
+			} else {
+				
+				enableIrrigatedSelects();
+			}
+			$("#progress").fadeOut('fast');
+			
+		}
+		
+	function enableIrrigatedSelects() {	
+		$("#irrigatedDryland").removeAttr("disabled").parent().parent().removeClass('disabled');	
+	}
+		
+	function disableSelects() {
+			$("#competitorVariety").attr("disabled","disabled").parent().parent().addClass("disabled");
+			$("#deltapineVariety").attr("disabled","disabled").parent().parent().addClass("disabled");
+			$("#irrigatedDryland").attr("disabled","disabled").parent().parent().addClass("disabled");
+			$("#competitorEstimatedYield").attr("disabled","disabled")
+			$("#deltapineEstimatedYield").attr("disabled","disabled")
+		}
+		
+	
+		
+	function setIrrigation(){
+		var irrigationItems = document.yieldCalculator.irrigatedDryland;
+		irrigationMethod = irrigationItems.options[irrigationItems.selectedIndex].value;
+		getCompetitorVariety();		
+		$("#competitor_progress").css({'display':'block'});
+	}
+	
+	function getCompetitorVariety() {
+		$.ajax({
+			type: "GET",
+			url: "xml/deltapine_datapoints.xml",
+			dataType: "xml",
+			success: dataXMLParserCompetitor
+		}).done();
+	}
+	
+	function AddToOptionList(OptionList, OptionValue, OptionText) {
+	// Add option to the bottom of the list
+		OptionList[OptionList.length] = new Option(OptionText, OptionValue);
+	}
+	
+	function setCompetitor(){
+		var competitorItems = document.yieldCalculator.competitorVariety;
+		competitorSelectionID = competitorItems.options[competitorItems.selectedIndex].value;
+		$("#deltapine_progress").css({'display':'block'});
+		getDeltapineVariety();
+	}
+	
+	function getDeltapineVariety() {
+		//document.getElementById('deltapine_progress').style.visibility = 'visible';
+		$.ajax({
+			type: "GET",
+			url: "xml/deltapine_datapoints.xml",
+			dataType: "xml",
+			success: dataXMLParserDeltapine
+		}).done();//turn off loader
+		
+	}
+	
+	function setDeltapine(){
+		//disable the calculate button
+		$('#calc input[type=submit]').button('disable');
+		var deltapineItems = document.yieldCalculator.deltapineVariety;
+		deltapineSelectionID = deltapineItems.options[deltapineItems.selectedIndex].value;
+		determineDeltapineDatapointSet();
+		clearResults();
+	}
+	
+	function determineDeltapineDatapointSet(){
+		console.log('determine deltapoint dataset');
+		
+		$.ajax({
+			type: "GET",
+			url: "xml/deltapine_datapoints.xml",
+			dataType: "xml",
+			success: dataXMLParserDatapoint
+		}).done();//turn off loader
+	}
+	
+	function formatCurrency(num) {
+	    num = num.toString().replace(/\$|\,/g, '');
+		if (isNaN(num)) num = "0";
+		sign = (num == (num = Math.abs(num)));
+		num = Math.floor(num * 100 + 0.50000000001);
+		cents = num % 100;
+		num = Math.floor(num / 100).toString();
+		if (cents < 10) cents = "0" + cents;
+		for (var i = 0; i < Math.floor((num.length - (1 + i)) / 3); i++)
+		num = num.substring(0, num.length - (4 * i + 3)) + ',' + num.substring(num.length - (4 * i + 3));
+		return (((sign) ? '' : '-') + '$' + num + '.' + cents);
+	}
+
+
+	function dataXMLParserDatapoint(xml){
+		$("#competitorEstimatedYield").removeAttr("disabled")
+		$("#deltapineEstimatedYield").removeAttr("disabled")
+			
+		$(xml).find("datapoint").each(function () {
+					if((parseFloat(String(regionid)) == parseFloat($(this).find("region_id").text()) && parseFloat(String(irrigationMethod)) == parseFloat($(this).find("irg_type_id").text()) ) && parseFloat(String(competitorSelectionID)) == parseFloat($(this).find("competitor_variety_id").text()) && parseFloat(String(deltapineSelectionID)) == parseFloat($(this).find("monsanto_variety_id").text()) ) {
+<<<<<<< .mine
+						
+						competitorYield = $(this).find("competitor_yield_avg").text();
+						deltapineYield = $(this).find("monsanto_yield_avg").text();
+=======
+						competitorYield = $(this).find("competitor_yield_avg").text();
+						deltapineYield = $(this).find("monsanto_yield_avg").text();
+>>>>>>> .r436
+						valueDiff = Number($(this).find("average_crop_value_difference").text());
+						yieldDiff = $(this).find("average_yield_difference").text();
+<<<<<<< .mine
+						//console.log(valueDiff);
+=======
+>>>>>>> .r436
+						
+						
+						/*
+						old calc
+						Yield (lbs/A) x Loan Price ($X.XX/lb) = Revenue Potential ($/A)
+						Revenue Potential x Total Acreage = Total Farm Revenue Potential
+						*/
+						
+						/*
+						new calc
+						Acres (entered by the user) x the number from row T under the Deltapine and Competitor and column "Average of Crop Value Difference"
+						*/
+						
+						totalAcresValue = parseInt($("#totalAcres").val());
+						
+						
+						farmValue = parseFloat(totalAcresValue * valueDiff);
+						/* old
+						revPotential = deltapineYield * .5;
+						totalFarmRevenuePotential = revPotential * totalAcresValue
+						*/
+						
+<<<<<<< .mine
+						console.log("Region ID: " + regionid + " Competitor Yield: " + competitorYield + " Deltapine Yeld: " + deltapineYield + " Value Difference: " + valueDiff + " Yiled Difference: " + yieldDiff + " Farm Value: " + farmValue + " Total Acres: " + totalAcresValue + " xml: " + $(this).text());
+=======
+						totalFarmRevenuePotential = totalAcresValue * valueDiff;
+						
+						console.log('farm value:' + farmValue);
+						//console.log('rev potential:' + revPotential);
+						console.log('deltapine yield:' + deltapineYield);
+						console.log('competitor yield:' + competitorYield);	
+						console.log('average yield value diff:' + valueDiff);
+>>>>>>> .r436
+
+						//alert(competitorYield + deltapineYield);
+						
+						document.getElementById('competitorEstimatedYield').value = String(competitorYield);
+						document.getElementById('deltapineEstimatedYield').value = String(deltapineYield);
+						
+						//enable the calculate button
+						$('#calc input[type=submit]').button('enable');
+
+						
+			}
+		});
+	}
+
+	function dataXMLParserCompetitor(xml){
+		$(xml).find("datapoint").each(function () {
+					if((parseFloat(String(regionid)) == parseFloat($(this).find("region_id").text()) && parseFloat(String(irrigationMethod)) == parseFloat($(this).find("irg_type_id").text()) )) {
+						var tmpID = $(this).find("competitor_variety_id").text();
+						var tmpCompetitor;
+						if(tmpID == "1"){
+						if (brand1 == true){
+							return;
+							
+						}else{
+							tmpCompetitor = "FM 1740B2RF"
+							brand1 = true;
+						}
+					}
+					
+					if(tmpID == "15"){
+						if (brand15 == true){
+							return;
+							
+						}else{
+							tmpCompetitor = "FM 9170 B2F"
+							brand15 = true;
+						}
+					}
+					
+					if(tmpID == "16"){
+						if (brand16 == true){
+							return;
+							
+						}else{
+							tmpCompetitor = "PHY 367 WRF"
+							brand16 = true;
+						}
+					}
+					
+					if(tmpID == "17"){
+						if (brand17 == true){
+							return;
+							
+						}else{
+							tmpCompetitor = "PHY 375 WRF"
+							brand17 = true;
+						}
+					}
+					
+					if(tmpID == "18"){
+						if (brand18 == true){
+							return;
+							
+						}else{
+							tmpCompetitor = "PHY 485 WRF"
+							brand18 = true;
+						}
+					}
+					
+					if(tmpID == "19"){
+						if (brand19 == true){
+							return;
+							
+						}else{
+							tmpCompetitor = "PHY 565 WRF"
+							brand19 = true;
+						}
+					}
+					
+					if(tmpID == "20"){
+						if (brand20 == true){
+							return;
+							
+						}else{
+							tmpCompetitor = "ST 4498B2RF"
+							brand20 = true;
+						}
+					}
+					
+					if(tmpID == "21"){
+						if (brand21 == true){
+							return;
+							
+						}else{
+							tmpCompetitor = "ST 5288B2RF"
+							brand21 = true;
+						}
+					}
+					
+					if(tmpID == "22"){
+						if (brand22 == true){
+							return;
+							
+						}else{
+							tmpCompetitor = "ST 5458B2RF"
+							brand22 = true;
+						}
+					}
+					if(tmpID == "25"){
+						if (brand25 == true){
+							return;
+							
+						}else{
+							tmpCompetitor = "ST 4288B2RF"
+							brand25 = true;
+						}
+					}
+					if(tmpID == "26"){
+						if (brand26 == true){
+							return;
+							
+						}else{
+							tmpCompetitor = "FM 9063 B2RF"
+							brand26 = true;
+						}
+					}
+					if(tmpID == "27"){
+						if (brand27 == true){
+							return;
+							
+						}else{
+							tmpCompetitor = "FM 9160 B2RF"
+							brand27 = true;
+						}
+					}
+					if(tmpID == "14"){
+						if (brand14 == true){
+							return;
+							
+						}else{
+							tmpCompetitor = "FM 840B2RF"
+							brand14 = true;
+						}
+					}
+					if(tmpID == "13"){
+						if (brand13 == true){
+							return;
+							
+						}else{
+							tmpCompetitor = "FM 1880 B2RF"
+							brand13 = true;
+						}
+					}
+					if(tmpID == "28"){
+						if (brand28 == true){
+							return;
+							
+						}else{
+							tmpCompetitor = "FM 9180 B2RF"
+							brand28 = true;
+						}
+					}
+					
+					if(tmpID == "29"){
+						if (brand29 == true){
+							return;
+							
+						}else{
+							tmpCompetitor = "PHY 499 WRF"
+							brand29 = true;
+						}
+					}
+					
+					if(tmpID == "30"){
+						if (brand30 == true){
+							return;
+							
+						}else{
+							tmpCompetitor = "PHY 569 WRF"
+							brand30 = true;
+						}
+					}
+					if(tmpID == "31"){
+						if (brand31 == true){
+							return;
+							
+						}else{
+							tmpCompetitor = "ST 4427B2RF"
+							brand31 = true;
+						}
+					}
+					
+					if(tmpID == "32"){
+						if (brand32 == true){
+							return;
+							
+						}else{
+							tmpCompetitor = "ST 4554B2RF"
+							brand32 = true;
+						}
+					}
+
+						
+						AddToOptionList(document.yieldCalculator.competitorVariety, tmpID, tmpCompetitor);
+						return;	
+					}
+					$("#competitorVariety").removeAttr("disabled").parent().parent().removeClass('disabled');
+					$("#competitor_progress").fadeOut("fast");	
+				});
+	}
+
+	function dataXMLParserDeltapine(xml){
+		$(xml).find("datapoint").each(function () {
+					if((parseFloat(String(regionid)) == parseFloat($(this).find("region_id").text()) && parseFloat(String(irrigationMethod)) == parseFloat($(this).find("irg_type_id").text()) ) && parseFloat(String(competitorSelectionID)) == parseFloat($(this).find("competitor_variety_id").text()) ) {
+						var tmpID = $(this).find("monsanto_variety_id").text();
+						var tmpDeltapine;
+						if(tmpID == "11"){
+						if (brand11 == true){
+							return;
+							
+						}else{
+							tmpDeltapine = "DP 1048 B2RF"
+							brand11 = true;
+						}
+					}
+					
+					if(tmpID == "2"){
+						if (brand2 == true){
+							return;
+							
+						}else{
+							tmpDeltapine = "DP 0912 B2RF"
+							brand2 = true;
+						}
+					}
+					
+					if(tmpID == "3"){
+						if (brand3 == true){
+							return;
+							
+						}else{
+							tmpDeltapine = "DP 0920 B2RF"
+							brand3 = true;
+						}
+					}
+					
+					if(tmpID == "4"){
+						if (brand4 == true){
+							return;
+							
+						}else{
+							tmpDeltapine = "DP 0924 B2RF"
+							brand4 = true;
+						}
+					}
+					
+					if(tmpID == "24"){
+						if (brand24 == true){
+							return;
+							
+						}else{
+							tmpDeltapine = "DP 1137 B2RF"
+							brand24 = true;
+						}
+					}
+					
+					if(tmpID == "23"){
+						if (brand23 == true){
+							return;
+							
+						}else{
+							tmpDeltapine = "DP 1133 B2RF"
+							brand23 = true;
+						}
+					}
+					
+					if(tmpID == "5"){
+						if (brand5 == true){
+							return;
+							
+						}else{
+							tmpDeltapine = "DP 0935 B2RF"
+							brand5 = true;
+						}
+					}
+					
+					if(tmpID == "12"){
+						if (brand12 == true){
+							return;
+							
+						}else{
+							tmpDeltapine = "DP 1050 B2RF"
+							brand12 = true;
+						}
+					}
+					
+					if(tmpID == "7"){
+						if (brand7 == true){
+							return;
+							
+						}else{
+							tmpDeltapine = "DP 1028 B2RF"
+							brand7 = true;
+						}
+					}
+					if(tmpID == "8"){
+						if (brand8 == true){
+							return;
+							
+						}else{
+							tmpDeltapine = "DP 1032 B2RF"
+							brand8 = true;
+						}
+					}
+					if(tmpID == "9"){
+						if (brand9 == true){
+							return;
+							
+						}else{
+							tmpDeltapine = "DP 1034 B2RF"
+							brand9 = true;
+						}
+					}
+					if(tmpID == "10"){
+						if (brand10 == true){
+							return;
+							
+						}else{
+							tmpDeltapine = "DP 1044 B2RF"
+							brand10 = true;
+						}
+					}
+					if(tmpID == "6"){
+						if (brand6 == true){
+							return;
+							
+						}else{
+							tmpDeltapine = "DP 0949 B2RF"
+							brand6 = true;
+						}
+					}
+
+						
+						
+						AddToOptionList(document.yieldCalculator.deltapineVariety, tmpID, tmpDeltapine);
+						return;	
+					}
+					$("#deltapineVariety").removeAttr("disabled").parent().parent().removeClass('disabled');;
+					$("#deltapine_progress").fadeOut("fast");
+				});	
+	}
+	
+  /*YIELD CALCULATOR END///////////////////////////////////////////////*/
+  
+  /*ACCORDIAN START////////////////////////////////////////////*/
+  var allPanels = $('.monAcCon').hide(); //Hide all Level 1 accordians
+  var allInnerPanels = $('.monAcInner').hide(); //Hide all Level 2 accordians
+  var allAcBtns = $('.monAccordian h1 a');  //All Level 1 links
+  var allInnerBtns = $('.monAccordian h3 a');  //All Level 2 links
+
+ /* $('section[data-role="page"]').live('pageshow',function(event, ui){
+        console.log($(this).attr('id'));
+    });*/
+
+  $('section[data-role="page"]').live("pagebeforeshow", function() { //Close all panel before page transition
+	$("#competitorVariety").attr("disabled","disabled").parent().parent().addClass("disabled");
+	$("#deltapineVariety").attr("disabled","disabled").parent().parent().addClass("disabled");
+	$("#irrigatedDryland").attr("disabled","disabled").parent().parent().addClass("disabled");
+	$("#competitorEstimatedYield").attr("disabled","disabled")
+	$("#deltapineEstimatedYield").attr("disabled","disabled")
+	$("#yield-calculator .ui-select .ui-btn-text").replaceWith('<span class="ui-btn-text">Please Select</span>');
+	$("#yield-calculator input").val("");
+	$("#yield-calculator select").val("Please Select");
+	
+	
+	allPanels.slideUp();
+	allInnerPanels.slideUp();
+  });
+  $('section[data-role="page"]').live("pagehide", function() { //Reset all classes and icons after page transition
+	$('h3 a.monCurrent').find('span').replaceWith('<span>&gt;&gt;</span>');
+	$('.monOpen').removeClass("monOpen");
+	$('.monActive').removeClass("monActive");
+	allAcBtns.removeClass("monCurrent");
+	allInnerBtns.removeClass("monCurrent");	
+	
+  });															  
+  
+  $('.monAccordian h1 a').click(function(e) { //Level 1 Accordian
+    e.preventDefault();
+	if($(this).parent().next().is(':hidden')){ //Check if accordian is closed
+		$('.monOpen') // Closes any open accordians
+		  .slideUp(function(){
+		     $(this).parent().children(":first-child").find('a').removeClass("monCurrent"); //remove Level 1 class after slide event
+			 $(this).parent().removeClass("monActive");
+			 
+		   });
+		$('.monOpen .monAcInner').slideUp();  // Close any open Level 2 accordians
+		$('.monOpen').removeClass("monOpen"); // Remove open accordian class
+		$('h3 a.monCurrent').find('span').replaceWith('<span>&gt;&gt;</span>'); // Reset Level 2 icons
+		$('h3 a.monCurrent').removeClass("monCurrent"); //Remove Level 2 classes
+		
+		
+		$(this).parent().parent().addClass("monActive");
+		$(this).parent().next().addClass("monOpen"); //Add class to accordian
+		$(this).parent().next().slideDown(); //Open accordian
+		$(this).addClass("monCurrent"); //Add class to Level 1 link
+		
+	}else{ //If accordian is already open then this will close it
+		$(this) // Close accordian
+		  .parent()
+		  .next()
+		  .slideUp(function(){
+		     $(this).parent().children(":first-child").find('a').removeClass("monCurrent"); //remove Level 1 class after slide event
+			 $(this).parent().removeClass("monActive");
+		   });
+		$(this) //Close any open Level 2 accordians
+		  .parent()
+		  .next()
+		  .children(".monAcInner")
+		  .slideUp();
+		$(this) // Remove class from accordian
+		  .parent()
+		  .next()
+		  .removeClass("monOpen");
+		$('h3 a.monCurrent').find('span').replaceWith('<span>&gt;&gt;</span>'); //Replace Level 2 icon
+		$('h3 a.monCurrent').removeClass("monCurrent"); //Remove Level 2 link class
+		
+	};
+    return false;
+   });
+  
+  $('.monAccordian h3 a').click(function(e) { //Level 2 Accordian
+    e.preventDefault();
+	if($(this).parent().next().is(':hidden')){ //Check if accordian is closed
+		$('.monAcInner').slideUp();
+		allInnerBtns.find('span').replaceWith('<span>&gt;&gt;</span>');
+		allInnerBtns.removeClass("monCurrent");
+		$(this).parent().next().slideDown();
+		$(this).find('span').replaceWith('<span>&lt;&lt;</span>');
+		$(this).addClass("monCurrent");
+
+	}else{  //If accordian is already open then this will close it
+		$(this).parent().next().slideUp();
+		$(this).find('span').replaceWith('<span>&gt;&gt;</span>');
+		$(this).removeClass("monCurrent");
+	};
+    return false;
+   });	
+  /*ACCORDIAN END////////////////////////////////////////////*/
+  
+});
