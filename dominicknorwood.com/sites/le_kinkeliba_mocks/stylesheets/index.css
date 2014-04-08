@@ -1,0 +1,204 @@
+/*////////////////////////////////////////////////
+TEMPLATE
+////////////////////////////////////////////////*/
+*{margin:0;padding:0;}
+a{outline:none;}
+img{border:none;}
+*:focus{outline:none;}
+img, a.logo, div.logo, .slideBtn, .galleryBtn, .thumbBtn{ _behavior: url("/sites/le_kinkeliba_mocks/stylesheets/iepngfix.htc") }
+body{background:url(/sites/le_kinkeliba_mocks/images/backgrounds/body_bkg.jpg) repeat left top #B6AE8A;}
+#wrapper{width:100%;font-size:12px;font-family:Arial, Helvetica, sans-serif;line-height:18px;}
+
+/*////////////////////////////////////////////////
+HEADER
+////////////////////////////////////////////////*/
+#headerWrap{position:relative;background:url(/sites/le_kinkeliba_mocks/images/backgrounds/header_bkg.png) repeat-x left top;}
+#headerWrap .slug{width:40%;height:50px;position:absolute;background:url(/sites/le_kinkeliba_mocks/images/backgrounds/headslug_bkg.png) repeat-x left top;}
+#header{width:1000px;margin:0 auto;position:relative;z-index:1;}
+#header .logo{width:445px;height:50px;display:block;float:left;text-indent:-9999px;background:url(/sites/le_kinkeliba_mocks/images/headlogo.png) no-repeat left top;}
+#header .anchor{position:absolute;}
+
+/*NAVIGATION////////////////////////////////////////////////*/
+#navigation{float:left;}
+#navigation ul{margin-left:5px;position:relative;}
+#navigation li{float:left;list-style-type:none;}
+#navigation a{height:50px;padding:0 15px;float:left;display:block;color:#B4AB86;font-size:11px;text-transform:uppercase;text-decoration:none;line-height:50px;text-shadow:0 0 6px #000;}
+#navigation a:hover{color:#FFF;}
+#navigation a.current{color:#FFF;background:url(/sites/le_kinkeliba_mocks/images/backgrounds/current_bkg.png) repeat-x left top;}
+
+/*DROP DOWN////////////////////////////////////////////////*/
+#navigation ul ul{padding-top:20px;margin:0;display:none;position:absolute;top:40px;*margin-left:-75px;}
+#navigation ul ul li{padding:0 10px;margin:0;border-right:1px solid #0E2E10;}
+#navigation ul ul li.last{border:none;}
+#navigation ul ul a{color:#0E2E10;height:auto;padding:0;font-size:11px;line-height:17px;text-transform:none;font-style:italic;text-shadow:none;}
+#navigation li:hover ul{display:block; }
+
+
+/*////////////////////////////////////////////////
+CONTENT
+////////////////////////////////////////////////*/
+#contentWrap{width:1000px;padding-top:50px;margin:0 auto;position:relative;/*IE7 + IE6 FIX*/*padding-top:0;*margin-top:50px;}
+#contentWrap .logo{width:157px;height:158px;position:absolute;top:25px;left:25px;text-indent:-9999px;background:url(/sites/le_kinkeliba_mocks/images/logo.png) no-repeat left top; z-index:200;/*IE7 + IE6 FIX*/*top:-25px;}
+#contentWrapL{width:50px;height:600px;float:left; }
+#contentWrapR{width:50px;height:600px;float:left; }
+#content{width:850px; min-height:600px;padding:10px 25px 15px 25px;float:left;background:url(/sites/le_kinkeliba_mocks/images/backgrounds/content_bkg.png) repeat-x left top #F5F5F1;-moz-box-shadow:5px 5px 5px #9C936F;-webkit-box-shadow:5px 5px 5px #9C936F;box-shadow:5px 5px 5px #9C936F;}
+#contentL{width:300px;float:left;}
+#contentL .contBtn{background:url(/sites/le_kinkeliba_mocks/images/buttons/contribute_sm_btn.jpg) no-repeat left top;}
+#contentL img{padding:15px 0 10px 0;}
+#contentL a{margin:15px 0 10px 0;}
+#contentR{width:525px;padding-left:25px;float:left;}
+#contentT{padding-left:150px;margin-bottom:15px;}
+#content h1{color:#00501B;padding:15px 0 0 0;font-size:36px;font-style:italic;font-weight:normal;line-height:42px;font-family:Georgia, "Times New Roman", Times, serif;}
+#content h2{color:#00501B;padding:10px 0 0 0;font-size:14px;font-style:italic;font-weight:normal;line-height:20px;}
+#content h3{color:#71B680;font-size:14px;line-height:20px;}
+#content h4{color:#837A51;font-size:12px;text-transform:uppercase;}
+#content h5, #content h6{color:#00501B;padding:15px 0 10px 0;font-size:13px;font-style:italic;font-weight:normal;line-height:19px;}
+#content ul, #content ol{margin:0 18px;}
+#content li{color:#00501B;padding:2px 0;}
+#content p{color:#867C50;padding:15px 0 10px 0;}
+#content p.footnote{margin-top:10px;font-size:11px;}
+#content a{color:#00501B;text-decoration:none;}
+#content a.more{font-style:italic;}
+#content a:hover{text-decoration:underline;}
+#content blockquote{color:#00501B;padding:10px 10px 5px 10px;font-style:italic;font-family:Georgia, "Times New Roman", Times, serif;}
+#content cite{color:#00501B;padding:0 40px;margin-bottom:10px;font-weight:bold;font-style:italic;text-align:right;}
+#content code{color:#867C50;margin:15px 10px 10px 10px;padding:10px;display:block;font-size:11px;font-family:Georgia, "Times New Roman", Times, serif;background-color:#FFF;}
+#content p a{font-style:italic;}
+#content h2 a{font-weight:bold;}
+#content #subNav{margin:0;}
+#content #subNav li{color:#00501B;display:inline;list-style-type:none;}
+#content #subNav a{color:#00501B;padding:0 10px;font-size:9px;text-decoration:none;text-transform:uppercase;line-height:9px;border-left:1px solid #00501B;}
+#content #subNav a:hover{color:#867C50;}
+#content #subNav a.current{color:#71B680;}
+#content #subNav li.first a{padding-left:0;border:none;}
+#content #map{padding:25px 0 10px 0;}
+#content img.floatR{float:right; padding:20px 0 20px 20px;}
+#content img.floatL{float:left; padding:20px 20px 20px 0;}
+#content #contentL ul{margin:0;text-transform:uppercase;}
+#content #contentL li{color:#71B680;display:inline;font-size:11px;}
+#content #contentL li a{color:#867C50;padding:0 7px;font-size:11px;border-right:1px solid #71B680;}
+#content #contentL li.last a{border:none;}
+
+/*SLIDESHOW//////////////////////////////////////////////*/
+#slideshow{padding:15px 0 10px 0;position:relative;}
+#slideshow #marquee{width:850px;height:575px;position:relative;overflow:hidden;z-index:1;}
+#slideshow #marquee img{position:absolute;top:0;left:0;}
+#slideshow #comment{width:185px;padding:15px 50px 15px 25px;position:absolute;bottom:35px;right:-25px;background-color:#FFF;z-index:100;/*IE7 + IE6 FIX*/_right:0;_bottom:160px;}
+#slideshow #comment h1{color:#00501B;padding-top:0;margin-top:10px;font-size:21px;font-style:italic;font-weight:normal;line-height:27px;font-family:Georgia, "Times New Roman", Times, serif;}
+#slideshow #comment p{padding-top:10px;}
+#slideFoot{padding:15px 0 10px;}
+#slideFootL{width:325px;float:left;}
+#slideFootR{width:525px;float:left;}
+#slideFootR div{padding-bottom:15px;float:right;/*IE7 + IE6 FIX*/*clear:both;}
+#slideFootR div.search {/*IE7 + IE6 FIX*/*width:250px;}
+#slideFootR div.search label{/*IE7 + IE6 FIX*/*width:50px;*margin-left:43px;}
+#slideFootR label{color:#5A5334;padding-right:10px;text-transform:uppercase;}
+#slideFootR input{width:140px;padding:1px;background-color:#F5F5F2;border:1px solid #C4C4C4;}
+
+/*BUTTONS//////////////////////////////////////////////*/
+#prevBtn{background:url(/sites/le_kinkeliba_mocks/images/buttons/previous_btn.png) no-repeat left top;}
+#nextBtn{margin-left:4px;background:url(/sites/le_kinkeliba_mocks/images/buttons/next_btn.png) no-repeat left top;}
+#prevTBtn{left:-18px;background:url(/sites/le_kinkeliba_mocks/images/buttons/previous_sm_btn.png) no-repeat left top;}
+#nextTBtn{right:-18px;background:url(/sites/le_kinkeliba_mocks/images/buttons/next_sm_btn.png) no-repeat left top;/*IE7 + IE6 FIX*/_right:5px;}
+.slideBtn{width:46px;height:88px;margin-top:450px;display:block;text-indent:-9999px;}
+.galleryBtn{width:46px;height:88px;margin-top:250px;display:block;text-indent:-9999px;}
+.thumbBtn{width:11px;height:23px;position:absolute;text-indent:-9999px;top:45px;}
+.backGalBtn{width:140px;height:33px;text-indent:-9999px;background:url(/sites/le_kinkeliba_mocks/images/buttons/back_to_galleries_btn.jpg) no-repeat left top;}
+.playBtn{width:95px;height:33px;text-indent:-9999px;background:url(/sites/le_kinkeliba_mocks/images/buttons/play_btn.jpg) no-repeat left top;}
+.stopBtn{width:95px;height:33px;text-indent:-9999px;background:url(/sites/le_kinkeliba_mocks/images/buttons/stop_btn.jpg) no-repeat left top;}
+.contBtn{width:300px;height:75px;display:block;text-indent:-9999px;background:url(/sites/le_kinkeliba_mocks/images/buttons/contribute_sm_btn.jpg) no-repeat left top;}
+.slideFoot .contBtn{width:325px;height:75px;display:block;text-indent:-9999px;background:url(/sites/le_kinkeliba_mocks/images/buttons/contribute_btn.jpg) no-repeat left top;}
+.howMuchBtn{width:300px;height:75px;display:block;text-indent:-9999px;background:url(/sites/le_kinkeliba_mocks/images/buttons/how_much_helps_btn.jpg) no-repeat left top;}
+.curProBtn{width:300px;height:75px;display:block;text-indent:-9999px;background:url(/sites/le_kinkeliba_mocks/images/buttons/current_projects_bnr.jpg) no-repeat left top;}
+.donateBtn{width:112px;height:50px;margin-top:15px;margin-bottom:10px;display:block;text-indent:-9999px;background:url(/sites/le_kinkeliba_mocks/images/buttons/donate_btn.png) no-repeat left top;}
+ .archiveBtn{width:300px;height:75px;margin-top:15px;margin-bottom:10px;display:block;text-indent:-9999px;background:url(/sites/le_kinkeliba_mocks/images/buttons/archives_btn.jpg) no-repeat left top;}
+ 
+/*OUR WORK//////////////////////////////////////////////*/
+#workTable{border-collapse:collapse;}
+#workTable td{padding:15px 0 10px 0;vertical-align:middle;}
+#workTable td.right{padding-left:25px;}
+#workTable p a{font-style:normal;}
+
+/*DONATE//////////////////////////////////////////////*/
+#donateForm{margin-top:10px;}
+#donateForm h3{color:#00501B;padding-top:15px;font-size:12px;text-transform:uppercase;}
+#donateForm table{margin-bottom:10px;border-collapse:collapse;}
+#donateForm td{padding-right:25px;padding-bottom:5px;vertical-align:middle;}
+#donateForm input.radio{margin-top:4px;margin-right:5px;float:left;}
+#donateForm span{color:#005A27;font-weight:bold;}
+#donateForm div{padding:10px 0;}
+#donateForm p{padding-top:10px;}
+#donateForm input.text{width:200px;margin-left:10px;}
+#donateForm select{width:200px;}
+
+/*GALLERY//////////////////////////////////////////////*/
+#gallery .gallCat{width:270px;padding:25px 0;margin-right:20px;float:left;/*IE7 + IE6 FIX*/_margin-right:10px;}
+#gallery .third{margin:0;}
+#gallery .gallCat h1{padding:10px;margin-top:15px;font-size:14px;line-height:20px;text-align:center;font-family:Arial, Helvetica, sans-serif;background-color:#BDDFC8;}
+#gallery #marquee{width:850px;height:525px;margin-top:15px;position:relative;/*IE7 + IE6 FIX*/*margin-top:25px;}
+#gallery #marquee img{position:absolute;}
+#gallery .caption{padding:0 25px 20px 25px;position:absolute;bottom:0;right:0;background:url(/sites/le_kinkeliba_mocks/images/backgrounds/caption_bkg.png) repeat left top;/*IE7 + IE6 FIX*/_background:none;_background-color:#FFF;}
+#gallery .collapse{padding:0 20px 5px 20px;/*IE7 + IE6 FIX*/*width:80px;}
+#gallery .caption p{color:#1D401A;padding:0;margin:0;clear:both;font-weight:bold;font-style:italic;}
+#gallery .caption a.hide{color:#4D3F21;padding:0 13px 0 0;margin:10px 0 2px 0;display:block;float:right;font-size:10px;text-transform:uppercase;background:url(/sites/le_kinkeliba_mocks/images/buttons/close_icon.png) no-repeat right 4px;}
+#gallery .caption a.hide:hover{text-decoration:none;}
+#gallery .caption a.show{color:#4D3F21;padding:0;margin:10px 0 2px 0;display:block;float:right;font-size:10px;text-transform:uppercase;}
+#gallery .caption a.show:hover{text-decoration:none;}
+#gallery #thumbs{margin:10px 0;position:relative;}
+#gallery #thumbBoxWrap{width:838px;padding:6px;overflow:hidden;}
+#gallery .thumbBox{width:9999px;}
+#gallery .thumbBox img{margin-right:15px;float:left;cursor:pointer;}
+#gallery .thumbBox img:hover{margin:-3px 12px -3px -3px;border:3px solid #85CB9F;}
+#gallery .thumbBox img.current{margin:-3px 12px -3px -3px;border:3px solid #85CB9F;}
+#gallery #panel{padding-bottom:15px;/*IE7 + IE6 FIX*/*padding-bottom:0;}
+#gallery #panel h1{width:490px;height:33px;padding:0;margin:0 10px 0 0;float:left;font-size:18px;text-align:center;line-height:33px;background-color:#C0E2CC;overflow:hidden;}
+#gallery #panel a{margin-right:10px;display:block;float:left;}
+#gallery #panel a.stopBtn{margin:0;}
+
+/*NEWS//////////////////////////////////////////////*/
+#news {padding-top:25px;}
+#news .article{padding-bottom:25px;}
+#news .articleL{width:70px;float:left;}
+#news .articleL div{color:#FFF;padding:20px 0;font-size:18px;text-align:center;line-height:24px;font-family:Georgia, "Times New Roman", Times, serif;background-color:#71B680;}
+#news .articleR {width:430px;padding-left:20px;float:left;}
+#news h2{padding:0;margin:0 0 -12px 0;}
+.articleR img{margin-bottom:25px;}
+
+/*CONTACT//////////////////////////////////////////////*/
+#contact{padding:10px 0;}
+#contact form{padding-top:40px;}
+#contact form div{margin-bottom:15px;}
+#contact label{color:#867C50;width:130px;padding:0;float:left;font-size:14px;}
+#contact input.text{width:370px;padding:1px;}
+#contact input.submit{color:#FFF;padding:10px 20px;margin:10px 0 5px 0;font-size:14px;text-transform:uppercase;background-color:#71B680;border:none;cursor:pointer;/*IE7 + IE6 FIX*/*padding:10px;}
+#contact input.submit:hover{background-color:#00501B;}
+#contact textarea{width:370px;padding:1px;}
+#contact .contactL{width:230px;padding-right:20px;float:left;}
+#contact .contactR{width:250px;float:left;}
+#contact h3{padding:0;margin:20px 0 0 0;font-size:15px;font-style:italic;line-height:21px;}
+#contact p{padding:0;margin:0;font-size:14px;line-height:20px;}
+
+/*////////////////////////////////////////////////
+FOOTER
+////////////////////////////////////////////////*/
+#footer{width:900px;margin:0 auto;padding:25px 50px 50px 50px;color:#5A5334;font-size:11px;}
+#footer a{color:#5A5334;text-decoration:none;}
+#footer a:hover{color:#FFF;}
+#footerL{width:600px;padding-right:10px;float:left;}
+#footerL p{padding:10px 0;}
+#footerL ul{}
+#footerL li{display:inline;list-style-type:none;}
+#footerL a{padding:0 8px;text-transform:uppercase;border-right:1px solid #FFF;}
+#footerL a.current{color:#FFF;}
+#footerL li.first a{padding-left:0;}
+#footerL li.last a{border:none;}
+#footerR{width:290px;float:left;}
+#footerR h3{color:#FFF;font-size:11px;font-weight:normal;text-transform:uppercase;}
+#footerR p{padding:10px 0;font-size:12px;}
+#footerR a{font-size:12px;font-style:italic;}
+#footerR #contactL{float:left;}
+#footerR #contactR{float:right;}
+#footForm{padding-bottom:5px;}
+#footForm div{padding-bottom:15px;}
+#footForm label{color:#5A5334;padding-left:10px;text-transform:uppercase;}
+#footForm input{width:140px;padding:1px;background-color:#F5F5F2;border:1px solid #C4C4C4;}

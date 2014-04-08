@@ -1,0 +1,62 @@
+/*////////////////////////////////////////////////
+TEMPLATE
+////////////////////////////////////////////////*/
+*{margin:0;padding:0;}
+a{outline:none;text-decoration:none;}
+img{border:none;}
+*:focus{outline:none;}
+html{-webkit-text-size-adjust: none; /* Prevent font scaling in landscape */background-color:#FFFFFF; font-family:Arial, Helvetica, sans-serif;font-size:12px;line-height:18px;}
+h1{font-size:18px;line-height:24px;}
+h2{clear:both;font-size:14px; line-height:20px;padding:10px 0;margin:20px 0 10px 0;text-transform:uppercase; border-bottom:solid 1px #CCC;border-top:solid 1px #CCC;}
+ul{margin-left:25px;}
+li{padding:5px 0;}
+table{border-collapse:collapse;width:100%;font-size:13px;line-height:19px;}
+#rWrap{width:100%;}
+#rLinkHead{display:none;}
+#rLinkFoot{display:none;}
+.rLogo{display:none;}
+.rSkills ul{float:left;margin-right:85px;margin-bottom:20px;margin-left:15px;}
+.rSkills ul:last-child{margin-right:0;}
+
+table.style1 td{width:33%;}
+p.style3{font-style:italic;padding:3px 0 10px 0;}
+.style2{font-weight:bold;text-align:center;}
+td{padding:5px 0;}
+td:last-child{text-align:right;}
+.style4{padding-bottom:20px;}
+a{color:#000;text-transform:none;}
+a:hover{color:#F00;}
+/*PNG TRANSPARENCY FIX FOR IE6*/
+/*img, #slideshow img, .bullets a, #slideshow .slug, #thumbNav #bar01, #thumbNav #bar02, .arrow, .new, .clickZoom, .moreImg, .close, .exitZoom, .shopodile, .print, .discount, .complete, div.addMsg, .continue{ _behavior: url("/floodlight_design/odile_mocks/stylesheets/iepngfix.htc")}*/
+/*#rWrap{color:#FFF;font-family:Arial, Helvetica, sans-serif;font-size:14px;line-height:20px;position:relative;}
+#rWrap h1{font-family:Georgia, "Times New Roman", Times, serif;font-size:30px;line-height:36px;font-style:italic;position:relative;z-index:106;margin-bottom:5px;}
+#rWrap h2{color:#FFBE06;font-size:18px;font-family:Georgia, "Times New Roman", Times, serif;line-height:18px;text-transform:uppercase;font-style:italic;background:url(/images/big_bullet.png) no-repeat left 50%;padding:20px 31px;border-bottom:solid 1px #333333;margin:5px 0;clear:both;}
+#rWrap h2.style5{margin-top:-5px;}
+#rWrap a{color:#FFFFFF;text-decoration:none;}
+#rWrap ul{}
+#rWrap .rSkills ul{float:left;margin-right:100px;margin-bottom:10px;}
+#rWrap .rSkills ul:last-child{margin-right:0;}
+#rWrap li{padding:5px 15px;list-style-type:none;background:url(/images/resume_bullet.gif) no-repeat left 11px;}
+#rWrap table{width:100%;color:#FFFFFF;font-family:Georgia, "Times New Roman", Times, serif;margin-top:2px;}
+#rWrap table.style1 td{width:33%;}
+#rWrap p.style3{color:#429DC1;font-style:italic;padding:3px 0 10px 0;}
+#rWrap .style2{font-weight:bold;text-align:center;}
+#rWrap td{padding:5px 0;}
+#rWrap td:last-child{text-align:right;}
+#rWrap #rHead{width:100%;padding:0 10px 8px 10px;position:relative;z-index:106;font-size:15px;line-height:23px;}
+#rWrap #rHead a{font-family:Georgia, "Times New Roman", Times, serif;font-weight:bold;font-style:italic;}
+#rWrap #rHead a:hover{color:#ED5454}
+#rWrap #rBody{width:765px;padding:0 10px;position:relative;z-index:106;}
+#rWrap .rBlock{border-top:solid 1px #333333;padding:10px 0;margin-bottom:5px;}
+#rWrap .style4{border-bottom:solid 1px #333333;}
+#rWrap .style4 ul{padding-bottom:5px;}
+#rWrap #rLinkHead{position:absolute;right:20px;top:8px;z-index:107;}
+#rWrap #rLinkHead li{float:left; background-image:none;background-color:#000;padding:0;margin-left:10px;}
+#rWrap #rLinkHead li a{display:block;text-transform:uppercase;font-family:Georgia, "Times New Roman", Times, serif;font-size:14px;line-height:20px;font-style:italic;color:#FFBE06;padding:5px 15px;}
+#rWrap #rLinkHead li a:hover{color:#FFF;}
+#rWrap .rLogo{width:574px;height:271px;background:url(/images/resume_head_bkg.png) no-repeat left top;position:absolute;z-index:105;top:-70px;right:-40px;}
+#rWrap #rLinkFoot{float:right;}
+#rWrap #rLinkFoot li{float:left; background-image:none;padding:0 15px;border-right:dotted 1px #333333;}
+#rWrap #rLinkFoot li:last-child{border:none;padding-right:0;}
+#rWrap #rLinkFoot li a{display:block;text-transform:uppercase;font-family:Georgia, "Times New Roman", Times, serif;font-size:14px;line-height:20px;font-style:italic;color:#ED5454;padding:0;}
+#rWrap #rLinkFoot li a:hover{color:#FFFFFF;}*/

@@ -1,0 +1,1393 @@
+<<<<<<< .mine
+<!DOCTYPE html>
+<html>
+<head>
+<title>DELTAPINE</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> <!--Set the scale of browser window for consistent font size-->
+<!--STYLESHEETS START-->
+<link rel="stylesheet" href="stylesheets/jquery.mobile.structure-1.0.1.css" /> <!--Jquery Mobile styles-->
+<link rel="stylesheet" href="stylesheets/index.css" /> <!--DELTAPINE styles-->
+<!--STYLESHEETS END-->
+<!--JAVASCRIPT START-->
+<script src="js/jquery-1.7.1.min.js"></script> <!--Jquery Library-->
+<script type="text/javascript">
+$(document).bind("mobileinit", function()
+{
+  $.extend(  $.mobile , {
+      ajaxFormsEnabled: false
+  });
+});
+</script>
+
+<script src="js/jquery.mobile-1.0.1.min.js"></script> <!--Jquery Mobile Library-->
+<script src="js/scripts.js"></script> <!--DELTAPINE Scripts-->
+<script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script>
+<!--JAVASCRIPT END-->
+</head>
+<body>
+  <!-- HOME START -->
+  <section id="page1" data-role="page"> <!--Page Declaration, JQ Mobile creates a page with data-role="page". JQ mobile uses the same data-role attribute to create the rest of its elements-->
+    <header data-role="header"><div><img src="/work/deltapine_mobile/images/logos/default.png" /></div></header> <!--Top Header with logos, header created using data-role="header"-->
+    <div data-role="content" class="content"> <!--Page Content, created using data-role="content"-->
+      <form action=""><!--HOME ZIP CODE FINDER START-->
+        <div class="zipBkg">
+          <table>
+            <tbody>
+              <tr>
+                <td>
+                  <label>Your ZIP Code</label>
+                </td>
+                <td class="monHomeZip">
+                  <input type="text"  value="" size="" maxlength="5" class="error"  />
+                </td>
+                <td>
+                  <a href="#page2"><input value="&#187;" type="submit" /></a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="error" style="display:none;">Please enter valid ZIP code.</p>
+      </form><!--HOME ZIP CODE FINDER END-->
+    </div>
+    <footer data-role="footer"> <!--Page Footer, created using data-role="footer"-->
+      <ul class="monFootMenu">
+        <li><a href="http://www.deltapine.com/Pages/home.aspx">Full Site</a></li>
+        <li><a href="mailto:info@email.deltapine.com">Contact Us</a></li>
+        <li><a class="last" href="http://www.monsanto.com/legal-notice/Pages/default.aspx" target="_blank">Legal Notice</a></li>
+        <li class="last"><a href="http://www.deltapine.com" target="_blank">Deltapine.com</a></li>
+      </ul>
+      <div style="clear:both;"></div>
+      <ul class="monFacebook">
+        <li><a href="https://www.facebook.com/Deltapine" target="_blank">Find Deltapine&reg; on Facebook</a></li>
+      </ul> 
+    </footer>
+  </section>
+  <!-- HOME END -->
+  <!-- TOOLS START -->
+  <section id="page2" data-role="page">
+    <header data-role="header"><div><img src="/work/deltapine_mobile/images/logos/default.png" /></div></header>
+    <div class="monWrapper">
+    <nav data-role="navbar"> <!--JQ Mobile navigation bar created with the attribute data-role="navbar"-->
+      <ul>
+        <li><a href="#" class="monCurrent">Tools</a></li>
+        <li><a href="#page3">Resources</a></li>
+      </ul>
+    </nav>
+    <div data-role="content" class="content">
+      <div class="monContent">
+        <div class="monWeather"> <!--Local Weather-->
+          <table>
+            <tbody>
+              <tr>
+                <td class="left">Des Moines, <span>Iowa</span><br/><span>High:</span> 60 / <span>Low:</span> 42</td>
+                <td class="middle">52<span>&deg;</span></td>
+                <td class="right"><a href="#page1">Change<br/>Zip Code</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="monAccordian"> <!--Accordian Wrapper-->
+          <div class="monAcBox"> <!--Main accordian block-->  
+            <h1><a href="#">Product and Yield Finder</a></h1> <!--LEVEL 1 accordian link, opens LEVEL 1 content-->
+            <div class="monAcCon"> <!--LEVEL 1 content-->
+              <h3><a href="#">DKC61-49 Brand (GENVT2P) <span>&gt;&gt;</span></a></h3> <!--LEVEL 2 accordian link, opens LEVEL 2 content-->
+              <div class="monAcInner"> <!--LEVEL 2 conetent-->
+                <h6>1 = Excellent, 9 = Poor</h6>
+                <div class="monInBox"> <!--Double padding block-->
+                  <ul> <!--List can also be replace with a table styles are commented out in stylesheet-->
+                    <li>Emergence <span>3</span></li>
+                    <li>Root Strength <span>4</span></li>
+                    <li>Stalk Strength <span>3</span></li>
+                    <li>Drought Tolerance <span>3</span></li>
+                    <li>Drydown <span>4</span></li>
+                    <li>Yield <span>179.02 Bu/A</span></li>
+                  </ul>
+                  <h6>*Current 2011 yield data</h6>
+                </div>
+              </div>
+              <h3><a href="#">DKC61-71 Brand (GENVT2P) <span>&gt;&gt;</span></a></h3>
+              <div class="monAcInner">
+                <h6>1 = Excellent, 9 = Poor</h6>
+                <div class="monInBox">
+                  <ul>
+                    <li>Emergence <span>3</span></li>
+                    <li>Root Strength <span>4</span></li>
+                    <li>Stalk Strength <span>3</span></li>
+                    <li>Drought Tolerance <span>3</span></li>
+                    <li>Drydown <span>4</span></li>
+                    <li>Yield <span>179.02 Bu/A</span></li>
+                  </ul>
+                  <h6>*Current 2011 yield data</h6>
+                </div>
+              </div>
+              <h3><a href="#">DKC62-13 Brand (GENVT2P) <span>&gt;&gt;</span></a></h3>
+              <div class="monAcInner">
+                <h6>1 = Excellent, 9 = Poor</h6>
+                <div class="monInBox">
+                  <ul>
+                    <li>Emergence <span>3</span></li>
+                    <li>Root Strength <span>4</span></li>
+                    <li>Stalk Strength <span>3</span></li>
+                    <li>Drought Tolerance <span>3</span></li>
+                    <li>Drydown <span>4</span></li>
+                    <li>Yield <span>179.02 Bu/A</span></li>
+                  </ul>
+                  <h6>*Current 2011 yield data</h6>
+                </div>
+              </div>
+              <h3><a href="#">DKC621-97 Brand (BENVT2P) <span>&gt;&gt;</span></a></h3>
+              <div class="monAcInner">
+                <h6>1 = Excellent, 9 = Poor</h6>
+                <div class="monInBox">
+                  <ul>
+                    <li>Emergence <span>3</span></li>
+                    <li>Root Strength <span>4</span></li>
+                    <li>Stalk Strength <span>3</span></li>
+                    <li>Drought Tolerance <span>3</span></li>
+                    <li>Drydown <span>4</span></li>
+                    <li>Yield <span>179.02 Bu/A</span></li>
+                  </ul>
+                  <h6>*Current 2011 yield data</h6>
+                </div>
+              </div>
+              <div class="monSearchBox"> <!--Accordian Search Box-->
+                <form action="">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td class="left">
+                          <label>Search by Product</label>
+                        </td>
+                        <td class="middle">
+                          <input type="text"  value="" size="" maxlength="99" class="error" />
+                          <p style="display:none;">*Error Message Here</p> <!--Error message set to display:none at the moment-->
+                        </td>
+                        <td class="right">
+                          <span>&gt;&gt;</span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="monAcBox">
+            <h1><a href="#">Planting Rate Calculator</a></h1>
+            <div class="monAcCon">
+              <div class="monBox"> <!--Normal Padded Box for content in LEVEL 1 Accordian-->
+                <form action="" method="" name="" class="calculator" id="" title=""><!--PLANTING RATE CALCULATOR START-->
+                    <div class="formRow">
+                        <label>Deltapine Product:</label>
+                        <select name=""  class="select" id="" style="" title="">
+                            <option selected="selected" disabled="disabled">Please Select</option>
+                            <option value="2">Product One</option>
+                            <option value="3">Product Two</option>
+                        </select>
+                    </div>
+                    <div class="formRow">
+                        <label>Seeds / Row Foot:</label>
+                        <input name="" type="text" class="textField" id="" title="" value="" />
+                    </div>
+                    <div class="formRow">
+                        <label>Row Spacing (inches):</label>
+                        <input name="" type="text" class="textField" id="" title="" value="" />
+                    </div>
+                    <div class="formRow">
+                        <label>Acres:</label>
+                        <input name="" type="text" class="textField" id="" title="" value="" />
+                    </div>
+                    
+                            <div style="clear:both;"></div>
+                    <div class="calSub">
+                      <input name="calculate" type="submit" class="calculate" id="calculate" title="Calculate" value="Calculate" />
+                      <div style="clear:both;"></div>
+                    </div>
+                </form><!--PLANTING RATE CALCULATOR END-->
+              </div>
+              <div class="calResults"><!--PLANTING RATE CALCULATOR RESULTS START-->
+                  <div class="calResultHead">
+                    <h4>Results For <span>DP 121 B2RF</span>:</h4>
+                  </div>
+                  <div class="box">
+                    <div class="formRow">
+                      <label>Bags to Plant:</label>
+                      <input name="" type="text" class="textField" id="resPlantBags" title="" value="1568.16" />
+                    </div>
+                    <div class="formRow">
+                      <label>Boll Box / Bags to Plant:</label>
+                      <input name="" type="text" class="textField" id="resPlantBoll" title="" value="41 Boll Boxes + 11 Bags" />
+                    </div>
+                    <div class="formRow">
+                      <label>Acres to Plant per Bag:</label>
+                      <input name="" type="text" class="textField" id="resPlantAcres" title="" value="FM 1740B2RF" />
+                    </div>
+                    <div style="clear:both;"></div>
+                  </div>
+                  <div class="calSub">
+                    <input name="" type="submit" class="restart" id="" title="" value="Restart" />
+                    <div style="clear:both;"></div>
+                  </div>
+              </div><!--PLANTING RATE CALCULATOR RESULTS END--> 
+            </div>
+          </div>
+          <div class="monAcBox">
+            <h1><a href="#">Yield Calculator</a></h1>
+            <div class="monAcCon">
+              <div class="monBox"> <!--Normal Padded Box for content in LEVEL 1 Accordian-->
+                <form action="" method="get" name="yieldCalculator" class="calculator" id="yield-calculator" title="yield-calculator" data-ajax="false"><!--YIELD CALCULATOR START-->
+                    <div class="formRow"  style="display:none;">
+                        <label>Farm Name</label>
+                        <input name="farmName" type="text" class="textField" id="farmName" title="Farm Name" value="" />
+                    </div>
+                    <div class="formRow">
+                        <label>Total Acres</label>
+                        <input name="totalAcres" type="text" class="textField" id="totalAcres" title="Total Acres" value="" />
+                    </div>
+                    <div class="formRow">
+                        <label>Zip <span class="required">*</span></label>
+                        <input name="zip" type="text" class="textField" id="zip" title="Zip Code" value="" />
+                        <div style="clear:both;"></div>
+                        <p style="" id="progress" class="progress smallTxt"/><img id="progress_image" style="padding-left:5px;padding-top:5px;" src="/work/deltapine_mobile/images/ajax-loader.gif" alt=""> Uploading in progress…</p>
+                    </div>
+                    
+                    <div class="formRow">
+                        <label>Irrigated / Dryland <span class="required">*</span></label>
+                        <select name="irrigatedDryland"  class="select" id="irrigatedDryland" style="irrigatedDryland" title="Irrigated Dryland">
+                            <option selected="selected" disabled="disabled">Please Select</option>
+                            <option value="2">Irrigated</option>
+                            <option value="3">Dryland</option>
+                        </select>
+                    </div>
+                            <div class="formRow">
+                                <label>Competitor Variety<sup>1</sup> <span class="required">*</span></label>
+                                <select name="competitorVariety" class="select" id="competitorVariety" style="competitorVariety" title="Competitor Variety">
+                                    <option selected="selected" disabled="disabled">Please Select</option>
+        
+                                </select>
+                                <div style="clear:both;"></div>
+                                <p style="" id="competitor_progress" class="progress smallTxt"/><img id="progress_image" style="padding-left:5px;padding-top:5px;" src="/work/deltapine_mobile/images/ajax-loader.gif" alt=""> Uploading in progress…</p>
+                            </div>
+                            <div class="formRow" style="display:none;">
+                                <label>Estimated Yield<sup>2</sup> <span>*</span></label>
+                                <input name="competitorEstimatedYield" type="text" class="textField" id="competitorEstimatedYield" title="Estimated Yield" value="" />
+                                <span class="label2">lbs / acre</span>
+                            </div>
+                            <div class="formRow">
+                                <label>Deltapine Variety<sup>1</sup> <span class="required">*</span></label>
+                                <select name="deltapineVariety" class="select" id="deltapineVariety" style="deltapineVariety" title="Deltapine Variety1">
+                                    <option selected="selected" disabled="disabled">Please Select</option>
+                                  
+                                </select>
+                                <div style="clear:both;"></div>
+                                <p style="" id="deltapine_progress" class="progress smallTxt"/><img id="progress_image" style="padding-left:5px;padding-top:5px;" src="/work/deltapine_mobile/images/ajax-loader.gif" alt=""> Uploading in progress…</p>
+                            </div>
+                            <div class="formRow" style="display:none;">
+                                <label>Estimated Yield<sup>2</sup></label>
+                                <input name="deltapineEstimatedYield" type="text" class="textField" id="deltapineEstimatedYield" title="Estimated Yield" value="" />
+                                <span class="label2">lbs / acre</span>
+                            </div>
+                            <div style="clear:both;"></div>
+                    <p class="smallTxt"><i>Estimated yield could change for each variety with each individual selection based on the head-to-head nature of trials.</i></p>
+                    <!-- calculation results -->
+             		<div id="results"></div>
+                    <div class="calSub">
+                      <input name="calculate" type="submit" class="calculate" id="calculate" title="Calculate" value="Calculate" />
+                      <div style="clear:both;"></div>
+                    </div>
+                    <p class="smallTxt reqTxt"><span class="required">*</span><em>Indicates required fields.</em></p>
+                  </form><!--YIELD CALCULATOR END-->
+          </div>
+          <div class="calResults"><!--YIELD CALCULATOR RESULTS START-->
+              <div class="resultsHead">
+                <div class="formRow">
+                  <label>Zip</label>
+                  <input name="" type="text" class="textField" id="resYieldZip" title="" value="50301" />
+                </div>
+                <div class="formRow">
+                  <label>Field Type:</label>
+                  <input name="" type="text" class="textField" id="resYieldFieldType" title="" value="Dryland" />
+                </div>
+                <div class="formRow">
+                  <label>Acres:</label>
+                  <input name="" type="text" class="textField" id="resYieldAcres" title="" value="500" />
+                </div>
+                <div style="clear:both;"></div>
+              </div>
+              <div class="box">
+                <div class="formRow">
+                  <label>Deltapine Product:</label>
+                  <input name="" type="text" class="textField" id="resYieldDeltProd" title="" value="DP 1028 B2RF" />
+                </div>
+                <div class="formRow">
+                  <label>Estimated Yield<sup>2</sup>:</label>
+                  <input name="" type="text" class="textField" id="resYieldEstYield" title="" value="1018 lbs /acres" />
+                </div>
+                <div style="clear:both;"></div>
+              </div>
+              <div class="box">
+                <div class="formRow">
+                  <label>Comparison Product:</label>
+                  <input name="" type="text" class="textField" id="resYieldCompProd" title="" value="FM 1740B2RF" />
+                </div>
+                <div class="formRow">
+                  <label>Estimated Yield<sup>2</sup>:</label>
+                  <input name="" type="text" class="textField" id="resYieldEstYield2" title="" value="958 lbs / acres" />
+                </div>
+                <div style="clear:both;"></div>
+              </div>
+              <div class="box">
+                <div class="formRow">
+                  <h4>The Deltapine Advantage:</h4>
+                  <div style="clear:both;"></div>
+                  <label>Product Advantage:</label>
+                  <input name="" type="text" class="textField" id="resYieldProdAdv" title="" value="60 lbs /acre" />
+                </div>
+                <div class="formRow">
+                  <label>Crop Value Advantage<sup>3</sup>:</label>
+                  <input name="" type="text" class="textField" id="resYieldCropAdv" title="" value="$43 /acre" />
+                </div>
+                <div class="formRow">
+                  <label>Potential Farm Value<sup>3</sup>:</label>
+                  <input name="" type="text" class="textField" id="resYieldFarmVal" title="" value="$281,000.00" />
+                </div>
+                <div style="clear:both;"></div>
+              </div>
+              <div class="calSub">
+                <input name="" type="submit" class="restart" id="" title="" value="Restart" />
+                <div style="clear:both;"></div>
+              </div>
+            </div><!--YIELD CALCULATOR RESULTS END-->
+              <div class="legal">
+                <ol>
+                  <li>Varieties available for selection are chosen based on the zip code and field type you entered.</li>
+                  <li>Data includes average yields for the varieties you selected from field trials that were either Monsanto Field Trials or University OVT’s in 2010 within the region containing the zip code you entered.</li>
+                  <li>Calculated using the standard base of 52 cents per pound and the 2010 loan chart for premiums and discounts (assuming a 31 color grade and 3 leaf grade).</li>
+                </ol>
+                <p class="smallTxt"><b>NO WARRANTY OF PERFORMANCE OR PROFITABILITY OF ANY TYPE IS MADE</b></br><b>Individual results may vary</b>, and performance may vary from location to location and from year to year. This result may not be an indicator of results you may obtain as local growing, soil and weather conditions may vary.</p>
+              </div>
+            </div>
+          </div>
+          <div class="monAcBox">
+            <h1><a href="#">Growing Degree Day</a></h1>
+            <div class="monAcCon">
+              <div class="monBox">
+                <p>Esimated 2011 Growing Degree Days since May 1st 2012 is:</p>
+                <h5><span>4296.7 <span>GDD</span></span></h5>
+                <h5><span>+483.0 <span>Variance</span></span></h5>
+                <p>for season vs. 10 yr avg<br />(Calc = Base 50 for grain)</p>
+              </div>
+            </div>
+          </div>
+          <div class="monAcBox">
+            <h1><a href="#">Weed Management Tool</a></h1>
+            <div class="monAcCon">
+              <div class="monBox"> <!--Normal Padded Box for content in LEVEL 1 Accordian-->
+                <form action="" method="" name="" class="calculator" id="" title=""><!--WEED MANAGEMENT CALCULATOR START-->
+                <div class="formRow">
+                    <label>ZIP Code:</label>
+                    <input name="" type="text" class="textField" id="" title="" value="" />
+                </div>
+                <div class="formRow">
+                    <label>Cotton Acres:</label>
+                    <input name="" type="text" class="textField" id="" title="" value="" />
+                </div>
+                <div class="formRow">
+                    <label style="margin-top:5px;">Soybean Acres:</br><span style="font-size:12px;font-weight:normal;font-style:italic;color:#333333;">*optional</span></label>
+                    <input name="" type="text" class="textField" id="" title="" value="" />
+                </div>
+                <div class="formRow">
+                    <label>Tillage:</label>
+                    <select name=""  class="select" id="" style="" title="">
+                        <option selected="selected" disabled="disabled">Please Select</option>
+                        <option value="2">Tillage One</option>
+                        <option value="3">Tillage Two</option>
+                    </select>
+                </div>
+                <div style="clear:both;"></div>
+                <div class="calSub">
+                  <input name="calculate" type="submit" class="calculate" id="calculate" title="Calculate" value="Submit" />
+                  <div style="clear:both;"></div>
+                </div>
+              </form><!--WEED MANAGEMENT CALCULATOR END-->
+              </div>
+              <div class="bottomLogo">
+                <img src="/work/deltapine_mobile/images/logos/weed_management_mock.png" />
+              </div>
+              <div class="calResults"><!--WEED MANAGEMENT CALCULATOR RESULTS START-->
+              <div class="resultsHead">
+                <div class="formRow">
+                  <label>Zip</label>
+                  <input name="" type="text" class="textField" id="resWeedZip" title="" value="50301" />
+                </div>
+                <div class="formRow">
+                  <label>Cotton Acres:</label>
+                  <input name="" type="text" class="textField" id="resWeedCotAcre" title="" value="500" />
+                </div>
+                <div class="formRow">
+                  <label>Soybean Acres:</label>
+                  <input name="" type="text" class="textField" id="resWeedSoyAcre" title="" value="XXX" />
+                </div>
+                <div class="formRow">
+                  <label>Tillage:</label>
+                  <input name="" type="text" class="textField" id="resWeedTill" title="" value="XXX" />
+                </div>
+                <div style="clear:both;"></div>
+              </div>
+              <div class="calResultHead">
+                <h4>Results For <span>DP 121 B2RF</span>:</h4>
+              </div>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Product</th>
+                    <th>Comments</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="grey">
+                    <td>Roundup PowerMAX&reg; + dicamba</td>
+                    <td>Gebruary application</td>
+                  </tr>
+                  <tr>
+                    <td>Roundup PowerMAX&reg; + Reflex&reg;</td>
+                    <td>Start Clean.</td>
+                  </tr>
+                  <tr>
+                    <td>Cotoran&reg; 4L or Cotton Pro&reg; + Gramoxone&reg; Brands</td>
+                    <td>Apply prior to planting for better control of emerged Palmer amaranth.</td>
+                  </tr>
+                  <tr class="grey">
+                    <td>Cotoran Pro&reg; + MSMA + Warrant&reg; Herbicide</td>
+                    <td>POST hooded sprayer, six-to-eight-leaf cotton if Palmer amaranth has not emerged</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="calSub">
+                <input name="" type="submit" class="restart" id="" title="" value="Restart" />
+                <div style="clear:both;"></div>
+              </div>
+            </div><!--WEED MANAGEMENT CALCULATOR END-->
+            </div>
+          </div>
+        </div>       
+      </div>
+    </div>
+    </div>
+    <footer data-role="footer">
+      <ul class="monFootMenu">
+        <li><a href="http://www.deltapine.com/Pages/home.aspx">Full Site</a></li>
+        <li><a href="mailto:info@email.deltapine.com">Contact Us</a></li>
+        <li><a href="http://www.monsanto.com/legal-notice/Pages/default.aspx" target="_blank">Legal Notice</a></li>
+        <li class="last"><a href="http://www.asgrowanddekalb.com/mobile/Pages/Home.aspx" target="_blank">AsgrowandDekalb.com</a></li>
+      </ul>
+      <div style="clear:both;"></div>
+      <ul class="monFacebook">
+        <li><a href="https://www.facebook.com/Deltapine" target="_blank">Find Deltapine&reg; on Facebook</a></li>
+      </ul> 
+    </footer> 
+  </section>
+  <!-- TOOLS END -->
+  <!-- RESOURCES START -->
+  <section id="page3" data-role="page">
+    <header data-role="header"><div><img src="/work/deltapine_mobile/images/logos/default.png" /></div></header>
+    
+    <div class="monWrapper">
+    <nav data-role="navbar">
+      <ul>
+        <li><a href="#page2">Tools</a></li>
+        <li><a href="#" class="monCurrent">Resources</a></li>
+      </ul>
+    </nav>
+    
+    <div data-role="content" class="content">
+      <div class="monContent">
+        <div class="monWeather">
+          <table>
+            <tbody>
+              <tr>
+                <td class="left">Des Moines, <span>Iowa</span><br/><span>High:</span> 60 / <span>Low:</span> 42</td>
+                <td class="middle">52<span>&deg;</span></td>
+                <td class="right"><a href="#page1">Change<br/>Zip Code</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="monAccordian">
+          <div class="monAcBox">
+            <h1><a href="#">Commodities</a></h1>
+            <div class="monAcCon">
+              <table class="commTable"><!--COMMODITIES TABLE START-->
+                <tbody>
+                  <tr>
+                    <td colspan="4"><h3>Cotton</h3></td>
+                  </tr>
+                  <tr>
+                    <td>Mar12</td>
+                    <td>658.5</td>
+                    <td>0</td>
+                    <td><span class="down"></span></td>
+                  </tr>
+                  <tr class="bkg">
+                    <td>Mar12</td>
+                    <td>658.5</td>
+                    <td>0</td>
+                    <td><span class="up"></span></td>
+                  </tr>
+                  <tr>
+                    <td>Mar12</td>
+                    <td>658.5</td>
+                    <td>0</td>
+                    <td><div>N/a</div></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><h3>Soybeans</h3></td>
+                  </tr>
+                  <tr>
+                    <td>Mar12</td>
+                    <td>658.5</td>
+                    <td>0</td>
+                    <td><div>N/a</div></td>
+                  </tr>
+                  <tr class="bkg">
+                    <td>Mar12</td>
+                    <td>658.5</td>
+                    <td>0</td>
+                    <td><span class="up"></span></td>
+                  </tr>
+                  <tr>
+                    <td>Mar12</td>
+                    <td>658.5</td>
+                    <td>0</td>
+                    <td><span class="down"></span></td>
+                  </tr>
+                  <tr class="bkg">
+                    <td>Mar12</td>
+                    <td>658.5</td>
+                    <td>0</td>
+                    <td><span class="up"></span></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><h3>Corn</h3></td>
+                  </tr>
+                  <tr>
+                    <td>Mar12</td>
+                    <td>658.5</td>
+                    <td>0</td>
+                    <td><div>N/a</div></td>
+                  </tr>
+                  <tr class="bkg">
+                    <td>Mar12</td>
+                    <td>658.5</td>
+                    <td>0</td>
+                    <td><span class="up"></span></td>
+                  </tr>
+                  <tr>
+                    <td>Mar12</td>
+                    <td>658.5</td>
+                    <td>0</td>
+                    <td><span class="down"></span></td>
+                  </tr>
+                </tbody>
+              </table><!--COMMODITIES TABLE END-->
+            </div>
+          </div>
+          <div class="monAcBox">
+            <h1><a href="#">Rep &amp; Dealer Locator</a></h1>
+            <div class="monAcCon">
+              <h2>Your Nearest Sales Rep</h2>
+              <div class="monBox">
+                <p><span class="monBig">Megan McQuoid</span><br/><span class="monBig">Territory Sales Manager</span><br/>Saint Louis, MO 63126</p>
+                <p>Business Phone: <span>314-540-0088</span><br/>Cell Phone: <span>314-540-0088</span></p>
+                <p><a href="mailto:megan.l.mcquoid@monsanto.com">megan.l.mcquoid@monsanto.com</a></p>
+              </div>
+              <h2>Your Nearest Dealer Listings</h2>
+			  <div class="monBox">
+                <p class="address"><span>Adams Fertilizer Inc</span></br>202 State High</br>Senath, MO 63876</br><span class="number">Phone: <span>(573) 738-2814</span></span></p>
+                <p class="address"><span>Adams Fertilizer Inc</span></br>202 State High</br>Senath, MO 63876</br><span class="number">Phone: <span>(573) 738-2814</span></span></p>
+                <p class="address"><span>Adams Fertilizer Inc</span></br>202 State High</br>Senath, MO 63876</br><span class="number">Phone: <span>(573) 738-2814</span></span></p>
+              </div>
+            </div>
+          </div>
+          <div class="monAcBox">
+            <h1><a href="#">Sign Up For Text Alerts</a></h1>
+            <div class="monAcCon">
+              <div class="monBox">
+                <p class="smallTxt">Sign up for text updates on seasonal yield results for your county, agronomic alerts, commodity/marketing updates and other Deltapine information. A verification message will be sent to your cell phone.</p>
+              <form action="" class="monTxtForm"> <!--TEXT ALERTS START-->
+                <div>
+                  <label>First Name</label>
+                  <input type="text"  value="" size="" maxlength="99"/>
+                </div>
+                <div>
+                  <label>Last Name</label>
+                  <input type="text"  value="" size="" maxlength="99"/>
+                </div>
+                <div>
+                  <label>Email</label>
+                  <input type="text"  value="" size="" maxlength="99"/>
+                </div>
+                <div>
+                <div class="zipNum">
+                  <div class="zipCode">
+                  <label>Zip Code</label>
+                  <input type="text"  value="" size="" maxlength="99"/>
+                  </div>
+                  
+                  <div class="pNumber">
+                  <label>Mobile Number (5551239876)</label>
+                  <input type="text"  value="" size="" maxlength="99"/>
+                  </div>
+                  <div style="clear:both;"></div>
+                </div>     
+                </div>
+                <div>
+                  <input type="checkbox" />
+                  <p>I consent to the transfer of my personal information. Text messaging service powered by and user consents to receive messages from Commodity Update LLC. A verification message will be sent to your phone. Standard text messaging charges from your cell phone carrier may apply.</p>
+                </div>
+                <div style="clear:both;"></div>
+                <div class="monTxtSub">
+                  <input type="submit" value="Submit" />
+                </div>
+                <div style="clear:both;"></div>
+              </form><!--TEXT ALERTS END-->
+              </div>
+            </div>
+          </div>
+        </div>       
+      </div>
+    </div>
+    </div>
+    <p class="monBookmark"><a href="#page5">Add Site to your Home Screen</a></p>
+    <footer data-role="footer">
+      <ul class="monFootMenu">
+        <li><a href="http://www.deltapine.com/Pages/home.aspx">Full Site</a></li>
+        <li><a href="mailto:info@email.deltapine.com">Contact Us</a></li>
+        <li><a href="http://www.monsanto.com/legal-notice/Pages/default.aspx" target="_blank">Legal Notice</a></li>
+        <li class="last"><a href="http://www.asgrowanddekalb.com/mobile/Pages/Home.aspx" target="_blank">AsgrowandDekalb.com</a></li>
+      </ul>
+      <div style="clear:both;"></div>
+      <ul class="monFacebook">
+        <li><a href="https://www.facebook.com/Deltapine" target="_blank">Find Deltapine&reg; on Facebook</a></li>
+      </ul> 
+    </footer>  
+  </section>
+  <!-- RESOURCES END -->
+  <!-- BOOKMARK START -->
+  <section id="page5" data-role="page">
+    <div data-role="content" class="content">
+      <p class="monBookmark"><a href="#page3">Add Site to your Home Screen <span>x</span></a></p>
+      <div class="monBookBox">
+        <p><b>Follow these instructions for a smart phone:</b></p>
+        <ol>
+          <li>Hit "Menu" on your phone and then select the "Add Bookmark" button.</li>
+          <li>We have pre-populated the options menu with our icon and name, press "Done".</li>
+          <li>In the thumbnail list press and hold the Deltapine Mobile thumbnail for one second.</li>
+          <li>This will open an options menu. Choose "Add shortcut to Home".</li>
+          <li>Hit your devices "Home" button, and navigate to see the Deltapine icon. Hit this at any time to open the site.</li>
+	    </ol>
+      </div>
+    </div>
+  </section>
+  <!-- BOOKMARK END -->
+</body>
+=======
+<!DOCTYPE html>
+<html>
+<head>
+<title>DELTAPINE</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> <!--Set the scale of browser window for consistent font size-->
+<!--STYLESHEETS START-->
+<link rel="stylesheet" href="stylesheets/jquery.mobile.structure-1.0.1.css" /> <!--Jquery Mobile styles-->
+<link rel="stylesheet" href="stylesheets/index.css" /> <!--DELTAPINE styles-->
+<!--STYLESHEETS END-->
+<!--JAVASCRIPT START-->
+<script src="js/jquery-1.7.1.min.js"></script> <!--Jquery Library-->
+<!-- <script src="js/clearform.js"></script> --><!-- clear form plugin -->
+<script type="text/javascript">
+$(document).bind("mobileinit", function()
+{
+  $.extend(  $.mobile , {
+      ajaxFormsEnabled: false
+  });
+});
+</script>
+
+<script src="js/jquery.mobile-1.0.1.min.js"></script> <!--Jquery Mobile Library-->
+<script src="js/scripts.js"></script> <!--DELTAPINE Scripts-->
+<script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script>
+<!--JAVASCRIPT END-->
+</head>
+<body>
+  <!-- HOME START -->
+  <section id="page1" data-role="page"> <!--Page Declaration, JQ Mobile creates a page with data-role="page". JQ mobile uses the same data-role attribute to create the rest of its elements-->
+    <header data-role="header"><div><img src="/work/deltapine_mobile/images/logos/default.png" /></div></header> <!--Top Header with logos, header created using data-role="header"-->
+    <div data-role="content" class="content"> <!--Page Content, created using data-role="content"-->
+      <form action=""><!--HOME ZIP CODE FINDER START-->
+        <div class="zipBkg">
+          <table>
+            <tbody>
+              <tr>
+                <td>
+                  <label>Your ZIP Code</label>
+                </td>
+                <td class="monHomeZip">
+                  <input type="text"  value="" size="" maxlength="5" class="error"  />
+                </td>
+                <td>
+                  <a href="#page2"><input value="&#187;" type="submit" /></a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="error" style="display:none;">Please enter valid ZIP code.</p>
+      </form><!--HOME ZIP CODE FINDER END-->
+    </div>
+    <footer data-role="footer"> <!--Page Footer, created using data-role="footer"-->
+      <ul class="monFootMenu">
+        <li><a href="http://www.deltapine.com/Pages/home.aspx">Full Site</a></li>
+        <li><a href="mailto:info@email.deltapine.com">Contact Us</a></li>
+        <li><a class="last" href="http://www.monsanto.com/legal-notice/Pages/default.aspx" target="_blank">Legal Notice</a></li>
+        <li class="last"><a href="http://www.deltapine.com" target="_blank">Deltapine.com</a></li>
+      </ul>
+      <div style="clear:both;"></div>
+      <ul class="monFacebook">
+        <li><a href="https://www.facebook.com/Deltapine" target="_blank">Find Deltapine&reg; on Facebook</a></li>
+      </ul> 
+    </footer>
+  </section>
+  <!-- HOME END -->
+  <!-- TOOLS START -->
+  <section id="page2" data-role="page">
+    <header data-role="header"><div><img src="/work/deltapine_mobile/images/logos/default.png" /></div></header>
+    <div class="monWrapper">
+    <nav data-role="navbar"> <!--JQ Mobile navigation bar created with the attribute data-role="navbar"-->
+      <ul>
+        <li><a href="#" class="monCurrent">Tools</a></li>
+        <li><a href="#page3">Resources</a></li>
+      </ul>
+    </nav>
+    <div data-role="content" class="content">
+      <div class="monContent">
+        <div class="monWeather"> <!--Local Weather-->
+          <table>
+            <tbody>
+              <tr>
+                <td class="left">Des Moines, <span>Iowa</span><br/><span>High:</span> 60 / <span>Low:</span> 42</td>
+                <td class="middle">52<span>&deg;</span></td>
+                <td class="right"><a href="#page1">Change<br/>Zip Code</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="monAccordian"> <!--Accordian Wrapper-->
+          <div class="monAcBox"> <!--Main accordian block-->  
+            <h1><a href="#">Product and Yield Finder</a></h1> <!--LEVEL 1 accordian link, opens LEVEL 1 content-->
+            <div class="monAcCon"> <!--LEVEL 1 content-->
+              <h3><a href="#">DKC61-49 Brand (GENVT2P) <span>&gt;&gt;</span></a></h3> <!--LEVEL 2 accordian link, opens LEVEL 2 content-->
+              <div class="monAcInner"> <!--LEVEL 2 conetent-->
+                <h6>1 = Excellent, 9 = Poor</h6>
+                <div class="monInBox"> <!--Double padding block-->
+                  <ul> <!--List can also be replace with a table styles are commented out in stylesheet-->
+                    <li>Emergence <span>3</span></li>
+                    <li>Root Strength <span>4</span></li>
+                    <li>Stalk Strength <span>3</span></li>
+                    <li>Drought Tolerance <span>3</span></li>
+                    <li>Drydown <span>4</span></li>
+                    <li>Yield <span>179.02 Bu/A</span></li>
+                  </ul>
+                  <h6>*Current 2011 yield data</h6>
+                </div>
+              </div>
+              <h3><a href="#">DKC61-71 Brand (GENVT2P) <span>&gt;&gt;</span></a></h3>
+              <div class="monAcInner">
+                <h6>1 = Excellent, 9 = Poor</h6>
+                <div class="monInBox">
+                  <ul>
+                    <li>Emergence <span>3</span></li>
+                    <li>Root Strength <span>4</span></li>
+                    <li>Stalk Strength <span>3</span></li>
+                    <li>Drought Tolerance <span>3</span></li>
+                    <li>Drydown <span>4</span></li>
+                    <li>Yield <span>179.02 Bu/A</span></li>
+                  </ul>
+                  <h6>*Current 2011 yield data</h6>
+                </div>
+              </div>
+              <h3><a href="#">DKC62-13 Brand (GENVT2P) <span>&gt;&gt;</span></a></h3>
+              <div class="monAcInner">
+                <h6>1 = Excellent, 9 = Poor</h6>
+                <div class="monInBox">
+                  <ul>
+                    <li>Emergence <span>3</span></li>
+                    <li>Root Strength <span>4</span></li>
+                    <li>Stalk Strength <span>3</span></li>
+                    <li>Drought Tolerance <span>3</span></li>
+                    <li>Drydown <span>4</span></li>
+                    <li>Yield <span>179.02 Bu/A</span></li>
+                  </ul>
+                  <h6>*Current 2011 yield data</h6>
+                </div>
+              </div>
+              <h3><a href="#">DKC621-97 Brand (BENVT2P) <span>&gt;&gt;</span></a></h3>
+              <div class="monAcInner">
+                <h6>1 = Excellent, 9 = Poor</h6>
+                <div class="monInBox">
+                  <ul>
+                    <li>Emergence <span>3</span></li>
+                    <li>Root Strength <span>4</span></li>
+                    <li>Stalk Strength <span>3</span></li>
+                    <li>Drought Tolerance <span>3</span></li>
+                    <li>Drydown <span>4</span></li>
+                    <li>Yield <span>179.02 Bu/A</span></li>
+                  </ul>
+                  <h6>*Current 2011 yield data</h6>
+                </div>
+              </div>
+              <div class="monSearchBox"> <!--Accordian Search Box-->
+                <form action="">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td class="left">
+                          <label>Search by Product</label>
+                        </td>
+                        <td class="middle">
+                          <input type="text"  value="" size="" maxlength="99" class="error" />
+                          <p style="display:none;">*Error Message Here</p> <!--Error message set to display:none at the moment-->
+                        </td>
+                        <td class="right">
+                          <span>&gt;&gt;</span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="monAcBox">
+            <h1><a href="#">Planting Rate Calculator</a></h1>
+            <div class="monAcCon">
+              <div class="monBox"> <!--Normal Padded Box for content in LEVEL 1 Accordian-->
+                <form action="" method="" name="" class="calculator" id="" title=""><!--PLANTING RATE CALCULATOR START-->
+                    <div class="formRow">
+                        <label>Deltapine Product:</label>
+                        <select name=""  class="select" id="" style="" title="">
+                            <option selected="selected" disabled="disabled">Please Select</option>
+                            <option value="2">Product One</option>
+                            <option value="3">Product Two</option>
+                        </select>
+                    </div>
+                    <div class="formRow">
+                        <label>Seeds / Row Foot:</label>
+                        <input name="" type="text" class="textField" id="" title="" value="" />
+                    </div>
+                    <div class="formRow">
+                        <label>Row Spacing (inches):</label>
+                        <input name="" type="text" class="textField" id="" title="" value="" />
+                    </div>
+                    <div class="formRow">
+                        <label>Acres:</label>
+                        <input name="" type="text" class="textField" id="" title="" value="" />
+                    </div>
+                    
+                            <div style="clear:both;"></div>
+                    <div class="calSub">
+                      <input name="calculate" type="submit" class="calculate" id="calculate" title="Calculate" value="Calculate" />
+                      <div style="clear:both;"></div>
+                    </div>
+                </form><!--PLANTING RATE CALCULATOR END-->
+              </div>
+              <div class="calResults"><!--PLANTING RATE CALCULATOR RESULTS START-->
+                  <div class="calResultHead">
+                    <h4>Results For <span>DP 121 B2RF</span>:</h4>
+                  </div>
+                  <div class="box">
+                    <div class="formRow">
+                      <label>Bags to Plant:</label>
+                      <input name="" type="text" class="textField" id="resPlantBags" title="" value="1568.16" />
+                    </div>
+                    <div class="formRow">
+                      <label>Boll Box / Bags to Plant:</label>
+                      <input name="" type="text" class="textField" id="resPlantBoll" title="" value="41 Boll Boxes + 11 Bags" />
+                    </div>
+                    <div class="formRow">
+                      <label>Acres to Plant per Bag:</label>
+                      <input name="" type="text" class="textField" id="resPlantAcres" title="" value="FM 1740B2RF" />
+                    </div>
+                    <div style="clear:both;"></div>
+                  </div>
+                  <div class="calSub">
+                    <input name="" type="submit" class="restart" id="" title="" value="Restart" />
+                    <div style="clear:both;"></div>
+                  </div>
+              </div><!--PLANTING RATE CALCULATOR RESULTS END--> 
+            </div>
+          </div>
+          <div class="monAcBox">
+            <h1><a href="#">Yield Calculator</a></h1>
+            <div class="monAcCon">
+              <div class="monBox"> <!--Normal Padded Box for content in LEVEL 1 Accordian-->
+                <form action="" method="get" name="yieldCalculator" class="calculator" id="yield-calculator" title="yield-calculator" data-ajax="false"><!--YIELD CALCULATOR START-->
+                    <div class="formRow"  style="display:none;">
+                        <label>Farm Name</label>
+                        <input name="farmName" type="text" class="textField" id="farmName" title="Farm Name" value="" />
+                    </div>
+                    <div class="formRow">
+                        <label>Total Acres</label>
+                        <input name="totalAcres" type="text" class="textField" id="totalAcres" title="Total Acres" value="" />
+                    </div>
+                    <div class="formRow">
+                        <label>Zip <span class="required">*</span></label>
+                        <input name="zip" type="text" class="textField" id="zip" title="Zip Code" value="" />
+                        <div style="clear:both;"></div>
+                        <p style="" id="progress" class="progress smallTxt"/><img id="progress_image" style="padding-left:5px;padding-top:5px;" src="/work/deltapine_mobile/images/ajax-loader.gif" alt=""> Uploading in progress…</p>
+                    </div>
+                    
+                    <div class="formRow">
+                        <label>Irrigated / Dryland <span class="required">*</span></label>
+                        <select name="irrigatedDryland"  class="select" id="irrigatedDryland" style="irrigatedDryland" title="Irrigated Dryland">
+                            <option selected="selected" disabled="disabled">Please Select</option>
+							<!-- 2 is T, or true, or irrigated -->
+                            <option value="2">Irrigated</option>
+                            <option value="3">Dryland</option>
+                        </select>
+                    </div>
+                            <div class="formRow">
+                                <label>Competitor Variety<sup>1</sup> <span class="required">*</span></label>
+                                <select name="competitorVariety" class="select" id="competitorVariety" style="competitorVariety" title="Competitor Variety">
+                                    <option selected="selected" disabled="disabled">Please Select</option>
+        
+                                </select>
+                                <div style="clear:both;"></div>
+                                <p style="" id="competitor_progress" class="progress smallTxt"/><img id="progress_image" style="padding-left:5px;padding-top:5px;" src="/work/deltapine_mobile/images/ajax-loader.gif" alt=""> Uploading in progress…</p>
+                            </div>
+                            <div class="formRow" style="display:none;">
+                                <label>Estimated Yield<sup>2</sup> <span>*</span></label>
+                                <input name="competitorEstimatedYield" type="text" class="textField" id="competitorEstimatedYield" title="Estimated Yield" value="" />
+                                <span class="label2">lbs / acre</span>
+                            </div>
+                            <div class="formRow">
+                                <label>Deltapine Variety<sup>1</sup> <span class="required">*</span></label>
+                                <select name="deltapineVariety" class="select" id="deltapineVariety" style="deltapineVariety" title="Deltapine Variety1">
+                                    <option selected="selected" disabled="disabled">Please Select</option>
+                                  
+                                </select>
+                                <div style="clear:both;"></div>
+                                <p style="" id="deltapine_progress" class="progress smallTxt"/><img id="progress_image" style="padding-left:5px;padding-top:5px;" src="/work/deltapine_mobile/images/ajax-loader.gif" alt=""> Uploading in progress…</p>
+                            </div>
+                            <div class="formRow" style="display:none;">
+                                <label>Estimated Yield<sup>2</sup></label>
+                                <input name="deltapineEstimatedYield" type="text" class="textField" id="deltapineEstimatedYield" title="Estimated Yield" value="" />
+                                <span class="label2">lbs / acre</span>
+                            </div>
+                            <div style="clear:both;"></div>
+                    <p class="smallTxt"><i>Estimated yield could change for each variety with each individual selection based on the head-to-head nature of trials.</i></p>
+                    <!-- calculation results -->
+             		<div id="results"></div>
+                    <div class="calSub" id="calc">
+                      <input name="calculate" type="submit" class="calculate" id="calculate" title="Calculate" value="Calculate" />
+                      <div style="clear:both;"></div>
+                    </div>
+                    <p class="smallTxt reqTxt"><span class="required">*</span><em>Indicates required fields.</em></p>
+                  </form><!--YIELD CALCULATOR END-->
+          </div>
+          <div class="calResults"><!--YIELD CALCULATOR RESULTS START-->
+              <div class="resultsHead">
+                <div class="formRow">
+                  <label>Zip</label>
+                  <input name="" type="text" class="textField" id="resYieldZip" title="" value="" />
+                </div>
+                <div class="formRow">
+                  <label>Field Type:</label>
+                  <input name="" type="text" class="textField" id="resYieldFieldType" title="" value="" />
+                </div>
+                <div class="formRow">
+                  <label>Acres:</label>
+                  <input name="" type="text" class="textField" id="resYieldAcres" title="" value="" />
+                </div>
+                <div style="clear:both;"></div>
+              </div>
+              <div class="box">
+                <div class="formRow">
+                  <label>Deltapine Product:</label>
+                  <input name="" type="text" class="textField" id="resYieldDeltProd" title="" value="" />
+                </div>
+                <div class="formRow">
+                  <label>Estimated Yield<sup>2</sup>:</label>
+                  <input name="" type="text" class="textField" id="resYieldEstYield" title="" value="" />
+                </div>
+                <div style="clear:both;"></div>
+              </div>
+              <div class="box">
+                <div class="formRow">
+                  <label>Comparison Product:</label>
+                  <input name="" type="text" class="textField" id="resYieldCompProd" title="" value="" />
+                </div>
+                <div class="formRow">
+                  <label>Estimated Yield<sup>2</sup>:</label>
+                  <input name="" type="text" class="textField" id="resYieldEstYield2" title="" value="" />
+                </div>
+                <div style="clear:both;"></div>
+              </div>
+              <div class="box">
+                <div class="formRow">
+                  <h4>The Deltapine Advantage:</h4>
+                  <div style="clear:both;"></div>
+                </div>
+                <div class="formRow">
+                  <label>Yield Advantage<sup>3</sup>:</label>
+                  <input name="" type="text" class="textField" id="resYieldCropAdv" title="" value="" />
+                </div>
+                <div class="formRow">
+                  <label>Potential Farm Value<sup>3</sup>:</label>
+                  <input name="" type="text" class="textField" id="resYieldFarmVal" title="" value="" />
+                </div>
+                <div style="clear:both;"></div>
+              </div>
+             
+ <div class="calSub">
+ 				
+               <input name="restart" type="submit" class="restart" id="restart" title="" value="Restart" />
+                <div style="clear:both;"></div>
+              </div>
+
+            </div><!--YIELD CALCULATOR RESULTS END-->
+              <div class="legal">
+                <ol>
+                  <li>Varieties available for selection are chosen based on the zip code and field type you entered.</li>
+                  <li>Data includes average yields for the varieties you selected from field trials that were either Monsanto Field Trials or University OVT’s in 2010 within the region containing the zip code you entered.</li>
+                  <li>Calculated using the standard base of 52 cents per pound and the 2010 loan chart for premiums and discounts (assuming a 31 color grade and 3 leaf grade).</li>
+                </ol>
+                <p class="smallTxt"><b>NO WARRANTY OF PERFORMANCE OR PROFITABILITY OF ANY TYPE IS MADE</b></br><b>Individual results may vary</b>, and performance may vary from location to location and from year to year. This result may not be an indicator of results you may obtain as local growing, soil and weather conditions may vary.</p>
+              </div>
+            </div>
+          </div>
+          <div class="monAcBox">
+            <h1><a href="#">Growing Degree Day</a></h1>
+            <div class="monAcCon">
+              <div class="monBox">
+                <p>Esimated 2011 Growing Degree Days since May 1st 2012 is:</p>
+                <h5><span>4296.7 <span>GDD</span></span></h5>
+                <h5><span>+483.0 <span>Variance</span></span></h5>
+                <p>for season vs. 10 yr avg<br />(Calc = Base 50 for grain)</p>
+              </div>
+            </div>
+          </div>
+          <div class="monAcBox">
+            <h1><a href="#">Weed Management Tool</a></h1>
+            <div class="monAcCon">
+              <div class="monBox"> <!--Normal Padded Box for content in LEVEL 1 Accordian-->
+                <form action="" method="" name="" class="calculator" id="" title=""><!--WEED MANAGEMENT CALCULATOR START-->
+                <div class="formRow">
+                    <label>ZIP Code:</label>
+                    <input name="" type="text" class="textField" id="" title="" value="" />
+                </div>
+                <div class="formRow">
+                    <label>Cotton Acres:</label>
+                    <input name="" type="text" class="textField" id="" title="" value="" />
+                </div>
+                <div class="formRow">
+                    <label style="margin-top:5px;">Soybean Acres:</br><span style="font-size:12px;font-weight:normal;font-style:italic;color:#333333;">*optional</span></label>
+                    <input name="" type="text" class="textField" id="" title="" value="" />
+                </div>
+                <div class="formRow">
+                    <label>Tillage:</label>
+                    <select name=""  class="select" id="" style="" title="">
+                        <option selected="selected" disabled="disabled">Please Select</option>
+                        <option value="2">Tillage One</option>
+                        <option value="3">Tillage Two</option>
+                    </select>
+                </div>
+                <div style="clear:both;"></div>
+                <div class="calSub">
+                  <input name="calculate" type="submit" class="calculate" id="calculate" title="Calculate" value="Submit" />
+                  <div style="clear:both;"></div>
+                </div>
+              </form><!--WEED MANAGEMENT CALCULATOR END-->
+              </div>
+              <div class="bottomLogo">
+                <img src="/work/deltapine_mobile/images/logos/weed_management_mock.png" />
+              </div>
+              <div class="calResults"><!--WEED MANAGEMENT CALCULATOR RESULTS START-->
+              <div class="resultsHead">
+                <div class="formRow">
+                  <label>Zip</label>
+                  <input name="" type="text" class="textField" id="resWeedZip" title="" value="50301" />
+                </div>
+                <div class="formRow">
+                  <label>Cotton Acres:</label>
+                  <input name="" type="text" class="textField" id="resWeedCotAcre" title="" value="500" />
+                </div>
+                <div class="formRow">
+                  <label>Soybean Acres:</label>
+                  <input name="" type="text" class="textField" id="resWeedSoyAcre" title="" value="XXX" />
+                </div>
+                <div class="formRow">
+                  <label>Tillage:</label>
+                  <input name="" type="text" class="textField" id="resWeedTill" title="" value="XXX" />
+                </div>
+                <div style="clear:both;"></div>
+              </div>
+              <div class="calResultHead">
+                <h4>Results For <span>DP 121 B2RF</span>:</h4>
+              </div>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Product</th>
+                    <th>Comments</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="grey">
+                    <td>Roundup PowerMAX&reg; + dicamba</td>
+                    <td>Gebruary application</td>
+                  </tr>
+                  <tr>
+                    <td>Roundup PowerMAX&reg; + Reflex&reg;</td>
+                    <td>Start Clean.</td>
+                  </tr>
+                  <tr>
+                    <td>Cotoran&reg; 4L or Cotton Pro&reg; + Gramoxone&reg; Brands</td>
+                    <td>Apply prior to planting for better control of emerged Palmer amaranth.</td>
+                  </tr>
+                  <tr class="grey">
+                    <td>Cotoran Pro&reg; + MSMA + Warrant&reg; Herbicide</td>
+                    <td>POST hooded sprayer, six-to-eight-leaf cotton if Palmer amaranth has not emerged</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="calSub">
+                <input name="" type="submit" class="restart" id="" title="" value="Restart" />
+                <div style="clear:both;"></div>
+              </div>
+            </div><!--WEED MANAGEMENT CALCULATOR END-->
+            </div>
+          </div>
+        </div>       
+      </div>
+    </div>
+    </div>
+    <footer data-role="footer">
+      <ul class="monFootMenu">
+        <li><a href="http://www.deltapine.com/Pages/home.aspx">Full Site</a></li>
+        <li><a href="mailto:info@email.deltapine.com">Contact Us</a></li>
+        <li><a href="http://www.monsanto.com/legal-notice/Pages/default.aspx" target="_blank">Legal Notice</a></li>
+         <li class="last"><a href="http://www.deltapine.com" target="_blank">Deltapine.com</a></li>
+      </ul>
+      <div style="clear:both;"></div>
+      <ul class="monFacebook">
+        <li><a href="https://www.facebook.com/Deltapine" target="_blank">Find Deltapine&reg; on Facebook</a></li>
+      </ul> 
+    </footer> 
+  </section>
+  <!-- TOOLS END -->
+  <!-- RESOURCES START -->
+  <section id="page3" data-role="page">
+    <header data-role="header"><div><img src="/work/deltapine_mobile/images/logos/default.png" /></div></header>
+    
+    <div class="monWrapper">
+    <nav data-role="navbar">
+      <ul>
+        <li><a href="#page2">Tools</a></li>
+        <li><a href="#" class="monCurrent">Resources</a></li>
+      </ul>
+    </nav>
+    
+    <div data-role="content" class="content">
+      <div class="monContent">
+        <div class="monWeather">
+          <table>
+            <tbody>
+              <tr>
+                <td class="left">Des Moines, <span>Iowa</span><br/><span>High:</span> 60 / <span>Low:</span> 42</td>
+                <td class="middle">52<span>&deg;</span></td>
+                <td class="right"><a href="#page1">Change<br/>Zip Code</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="monAccordian">
+          <div class="monAcBox">
+            <h1><a href="#">Commodities</a></h1>
+            <div class="monAcCon">
+              <table class="commTable"><!--COMMODITIES TABLE START-->
+                <tbody>
+                  <tr>
+                    <td colspan="4"><h3>Cotton</h3></td>
+                  </tr>
+                  <tr>
+                    <td>Mar12</td>
+                    <td>658.5</td>
+                    <td>0</td>
+                    <td><span class="down"></span></td>
+                  </tr>
+                  <tr class="bkg">
+                    <td>Mar12</td>
+                    <td>658.5</td>
+                    <td>0</td>
+                    <td><span class="up"></span></td>
+                  </tr>
+                  <tr>
+                    <td>Mar12</td>
+                    <td>658.5</td>
+                    <td>0</td>
+                    <td><div>N/a</div></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><h3>Soybeans</h3></td>
+                  </tr>
+                  <tr>
+                    <td>Mar12</td>
+                    <td>658.5</td>
+                    <td>0</td>
+                    <td><div>N/a</div></td>
+                  </tr>
+                  <tr class="bkg">
+                    <td>Mar12</td>
+                    <td>658.5</td>
+                    <td>0</td>
+                    <td><span class="up"></span></td>
+                  </tr>
+                  <tr>
+                    <td>Mar12</td>
+                    <td>658.5</td>
+                    <td>0</td>
+                    <td><span class="down"></span></td>
+                  </tr>
+                  <tr class="bkg">
+                    <td>Mar12</td>
+                    <td>658.5</td>
+                    <td>0</td>
+                    <td><span class="up"></span></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><h3>Corn</h3></td>
+                  </tr>
+                  <tr>
+                    <td>Mar12</td>
+                    <td>658.5</td>
+                    <td>0</td>
+                    <td><div>N/a</div></td>
+                  </tr>
+                  <tr class="bkg">
+                    <td>Mar12</td>
+                    <td>658.5</td>
+                    <td>0</td>
+                    <td><span class="up"></span></td>
+                  </tr>
+                  <tr>
+                    <td>Mar12</td>
+                    <td>658.5</td>
+                    <td>0</td>
+                    <td><span class="down"></span></td>
+                  </tr>
+                </tbody>
+              </table><!--COMMODITIES TABLE END-->
+            </div>
+          </div>
+          <div class="monAcBox">
+            <h1><a href="#">Rep &amp; Dealer Locator</a></h1>
+            <div class="monAcCon">
+              <h2>Your Nearest Sales Rep</h2>
+              <div class="monBox">
+                <p><span class="monBig">Megan McQuoid</span><br/><span class="monBig">Territory Sales Manager</span><br/>Saint Louis, MO 63126</p>
+                <p>Business Phone: <span>314-540-0088</span><br/>Cell Phone: <span>314-540-0088</span></p>
+                <p><a href="mailto:megan.l.mcquoid@monsanto.com">megan.l.mcquoid@monsanto.com</a></p>
+              </div>
+              <h2>Your Nearest Dealer Listings</h2>
+			  <div class="monBox">
+                <p class="address"><span>Adams Fertilizer Inc</span></br>202 State High</br>Senath, MO 63876</br><span class="number">Phone: <span>(573) 738-2814</span></span></p>
+                <p class="address"><span>Adams Fertilizer Inc</span></br>202 State High</br>Senath, MO 63876</br><span class="number">Phone: <span>(573) 738-2814</span></span></p>
+                <p class="address"><span>Adams Fertilizer Inc</span></br>202 State High</br>Senath, MO 63876</br><span class="number">Phone: <span>(573) 738-2814</span></span></p>
+              </div>
+            </div>
+          </div>
+          <div class="monAcBox">
+            <h1><a href="#">Sign Up For Text Alerts</a></h1>
+            <div class="monAcCon">
+              <div class="monBox">
+                <p class="smallTxt">Sign up for text updates on seasonal yield results for your county, agronomic alerts, commodity/marketing updates and other Deltapine information. A verification message will be sent to your cell phone.</p>
+              <form action="" class="monTxtForm"> <!--TEXT ALERTS START-->
+                <div>
+                  <label>First Name</label>
+                  <input type="text"  value="" size="" maxlength="99"/>
+                </div>
+                <div>
+                  <label>Last Name</label>
+                  <input type="text"  value="" size="" maxlength="99"/>
+                </div>
+                <div>
+                  <label>Email</label>
+                  <input type="text"  value="" size="" maxlength="99"/>
+                </div>
+                <div>
+                <div class="zipNum">
+                  <div class="zipCode">
+                  <label>Zip Code</label>
+                  <input type="text"  value="" size="" maxlength="99"/>
+                  </div>
+                  
+                  <div class="pNumber">
+                  <label>Mobile Number (5551239876)</label>
+                  <input type="text"  value="" size="" maxlength="99"/>
+                  </div>
+                  <div style="clear:both;"></div>
+                </div>     
+                </div>
+                <div>
+                  <input type="checkbox" />
+                  <p>I consent to the transfer of my personal information. Text messaging service powered by and user consents to receive messages from Commodity Update LLC. A verification message will be sent to your phone. Standard text messaging charges from your cell phone carrier may apply.</p>
+                </div>
+                <div style="clear:both;"></div>
+                <div class="monTxtSub">
+                  <input type="submit" value="Submit" />
+                </div>
+                <div style="clear:both;"></div>
+              </form><!--TEXT ALERTS END-->
+              </div>
+            </div>
+          </div>
+        </div>       
+      </div>
+    </div>
+    </div>
+    <p class="monBookmark"><a href="#page5">Add Site to your Home Screen</a></p>
+    <footer data-role="footer">
+      <ul class="monFootMenu">
+        <li><a href="http://www.deltapine.com/Pages/home.aspx">Full Site</a></li>
+        <li><a href="mailto:info@email.deltapine.com">Contact Us</a></li>
+        <li><a href="http://www.monsanto.com/legal-notice/Pages/default.aspx" target="_blank">Legal Notice</a></li>
+         <li class="last"><a href="http://www.deltapine.com" target="_blank">Deltapine.com</a></li>
+      </ul>
+      <div style="clear:both;"></div>
+      <ul class="monFacebook">
+        <li><a href="https://www.facebook.com/Deltapine" target="_blank">Find Deltapine&reg; on Facebook</a></li>
+      </ul> 
+    </footer>  
+  </section>
+  <!-- RESOURCES END -->
+  <!-- BOOKMARK START -->
+  <section id="page5" data-role="page">
+    <div data-role="content" class="content">
+      <p class="monBookmark"><a href="#page3">Add Site to your Home Screen <span>x</span></a></p>
+      <div class="monBookBox">
+        <p><b>Follow these instructions for a smart phone:</b></p>
+        <ol>
+          <li>Hit "Menu" on your phone and then select the "Add Bookmark" button.</li>
+          <li>We have pre-populated the options menu with our icon and name, press "Done".</li>
+          <li>In the thumbnail list press and hold the Deltapine Mobile thumbnail for one second.</li>
+          <li>This will open an options menu. Choose "Add shortcut to Home".</li>
+          <li>Hit your devices "Home" button, and navigate to see the Deltapine icon. Hit this at any time to open the site.</li>
+	    </ol>
+      </div>
+    </div>
+  </section>
+  <!-- BOOKMARK END -->
+</body>
+>>>>>>> .r436
+</html>

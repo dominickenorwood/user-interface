@@ -1,0 +1,47 @@
+/* - - - - - - - - - - - - - - - - - - - - -
+
+ Title : Woofoo Custom CSS : Lelander.com!
+
+- - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - Default - - - */
+
+/* Backgrounds */
+#container, html {
+    background-color: transparent !important;
+}
+
+
+.wufoo-form-container{ height: 223px;}
+.wufoo input.text, .wufoo textarea.textarea{width:80%;padding:10px;border:solid 3px #525356;margin: 0 0 10px;color:#38383B;border-radius:5px;box-sizing:border-box;-moz-box-sizing:border-box; font-size: 11px}
+.wufoo .focused{background:#FFF7C0}
+.wufoo .instruct{background-color:#F5F5F5}
+.wufoo  input[type=submit]{background-color:#D31145;color:#FFF;border:none;margin-top:0px;width:auto;padding:10px 20px;cursor:pointer;border-radius:0;font-size: 11px;}
+.wufoo  input[type=submit]:hover{background-color:#657BBC;}
+/* Borders */
+
+
+.wufoo .woo-field label.desc, .wufoo legend.desc {
+    display: none;
+}
+
+.hide{display: none;}
+
+.confirm .wufoo h2 {
+    font-weight: normal;
+    font-size: 160%;
+    margin: 0 0 .2em 0;
+    line-height: 135%;
+    color: #fff;
+    margin: 0 1em;
+    padding: 0 0 0px 0;
+}
+.confirm  #logo {
+    background-image: none;
+    background-color: transparent;
+}
+
+.wufoo p {
+    font-size: 14px;
+    color: #94979A;
+}

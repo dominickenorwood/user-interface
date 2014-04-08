@@ -1,0 +1,92 @@
+/*////////////////////////////
+TEMPLATE
+////////////////////////////*/
+* {margin:0;padding:0;}
+html{background:url(/images/black_grain_html_bkg.png) repeat left top #000000;}
+body{font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:18px;}
+#wrapper{/*width:803px; margin:5px auto;*/ width:500px; margin:20px auto;}
+h1{text-align:center;font-size:40px; color:#FFF; line-height:45px; font-weight:normal; margin-bottom:20px;}
+h2{color:#990000; font-size:16px; /*text-transform:uppercase;*/}
+p{margin-top:5px;}
+a{outline:none;}
+table{border-collapse:collapse;}
+#box{background-color:#FFFFFF; padding:20px; margin:10px 0 40px 0;width:460px;}
+
+/*#jsSlideshows {}
+#jsSlideshows h1{color:#990000; font-size:18px; padding:30px 0 10px 0; text-transform:uppercase; border-bottom:dotted 1px #999; clear:both;}
+#jsSlideshows p{clear:both; padding:10px 0;}
+#jsSlideshows b{text-transform:uppercase;}*/
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+STANDARD SLIDESHOW
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*#jsSlideshows #standard h1{padding-top:0;}*/
+#standard #standardShow {position:relative;width: 500px; height: 300px; overflow:hidden;}
+#standard #standardShow img{position:absolute; left:0; top:0; }
+
+#standard #standardShowSlide{position:relative;width: 500px; height: 300px; overflow:hidden;}
+#standard #standardShowSlide img{position:absolute; left:0; top:0;}
+
+#standardSlideOver{position:relative;width: 500px; height: 300px; overflow:hidden; margin-bottom:10px;}
+#standardSlideOver img{position:absolute; left:0; top:0;}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ADVANCED TRANSITIONS
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+#advacedTransitions #advancedExpand {position:relative;width: 500px; height: 300px;overflow:hidden;}
+#advacedTransitions #advancedExpand .parent{position:absolute; left:0; top:0;}
+
+#advacedTransitions #advancedColumn {position:relative;width: 500px; height: 300px; overflow:hidden;}
+#advacedTransitions #advancedColumn .parent{position:absolute; left:0; top:0;}
+#advacedTransitions #advancedColumn .child{width:40px;float:left;}
+#advacedTransitions #advancedColumn .childLast{width:40px;float:left;}
+
+#advacedTransitions #advancedVenetian{position:relative;width: 500px; height: 300px; overflow:hidden;}
+#advacedTransitions #advancedVenetian .parent{position:absolute; left:0; top:0;}
+#advacedTransitions #advancedVenetian .child{width:40px;height:300px;float:left;  }
+#advacedTransitions #advancedVenetian .box{width:0; height:100%; margin:0 auto;}
+
+#advancedPixel {position:relative;width: 500px; height: 300px; overflow:hidden;/*background-color:#09F;*//*margin-bottom:50px;*/}
+#advancedPixel .parent{position:absolute; left:0; top:0; width:560px; height:350px; /*width:576px; height:360px; *//*background-color:#F00; width:50px; height:50px;*//*border:solid 1px #F00;*/ }
+#advancedPixel .child{width:100px;height:100px;float:left; /*border:solid 1px #000;*/}
+#advancedPixel .box{width:0; height:0; margin:35px auto; background-color:#F00; /*border:solid 1px #F00;*/}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+NAVIGATION SLIDESHOW
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+#navShow {position:relative;width: 500px; height: 300px; overflow:hidden;}
+#navShow img{position:absolute; left:0; top:0; }
+#navShow .prevNext{z-index:100; position:relative; margin:25% 10px;}
+#navShow .prevNext a{display:block; position:absolute; width:33px; height:33px; text-indent:-9999px;}
+#navShow .prevNext a.prev{left:0; background:url(/images/js/left-arrow.png) no-repeat left top;}
+#navShow .prevNext a.next{right:0;background:url(/images/js/right-arrow.png) no-repeat left top;}
+#navShow .bullets{position:absolute;z-index:101; top:5px; left:5px;}
+#navShow .bullets a{display:block; width:10px; height:10px;background:url(/images/js/bullets.png) no-repeat left top; float:left; text-indent:-9999px; margin-right:5px;}
+#navShow .bullets a.current{background:url(/images/js/bullets.png) no-repeat left -10px;}
+#navShow .paused{position:absolute;z-index:102; top:5px; right:5px; width:40px; height:40px; background:url(/images/js/pause-black.png) no-repeat left top;}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+STOP WATCH
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+#stopWatch{height:80px;}
+#stopWatch #time{border:solid 1px #CCC; width:150px; height:40px; margin-bottom:10px; padding:5px; font-size:40px; line-height:40px;}
+#stopWatch #progressBar{width:100px; height:10px; border:solid 1px #999; margin:10px 0;}
+#stopWatch .progress{background-color:#09C; height:10px; /*width:50px;*/ width:0;}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+LOADED SLIDESHOW
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+#loaded h1{padding-top:0;}
+#loadedSlideshow{position:relative;width: 500px; height: 300px; overflow:hidden; }
+#loadedSlideshow img{position:absolute; left:0; top:0; }
+#loadedSlideshow .prevNext{z-index:100; position:relative; /*margin:25% 10px;*/}
+#loadedSlideshow .prevNext a{display:block; position:absolute; width:33px; height:33px; text-indent:-9999px;/*margin:25% 10px;*//* margin:150px 10px 0 10px;*/ top:120px;}
+#loadedSlideshow .prevNext a.prev{left:10px; background:url(/images/js/left-arrow.png) no-repeat left top;}
+#loadedSlideshow .prevNext a.next{right:10px;background:url(/images/js/right-arrow.png) no-repeat left top;}
+#loadedSlideshow .bullets{/*position:relative;*/z-index:101; top:5px; left:5px;float:left; position:absolute;}
+#loadedSlideshow .bullets a{display:block; width:10px; height:10px;background:url(/images/js/bullets.png) no-repeat left top; float:left; text-indent:-9999px; margin-right:5px;}
+#loadedSlideshow .bullets a.current{background:url(/images/js/bullets.png) no-repeat left -10px;}
+#loadedSlideshow #progressBar{width:100px; height:10px; border:solid 1px #F00; margin:5px; position:absolute; z-index:102; right:0;/*opacity:.4;*/}
+#loadedSlideshow #progressBar .progress{background-color:#F00; height:10px;/*width:50px;*/ width:0; }
+#loadedSlideshow #comment{position:absolute; z-index:99; color:#FFF; background:url(/images/js/black-alpah.png) repeat left top; top:300px;width:100%;}
+#loadedSlideshow #comment p{padding:10px;}
