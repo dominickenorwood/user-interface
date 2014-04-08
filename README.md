@@ -23,7 +23,7 @@
 <li>Monsanto_mobile - http://dominicknorwood.com/sites/monsanto_mobile/</li>
 </ul></p>
 
-<p><b>JavaScript:</b>
+<p><b>JavaScript (NO PLUGINS):</b>
 <ul>
 <li>jquery-slideshows - http://dominicknorwood.com/jquery_slideshows.html (old slideshows I produced with jquery need to be converted to OO)</li>
 </ul></p>
