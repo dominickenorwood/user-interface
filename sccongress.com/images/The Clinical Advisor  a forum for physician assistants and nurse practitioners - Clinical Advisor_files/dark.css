@@ -1,0 +1,11 @@
+.magnify-lightbox-playlist-dark { position: relative; }
+.magnify-lightbox-playlist-dark .magnify-lightbox-playlist-title { color: #000000; }
+.magnify-lightbox-playlist-dark .magnify-lightbox-playlist-prev, .magnify-lightbox-playlist-dark .magnify-lightbox-playlist-next { background-color: rgba(0,0,0,.5); }
+.magnify-lightbox-playlist-dark .magnify-lightbox-playlist-prev-disabled, .magnify-lightbox-playlist-dark .magnify-lightbox-playlist-next-disabled { background-color: rgba(0,0,0,.5); }
+.magnify-lightbox-playlist-dark .magnify-lightbox-playlist-prev { background-image: url('http://decor.magnify.net/decor/item_chrome/playlist_arrow_left.png'); }
+.magnify-lightbox-playlist-dark .magnify-lightbox-playlist-next { background-image: url('http://decor.magnify.net/decor/item_chrome/playlist_arrow_right.png'); }
+.magnify-lightbox-playlist-dark .magnify-lightbox-playlist-embed { color: #000000; }
+.magnify-lightbox-playlist-dark .magnify-lightbox-playlist-link { color: #000000; }
+
+.magnify-lightbox-playlist-grid.magnify-lightbox-playlist-dark .magnify-lightbox-content-title-below .magnify-lightbox-content-title-text { color: #000000; }
+.magnify-lightbox-playlist-scroller.magnify-lightbox-playlist-dark .magnify-lightbox-content-title-below .magnify-lightbox-content-title-text { color: #FFFFFF; }

@@ -1,0 +1,575 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>SEQUENCER</title>
+<link rel="shortcut icon" href="images/favicon.ico"/>
+<link href="normalize.css" media="screen" rel="stylesheet" type="text/css"/>
+<style type="text/css">
+  #wrapper{
+    width:728px;
+    margin:50px auto;
+    background-color: #EEE;
+  }
+  #sequence,
+  #sequence .slide-wrapper{
+    height: 500px;
+  }
+  #sequence {
+    width:100%;
+    position: relative;
+    overflow: hidden;
+  }
+  #sequence > .sequence-canvas {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin:0;
+  }
+  #sequence > .sequence-canvas > li {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    list-style-type: none;
+  }
+  #sequence > .sequence-canvas > li > div{
+    position: relative;
+    left:100%;
+    top:0;
+    height: 100%;
+    width: 100%;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    -ms-transition-duration: 1s;
+    transition-duration: 1s;
+  }
+  #sequence > .sequence-canvas > li.animate-in > div{
+    left:0;
+  }
+  #sequence > .sequence-canvas > li.animate-out > div{
+    left:-100%;
+  }
+  #sequence .slide{
+    display: table;
+  }
+  #sequence .slide-wrapper{
+    width:100%;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+  }
+  #sequence img{
+    max-width: 100%;
+    max-height:100%;
+  }
+  #sequence .button{
+    position: absolute;
+    z-index: 1000;
+    top:45%;
+    display: block;
+    background-color: #FFF;
+    padding: 5px;
+    text-decoration: none;
+  }
+  #sequence .sequence-next{
+    right:0;
+  }
+  #sequence .text-box{
+    background-color: rgba(0,0,0,0.75);
+    position: absolute;
+    left:10%;
+    bottom: 5%;
+    right:0;
+  }
+  #sequence .text-box .wrap{
+    padding: 15px 10px;
+  }
+  #sequence .text-box{
+    color:#FFF;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: left;
+  }
+  #sequence .text-box h1{
+    font-size: 18px;
+    line-height: 24px;
+    margin:0;
+    padding: 0;
+    font-family: 'Georgia';
+    font-weight: normal;
+  }
+  #sequence .text-box a{
+    color:#15a9e0;
+    text-decoration: none;
+    font-style: italic;
+  }
+  #sequence .text-box a:hover{
+    color:#F00;
+  }
+  #sequence .text-box p{
+    padding: 0;
+    margin:5px 0 0 0;
+  }
+  #sequence .ad-slot{
+    background-color: rgba(0,0,0,0.5);
+  }
+  #sequence .slide-ad{
+    width:300px;
+    height: 250px;
+    margin:auto;
+  }
+  #sequence.disable-buttons .button{
+    display: none;
+  }
+  #sequence .slide-ad p{
+    color:#FFF;
+    font-size: 12px;
+    font-weight: bold;
+    padding:10px 0 5px 0;
+    margin:-40px 0 0 0;
+  }
+  #sequence .slide-ad p span{
+    color:#F00;
+    font-size:16px;
+  }
+  /*PRELOADER STYLES*/
+  .sequence-preloader {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 999999;
+  }
+  @keyframes preload {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .sequence-preloader .preloading .circle {
+    fill: #ff9442;
+    display: inline-block;
+    height: 12px;
+    position: relative;
+    top: -50%;
+    width: 12px;
+    animation: preload 1s infinite;
+  }
+  .preloading {
+    display: block;
+    height: 12px;
+    margin: 0 auto;
+    top: 50%;
+    margin-top: -6px;
+    position: relative;
+    width: 48px;
+  }
+  .sequence-preloader .preloading .circle:nth-child(2) {
+    animation-delay: .15s;
+  }
+  .sequence-preloader .preloading .circle:nth-child(3) {
+    animation-delay: .3s;
+  }
+  .preloading-complete {
+    opacity: 0;
+    visibility: hidden;
+    transition-duration: 1s;
+  }
+  div.inline {
+    background-color: #ff9442;
+    margin-right: 4px;
+    float: left;
+  }
+</style>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+        (function() {
+            var gads = document.createElement("script");
+            gads.async = true;
+            gads.type = "text/javascript";
+            var useSSL = "https:" == document.location.protocol;
+            gads.src = (useSSL ? "https:" : "http:") + "//www.googletagservices.com/tag/js/gpt.js";
+            var node = document.getElementsByTagName("script")[0];
+            node.parentNode.insertBefore(gads, node);
+        })();
+
+        var slots = {};
+    </script>
+
+    <script type="text/javascript" src="jquery.sequence-min.js"></script>
+    <script type="text/javascript"> 
+      $(document).ready(function(){
+        var auto = false;
+        var autoDelay = 3000;
+        var options = {
+            autoPlay: auto,
+            autoPlayDelay: autoDelay,
+            nextButton: true,
+            prevButton: true,
+            pauseOnHover: true,
+            preloader : true,
+            preloadTheseFrames: [1,2,3,4,5,6,7,8,9,10],
+            hideFramesUntilPreloaded: true
+        }
+        var sequence = $("#sequence").sequence(options).data("sequence");
+        var adSlotOneRendered = false;
+        var adSlotTwoRendered = false;
+        var adSlotOnePosition = 3;
+        var adSlotTwoPosition = 6;
+        var targetSlide;
+        var targetSlideshow;
+
+        sequence.beforeNextFrameAnimatesIn = function(){          
+          var nextSlide = this.nextFrame;
+          var isAdSlot = nextSlide.children().hasClass('ad-slot');
+          targetSlide = nextSlide;
+          targetSlideshow = this;
+          if(isAdSlot) {
+            this.canvas.parent().addClass('disable-buttons');
+            stopAutoPlay(this);
+          }
+        };
+
+        sequence.afterNextFrameAnimatesIn = function(){
+          var nextSlide = this.nextFrame;
+          var isAdSlot = nextSlide.children().hasClass('ad-slot');
+          if(isAdSlot) {
+            initClearRefreshAdSlot(this.nextFrameID);
+          }
+        }
+
+        function stopAutoPlay(slideshow){
+          slideshow.stopAutoPlay();
+        };
+
+        function startAutoPlay(slideshow){
+          slideshow.startAutoPlay();
+        };
+
+        function initAdSlot(slide, slideshow){
+          var slideAd = slide.find('.slide-ad');
+          var seconds = 5;
+          var timer = '<p>You can skip this ad in <span>' + seconds + '<\/span> seconds.<\/p>'
+          slideAd.prepend(timer);
+          var interval = setInterval(function(){
+            seconds--;
+            if (seconds > 0) slideAd.find('p').html('You can skip this ad in <span>' + seconds + '<\/span> seconds.');
+            if (seconds === 0){
+              slideAd.find('p').fadeOut();
+              slideshow.canvas.parent().removeClass('disable-buttons');
+              startAutoPlay(slideshow);
+              clearInterval(interval);
+            }
+          }, 1000);
+        };
+
+        function initClearRefreshAdSlot(slot){
+          if(slot == 3 && !adSlotOneRendered){
+            renderAdSlotOne();
+            adSlotOneRendered = true;
+          }else if(slot == 3 && adSlotOneRendered) {
+            clearRefrestAd('ADCALL_301');
+          }
+          if(slot == 6 && !adSlotTwoRendered){
+            renderAdSlotTwo();
+            adSlotTwoRendered = true;
+          }else if(slot == 6 && adSlotTwoRendered) {
+            clearRefrestAd('ADCALL_401');
+          }
+        };
+
+        function clearRefrestAd(slot){
+          googletag.pubads().clear([slots[slot]]);
+          googletag.pubads().refresh([slots[slot]]);
+        };
+
+        function renderAdSlotOne(){
+          googletag.cmd.push(
+            function () {                            
+              slots['ADCALL_301'] = googletag.defineSlot('/5745/psychadvisor', [[300,250]], 'ADCALL_301');
+              slots['ADCALL_301'].addService(googletag.pubads()); 
+              slots['ADCALL_301'].setTargeting('pos', ['301']); 
+              slots['ADCALL_301'].setCollapseEmptyDiv(true); 
+              googletag.enableServices();
+              googletag.display('ADCALL_301', [[300,250]]);
+            }
+          );
+        };
+
+        function renderAdSlotTwo(){
+          googletag.cmd.push(
+            function () {
+              slots['ADCALL_401'] = googletag.defineSlot('/5745/psychadvisor', [[300,250],[300,600]], 'ADCALL_401');
+              slots['ADCALL_401'].addService(googletag.pubads()); 
+              slots['ADCALL_401'].setTargeting('pos', ['401']); 
+              slots['ADCALL_401'].setCollapseEmptyDiv(true); 
+              googletag.enableServices();
+              googletag.display('ADCALL_401', [[300,250],[300,600]]);
+            }
+          );
+        };
+
+        googletag.cmd.push(function() {
+          googletag.pubads().addEventListener('slotRenderEnded', function (event) {
+            if(event.slot === slots['ADCALL_301'] || event.slot === slots['ADCALL_401']){
+              initAdSlot(targetSlide, targetSlideshow);
+              if(event.slot === slots['ADCALL_301']) console.log('301 Rendered');
+              if(event.slot === slots['ADCALL_401']) console.log('401 Rendered');
+            };
+          });
+        });
+
+      });
+    </script>
+
+
+</head>
+	<body>
+		<div id="wrapper">
+      <div id="sequence">
+          <ul class="sequence-canvas">
+              <li class="animate-in">
+                <div class="slide">
+                  <div class="slide-wrapper">
+                    <a href="https://www.google.com/" target="_blank"><img src="images/batman.jpg" /></a>
+                    <div class="text-box">
+                      <div class="wrap">
+                        <h1><a href="https://www.google.com/" target="_blank">Quisque sit amet est et sapien ullamcorper pharetra</a></h1>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="slide">
+                  <div class="slide-wrapper">
+                    <a href="https://www.google.com/" target="_blank"><img src="images/wonder-women.jpg" /></a>
+                    <div class="text-box">
+                      <div class="wrap">
+                        <h1><a href="https://www.google.com/" target="_blank">Aenean ultricies mi vitae est</a></h1>
+                        <p>Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="slide ad-slot">
+                  <div class="slide-wrapper">
+                    <div class="slide-ad">
+                      <div id="ADCALL_301" ></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="slide">
+                  <div class="slide-wrapper">
+                    <a href="https://www.google.com/" target="_blank"><img src="images/dr-stange.jpg" /></a>
+                    <div class="text-box">
+                      <div class="wrap">
+                        <h1><a href="https://www.google.com/" target="_blank">Aenean fermentum, elit eget tincidunt condimentum</a></h1>
+                        <p>Eros ipsum rutrum orci sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="slide">
+                  <div class="slide-wrapper">
+                    <a href="https://www.google.com/" target="_blank"><img src="images/daredevil.jpg" /></a>
+                    <div class="text-box">
+                      <div class="wrap">
+                        <h1><a href="https://www.google.com/" target="_blank">Quisque sit amet est et sapien ullamcorper pharetra</a></h1>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="slide ad-slot">
+                  <div class="slide-wrapper">
+                    <div class="slide-ad">
+                      <div id="ADCALL_401"></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!-- <li>
+                <div class="slide">
+                  <div class="slide-wrapper">
+                    <a href="https://www.google.com/" target="_blank"><img src="images/doom.jpg" /></a>
+                    <div class="text-box">
+                      <div class="wrap">
+                        <h1><a href="https://www.google.com/" target="_blank">Aenean ultricies mi vitae est</a></h1>
+                        <p>Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="slide">
+                  <div class="slide-wrapper">
+                    <a href="https://www.google.com/" target="_blank"><img src="images/joker.jpg" /></a>
+                    <div class="text-box">
+                      <div class="wrap">
+                        <h1><a href="https://www.google.com/" target="_blank">Aenean fermentum, elit eget tincidunt condimentum</a></h1>
+                        <p>Eros ipsum rutrum orci sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="slide">
+                  <div class="slide-wrapper">
+                    <a href="https://www.google.com/" target="_blank"><img src="images/fantastic-four.jpg" /></a>
+                    <div class="text-box">
+                      <div class="wrap">
+                        <h1><a href="https://www.google.com/" target="_blank">Quisque sit amet est et sapien ullamcorper pharetra</a></h1>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="slide">
+                  <div class="slide-wrapper">
+                    <a href="https://www.google.com/" target="_blank"><img src="images/power-girl.jpg" /></a>
+                    <div class="text-box">
+                      <div class="wrap">
+                        <h1><a href="https://www.google.com/" target="_blank">Aenean ultricies mi vitae est</a></h1>
+                        <p>Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="slide">
+                  <div class="slide-wrapper">
+                    <a href="https://www.google.com/" target="_blank"><img src="images/ironman.jpg" /></a>
+                    <div class="text-box">
+                      <div class="wrap">
+                        <h1><a href="https://www.google.com/" target="_blank">Aenean fermentum, elit eget tincidunt condimentum</a></h1>
+                        <p>Eros ipsum rutrum orci sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="slide">
+                  <div class="slide-wrapper">
+                    <a href="https://www.google.com/" target="_blank"><img src="images/robin.jpg" /></a>
+                    <div class="text-box">
+                      <div class="wrap">
+                        <h1><a href="https://www.google.com/" target="_blank">Quisque sit amet est et sapien ullamcorper pharetra</a></h1>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="slide">
+                  <div class="slide-wrapper">
+                    <a href="https://www.google.com/" target="_blank"><img src="images/superman.jpg" /></a>
+                    <div class="text-box">
+                      <div class="wrap">
+                        <h1><a href="https://www.google.com/" target="_blank">Aenean ultricies mi vitae est</a></h1>
+                        <p>Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="slide">
+                  <div class="slide-wrapper">
+                    <a href="https://www.google.com/" target="_blank"><img src="images/lonewolf.jpg" /></a>
+                    <div class="text-box">
+                      <div class="wrap">
+                        <h1><a href="https://www.google.com/" target="_blank">Aenean fermentum, elit eget tincidunt condimentum</a></h1>
+                        <p>Eros ipsum rutrum orci sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="slide">
+                  <div class="slide-wrapper">
+                    <a href="https://www.google.com/" target="_blank"><img src="images/tmnt.jpg" /></a>
+                    <div class="text-box">
+                      <div class="wrap">
+                        <h1><a href="https://www.google.com/" target="_blank">Quisque sit amet est et sapien ullamcorper pharetra</a></h1>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="slide">
+                  <div class="slide-wrapper">
+                    <a href="https://www.google.com/" target="_blank"><img src="images/hulk.jpg" /></a>
+                    <div class="text-box">
+                      <div class="wrap">
+                        <h1><a href="https://www.google.com/" target="_blank">Aenean ultricies mi vitae est</a></h1>
+                        <p>Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="slide">
+                  <div class="slide-wrapper">
+                    <a href="https://www.google.com/" target="_blank"><img src="images/wolverine.jpg" /></a>
+                    <div class="text-box">
+                      <div class="wrap">
+                        <h1><a href="https://www.google.com/" target="_blank">Aenean fermentum, elit eget tincidunt condimentum</a></h1>
+                        <p>Eros ipsum rutrum orci sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li> -->
+          </ul>
+          <a href="#" class="button sequence-next">Next</a>
+          <a href="#" class="button sequence-prev">Prev</a>
+      </div>
+      <div id="ADCALL_101">
+        <script type="text/javascript">
+          googletag.cmd.push(
+            function () {
+              slots['ADCALL_101'] =googletag.defineSlot('/5745/dmn_us', [[728,90]], 'ADCALL_101');
+              slots['ADCALL_101'].addService(googletag.pubads()); 
+              slots['ADCALL_101'].setTargeting('pos', ['101']); 
+              slots['ADCALL_101'].setCollapseEmptyDiv(true); 
+              googletag.enableServices();
+              googletag.display('ADCALL_101', [[728,90]]);
+            }
+          );
+        </script>
+      </div>
+    </div>
+	</body>
+</html>
+

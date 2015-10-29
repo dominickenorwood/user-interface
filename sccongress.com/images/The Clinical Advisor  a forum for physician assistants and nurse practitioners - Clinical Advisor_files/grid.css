@@ -1,0 +1,40 @@
+.magnify-clearfix:after { content: '.'; display: block; height: 0; clear: both; visibility: hidden; }
+.magnify-clearfix { display: inline-block; }
+* html .magnify-clearfix { height: 1%; }
+.magnify-clearfix { display: block; }
+.magnify-playlist-player { font-family: arial, helvetica, sans-serif; }
+.magnify-playlist-player, .magnify-playlist-player div {
+	box-sizing: content-box;
+	-moz-box-sizing: content-box;
+}
+.magnify-lightbox-playlist-grid .magnify-lightbox-playlist-title-bar { position: relative; padding-bottom: 2px; height: 35px; }
+.magnify-lightbox-playlist-grid .magnify-lightbox-playlist-title { position: absolute; bottom: 2px; text-decoration: none; font-size: 16px; padding-right: 145px; }
+.magnify-lightbox-playlist-grid .magnify-lightbox-playlist-title-logo { cursor: pointer; cursor: hand; position: absolute; bottom: 2px; right: 0px; width: 145px; height: 30px; background-position: bottom right; background-repeat: no-repeat; }
+.magnify-lightbox-playlist-grid .magnify-lightbox-playlist-grid-container { position: relative; overflow: hidden; padding-bottom: 10px; }
+
+.magnify-lightbox-playlist-grid .magnify-lightbox-content-item-wrapper { position: relative; display: inline-block; vertical-align: top; overflow: hidden; }
+.magnify-lightbox-playlist-grid .magnify-lightbox-content-item-wrapper-first { text-align: left; }
+.magnify-lightbox-playlist-grid .magnify-lightbox-content-item-wrapper-center { text-align: center; }
+.magnify-lightbox-playlist-grid .magnify-lightbox-content-item-wrapper-last { text-align: right; }
+.magnify-lightbox-playlist-grid .magnify-lightbox-content-item { position: relative; display: inline-block; }
+
+.magnify-lightbox-playlist-grid .magnify-lightbox-overlay { cursor: pointer; cursor: hand; position: absolute; z-index: 2; background-position: center center; background-repeat: no-repeat; left: 0px; top: 0px; }
+.magnify-lightbox-playlist-grid .magnify-lightbox-thumbnail-container { cursor: pointer; cursor: hand; position: relative; background-size: 100% 100%; background-position: center center; background-repeat: no-repeat; z-index: 0; margin: 0px auto; }
+
+.magnify-lightbox-playlist-grid .magnify-lightbox-content-title-over { position: absolute; bottom: 0px; width: 100%; background-color: rgba(0,0,0,.5); font-size: 12px; white-space: normal; color: #FFFFFF; -moz-box-sizing: border-box; z-index: 1; height: 50%; text-align: left; }
+.magnify-lightbox-playlist-grid .magnify-lightbox-content-title-over .magnify-lightbox-content-title-text { display: block; padding: 6px 10px; color: #FFFFFF; text-decoration: none; }
+.magnify-lightbox-playlist-grid .magnify-lightbox-content-title-over .magnify-lightbox-content-title-text:hover { color: #FFFFFF; text-decoration: none; }
+
+.magnify-lightbox-playlist-grid .magnify-lightbox-content-title-below { position: relative; width: 100%; background-color: transparent; font-size: 12px; white-space: normal; -moz-box-sizing: border-box; z-index: 1; text-align: left; }
+.magnify-lightbox-playlist-grid .magnify-lightbox-content-title-below .magnify-lightbox-content-title-text { display: block; padding: 6px 0px; text-decoration: none; }
+.magnify-lightbox-playlist-grid .magnify-lightbox-content-title-below .magnify-lightbox-content-title-text:hover { text-decoration: none; }
+
+
+.magnify-lightbox-playlist-grid .magnify-lightbox-playlist-link-container { padding: 0px 0px 4px 0px; }
+.magnify-lightbox-playlist-grid .magnify-lightbox-playlist-link { font-size: 11px; text-decoration: none; }
+
+.magnify-lightbox-playlist-grid .magnify-lightbox-playlist-footer-bar { position: relative; padding-top: 2px; height: 18px; }
+.magnify-lightbox-playlist-grid .magnify-lightbox-playlist-embed { cursor: pointer; cursor: hand; display: inline-block; vertical-align: middle; font-size: 11px; color: #FFFFFF; }
+.magnify-lightbox-playlist-grid .magnify-lightbox-playlist-embed-code { position: absolute; top: 0px; height: 18px; display: inline-block; vertical-align: middle; margin-left: 4px; font-size: 10px; line-height: 12px; color: #000000; -moz-box-sizing: border-box; border: solid 1px #CCCCCC; padding: 2px; }
+.magnify-lightbox-playlist-grid .magnify-lightbox-playlist-embed-code-disabled { display: none; vertical-align: middle; }
+.magnify-lightbox-playlist-grid .magnify-lightbox-playlist-footer-logo { cursor: pointer; cursor: hand; position: absolute; top: 2px; right: 0px; width: 105px; height: 14px; background-image: url('/decor/mvp/magnify_player_logo_color.png'); background-position: top right; background-repeat: no-repeat; }

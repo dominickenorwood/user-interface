@@ -1,0 +1,475 @@
+
+/* SITE SPECIFIC STYLES */
+/* //TEMPLATE///////////////////////////////////////////////////// */
+body {
+	background: url("../simages/twenty-twenty/cardioadvisor/body-bkg.png") repeat 50% 50% #fff0f0;
+}
+a {
+	color: #cb0000;
+}
+
+/* //BREADCRUMBS///////////////////////////////////////////////////// */
+#breadCrumbs a {
+	color: #cb0000;
+}
+
+/* //MAIN CONTENT///////////////////////////////////////////////////// */
+#contentColumn .sectionBox h2.sectionHeadline a:hover,
+#contentColumn .sectionBox h2.sectionHeadline a:focus,
+#contentColumn .sectionBox h2.sectionHeadline a:active,
+#contentColumn .sectionBox h2.sectionHeadlineBig a:hover,
+#contentColumn .sectionBox h2.sectionHeadlineBig a:focus,
+#contentColumn .sectionBox h2.sectionHeadlineBig a:active {
+	color: #cb0000;
+}
+#contentColumn .sectionBox .searchTCList a {
+	color: #cb0000;
+}
+#contentColumn .sectionBox .sectionByline a {
+	color: #cb0000;
+}
+#contentColumn h1.articleFormatTitle,
+#contentColumn h3.sectionTitle,
+#contentColumn h3.tabbedAssetTitle,
+#contentColumn .rawHTMLAsset #drugSearchAsset h3,
+#contentColumn .rawHTMLAsset .big {
+	color: #cb0000;
+}
+#contentColumn .qryMoreLink a {
+	color: #cb0000;
+}
+#contentColumn .rawHTMLAsset h1,
+#contentColumn .rawHTMLAsset h2,
+#contentColumn .rawHTMLAsset h3 {
+	color: #cb0000;
+}
+#contentColumn .rawHTMLAsset a {
+	color: #cb0000;
+}
+#contentColumn .image-overlay-format a:hover,
+#contentColumn .image-overlay-format a:focus,
+#contentColumn .image-overlay-format a:active {
+	color: #cb0000;
+}
+#contentColumn .relatedArticles .relatedArticlesTitle {
+	color: #cb0000;
+}
+#contentColumn .relatedArticles a:hover,
+#contentColumn .relatedArticles a:focus,
+#contentColumn .relatedArticles a:active {
+	color: #cb0000;
+}
+#contentColumn h3.sectionTitle .highlight {
+	background: url('../simages/twenty-twenty/cardioadvisor/sectiontitle-bkg.png') no-repeat 5px 50% #fff0f0;
+}
+#contentColumn .grid_row > .grid_4:first-child .sectionBox h2.sectionHeadline {
+	background: url('../simages/twenty-twenty/cardioadvisor/headline-bullet.png') no-repeat 8px 10px transparent;
+}
+
+/* //DRUG PAGES///////////////////////////////////////////////////// */
+#browseByFilter a:hover,
+#browseByFilter a:focus,
+#browseByFilter a:active {
+	background-color: #cb0000;
+	border: solid 1px #cb0000;
+}
+#browseByFilterRange a:hover {
+	color: #cb0000;
+}
+.dropBtnWrap .dropBtnActions a {
+	color: #cb0000;
+}
+.dropBtnWrap .dropBtnActions a:hover,
+.dropBtnWrap .dropBtnActions a:focus,
+.dropBtnWrap .dropBtnActions a:active {
+	color: #cb0000;
+}
+#browseByList table a:hover,
+#browseByList table a:focus,
+#browseByList table a:active {
+	color: #cb0000;
+}
+#drugInfo a,
+#monographIndications a {
+	color: #cb0000;
+}
+#drugInfo a:hover,
+#drugInfo a:focus,
+#drugInfo a:active,
+#monographIndications a:hover,
+#monographIndications a:focus,
+#monographIndications a:active {
+	color: #cb0000;
+}
+#monographIndications #monographNav li.ui-state-active a {
+	background-color: #cb0000;
+}
+
+/* Compare Page Styles */
+#plainLayoutColumn a {
+	color: #cb0000;
+}
+#plainLayoutColumn a:hover,
+#plainLayoutColumn a:focus,
+#plainLayoutColumn a:active {
+	color: #cb0000;
+}
+.drugCompareListItems ul li.compareTcName {
+	color: #cb0000;
+}
+
+/* Browser By Disease */
+.browserByDiseaseItems a {
+	color: #cb0000;
+}
+
+/* //ARTICLE///////////////////////////////////////////////////// */
+#articleColumn article a,
+#articleColumn .articleAuthor a {
+	color: #cb0000;
+}
+
+/* //DRUG SEARCH ASSET///////////////////////////////////////////////////// */
+#contentColumn .rawHTMLAsset #drugSearchAsset a {
+	color: #cb0000;
+}
+
+/* //TABBED ASSET///////////////////////////////////////////////////// */
+.tabbedAssetNav li a {
+	background-color: #fff0f0;
+}
+.tabbedAssetNav li a:hover,
+.tabbedAssetNav li a:focus,
+.tabbedAssetNav li a:active {
+	color: #cb0000;
+}
+.tabbedAssetNav li.ui-state-active a {
+	background-color: #cb0000;
+	color: #FFF;
+}
+
+/* //CAROUSEL//////////////////////////////////////////////////// */
+#carouselWrapper .carousel li a {
+	color: #cb0000;
+}
+#carouselWrapper .carousel li a:hover,
+#carouselWrapper .carousel li a:focus,
+#carouselWrapper .carousel li a:active {
+	color: #cb0000;
+}
+#carouselWrapper .carouselNext {
+	background: url("../simages/twenty-twenty/cardioadvisor/carousel-next-arrow.png") no-repeat left top transparent;
+}
+#carouselWrapper .carouselPrev {
+	background: url("../simages/twenty-twenty/cardioadvisor/carousel-prev-arrow.png") no-repeat left top transparent;
+}
+
+/* //RIGHT COLUMN///////////////////////////////////////////////////// */
+#rightColumn h3.sectionTitle {
+	color: #cb0000;
+}
+
+/* //RIGHT COLUMN NEWSLETTER ASSET///////////////////////////////////////////////////// */
+#rightColumn #emailAlertsWrapper {
+	border: solid 1px #cb0000;
+}
+#rightColumn #emailAlertsWrapper #emailAlertsSubmit {
+	background: url("../simages/twenty-twenty/cardioadvisor/sign-up.png") no-repeat 50% 50% #cb0000;
+}
+
+/* //RIGHT COLUMN MOST ARTICLES ASSET///////////////////////////////////////////////////// */
+#rightColumn #mostArticleTabs h3 {
+	color: #cb0000;
+}
+#rightColumn #mostArticleTabs .mostArticleTabsContent li {
+	color: #cb0000;
+}
+#rightColumn #mostArticleTabs .mostArticleTabsContent a:hover,
+#rightColumn #mostArticleTabs .mostArticleTabsContent a:focus,
+#rightColumn #mostArticleTabs .mostArticleTabsContent a:active {
+	color: #cb0000;
+}
+
+/* //RIGHT COLUMN FEATURED JOBS ASSET///////////////////////////////////////////////////// */
+#rightColumn #featured-jobs .heading a {
+	color: #cb0000;
+}
+#rightColumn #featured-jobs form {
+	border: solid 1px #cb0000;
+}
+#rightColumn #featured-jobs form .search_submit {
+	background-color: #cb0000;
+}
+#rightColumn #featured-jobs .jt_job a {
+	color: #cb0000;
+}
+#rightColumn #featured-jobs .jt_row2 {
+	background-color: #fff0f0;
+}
+
+/* //RIGHT COLUMN TAG CLOUD AND BLOG ASSET///////////////////////////////////////////////////// */
+#rightColumn #tagCloud h3,
+#rightColumn #rightColBlogAsset h3 {
+	color: #cb0000;
+}
+#rightColumn #tagCloud a:hover,
+#rightColumn #tagCloud a:focus,
+#rightColumn #tagCloud a:active {
+	color: #cb0000;
+}
+#rightColumn #rightColBlogAsset a {
+	color: #cb0000;
+}
+
+/* //BOTTOM FEATURED ARTICLES///////////////////////////////////////////////////// */
+.featuredArticlesBottom h3 {
+	color: #cb0000;
+}
+.featuredArticlesBottom h2 a:hover,
+.featuredArticlesBottom h2 a:focus,
+.featuredArticlesBottom h2 a:active {
+	color: #cb0000;
+}
+
+/* //SLIDESHOWS///////////////////////////////////////////////////// */
+#slideshowContent a {
+	color: #cb0000;
+}
+
+/* //RECENT SLIDESHOW ASSET///////////////////////////////////////////////////// */
+#recentSlideshows .recent-slideshow-item h2 a {
+	color: #cb0000;
+}
+
+/* //MINI ROTATOR///////////////////////////////////////////////////// */
+#contentColumn .miniRotator .galleria-info-title a:hover,
+#contentColumn .miniRotator .galleria-info-title a:focus,
+#contentColumn .miniRotator .galleria-info-title a:active {
+	color: #cb0000;
+}
+
+/* //FOOTER///////////////////////////////////////////////////// */
+#globalFooter .copyrightText a {
+	color: #cb0000;
+}
+.footer_col h1,
+.footer_col h2,
+.footer_col h3,
+.footer_col h4,
+.footer_col h5,
+.footer_col h6 {
+	color: #cb0000;
+}
+#globalFooter .footer-right .footer_col a:hover,
+#globalFooter .footer-right .footer_col a:focus,
+#globalFooter .footer-right .footer_col a:active {
+	color: #cb0000;
+}
+#globalFooter #footerIcons > li a.facebookIcon {
+	background: url("../simages/twenty-twenty/cardioadvisor/pa-social-icons.gif") no-repeat left top transparent;
+}
+#globalFooter #footerIcons > li a.twitterIcon {
+	background: url("../simages/twenty-twenty/cardioadvisor/pa-social-icons.gif") no-repeat -25px top transparent;
+}
+#globalFooter #footerIcons > li a.googleplusIcon {
+	background: url("../simages/twenty-twenty/cardioadvisor/pa-social-icons.gif") no-repeat -75px top transparent;
+}
+#globalFooter #footerIcons > li a.linkedinIcon {
+	background: url("../simages/twenty-twenty/cardioadvisor/pa-social-icons.gif") no-repeat -50px top transparent;
+}
+#globalFooter #footerLogo {
+	width: 199px;
+	height: 33px;
+	background: url("../simages/twenty-twenty/cardioadvisor/logo-footer.png") no-repeat top left transparent;
+}
+
+/* //GOOGLE ADS///////////////////////////////////////////////////// */
+.googleTextAdsByGoogle a {
+	color: #cb0000;
+}
+.GoogleAd a {
+	color: #cb0000;
+}
+
+/* //LIGHTBOX///////////////////////////////////////////////////// */
+#lightboxHeader h3,
+#lightboxEmailHeader h3 {
+	color: #cb0000;
+}
+
+/* Edit Password Lightbox */
+/* //SOCIAL ICONS///////////////////////////////////////////////////// */
+.socialIcons {
+	background: url(../simages/twenty-twenty/cardioadvisor/disque-icons.png) no-repeat left top transparent;
+}
+
+/* //SOCIAL BAR///////////////////////////////////////////////////// */
+#socialEmail {
+	background: url(../simages/twenty-twenty/cardioadvisor/social-bar-email-icon.png) no-repeat;
+}
+#socialPrint {
+	background: url(../simages/twenty-twenty/cardioadvisor/social-bar-print-icon.png) no-repeat;
+}
+
+/* Search Results Styles */
+.searchDirectoryCategory a {
+	color: #cb0000;
+}
+.sectionHeadlineTopics a {
+	color: #cb0000;
+}
+
+/* Pagination  Styles */
+#paginationList li a.current {
+	background-color: #cb0000;
+}
+
+/* HEAD ARTICLES */
+.headerArticleBox a:hover,
+.headerArticleBox a:focus,
+.headerArticleBox a:active {
+	color: #cb0000;
+}
+
+/* Activity Format Styles */
+.activityTileCredits {
+	color: #cb0000;
+}
+.activityFormatContent h2 a:hover,
+.activityFormatContent h2 a:focus,
+.activityFormatContent h2 a:active {
+	color: #cb0000;
+}
+
+/* GATED ARTICLE */
+ul.gatedWhyRegisterList li {
+	color: #cb0000;
+}
+
+/* Style to hide the logout button */
+.printContainer #articleColumn a {
+	color: #cb0000;
+}
+
+/* My Account Page Styles */
+h1.subpageHeadline {
+	color: #cb0000;
+}
+.featuredArticle .sectionByline a {
+	color: #cb0000; /* Derm DX Poll */
+}
+.featuredArticle h2.sectionHeadlineBig a:hover,
+.featuredArticle h2.sectionHeadlineBig a:focus,
+.featuredArticle h2.sectionHeadlineBig a:active {
+	color: #cb0000;
+}
+.featuredArticle .sectionCat {
+	color: #cb0000;
+}
+.sectionBulletLinks {
+	color: #cb0000;
+}
+.sectionBulletLinks li a:hover {
+	color: #cb0000;
+}
+#contentColumn .rawHTMLAsset .drug-listings .row a span {
+	background: url('../simages/twenty-twenty/cardioadvisor/listing_button_arrow.png') no-repeat right 0;
+}
+#contentColumn .rawHTMLAsset .blue-header h1 {
+	color: #cb0000;
+}
+#contentColumn .rawHTMLAsset .blue-header a {
+	color: #cb0000;
+}
+.blue-header {
+	background-color: #fff0f0 !important;
+}
+
+/* Company Page Styles */
+#manufacturerInfo a {
+	color: #cb0000;
+}
+
+/* DERM DX */
+#dermDX-tabs ul.dermDX-tabs-nav li.ui-tabs-active a {
+	color: #cb0000;
+	border-top: 4px solid #cb0000;
+}
+
+/* Derm DX Poll */
+#dermDx-poll-content h3 {
+	color: #cb0000;
+}
+#dermDx-poll-submit.enabled {
+	background-color: #cb0000;
+}
+#dermDx-poll-prev {
+	background-color: #cb0000;
+}
+#dermDx-poll-next {
+	background-color: #cb0000;
+}
+#dermDx-poll-submit.enabled:hover {
+	background-color: #fff0f0;
+}
+nav#mainNav > ul > li > a,
+.navbarClmHeader {
+    color: #cb0000;
+}
+.dropdown1col a,
+.dropdown4col a {
+    color: #cb0000;
+}
+.utilityNavLinks a {
+    color: #cb0000;
+}
+.pds-vote-button,
+#articleColumn article a.pds-vote-button {
+	background-color: #cb0000;
+}
+.final-countdown span.count {
+	font-family: 'CodeProRegular';
+	-webkit-text-stroke-width: 0.5px;
+	background: #cb0000;
+	background: -moz-linear-gradient(top, #cb0000 0%, #b50505 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cb0000), color-stop(100%, #b50505));
+	background: -webkit-linear-gradient(top, #cb0000 0%, #b50505 100%);
+	background: -o-linear-gradient(top, #cb0000 0%, #b50505 100%);
+	background: -ms-linear-gradient(top, #cb0000 0%, #b50505 100%);
+	background: linear-gradient(to bottom, #cb0000 0%, #b50505 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb0000', endColorstr='#b50505', GradientType=0 );
+}
+#utilityNav > ul li a.facebookIcon {
+	background: url("../simages/twenty-twenty/cardioadvisor/pa-social-icons.gif") no-repeat left top transparent;
+}
+#utilityNav > ul li a.twitterIcon {
+	background: url("../simages/twenty-twenty/cardioadvisor/pa-social-icons.gif") no-repeat -25px top transparent;
+}
+#utilityNav > ul li a.googleplusIcon {
+	background: url("../simages/twenty-twenty/cardioadvisor/pa-social-icons.gif") no-repeat -75px top transparent;
+}
+#utilityNav > ul li a.linkedinIcon {
+	background: url("../simages/twenty-twenty/cardioadvisor/pa-social-icons.gif") no-repeat -50px top transparent;
+}
+#showSearchButton {
+	background: url('../simages/twenty-twenty/cardioadvisor/search-icon.png') no-repeat 50% 50% transparent;
+}
+.nav-search-wrapper {
+	background: url('../simages/twenty-twenty/cardioadvisor/search-gradient.png') no-repeat transparent;
+}
+#searchSubmit {
+	background: url('../simages/twenty-twenty/cardioadvisor/search-icon-active.png') no-repeat right 50% #FFF;
+}
+@media only screen and (max-width:768px) {
+	#navMobileDropArrow a {
+		background-image: url('../simages/twenty-twenty/cardioadvisor/mobile-nav-arrow.png');
+	}
+	#navMobileMore .nav-search-wrapper #searchSubmit {
+		background: url("../simages/twenty-twenty/cardioadvisor/search-icon.png") no-repeat top left transparent;
+	}
+}
+@media only screen and (max-width:400px) {
+	#globalFooter .footer-right #footerLogo {
+		background: url("../simages/twenty-twenty/cardioadvisor/logo-footer-mobile.png") no-repeat top left transparent;
+	}
+}

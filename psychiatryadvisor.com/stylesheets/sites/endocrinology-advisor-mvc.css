@@ -1,0 +1,475 @@
+
+/* SITE SPECIFIC STYLES */
+/* //TEMPLATE///////////////////////////////////////////////////// */
+body {
+	background: url("../simages/twenty-twenty/endocrinology/body-bkg.png") repeat 50% 50% #f6e8e8;
+}
+a {
+	color: #9b2d06;
+}
+
+/* //BREADCRUMBS///////////////////////////////////////////////////// */
+#breadCrumbs a {
+	color: #9b2d06;
+}
+
+/* //MAIN CONTENT///////////////////////////////////////////////////// */
+#contentColumn .sectionBox h2.sectionHeadline a:hover,
+#contentColumn .sectionBox h2.sectionHeadline a:focus,
+#contentColumn .sectionBox h2.sectionHeadline a:active,
+#contentColumn .sectionBox h2.sectionHeadlineBig a:hover,
+#contentColumn .sectionBox h2.sectionHeadlineBig a:focus,
+#contentColumn .sectionBox h2.sectionHeadlineBig a:active {
+	color: #9b2d06;
+}
+#contentColumn .sectionBox .searchTCList a {
+	color: #9b2d06;
+}
+#contentColumn .sectionBox .sectionByline a {
+	color: #9b2d06;
+}
+#contentColumn h1.articleFormatTitle,
+#contentColumn h3.sectionTitle,
+#contentColumn h3.tabbedAssetTitle,
+#contentColumn .rawHTMLAsset #drugSearchAsset h3,
+#contentColumn .rawHTMLAsset .big {
+	color: #9b2d06;
+}
+#contentColumn .qryMoreLink a {
+	color: #9b2d06;
+}
+#contentColumn .rawHTMLAsset h1,
+#contentColumn .rawHTMLAsset h2,
+#contentColumn .rawHTMLAsset h3 {
+	color: #9b2d06;
+}
+#contentColumn .rawHTMLAsset a {
+	color: #9b2d06;
+}
+#contentColumn .image-overlay-format a:hover,
+#contentColumn .image-overlay-format a:focus,
+#contentColumn .image-overlay-format a:active {
+	color: #9b2d06;
+}
+#contentColumn .relatedArticles .relatedArticlesTitle {
+	color: #9b2d06;
+}
+#contentColumn .relatedArticles a:hover,
+#contentColumn .relatedArticles a:focus,
+#contentColumn .relatedArticles a:active {
+	color: #9b2d06;
+}
+#contentColumn h3.sectionTitle .highlight {
+	background: url('../simages/twenty-twenty/endocrinology/sectiontitle-bkg.png') no-repeat 5px 50% #f6e8e8;
+}
+#contentColumn .grid_row > .grid_4:first-child .sectionBox h2.sectionHeadline {
+	background: url('../simages/twenty-twenty/endocrinology/headline-bullet.png') no-repeat 8px 10px transparent;
+}
+
+/* //DRUG PAGES///////////////////////////////////////////////////// */
+#browseByFilter a:hover,
+#browseByFilter a:focus,
+#browseByFilter a:active {
+	background-color: #9b2d06;
+	border: solid 1px #9b2d06;
+}
+#browseByFilterRange a:hover {
+	color: #9b2d06;
+}
+.dropBtnWrap .dropBtnActions a {
+	color: #9b2d06;
+}
+.dropBtnWrap .dropBtnActions a:hover,
+.dropBtnWrap .dropBtnActions a:focus,
+.dropBtnWrap .dropBtnActions a:active {
+	color: #9b2d06;
+}
+#browseByList table a:hover,
+#browseByList table a:focus,
+#browseByList table a:active {
+	color: #9b2d06;
+}
+#drugInfo a,
+#monographIndications a {
+	color: #9b2d06;
+}
+#drugInfo a:hover,
+#drugInfo a:focus,
+#drugInfo a:active,
+#monographIndications a:hover,
+#monographIndications a:focus,
+#monographIndications a:active {
+	color: #9b2d06;
+}
+#monographIndications #monographNav li.ui-state-active a {
+	background-color: #9b2d06;
+}
+
+/* Compare Page Styles */
+#plainLayoutColumn a {
+	color: #9b2d06;
+}
+#plainLayoutColumn a:hover,
+#plainLayoutColumn a:focus,
+#plainLayoutColumn a:active {
+	color: #9b2d06;
+}
+.drugCompareListItems ul li.compareTcName {
+	color: #9b2d06;
+}
+
+/* Browser By Disease */
+.browserByDiseaseItems a {
+	color: #9b2d06;
+}
+
+/* //ARTICLE///////////////////////////////////////////////////// */
+#articleColumn article a,
+#articleColumn .articleAuthor a {
+	color: #9b2d06;
+}
+
+/* //DRUG SEARCH ASSET///////////////////////////////////////////////////// */
+#contentColumn .rawHTMLAsset #drugSearchAsset a {
+	color: #9b2d06;
+}
+
+/* //TABBED ASSET///////////////////////////////////////////////////// */
+.tabbedAssetNav li a {
+	background-color: #f6e8e8;
+}
+.tabbedAssetNav li a:hover,
+.tabbedAssetNav li a:focus,
+.tabbedAssetNav li a:active {
+	color: #9b2d06;
+}
+.tabbedAssetNav li.ui-state-active a {
+	background-color: #9b2d06;
+	color: #FFF;
+}
+
+/* //CAROUSEL//////////////////////////////////////////////////// */
+#carouselWrapper .carousel li a {
+	color: #9b2d06;
+}
+#carouselWrapper .carousel li a:hover,
+#carouselWrapper .carousel li a:focus,
+#carouselWrapper .carousel li a:active {
+	color: #9b2d06;
+}
+#carouselWrapper .carouselNext {
+	background: url("../simages/twenty-twenty/endocrinology/carousel-next-arrow.png") no-repeat left top transparent;
+}
+#carouselWrapper .carouselPrev {
+	background: url("../simages/twenty-twenty/endocrinology/carousel-prev-arrow.png") no-repeat left top transparent;
+}
+
+/* //RIGHT COLUMN///////////////////////////////////////////////////// */
+#rightColumn h3.sectionTitle {
+	color: #9b2d06;
+}
+
+/* //RIGHT COLUMN NEWSLETTER ASSET///////////////////////////////////////////////////// */
+#rightColumn #emailAlertsWrapper {
+	border: solid 1px #9b2d06;
+}
+#rightColumn #emailAlertsWrapper #emailAlertsSubmit {
+	background: url("../simages/twenty-twenty/endocrinology/sign-up.png") no-repeat 50% 50% #9b2d06;
+}
+
+/* //RIGHT COLUMN MOST ARTICLES ASSET///////////////////////////////////////////////////// */
+#rightColumn #mostArticleTabs h3 {
+	color: #9b2d06;
+}
+#rightColumn #mostArticleTabs .mostArticleTabsContent li {
+	color: #9b2d06;
+}
+#rightColumn #mostArticleTabs .mostArticleTabsContent a:hover,
+#rightColumn #mostArticleTabs .mostArticleTabsContent a:focus,
+#rightColumn #mostArticleTabs .mostArticleTabsContent a:active {
+	color: #9b2d06;
+}
+
+/* //RIGHT COLUMN FEATURED JOBS ASSET///////////////////////////////////////////////////// */
+#rightColumn #featured-jobs .heading a {
+	color: #9b2d06;
+}
+#rightColumn #featured-jobs form {
+	border: solid 1px #9b2d06;
+}
+#rightColumn #featured-jobs form .search_submit {
+	background-color: #9b2d06;
+}
+#rightColumn #featured-jobs .jt_job a {
+	color: #9b2d06;
+}
+#rightColumn #featured-jobs .jt_row2 {
+	background-color: #f6e8e8;
+}
+
+/* //RIGHT COLUMN TAG CLOUD AND BLOG ASSET///////////////////////////////////////////////////// */
+#rightColumn #tagCloud h3,
+#rightColumn #rightColBlogAsset h3 {
+	color: #9b2d06;
+}
+#rightColumn #tagCloud a:hover,
+#rightColumn #tagCloud a:focus,
+#rightColumn #tagCloud a:active {
+	color: #9b2d06;
+}
+#rightColumn #rightColBlogAsset a {
+	color: #9b2d06;
+}
+
+/* //BOTTOM FEATURED ARTICLES///////////////////////////////////////////////////// */
+.featuredArticlesBottom h3 {
+	color: #9b2d06;
+}
+.featuredArticlesBottom h2 a:hover,
+.featuredArticlesBottom h2 a:focus,
+.featuredArticlesBottom h2 a:active {
+	color: #9b2d06;
+}
+
+/* //SLIDESHOWS///////////////////////////////////////////////////// */
+#slideshowContent a {
+	color: #9b2d06;
+}
+
+/* //RECENT SLIDESHOW ASSET///////////////////////////////////////////////////// */
+#recentSlideshows .recent-slideshow-item h2 a {
+	color: #9b2d06;
+}
+
+/* //MINI ROTATOR///////////////////////////////////////////////////// */
+#contentColumn .miniRotator .galleria-info-title a:hover,
+#contentColumn .miniRotator .galleria-info-title a:focus,
+#contentColumn .miniRotator .galleria-info-title a:active {
+	color: #9b2d06;
+}
+
+/* //FOOTER///////////////////////////////////////////////////// */
+#globalFooter .copyrightText a {
+	color: #9b2d06;
+}
+.footer_col h1,
+.footer_col h2,
+.footer_col h3,
+.footer_col h4,
+.footer_col h5,
+.footer_col h6 {
+	color: #9b2d06;
+}
+#globalFooter .footer-right .footer_col a:hover,
+#globalFooter .footer-right .footer_col a:focus,
+#globalFooter .footer-right .footer_col a:active {
+	color: #9b2d06;
+}
+#globalFooter #footerIcons > li a.facebookIcon {
+	background: url("../simages/twenty-twenty/endocrinology/pa-social-icons.gif") no-repeat left top transparent;
+}
+#globalFooter #footerIcons > li a.twitterIcon {
+	background: url("../simages/twenty-twenty/endocrinology/pa-social-icons.gif") no-repeat -25px top transparent;
+}
+#globalFooter #footerIcons > li a.googleplusIcon {
+	background: url("../simages/twenty-twenty/endocrinology/pa-social-icons.gif") no-repeat -75px top transparent;
+}
+#globalFooter #footerIcons > li a.linkedinIcon {
+	background: url("../simages/twenty-twenty/endocrinology/pa-social-icons.gif") no-repeat -50px top transparent;
+}
+#globalFooter #footerLogo {
+	width: 199px;
+	height: 33px;
+	background: url("../simages/twenty-twenty/endocrinology/logo-footer.png") no-repeat top left transparent;
+}
+
+/* //GOOGLE ADS///////////////////////////////////////////////////// */
+.googleTextAdsByGoogle a {
+	color: #9b2d06;
+}
+.GoogleAd a {
+	color: #9b2d06;
+}
+
+/* //LIGHTBOX///////////////////////////////////////////////////// */
+#lightboxHeader h3,
+#lightboxEmailHeader h3 {
+	color: #9b2d06;
+}
+
+/* Edit Password Lightbox */
+/* //SOCIAL ICONS///////////////////////////////////////////////////// */
+.socialIcons {
+	background: url(../simages/twenty-twenty/endocrinology/disque-icons.png) no-repeat left top transparent;
+}
+
+/* //SOCIAL BAR///////////////////////////////////////////////////// */
+#socialEmail {
+	background: url(../simages/twenty-twenty/endocrinology/social-bar-email-icon.png) no-repeat;
+}
+#socialPrint {
+	background: url(../simages/twenty-twenty/endocrinology/social-bar-print-icon.png) no-repeat;
+}
+
+/* Search Results Styles */
+.searchDirectoryCategory a {
+	color: #9b2d06;
+}
+.sectionHeadlineTopics a {
+	color: #9b2d06;
+}
+
+/* Pagination  Styles */
+#paginationList li a.current {
+	background-color: #9b2d06;
+}
+
+/* HEAD ARTICLES */
+.headerArticleBox a:hover,
+.headerArticleBox a:focus,
+.headerArticleBox a:active {
+	color: #9b2d06;
+}
+
+/* Activity Format Styles */
+.activityTileCredits {
+	color: #9b2d06;
+}
+.activityFormatContent h2 a:hover,
+.activityFormatContent h2 a:focus,
+.activityFormatContent h2 a:active {
+	color: #9b2d06;
+}
+
+/* GATED ARTICLE */
+ul.gatedWhyRegisterList li {
+	color: #9b2d06;
+}
+
+/* Style to hide the logout button */
+.printContainer #articleColumn a {
+	color: #9b2d06;
+}
+
+/* My Account Page Styles */
+h1.subpageHeadline {
+	color: #9b2d06;
+}
+.featuredArticle .sectionByline a {
+	color: #9b2d06; /* Derm DX Poll */
+}
+.featuredArticle h2.sectionHeadlineBig a:hover,
+.featuredArticle h2.sectionHeadlineBig a:focus,
+.featuredArticle h2.sectionHeadlineBig a:active {
+	color: #9b2d06;
+}
+.featuredArticle .sectionCat {
+	color: #9b2d06;
+}
+.sectionBulletLinks {
+	color: #9b2d06;
+}
+.sectionBulletLinks li a:hover {
+	color: #9b2d06;
+}
+#contentColumn .rawHTMLAsset .drug-listings .row a span {
+	background: url('../simages/twenty-twenty/endocrinology/listing_button_arrow.png') no-repeat right 0;
+}
+#contentColumn .rawHTMLAsset .blue-header h1 {
+	color: #9b2d06;
+}
+#contentColumn .rawHTMLAsset .blue-header a {
+	color: #9b2d06;
+}
+.blue-header {
+	background-color: #f8f0ed !important;
+}
+
+/* Company Page Styles */
+#manufacturerInfo a {
+	color: #9b2d06;
+}
+
+/* DERM DX */
+#dermDX-tabs ul.dermDX-tabs-nav li.ui-tabs-active a {
+	color: #9b2d06;
+	border-top: 4px solid #9b2d06;
+}
+
+/* Derm DX Poll */
+#dermDx-poll-content h3 {
+	color: #9b2d06;
+}
+#dermDx-poll-submit.enabled {
+	background-color: #9b2d06;
+}
+#dermDx-poll-prev {
+	background-color: #9b2d06;
+}
+#dermDx-poll-next {
+	background-color: #9b2d06;
+}
+#dermDx-poll-submit.enabled:hover {
+	background-color: #f6e8e8;
+}
+nav#mainNav > ul > li > a,
+.navbarClmHeader {
+    color: #9b2d06;
+}
+.dropdown1col a,
+.dropdown4col a {
+    color: #9b2d06;
+}
+.utilityNavLinks a {
+    color: #9b2d06;
+}
+.pds-vote-button,
+#articleColumn article a.pds-vote-button {
+	background-color: #9b2d06;
+}
+.final-countdown span.count {
+	font-family: 'CodeProRegular';
+	-webkit-text-stroke-width: 0.5px;
+	background: #9b2d06;
+	background: -moz-linear-gradient(top, #9b2d06 0%, #792405 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #9b2d06), color-stop(100%, #792405));
+	background: -webkit-linear-gradient(top, #9b2d06 0%, #792405 100%);
+	background: -o-linear-gradient(top, #9b2d06 0%, #792405 100%);
+	background: -ms-linear-gradient(top, #9b2d06 0%, #792405 100%);
+	background: linear-gradient(to bottom, #9b2d06 0%, #792405 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9b2d06', endColorstr='#792405', GradientType=0 );
+}
+#utilityNav > ul li a.facebookIcon {
+	background: url("../simages/twenty-twenty/endocrinology/pa-social-icons.gif") no-repeat left top transparent;
+}
+#utilityNav > ul li a.twitterIcon {
+	background: url("../simages/twenty-twenty/endocrinology/pa-social-icons.gif") no-repeat -25px top transparent;
+}
+#utilityNav > ul li a.googleplusIcon {
+	background: url("../simages/twenty-twenty/endocrinology/pa-social-icons.gif") no-repeat -75px top transparent;
+}
+#utilityNav > ul li a.linkedinIcon {
+	background: url("../simages/twenty-twenty/endocrinology/pa-social-icons.gif") no-repeat -50px top transparent;
+}
+#showSearchButton {
+	background: url('../simages/twenty-twenty/endocrinology/search-icon.png') no-repeat 50% 50% transparent;
+}
+.nav-search-wrapper {
+	background: url('../simages/twenty-twenty/endocrinology/search-gradient.png') no-repeat transparent;
+}
+#searchSubmit {
+	background: url('../simages/twenty-twenty/endocrinology/search-icon-active.png') no-repeat right 50% #FFF;
+}
+@media only screen and (max-width:768px) {
+	#navMobileDropArrow a {
+		background-image: url('../simages/twenty-twenty/endocrinology/mobile-nav-arrow.png');
+	}
+	#navMobileMore .nav-search-wrapper #searchSubmit {
+		background: url("../simages/twenty-twenty/endocrinology/search-icon.png") no-repeat top left transparent;
+	}
+}
+@media only screen and (max-width:400px) {
+	#globalFooter .footer-right #footerLogo {
+		background: url("../simages/twenty-twenty/endocrinology/logo-footer-mobile.png") no-repeat top left transparent;
+	}
+}

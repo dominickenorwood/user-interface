@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="adverttracking">
+<head>
+    <title>Insights realtime</title>
+    <link rel="stylesheet" href="content/styles.css" />
+</head>
+<body ng-controller="SignalRAngularCtrl" ng-class="showHideScroll">
+    <div id="wrapper">
+        <div id="dashboard">
+            <div class="row dashboard-header">
+                <div class="col-md-4">
+                    <h1>Ad Tracking Dashboard</h1>
+                </div>
+                <div class="col-md-4">
+                    <div>
+                        <div class="row website-select">
+                            <div class="col-md-3">
+                                <h2 class="choose-website">Choose Website</h2>
+                            </div>
+                            <div class="col-md-9">
+                                <div><select ng-model="websiteSelect" ng-options="website.name for website in websites" ng-change="changeSites()"></select><i class="fa fa-caret-down fa-2x"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div>
+                        <div class="row chrono">
+                            <div class="col-md-3">
+                                <h2 class="choose-website">Choose Granularity</h2>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default" ng-class="setCurrentClass($index)" ng-repeat="grain in granularityArray" ng-click="switchTime($index)">{{grain.name}}</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-bottom-border">
+                <div class="col-md-6">
+                    <section class="pie-section">
+                        <header>
+                            <h3> Top Professions</h3>
+                            <p>The top 5 professions using {{websiteSelect.name}} as of {{date | date:'MM/dd/yyyy h:mma'}}.</p>
+                        </header>
+                        <div class="pie-charts professions">
+                            <div class="pie-chart" ng-class="pieChart0" ng-click="pieChartClicked(professionName0, 0)">
+                                <span easypiechart class="chart" percent="professionPercent0" options="professionOptions">
+                                    <span class="percent" ng-class="currentPie0">{{professionPercent0}}<sup>%</sup></span>
+                                </span>
+                                <div class="pie-count" ng-class="currentPie0"><span>{{professionCount0}}</span><i class="fa fa-caret-down"></i></div>
+                                <div class="pie-chart-fill" ng-class="currentPie0"></div>
+                                <div class="pie-chart-border" ng-class="currentPie0"></div>
+                                <div class="pie-chart-outer-border"></div>
+                                <h3>{{professionName0}}</h3>
+                            </div>
+                            <div class="pie-chart" ng-class="pieChart1" ng-click="pieChartClicked(professionName1,1)">
+                                <span easypiechart class="chart" percent="professionPercent1" options="professionOptions">
+                                    <span class="percent" ng-class="currentPie1">{{professionPercent1}}<sup>%</sup></span>
+                                </span>
+                                <div class="pie-count" ng-class="currentPie1"><span>{{professionCount1}}</span><i class="fa fa-caret-down"></i></div>
+                                <div class="pie-chart-fill" ng-class="currentPie1"></div>
+                                <div class="pie-chart-border" ng-class="currentPie1"></div>
+                                <div class="pie-chart-outer-border"></div>
+                                <h3>{{professionName1}}</h3>
+                            </div>
+                            <div class="pie-chart" ng-class="pieChart2" ng-click="pieChartClicked(professionName2,2)">
+                                <span easypiechart class="chart" percent="professionPercent2" options="professionOptions">
+                                    <span class="percent" ng-class="currentPie2">{{professionPercent2}}<sup>%</sup></span>
+                                </span>
+                                <div class="pie-count" ng-class="currentPie2"><span>{{professionCount2}}</span><i class="fa fa-caret-down"></i></div>
+                                <div class="pie-chart-fill" ng-class="currentPie2"></div>
+                                <div class="pie-chart-border" ng-class="currentPie2"></div>
+                                <div class="pie-chart-outer-border"></div>
+                                <h3>{{professionName2}}</h3>
+                            </div>
+                            <div class="pie-chart" ng-class="pieChart3" ng-click="pieChartClicked(professionName3,3)">
+                                <span easypiechart class="chart" percent="professionPercent3" options="professionOptions">
+                                    <span class="percent" ng-class="currentPie3">{{professionPercent3}}<sup>%</sup></span>
+                                </span>
+                                <div class="pie-count" ng-class="currentPie3"><span>{{professionCount3}}</span><i class="fa fa-caret-down"></i></div>
+                                <div class="pie-chart-fill" ng-class="currentPie3"></div>
+                                <div class="pie-chart-border" ng-class="currentPie3"></div>
+                                <div class="pie-chart-outer-border"></div>
+                                <h3>{{professionName3}}</h3>
+                            </div>
+                            <div class="pie-chart" ng-class="pieChart4" ng-click="pieChartClicked(professionName4,4)">
+                                <span easypiechart class="chart" percent="professionPercent4" options="professionOptions">
+                                    <span class="percent" ng-class="currentPie4">{{professionPercent4}}<sup>%</sup></span>
+                                </span>
+                                <div class="pie-count" ng-class="currentPie4"><span>{{professionCount4}}</span><i class="fa fa-caret-down"></i></div>
+                                <div class="pie-chart-fill" ng-class="currentPie4"></div>
+                                <div class="pie-chart-border" ng-class="currentPie4"></div>
+                                <div class="pie-chart-outer-border"></div>
+                                <h3>{{professionName4}}</h3>
+                            </div>
+                            <div style="clear:both;"></div>
+                        </div>
+                    </section>
+                    <section class="pie-section">
+                        <header>
+                            <h3 class="top-specialties">Top Specialties</h3>
+                            <p>The top 5 specialties using {{websiteSelect.name}} as of {{date | date:'MM/dd/yyyy h:mma'}}.</p>
+                        </header>
+                        <div class="pie-charts specialties">
+                            <div class="pie-chart" ng-class="pieChartSpecialties0">
+                                <span easypiechart class="chart" percent="specialtiesPercent0" options="specialtiesOptions">
+                                    <span class="percent">{{specialtiesPercent0}}<sup>%</sup></span>
+                                </span>
+                                <div class="pie-count"><span>{{specialtiesCount0}}</span><i class="fa fa-caret-down"></i></div>
+                                <div class="pie-chart-fill"></div>
+                                <div class="pie-chart-border"></div>
+                                <div class="pie-chart-outer-border"></div>
+                                <h3>{{specialtiesName0}}</h3>
+                            </div>
+                            <div class="pie-chart" ng-class="pieChartSpecialties1">
+                                <span easypiechart class="chart" percent="specialtiesPercent1" options="specialtiesOptions">
+                                    <span class="percent">{{specialtiesPercent1}}<sup>%</sup></span>
+                                </span>
+                                <div class="pie-count"><span>{{specialtiesCount1}}</span><i class="fa fa-caret-down"></i></div>
+                                <div class="pie-chart-fill"></div>
+                                <div class="pie-chart-border"></div>
+                                <div class="pie-chart-outer-border"></div>
+                                <h3>{{specialtiesName1}}</h3>
+                            </div>
+                            <div class="pie-chart" ng-class="pieChartSpecialties2">
+                                <span easypiechart class="chart" percent="specialtiesPercent2" options="specialtiesOptions">
+                                    <span class="percent">{{specialtiesPercent2}}<sup>%</sup></span>
+                                </span>
+                                <div class="pie-count"><span>{{specialtiesCount2}}</span><i class="fa fa-caret-down"></i></div>
+                                <div class="pie-chart-fill"></div>
+                                <div class="pie-chart-border"></div>
+                                <div class="pie-chart-outer-border"></div>
+                                <h3>{{specialtiesName2}}</h3>
+                            </div>
+                            <div class="pie-chart" ng-class="pieChartSpecialties3">
+                                <span easypiechart class="chart" percent="specialtiesPercent3" options="specialtiesOptions">
+                                    <span class="percent">{{specialtiesPercent3}}<sup>%</sup></span>
+                                </span>
+                                <div class="pie-count"><span>{{specialtiesCount3}}</span><i class="fa fa-caret-down"></i></div>
+                                <div class="pie-chart-fill"></div>
+                                <div class="pie-chart-border"></div>
+                                <div class="pie-chart-outer-border"></div>
+                                <h3>{{specialtiesName3}}</h3>
+                            </div>
+                            <div class="pie-chart" ng-class="pieChartSpecialties4">
+                                <span easypiechart class="chart" percent="specialtiesPercent4" options="specialtiesOptions">
+                                    <span class="percent">{{specialtiesPercent4}}<sup>%</sup></span>
+                                </span>
+                                <div class="pie-count"><span>{{specialtiesCount4}}</span><i class="fa fa-caret-down"></i></div>
+                                <div class="pie-chart-fill"></div>
+                                <div class="pie-chart-border"></div>
+                                <div class="pie-chart-outer-border"></div>
+                                <h3>{{specialtiesName4}}</h3>
+                            </div>
+                            <div class="pie-chart" ng-class="pieChartSpecialties5">
+                                <span easypiechart class="chart" percent="specialtiesPercent5" options="specialtiesOptions">
+                                    <span class="percent">{{specialtiesPercent5}}<sup>%</sup></span>
+                                </span>
+                                <div class="pie-count"><span>{{specialtiesCount5}}</span><i class="fa fa-caret-down"></i></div>
+                                <div class="pie-chart-fill"></div>
+                                <div class="pie-chart-border"></div>
+                                <div class="pie-chart-outer-border"></div>
+                                <h3>{{specialtiesName5}}</h3>
+                            </div>
+                            <div class="pie-chart" ng-class="pieChartSpecialties6">
+                                <span easypiechart class="chart" percent="specialtiesPercent6" options="specialtiesOptions">
+                                    <span class="percent">{{specialtiesPercent6}}<sup>%</sup></span>
+                                </span>
+                                <div class="pie-count"><span>{{specialtiesCount6}}</span><i class="fa fa-caret-down"></i></div>
+                                <div class="pie-chart-fill"></div>
+                                <div class="pie-chart-border"></div>
+                                <div class="pie-chart-outer-border"></div>
+                                <h3>{{specialtiesName6}}</h3>
+                            </div>
+                            <div style="clear:both;"></div>
+                        </div>
+                    </section>
+                    <section class="advert-module">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <header>
+                                    <hgroup>
+                                        <h3>Top Adverts Viewed</h3>
+                                        <h4>{{granularityTitle}}</h4>
+                                    </hgroup>
+                                </header>
+                                <div class="adverts">
+                                    <div class="adverts-box">
+                                        <div class="advert" ng-repeat="advert in advertsViewedArray">
+                                            <div class="row">
+                                                <div class="col-md-7">
+                                                    <hgroup>
+                                                        <h1>{{advert.Advert.Name}}</h1>
+                                                        <h3>{{advert.Advert.Company}}</h3>
+                                                    </hgroup>
+                                                </div>
+                                                <div class="col-md-5">
+                                                    <h2>{{advert.Count | number : 0}}</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <header>
+                                    <hgroup>
+                                        <h3>Top Adverts Clicked</h3>
+                                        <a href="~/details/{{websiteSelect.value}}?name={{websiteSelect.name}}&webid={{websiteSelect.value}}&hours={{selectedGranularity}}"><i class="fa fa-globe"></i> Overview</a> 
+                                        <h4>{{granularityTitle}}</h4>
+                                    </hgroup>
+                                </header>
+                                <div class="adverts">
+                                    <div class="adverts-box">
+                                        <div class="advert" ng-repeat="advert in advertsClickedArray">
+                                            <div class="row">
+                                                <div class="col-md-7">
+                                                    <hgroup>
+                                                        <h1>{{advert.Advert.Name}}</h1>
+                                                        <h3>{{advert.Advert.Company}}</h3>
+                                                    </hgroup>
+                                                </div>
+                                                <div class="col-md-5">
+                                                    <h2>{{advert.Count | number : 0}}</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-md-3 row-border">
+                    <section>
+                        <header>
+                            <h3>Top Campaigns</h3>
+                            <p>The top 5 campaigns viewing {{websiteSelect.name}} as of {{date | date:'MM/dd/yyyy h:mma'}}.</p>
+                        </header>
+                        <div class="bar-chart">
+                            <div class="chart-lines">
+                                <span class="line-title">Number Of Visits</span>
+                                <span class="line"><span>{{campaignHighest}}</span></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"><span>{{campaignHalf}}</span></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"><span>{{campaignLowest}}</span></span>
+                            </div>
+                            <div class="chart">
+                                <div class="advert-bar" ng-repeat="bar in professionsBarChartArray">
+                                    <div class="bar" style="height:{{bar.Percent}}%"><div class="fill"></div><div class="bar-count"><span>{{bar.Count}}</span><i class="fa fa-caret-down"></i></div></div>
+                                </div>
+                                <div style="clear:both;"></div>
+                                <div class="chart-labels">
+                                    <div ng-repeat="names in professionsBarChartArray"><span>{{names.Name | characters:20}}</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <header>
+                            <h3>Top Ad Positions</h3>
+                        </header>
+                        <div class="ad-postions-wrapper">
+                            <div class="ad-positions">
+                                <div class="positions">
+                                    <div class="section-1 block" ng-class="heat1">
+                                        <div class="bullet">
+                                            <div class="background">
+                                                <div class="dot"></div>
+                                                <span class="line"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="section-2 block" ng-class="heat2">
+                                        <div class="bullet">
+                                            <div class="background">
+                                                <div class="dot"></div>
+                                                <span class="line"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slug"></div>
+                                    <div class="section-3 block" ng-class="heat3">
+                                        <div class="bullet">
+                                            <div class="background">
+                                                <div class="dot"></div>
+                                                <span class="line"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="section-4 block" ng-class="heat4">
+                                        <div class="bullet">
+                                            <div class="background">
+                                                <div class="dot"></div>
+                                                <span class="line"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="section-5 block" ng-class="heat5">
+                                        <div class="bullet">
+                                            <div class="background">
+                                                <div class="dot"></div>
+                                                <span class="line"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="section-6 block" ng-class="heat6">
+                                        <div class="bullet">
+                                            <div class="background">
+                                                <div class="dot"></div>
+                                                <span class="line"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="section-7 block" ng-class="heat7">
+                                        <div class="bullet">
+                                            <div class="background">
+                                                <div class="dot"></div>
+                                                <span class="line"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="section-8 block" ng-class="heat8">
+                                        <div class="bullet">
+                                            <div class="background">
+                                                <div class="dot"></div>
+                                                <span class="line"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="section-9 block" ng-class="heat9">
+                                        <div class="bullet">
+                                            <div class="background">
+                                                <div class="dot"></div>
+                                                <span class="line"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="liquid-slots">
+                                    <div class="section-10 block" ng-class="heat10">
+                                        <div class="bullet">
+                                            <div class="background">
+                                                <div class="dot"></div>
+                                                <span class="line"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="clear:both;"></div>
+                                    <div class="section-11 block" ng-class="heat11">
+                                        <div class="bullet">
+                                            <div class="background">
+                                                <div class="dot"></div>
+                                                <span class="line"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ad-positions-percentages">
+                                <div class="percentage" ng-repeat="percentage in topAdPositionsArray">
+                                    <div class="box">
+                                        <h1>{{percentage.Name}}</h1>
+                                        <h3>{{percentage.Count}}</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="clear:both;"></div>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-md-3">
+                    <section>
+                        <header>
+                            <h3>Platform</h3>
+                            <p>The platform split used to view {{websiteSelect.name}} as of  {{date | date:'MM/dd/yyyy h:mma'}}.</p>
+                        </header>
+                        <div class="platform">
+                            <div class="devices">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="desktop">
+                                            <div class="screen">
+                                                <div class="box">
+                                                    <div class="highlight"></div>
+                                                </div>
+                                            </div>
+                                            <div class="stand"></div>
+                                            <div class="base"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mobile">
+                                        <div class="tablet">
+                                            <div class="screen">
+                                                <div class="box">
+                                                    <div class="highlight"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="phone">
+                                            <div class="screen">
+                                                <div class="box">
+                                                    <div class="highlight"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="percentages">
+                                <h1>{{desktopPercentage}}%</h1>
+                                <h1>{{mobilePercentage}}%</h1>
+                                </div>
+                            </div>
+                    </section>
+                    <section>
+                        <header>
+                            <h3>Geo Tracking</h3>
+                        </header>
+                        <div class="map">
+                            <div id="chart_div"></div>
+                            <h1><span>PST</span>{{easternPercentage}}%</h1>
+                            <h1><span>MST</span>{{centralPercentage}}%</h1>
+                            <h1><span>CST</span>{{mountainPercentage}}%</h1>
+                            <h1><span>EST</span>{{pacificPercentage}}%</h1>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div id="overlay-spinner" ng-class="overlay">
+            <div class="wrap">
+            <i class="fa fa-cog fa-spin"></i> 
+            </div>
+        </div>
+    </div>
+    <script src="scripts/jquery-2.1.1.js"></script>
+    <script src="scripts/angular/angular.min.js"></script>
+    <script src="scripts/angular/angular-resource.min.js"></script>
+    <script src="scripts/angular/angular-route.min.js"></script>
+    <script src="scripts/angular/angular.easypiechart.min.js"></script>
+    <script src="scripts/angular/ui-bootstrap-tpls-0.11.0.min.js"></script>
+    <script src="scripts/jquery.signalR-2.0.3.js"></script>
+    <!--<script src="signalr/hubs"></script>-->
+    <script src="scripts/routes/routes.js"></script>
+    <script src="scripts/filters/filters.js"></script>
+    <script src="scripts/directives/directives.js"></script>
+    <script src="scripts/services/services.js"></script>
+    <script src="scripts/controllers/controllers.js"></script>
+    <script src="content/bootstrap/js/bootstrap.min.js"></script>
+    <script type='text/javascript' src='https://www.google.com/jsapi'></script>
+    <script type='text/javascript'>
+        google.load('visualization', '1', { 'packages': ['geochart'] });
+
+        google.setOnLoadCallback(drawVisualization);
+        function drawVisualization() {
+        var data = new google.visualization.DataTable();
+            data.addColumn('number', 'LATITUDE', 'Latitude');                                
+            data.addColumn('number', 'LONGITUDE', 'Longitude');
+            data.addColumn('number', 'VALUE', 'Value');
+            data.addColumn({type:'string', role:'tooltip'});                         
+            data.addRows([[0,0,0,'']]);
+            var options = {
+                    sizeAxis: { minValue: 0, maxValue: 100 },
+                    region: 'US',
+                    displayMode: 'markers',
+                    colorAxis: { colors: ['#aadded', '#1091ba'] },
+                    backgroundColor: { fill: 'transparent' },
+                    datalessRegionColor: 'transparent',
+                    enableRegionInteractivity : true,
+                    legend: 'none',
+                    width: 400,
+                    tooltip : {trigger : 'none'},
+            }; 
+
+            var chart = new google.visualization.GeoChart(document.getElementById('chart_div'));
+            chart.draw(data, options);
+        };
+    </script>
+</body>
+</html>

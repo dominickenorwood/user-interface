@@ -1,0 +1,88 @@
+document.write('<style>\r\n' +
+'.ml-context .ml-modlinks {\r\n' +
+'font: bold 12px Arial,Helvetica,sans-serif; text-decoration: none; \r\n' +
+'color: #254D62 ;\r\n' +
+'}\r\n' +
+'.ml-context .ml-modlinks:hover {text-decoration: underline;}\r\n' +
+'</s'+'tyle>\r\n' +
+'<table class="ml-context" cellspacing="0" style="background-color: #fafafa; border-top: 1px solid #cccccc; border-right: 1px solid #cccccc; border-left: 1px solid #ccc;border-collapse: collapse; padding-bottom: 5px;" width="100%">\r\n' +
+'  <tr>\r\n' +
+'    <td height="19" colspan="2" style="font-size: 13px; font-weight: bold; font-family:Arial; color: #254D62 ; text-align: Left; padding-left : 10px; padding-top: 10px; padding-bottom: 8px; background-color: #fafafa; border-bottom: 1px solid #cccccc">\r\n' +
+'      Register Now for Free Research\r\n' +
+'    </td>\r\n' +
+'  </tr><tr>\r\n' +
+'    \r\n' +
+'    <td style="padding:9px 0px 10px 10px; border-right: 1px solid #CBCBCB;">\r\n' +
+'      <table border="0" cellspacing="0" cellpadding="0">\r\n' +
+'        <tr>\r\n' +
+'          <td valign="top" style="padding:0px 10px 0px 0px">\r\n' +
+'            <p style="font-size:12px;font-family:Arial; ">\r\n' +
+'              <a href="http://clk.madisonlogic.com/clk?pub=485&amp;pgr=911&amp;src=9643&amp;ctg=665&amp;tstamp=20150924T160020&amp;ast=49443&amp;cmp=16330&amp;crv=0&amp;pos=1&amp;frm=1484&amp;imp=6193927383395338375" class="ml-modlinks">\r\n' +
+'                DevOps: Enterprise Organizations Newest Best Practices:\r\n' +
+'              </a>\r\n' +
+'              The research shows DevOps delivers 18% faster time-to-market and 19...\r\n' +
+'            </p>\r\n' +
+'          </td>\r\n' +
+'          <td style="width:80px; padding:5px 10px 5px 0px; vertical-align:middle">\r\n' +
+'            <a href="http://clk.madisonlogic.com/clk?pub=485&amp;pgr=911&amp;src=9643&amp;ctg=665&amp;tstamp=20150924T160020&amp;ast=49443&amp;cmp=16330&amp;crv=0&amp;pos=1&amp;frm=1484&amp;imp=6193927383395338375"  target="_blank" style="text-decoration: none;text-align: right">              \r\n' +
+'      <img border="0" width="80" style="vertical-align: middle" src="http://st.madisonlogic.com/media/thumbnail/4/9/49443_thumbnail.png">\r\n' +
+'\r\n' +
+'\r\n' +
+'            </a>\r\n' +
+'          </td>\r\n' +
+'        </tr>\r\n' +
+'      </table>\r\n' +
+'    </td>\r\n' +
+'  </tr><tr>\r\n' +
+'    \r\n' +
+'    <td style="padding:9px 0px 10px 10px; border-right: 1px solid #CBCBCB;">\r\n' +
+'      <table border="0" cellspacing="0" cellpadding="0">\r\n' +
+'        <tr>\r\n' +
+'          <td valign="top" style="padding:0px 10px 0px 0px">\r\n' +
+'            <p style="font-size:12px;font-family:Arial; ">\r\n' +
+'              <a href="http://clk.madisonlogic.com/clk?pub=485&amp;pgr=911&amp;src=9643&amp;ctg=665&amp;tstamp=20150924T160020&amp;ast=48512&amp;cmp=15801&amp;crv=0&amp;pos=2&amp;frm=1484&amp;imp=6193927383395338375" class="ml-modlinks">\r\n' +
+'                Oklahoma State University Medical Center Case Study:\r\n' +
+'              </a>\r\n' +
+'              Help optimize cardiovascular care with a single database of images ...\r\n' +
+'            </p>\r\n' +
+'          </td>\r\n' +
+'          <td style="width:80px; padding:5px 10px 5px 0px; vertical-align:middle">\r\n' +
+'            <a href="http://clk.madisonlogic.com/clk?pub=485&amp;pgr=911&amp;src=9643&amp;ctg=665&amp;tstamp=20150924T160020&amp;ast=48512&amp;cmp=15801&amp;crv=0&amp;pos=2&amp;frm=1484&amp;imp=6193927383395338375"  target="_blank" style="text-decoration: none;text-align: right">              \r\n' +
+'      <img border="0" width="80" style="vertical-align: middle" src="http://st.madisonlogic.com/media/thumbnail/4/8/48512_thumbnail.png">\r\n' +
+'\r\n' +
+'\r\n' +
+'            </a>\r\n' +
+'          </td>\r\n' +
+'        </tr>\r\n' +
+'      </table>\r\n' +
+'    </td>\r\n' +
+'  </tr><tr>\r\n' +
+'    \r\n' +
+'    <td style="padding:9px 0px 10px 10px; border-right: 1px solid #CBCBCB;">\r\n' +
+'      <table border="0" cellspacing="0" cellpadding="0">\r\n' +
+'        <tr>\r\n' +
+'          <td valign="top" style="padding:0px 10px 0px 0px">\r\n' +
+'            <p style="font-size:12px;font-family:Arial; ">\r\n' +
+'              <a href="http://clk.madisonlogic.com/clk?pub=485&amp;pgr=911&amp;src=9643&amp;ctg=665&amp;tstamp=20150924T160020&amp;ast=46171&amp;cmp=16272&amp;crv=0&amp;pos=3&amp;frm=1484&amp;imp=6193927383395338375" class="ml-modlinks">\r\n' +
+'                Cloud-Based Call Centers:\r\n' +
+'              </a>\r\n' +
+'              Learn how to set new standards in capability for your cloud-based c...\r\n' +
+'            </p>\r\n' +
+'          </td>\r\n' +
+'          <td style="width:80px; padding:5px 10px 5px 0px; vertical-align:middle">\r\n' +
+'            <a href="http://clk.madisonlogic.com/clk?pub=485&amp;pgr=911&amp;src=9643&amp;ctg=665&amp;tstamp=20150924T160020&amp;ast=46171&amp;cmp=16272&amp;crv=0&amp;pos=3&amp;frm=1484&amp;imp=6193927383395338375"  target="_blank" style="text-decoration: none;text-align: right">              \r\n' +
+'      <img border="0" width="80" style="vertical-align: middle" src="http://st.madisonlogic.com/media/thumbnail/4/6/46171_thumbnail.png">\r\n' +
+'\r\n' +
+'\r\n' +
+'            </a>\r\n' +
+'          </td>\r\n' +
+'        </tr>\r\n' +
+'      </table>\r\n' +
+'    </td>\r\n' +
+'  </tr></table><table style="border-top: 1px solid #CBCBCB;  width: 100%; background-color: #fafafa" >\r\n' +
+'  <tr>\r\n' +
+'   \r\n' +
+'  </tr>\r\n' +
+'</table>\r\n' +
+'<script type=\'text/javascript\'> if (typeof typage == \'undefined\') { (function () { _ml = window._ml || {}; _ml.eid = \'140\'; _ml.pub = \'485\'; _ml.ec = \'1\'; var s = document.getElementsByTagName(\'script\')[0], cd = new Date(), mltag = document.createElement(\'script\'); mltag.type = \'text/javascript\'; mltag.async = true; mltag.src = \'//ml314.com/tag.aspx?\' + cd.getDate() + cd.getMonth() + cd.getFullYear(); s.parentNode.insertBefore(mltag, s); })(); } </s'+'cript>\r\n' +
+'');

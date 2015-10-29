@@ -1,0 +1,475 @@
+
+/* SITE SPECIFIC STYLES */
+/* //TEMPLATE///////////////////////////////////////////////////// */
+body {
+	background: url("../simages/twenty-twenty/clinicalpainadvisor/body-bkg.png") repeat 50% 50% #fcebe9;
+}
+a {
+	color: #db1c07;
+}
+
+/* //BREADCRUMBS///////////////////////////////////////////////////// */
+#breadCrumbs a {
+	color: #db1c07;
+}
+
+/* //MAIN CONTENT///////////////////////////////////////////////////// */
+#contentColumn .sectionBox h2.sectionHeadline a:hover,
+#contentColumn .sectionBox h2.sectionHeadline a:focus,
+#contentColumn .sectionBox h2.sectionHeadline a:active,
+#contentColumn .sectionBox h2.sectionHeadlineBig a:hover,
+#contentColumn .sectionBox h2.sectionHeadlineBig a:focus,
+#contentColumn .sectionBox h2.sectionHeadlineBig a:active {
+	color: #db1c07;
+}
+#contentColumn .sectionBox .searchTCList a {
+	color: #db1c07;
+}
+#contentColumn .sectionBox .sectionByline a {
+	color: #db1c07;
+}
+#contentColumn h1.articleFormatTitle,
+#contentColumn h3.sectionTitle,
+#contentColumn h3.tabbedAssetTitle,
+#contentColumn .rawHTMLAsset #drugSearchAsset h3,
+#contentColumn .rawHTMLAsset .big {
+	color: #db1c07;
+}
+#contentColumn .qryMoreLink a {
+	color: #db1c07;
+}
+#contentColumn .rawHTMLAsset h1,
+#contentColumn .rawHTMLAsset h2,
+#contentColumn .rawHTMLAsset h3 {
+	color: #db1c07;
+}
+#contentColumn .rawHTMLAsset a {
+	color: #db1c07;
+}
+#contentColumn .image-overlay-format a:hover,
+#contentColumn .image-overlay-format a:focus,
+#contentColumn .image-overlay-format a:active {
+	color: #db1c07;
+}
+#contentColumn .relatedArticles .relatedArticlesTitle {
+	color: #db1c07;
+}
+#contentColumn .relatedArticles a:hover,
+#contentColumn .relatedArticles a:focus,
+#contentColumn .relatedArticles a:active {
+	color: #db1c07;
+}
+#contentColumn h3.sectionTitle .highlight {
+	background: url('../simages/twenty-twenty/clinicalpainadvisor/sectiontitle-bkg.png') no-repeat 5px 50% #fcebe9;
+}
+#contentColumn .grid_row > .grid_4:first-child .sectionBox h2.sectionHeadline {
+	background: url('../simages/twenty-twenty/clinicalpainadvisor/headline-bullet.png') no-repeat 8px 10px transparent;
+}
+
+/* //DRUG PAGES///////////////////////////////////////////////////// */
+#browseByFilter a:hover,
+#browseByFilter a:focus,
+#browseByFilter a:active {
+	background-color: #db1c07;
+	border: solid 1px #db1c07;
+}
+#browseByFilterRange a:hover {
+	color: #db1c07;
+}
+.dropBtnWrap .dropBtnActions a {
+	color: #db1c07;
+}
+.dropBtnWrap .dropBtnActions a:hover,
+.dropBtnWrap .dropBtnActions a:focus,
+.dropBtnWrap .dropBtnActions a:active {
+	color: #db1c07;
+}
+#browseByList table a:hover,
+#browseByList table a:focus,
+#browseByList table a:active {
+	color: #db1c07;
+}
+#drugInfo a,
+#monographIndications a {
+	color: #db1c07;
+}
+#drugInfo a:hover,
+#drugInfo a:focus,
+#drugInfo a:active,
+#monographIndications a:hover,
+#monographIndications a:focus,
+#monographIndications a:active {
+	color: #db1c07;
+}
+#monographIndications #monographNav li.ui-state-active a {
+	background-color: #db1c07;
+}
+
+/* Compare Page Styles */
+#plainLayoutColumn a {
+	color: #db1c07;
+}
+#plainLayoutColumn a:hover,
+#plainLayoutColumn a:focus,
+#plainLayoutColumn a:active {
+	color: #db1c07;
+}
+.drugCompareListItems ul li.compareTcName {
+	color: #db1c07;
+}
+
+/* Browser By Disease */
+.browserByDiseaseItems a {
+	color: #db1c07;
+}
+
+/* //ARTICLE///////////////////////////////////////////////////// */
+#articleColumn article a,
+#articleColumn .articleAuthor a {
+	color: #db1c07;
+}
+
+/* //DRUG SEARCH ASSET///////////////////////////////////////////////////// */
+#contentColumn .rawHTMLAsset #drugSearchAsset a {
+	color: #db1c07;
+}
+
+/* //TABBED ASSET///////////////////////////////////////////////////// */
+.tabbedAssetNav li a {
+	background-color: #fcebe9;
+}
+.tabbedAssetNav li a:hover,
+.tabbedAssetNav li a:focus,
+.tabbedAssetNav li a:active {
+	color: #db1c07;
+}
+.tabbedAssetNav li.ui-state-active a {
+	background-color: #db1c07;
+	color: #FFF;
+}
+
+/* //CAROUSEL//////////////////////////////////////////////////// */
+#carouselWrapper .carousel li a {
+	color: #db1c07;
+}
+#carouselWrapper .carousel li a:hover,
+#carouselWrapper .carousel li a:focus,
+#carouselWrapper .carousel li a:active {
+	color: #db1c07;
+}
+#carouselWrapper .carouselNext {
+	background: url("../simages/twenty-twenty/clinicalpainadvisor/carousel-next-arrow.png") no-repeat left top transparent;
+}
+#carouselWrapper .carouselPrev {
+	background: url("../simages/twenty-twenty/clinicalpainadvisor/carousel-prev-arrow.png") no-repeat left top transparent;
+}
+
+/* //RIGHT COLUMN///////////////////////////////////////////////////// */
+#rightColumn h3.sectionTitle {
+	color: #db1c07;
+}
+
+/* //RIGHT COLUMN NEWSLETTER ASSET///////////////////////////////////////////////////// */
+#rightColumn #emailAlertsWrapper {
+	border: solid 1px #db1c07;
+}
+#rightColumn #emailAlertsWrapper #emailAlertsSubmit {
+	background: url("../simages/twenty-twenty/clinicalpainadvisor/sign-up.png") no-repeat 50% 50% #db1c07;
+}
+
+/* //RIGHT COLUMN MOST ARTICLES ASSET///////////////////////////////////////////////////// */
+#rightColumn #mostArticleTabs h3 {
+	color: #db1c07;
+}
+#rightColumn #mostArticleTabs .mostArticleTabsContent li {
+	color: #db1c07;
+}
+#rightColumn #mostArticleTabs .mostArticleTabsContent a:hover,
+#rightColumn #mostArticleTabs .mostArticleTabsContent a:focus,
+#rightColumn #mostArticleTabs .mostArticleTabsContent a:active {
+	color: #db1c07;
+}
+
+/* //RIGHT COLUMN FEATURED JOBS ASSET///////////////////////////////////////////////////// */
+#rightColumn #featured-jobs .heading a {
+	color: #db1c07;
+}
+#rightColumn #featured-jobs form {
+	border: solid 1px #db1c07;
+}
+#rightColumn #featured-jobs form .search_submit {
+	background-color: #db1c07;
+}
+#rightColumn #featured-jobs .jt_job a {
+	color: #db1c07;
+}
+#rightColumn #featured-jobs .jt_row2 {
+	background-color: #fcebe9;
+}
+
+/* //RIGHT COLUMN TAG CLOUD AND BLOG ASSET///////////////////////////////////////////////////// */
+#rightColumn #tagCloud h3,
+#rightColumn #rightColBlogAsset h3 {
+	color: #db1c07;
+}
+#rightColumn #tagCloud a:hover,
+#rightColumn #tagCloud a:focus,
+#rightColumn #tagCloud a:active {
+	color: #db1c07;
+}
+#rightColumn #rightColBlogAsset a {
+	color: #db1c07;
+}
+
+/* //BOTTOM FEATURED ARTICLES///////////////////////////////////////////////////// */
+.featuredArticlesBottom h3 {
+	color: #db1c07;
+}
+.featuredArticlesBottom h2 a:hover,
+.featuredArticlesBottom h2 a:focus,
+.featuredArticlesBottom h2 a:active {
+	color: #db1c07;
+}
+
+/* //SLIDESHOWS///////////////////////////////////////////////////// */
+#slideshowContent a {
+	color: #db1c07;
+}
+
+/* //RECENT SLIDESHOW ASSET///////////////////////////////////////////////////// */
+#recentSlideshows .recent-slideshow-item h2 a {
+	color: #db1c07;
+}
+
+/* //MINI ROTATOR///////////////////////////////////////////////////// */
+#contentColumn .miniRotator .galleria-info-title a:hover,
+#contentColumn .miniRotator .galleria-info-title a:focus,
+#contentColumn .miniRotator .galleria-info-title a:active {
+	color: #db1c07;
+}
+
+/* //FOOTER///////////////////////////////////////////////////// */
+#globalFooter .copyrightText a {
+	color: #db1c07;
+}
+.footer_col h1,
+.footer_col h2,
+.footer_col h3,
+.footer_col h4,
+.footer_col h5,
+.footer_col h6 {
+	color: #db1c07;
+}
+#globalFooter .footer-right .footer_col a:hover,
+#globalFooter .footer-right .footer_col a:focus,
+#globalFooter .footer-right .footer_col a:active {
+	color: #db1c07;
+}
+#globalFooter #footerIcons > li a.facebookIcon {
+	background: url("../simages/twenty-twenty/clinicalpainadvisor/pa-social-icons.gif") no-repeat left top transparent;
+}
+#globalFooter #footerIcons > li a.twitterIcon {
+	background: url("../simages/twenty-twenty/clinicalpainadvisor/pa-social-icons.gif") no-repeat -25px top transparent;
+}
+#globalFooter #footerIcons > li a.googleplusIcon {
+	background: url("../simages/twenty-twenty/clinicalpainadvisor/pa-social-icons.gif") no-repeat -75px top transparent;
+}
+#globalFooter #footerIcons > li a.linkedinIcon {
+	background: url("../simages/twenty-twenty/clinicalpainadvisor/pa-social-icons.gif") no-repeat -50px top transparent;
+}
+#globalFooter #footerLogo {
+	width: 199px;
+	height: 33px;
+	background: url("../simages/twenty-twenty/clinicalpainadvisor/logo-footer.png") no-repeat top left transparent;
+}
+
+/* //GOOGLE ADS///////////////////////////////////////////////////// */
+.googleTextAdsByGoogle a {
+	color: #db1c07;
+}
+.GoogleAd a {
+	color: #db1c07;
+}
+
+/* //LIGHTBOX///////////////////////////////////////////////////// */
+#lightboxHeader h3,
+#lightboxEmailHeader h3 {
+	color: #db1c07;
+}
+
+/* Edit Password Lightbox */
+/* //SOCIAL ICONS///////////////////////////////////////////////////// */
+.socialIcons {
+	background: url(../simages/twenty-twenty/clinicalpainadvisor/disque-icons.png) no-repeat left top transparent;
+}
+
+/* //SOCIAL BAR///////////////////////////////////////////////////// */
+#socialEmail {
+	background: url(../simages/twenty-twenty/clinicalpainadvisor/social-bar-email-icon.png) no-repeat;
+}
+#socialPrint {
+	background: url(../simages/twenty-twenty/clinicalpainadvisor/social-bar-print-icon.png) no-repeat;
+}
+
+/* Search Results Styles */
+.searchDirectoryCategory a {
+	color: #db1c07;
+}
+.sectionHeadlineTopics a {
+	color: #db1c07;
+}
+
+/* Pagination  Styles */
+#paginationList li a.current {
+	background-color: #db1c07;
+}
+
+/* HEAD ARTICLES */
+.headerArticleBox a:hover,
+.headerArticleBox a:focus,
+.headerArticleBox a:active {
+	color: #db1c07;
+}
+
+/* Activity Format Styles */
+.activityTileCredits {
+	color: #db1c07;
+}
+.activityFormatContent h2 a:hover,
+.activityFormatContent h2 a:focus,
+.activityFormatContent h2 a:active {
+	color: #db1c07;
+}
+
+/* GATED ARTICLE */
+ul.gatedWhyRegisterList li {
+	color: #db1c07;
+}
+
+/* Style to hide the logout button */
+.printContainer #articleColumn a {
+	color: #db1c07;
+}
+
+/* My Account Page Styles */
+h1.subpageHeadline {
+	color: #db1c07;
+}
+.featuredArticle .sectionByline a {
+	color: #db1c07; /* Derm DX Poll */
+}
+.featuredArticle h2.sectionHeadlineBig a:hover,
+.featuredArticle h2.sectionHeadlineBig a:focus,
+.featuredArticle h2.sectionHeadlineBig a:active {
+	color: #db1c07;
+}
+.featuredArticle .sectionCat {
+	color: #db1c07;
+}
+.sectionBulletLinks {
+	color: #db1c07;
+}
+.sectionBulletLinks li a:hover {
+	color: #db1c07;
+}
+#contentColumn .rawHTMLAsset .drug-listings .row a span {
+	background: url('../simages/twenty-twenty/clinicalpainadvisor/listing_button_arrow.png') no-repeat right 0;
+}
+#contentColumn .rawHTMLAsset .blue-header h1 {
+	color: #db1c07;
+}
+#contentColumn .rawHTMLAsset .blue-header a {
+	color: #db1c07;
+}
+.blue-header {
+	background-color: #fcebe9 !important;
+}
+
+/* Company Page Styles */
+#manufacturerInfo a {
+	color: #db1c07;
+}
+
+/* DERM DX */
+#dermDX-tabs ul.dermDX-tabs-nav li.ui-tabs-active a {
+	color: #db1c07;
+	border-top: 4px solid #db1c07;
+}
+
+/* Derm DX Poll */
+#dermDx-poll-content h3 {
+	color: #db1c07;
+}
+#dermDx-poll-submit.enabled {
+	background-color: #db1c07;
+}
+#dermDx-poll-prev {
+	background-color: #db1c07;
+}
+#dermDx-poll-next {
+	background-color: #db1c07;
+}
+#dermDx-poll-submit.enabled:hover {
+	background-color: #fcebe9;
+}
+nav#mainNav > ul > li > a,
+.navbarClmHeader {
+    color: #db1c07;
+}
+.dropdown1col a,
+.dropdown4col a {
+    color: #db1c07;
+}
+.utilityNavLinks a {
+    color: #db1c07;
+}
+.pds-vote-button,
+#articleColumn article a.pds-vote-button {
+	background-color: #db1c07;
+}
+.final-countdown span.count {
+	font-family: 'CodeProRegular';
+	-webkit-text-stroke-width: 0.5px;
+	background: #db1c07;
+	background: -moz-linear-gradient(top, #db1c07 0%, #c61b08 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #db1c07), color-stop(100%, #c61b08));
+	background: -webkit-linear-gradient(top, #db1c07 0%, #c61b08 100%);
+	background: -o-linear-gradient(top, #db1c07 0%, #c61b08 100%);
+	background: -ms-linear-gradient(top, #db1c07 0%, #c61b08 100%);
+	background: linear-gradient(to bottom, #db1c07 0%, #c61b08 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db1c07', endColorstr='#c61b08', GradientType=0 );
+}
+#utilityNav > ul li a.facebookIcon {
+	background: url("../simages/twenty-twenty/clinicalpainadvisor/pa-social-icons.gif") no-repeat left top transparent;
+}
+#utilityNav > ul li a.twitterIcon {
+	background: url("../simages/twenty-twenty/clinicalpainadvisor/pa-social-icons.gif") no-repeat -25px top transparent;
+}
+#utilityNav > ul li a.googleplusIcon {
+	background: url("../simages/twenty-twenty/clinicalpainadvisor/pa-social-icons.gif") no-repeat -75px top transparent;
+}
+#utilityNav > ul li a.linkedinIcon {
+	background: url("../simages/twenty-twenty/clinicalpainadvisor/pa-social-icons.gif") no-repeat -50px top transparent;
+}
+#showSearchButton {
+	background: url('../simages/twenty-twenty/clinicalpainadvisor/search-icon.png') no-repeat 50% 50% transparent;
+}
+.nav-search-wrapper {
+	background: url('../simages/twenty-twenty/clinicalpainadvisor/search-gradient.png') no-repeat transparent;
+}
+#searchSubmit {
+	background: url('../simages/twenty-twenty/clinicalpainadvisor/search-icon-active.png') no-repeat right 50% #FFF;
+}
+@media only screen and (max-width:768px) {
+	#navMobileDropArrow a {
+		background-image: url('../simages/twenty-twenty/clinicalpainadvisor/mobile-nav-arrow.png');
+	}
+	#navMobileMore .nav-search-wrapper #searchSubmit {
+		background: url("../simages/twenty-twenty/clinicalpainadvisor/search-icon.png") no-repeat top left transparent;
+	}
+}
+@media only screen and (max-width:400px) {
+	#globalFooter .footer-right #footerLogo {
+		background: url("../simages/twenty-twenty/clinicalpainadvisor/logo-footer-mobile.png") no-repeat top left transparent;
+	}
+}

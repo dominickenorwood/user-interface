@@ -1,0 +1,7 @@
+
+/******************
+LIQWID Version 3.0
+Copyright(C) 2010-2015, LeftsnRights Inc. All rights reserved.
+*******************/
+
+var LW_init=false;

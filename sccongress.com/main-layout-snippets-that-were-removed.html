@@ -1,0 +1,94 @@
+<!-- Background image -->
+<div class="main-content-background">
+    <style type="text/css">
+    .main-content-background{
+    background-image: url('http://localhost/cda/simages/sccongress/background.gif');
+    }
+    </style>
+</div>
+
+<!-- Main Content Header -->
+<div class="main-content-header">
+    <div class="wrapper">
+        <header>
+            <div class="content">
+                <div class="wrap">
+                    <div class="register">
+                        <img src="http://localhost/cda/simages/sccongress/subway-sign.png" />
+                        <a href="#" class="register-now-button">Register Now</a>
+                    </div>
+                    <h3>October 21, 2014</h3>
+                    <div style="clear:both;"></div>
+                    <p>Conference Hours 9:00am - 6:00pm</p>
+                    <p>Exhibit Hours 11:00am - 6:30pm Metropolitan Pavillion 125 West 18th St. NYC 10011</p>
+                </div>
+            </div>
+        </header>
+        <img src="http://localhost/cda/simages/sccongress/new-york.png" />
+    </div>
+</div>
+
+<!-- Ticker -->
+<div class="ticker">
+    <div class="wrapper">
+        <div class="ticker-content">
+            <ul>
+                <li><span>10/10/2007</span><a href="#">The first thing ...</a></li>
+                <li><span>10/10/2007</span><a href="#">End up doing is ...</a></li>
+                <li><span>10/10/2007</span><a href="#">The code that you ...</a></li>
+                <li>This is another ticker thing you'll see this scroll across the ticker!!!</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script type='text/javascript' src='~/js/plugins/jquery.li-scroller.1.0.js'></script>
+<script type="text/javascript">
+(
+function ($) {
+$(document).ready(function () {
+$(".ticker ul").liScroll();
+});
+}
+)(jQuery);
+</script>
+
+<!-- Ticker -->
+<div class="ticker">
+    <div class="wrapper">
+        <div class="marquee">
+            <ul>
+                <li>list item 1</li>
+                <li>list item 2</li>
+                <li>list item 3</li>
+            </ul>
+            <p>This is a paragraph with a<a href="http://google.com" target="_blank"> link to google</a></p>
+            <p>
+            </p>
+            <ol>
+                <li>Order list item 1</li>
+                <li>Order list item 2</li>
+                <li>Order list item 3</li>
+            </ol>
+            <p>This is a ticker element</p>
+            <p>This is a second paragraph</p>
+            <p>This is a third paragraph</p>
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+        </div>
+        <div style="clear:both;"></div>
+    </div>
+</div>
+<script type='text/javascript' src='/cda/js/plugins/jquery.marquee.min.js'></script>
+<script type="text/javascript">
+    (
+        function ($) {
+            $(document).ready(function () {
+                $('.marquee').marquee({duration: 15000});
+            });
+        }
+    )(jQuery);
+</script>

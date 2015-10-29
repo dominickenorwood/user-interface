@@ -1,0 +1,475 @@
+
+/* SITE SPECIFIC STYLES */
+/* //TEMPLATE///////////////////////////////////////////////////// */
+body {
+	background: url("../simages/twenty-twenty/neurology/body-bkg.png") repeat 50% 50% #eaf9f8;
+}
+a {
+	color: #2bb4b0;
+}
+
+/* //BREADCRUMBS///////////////////////////////////////////////////// */
+#breadCrumbs a {
+	color: #2bb4b0;
+}
+
+/* //MAIN CONTENT///////////////////////////////////////////////////// */
+#contentColumn .sectionBox h2.sectionHeadline a:hover,
+#contentColumn .sectionBox h2.sectionHeadline a:focus,
+#contentColumn .sectionBox h2.sectionHeadline a:active,
+#contentColumn .sectionBox h2.sectionHeadlineBig a:hover,
+#contentColumn .sectionBox h2.sectionHeadlineBig a:focus,
+#contentColumn .sectionBox h2.sectionHeadlineBig a:active {
+	color: #2bb4b0;
+}
+#contentColumn .sectionBox .searchTCList a {
+	color: #2bb4b0;
+}
+#contentColumn .sectionBox .sectionByline a {
+	color: #2bb4b0;
+}
+#contentColumn h1.articleFormatTitle,
+#contentColumn h3.sectionTitle,
+#contentColumn h3.tabbedAssetTitle,
+#contentColumn .rawHTMLAsset #drugSearchAsset h3,
+#contentColumn .rawHTMLAsset .big {
+	color: #2bb4b0;
+}
+#contentColumn .qryMoreLink a {
+	color: #2bb4b0;
+}
+#contentColumn .rawHTMLAsset h1,
+#contentColumn .rawHTMLAsset h2,
+#contentColumn .rawHTMLAsset h3 {
+	color: #2bb4b0;
+}
+#contentColumn .rawHTMLAsset a {
+	color: #2bb4b0;
+}
+#contentColumn .image-overlay-format a:hover,
+#contentColumn .image-overlay-format a:focus,
+#contentColumn .image-overlay-format a:active {
+	color: #2bb4b0;
+}
+#contentColumn .relatedArticles .relatedArticlesTitle {
+	color: #2bb4b0;
+}
+#contentColumn .relatedArticles a:hover,
+#contentColumn .relatedArticles a:focus,
+#contentColumn .relatedArticles a:active {
+	color: #2bb4b0;
+}
+#contentColumn h3.sectionTitle .highlight {
+	background: url('../simages/twenty-twenty/neurology/sectiontitle-bkg.png') no-repeat 5px 50% #eaf9f8;
+}
+#contentColumn .grid_row > .grid_4:first-child .sectionBox h2.sectionHeadline {
+	background: url('../simages/twenty-twenty/neurology/headline-bullet.png') no-repeat 8px 10px transparent;
+}
+
+/* //DRUG PAGES///////////////////////////////////////////////////// */
+#browseByFilter a:hover,
+#browseByFilter a:focus,
+#browseByFilter a:active {
+	background-color: #2bb4b0;
+	border: solid 1px #2bb4b0;
+}
+#browseByFilterRange a:hover {
+	color: #2bb4b0;
+}
+.dropBtnWrap .dropBtnActions a {
+	color: #2bb4b0;
+}
+.dropBtnWrap .dropBtnActions a:hover,
+.dropBtnWrap .dropBtnActions a:focus,
+.dropBtnWrap .dropBtnActions a:active {
+	color: #2bb4b0;
+}
+#browseByList table a:hover,
+#browseByList table a:focus,
+#browseByList table a:active {
+	color: #2bb4b0;
+}
+#drugInfo a,
+#monographIndications a {
+	color: #2bb4b0;
+}
+#drugInfo a:hover,
+#drugInfo a:focus,
+#drugInfo a:active,
+#monographIndications a:hover,
+#monographIndications a:focus,
+#monographIndications a:active {
+	color: #2bb4b0;
+}
+#monographIndications #monographNav li.ui-state-active a {
+	background-color: #2bb4b0;
+}
+
+/* Compare Page Styles */
+#plainLayoutColumn a {
+	color: #2bb4b0;
+}
+#plainLayoutColumn a:hover,
+#plainLayoutColumn a:focus,
+#plainLayoutColumn a:active {
+	color: #2bb4b0;
+}
+.drugCompareListItems ul li.compareTcName {
+	color: #2bb4b0;
+}
+
+/* Browser By Disease */
+.browserByDiseaseItems a {
+	color: #2bb4b0;
+}
+
+/* //ARTICLE///////////////////////////////////////////////////// */
+#articleColumn article a,
+#articleColumn .articleAuthor a {
+	color: #2bb4b0;
+}
+
+/* //DRUG SEARCH ASSET///////////////////////////////////////////////////// */
+#contentColumn .rawHTMLAsset #drugSearchAsset a {
+	color: #2bb4b0;
+}
+
+/* //TABBED ASSET///////////////////////////////////////////////////// */
+.tabbedAssetNav li a {
+	background-color: #eaf9f8;
+}
+.tabbedAssetNav li a:hover,
+.tabbedAssetNav li a:focus,
+.tabbedAssetNav li a:active {
+	color: #2bb4b0;
+}
+.tabbedAssetNav li.ui-state-active a {
+	background-color: #2bb4b0;
+	color: #FFF;
+}
+
+/* //CAROUSEL//////////////////////////////////////////////////// */
+#carouselWrapper .carousel li a {
+	color: #2bb4b0;
+}
+#carouselWrapper .carousel li a:hover,
+#carouselWrapper .carousel li a:focus,
+#carouselWrapper .carousel li a:active {
+	color: #2bb4b0;
+}
+#carouselWrapper .carouselNext {
+	background: url("../simages/twenty-twenty/neurology/carousel-next-arrow.png") no-repeat left top transparent;
+}
+#carouselWrapper .carouselPrev {
+	background: url("../simages/twenty-twenty/neurology/carousel-prev-arrow.png") no-repeat left top transparent;
+}
+
+/* //RIGHT COLUMN///////////////////////////////////////////////////// */
+#rightColumn h3.sectionTitle {
+	color: #2bb4b0;
+}
+
+/* //RIGHT COLUMN NEWSLETTER ASSET///////////////////////////////////////////////////// */
+#rightColumn #emailAlertsWrapper {
+	border: solid 1px #2bb4b0;
+}
+#rightColumn #emailAlertsWrapper #emailAlertsSubmit {
+	background: url("../simages/twenty-twenty/neurology/sign-up.png") no-repeat 50% 50% #2bb4b0;
+}
+
+/* //RIGHT COLUMN MOST ARTICLES ASSET///////////////////////////////////////////////////// */
+#rightColumn #mostArticleTabs h3 {
+	color: #2bb4b0;
+}
+#rightColumn #mostArticleTabs .mostArticleTabsContent li {
+	color: #2bb4b0;
+}
+#rightColumn #mostArticleTabs .mostArticleTabsContent a:hover,
+#rightColumn #mostArticleTabs .mostArticleTabsContent a:focus,
+#rightColumn #mostArticleTabs .mostArticleTabsContent a:active {
+	color: #2bb4b0;
+}
+
+/* //RIGHT COLUMN FEATURED JOBS ASSET///////////////////////////////////////////////////// */
+#rightColumn #featured-jobs .heading a {
+	color: #2bb4b0;
+}
+#rightColumn #featured-jobs form {
+	border: solid 1px #2bb4b0;
+}
+#rightColumn #featured-jobs form .search_submit {
+	background-color: #2bb4b0;
+}
+#rightColumn #featured-jobs .jt_job a {
+	color: #2bb4b0;
+}
+#rightColumn #featured-jobs .jt_row2 {
+	background-color: #eaf9f8;
+}
+
+/* //RIGHT COLUMN TAG CLOUD AND BLOG ASSET///////////////////////////////////////////////////// */
+#rightColumn #tagCloud h3,
+#rightColumn #rightColBlogAsset h3 {
+	color: #2bb4b0;
+}
+#rightColumn #tagCloud a:hover,
+#rightColumn #tagCloud a:focus,
+#rightColumn #tagCloud a:active {
+	color: #2bb4b0;
+}
+#rightColumn #rightColBlogAsset a {
+	color: #2bb4b0;
+}
+
+/* //BOTTOM FEATURED ARTICLES///////////////////////////////////////////////////// */
+.featuredArticlesBottom h3 {
+	color: #2bb4b0;
+}
+.featuredArticlesBottom h2 a:hover,
+.featuredArticlesBottom h2 a:focus,
+.featuredArticlesBottom h2 a:active {
+	color: #2bb4b0;
+}
+
+/* //SLIDESHOWS///////////////////////////////////////////////////// */
+#slideshowContent a {
+	color: #2bb4b0;
+}
+
+/* //RECENT SLIDESHOW ASSET///////////////////////////////////////////////////// */
+#recentSlideshows .recent-slideshow-item h2 a {
+	color: #2bb4b0;
+}
+
+/* //MINI ROTATOR///////////////////////////////////////////////////// */
+#contentColumn .miniRotator .galleria-info-title a:hover,
+#contentColumn .miniRotator .galleria-info-title a:focus,
+#contentColumn .miniRotator .galleria-info-title a:active {
+	color: #2bb4b0;
+}
+
+/* //FOOTER///////////////////////////////////////////////////// */
+#globalFooter .copyrightText a {
+	color: #2bb4b0;
+}
+.footer_col h1,
+.footer_col h2,
+.footer_col h3,
+.footer_col h4,
+.footer_col h5,
+.footer_col h6 {
+	color: #2bb4b0;
+}
+#globalFooter .footer-right .footer_col a:hover,
+#globalFooter .footer-right .footer_col a:focus,
+#globalFooter .footer-right .footer_col a:active {
+	color: #2bb4b0;
+}
+#globalFooter #footerIcons > li a.facebookIcon {
+	background: url("../simages/twenty-twenty/neurology/pa-social-icons.gif") no-repeat left top transparent;
+}
+#globalFooter #footerIcons > li a.twitterIcon {
+	background: url("../simages/twenty-twenty/neurology/pa-social-icons.gif") no-repeat -25px top transparent;
+}
+#globalFooter #footerIcons > li a.googleplusIcon {
+	background: url("../simages/twenty-twenty/neurology/pa-social-icons.gif") no-repeat -75px top transparent;
+}
+#globalFooter #footerIcons > li a.linkedinIcon {
+	background: url("../simages/twenty-twenty/neurology/pa-social-icons.gif") no-repeat -50px top transparent;
+}
+#globalFooter #footerLogo {
+	width: 199px;
+	height: 33px;
+	background: url("../simages/twenty-twenty/neurology/logo-footer.png") no-repeat top left transparent;
+}
+
+/* //GOOGLE ADS///////////////////////////////////////////////////// */
+.googleTextAdsByGoogle a {
+	color: #2bb4b0;
+}
+.GoogleAd a {
+	color: #2bb4b0;
+}
+
+/* //LIGHTBOX///////////////////////////////////////////////////// */
+#lightboxHeader h3,
+#lightboxEmailHeader h3 {
+	color: #2bb4b0;
+}
+
+/* Edit Password Lightbox */
+/* //SOCIAL ICONS///////////////////////////////////////////////////// */
+.socialIcons {
+	background: url(../simages/twenty-twenty/neurology/disque-icons.png) no-repeat left top transparent;
+}
+
+/* //SOCIAL BAR///////////////////////////////////////////////////// */
+#socialEmail {
+	background: url(../simages/twenty-twenty/neurology/social-bar-email-icon.png) no-repeat;
+}
+#socialPrint {
+	background: url(../simages/twenty-twenty/neurology/social-bar-print-icon.png) no-repeat;
+}
+
+/* Search Results Styles */
+.searchDirectoryCategory a {
+	color: #2bb4b0;
+}
+.sectionHeadlineTopics a {
+	color: #2bb4b0;
+}
+
+/* Pagination  Styles */
+#paginationList li a.current {
+	background-color: #2bb4b0;
+}
+
+/* HEAD ARTICLES */
+.headerArticleBox a:hover,
+.headerArticleBox a:focus,
+.headerArticleBox a:active {
+	color: #2bb4b0;
+}
+
+/* Activity Format Styles */
+.activityTileCredits {
+	color: #2bb4b0;
+}
+.activityFormatContent h2 a:hover,
+.activityFormatContent h2 a:focus,
+.activityFormatContent h2 a:active {
+	color: #2bb4b0;
+}
+
+/* GATED ARTICLE */
+ul.gatedWhyRegisterList li {
+	color: #2bb4b0;
+}
+
+/* Style to hide the logout button */
+.printContainer #articleColumn a {
+	color: #2bb4b0;
+}
+
+/* My Account Page Styles */
+h1.subpageHeadline {
+	color: #2bb4b0;
+}
+.featuredArticle .sectionByline a {
+	color: #2bb4b0; /* Derm DX Poll */
+}
+.featuredArticle h2.sectionHeadlineBig a:hover,
+.featuredArticle h2.sectionHeadlineBig a:focus,
+.featuredArticle h2.sectionHeadlineBig a:active {
+	color: #2bb4b0;
+}
+.featuredArticle .sectionCat {
+	color: #2bb4b0;
+}
+.sectionBulletLinks {
+	color: #2bb4b0;
+}
+.sectionBulletLinks li a:hover {
+	color: #2bb4b0;
+}
+#contentColumn .rawHTMLAsset .drug-listings .row a span {
+	background: url('../simages/twenty-twenty/neurology/listing_button_arrow.png') no-repeat right 0;
+}
+#contentColumn .rawHTMLAsset .blue-header h1 {
+	color: #2bb4b0;
+}
+#contentColumn .rawHTMLAsset .blue-header a {
+	color: #2bb4b0;
+}
+.blue-header {
+	background-color: #eaf9f8 !important;
+}
+
+/* Company Page Styles */
+#manufacturerInfo a {
+	color: #2bb4b0;
+}
+
+/* DERM DX */
+#dermDX-tabs ul.dermDX-tabs-nav li.ui-tabs-active a {
+	color: #2bb4b0;
+	border-top: 4px solid #2bb4b0;
+}
+
+/* Derm DX Poll */
+#dermDx-poll-content h3 {
+	color: #2bb4b0;
+}
+#dermDx-poll-submit.enabled {
+	background-color: #2bb4b0;
+}
+#dermDx-poll-prev {
+	background-color: #2bb4b0;
+}
+#dermDx-poll-next {
+	background-color: #2bb4b0;
+}
+#dermDx-poll-submit.enabled:hover {
+	background-color: #eaf9f8;
+}
+nav#mainNav > ul > li > a,
+.navbarClmHeader {
+    color: #2bb4b0;
+}
+.dropdown1col a,
+.dropdown4col a {
+    color: #2bb4b0;
+}
+.utilityNavLinks a {
+    color: #2bb4b0;
+}
+.pds-vote-button,
+#articleColumn article a.pds-vote-button {
+	background-color: #2bb4b0;
+}
+.final-countdown span.count {
+	font-family: 'CodeProRegular';
+	-webkit-text-stroke-width: 0.5px;
+	background: #2bb4b0;
+	background: -moz-linear-gradient(top, #2bb4b0 0%, #23a19d 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2bb4b0), color-stop(100%, #23a19d));
+	background: -webkit-linear-gradient(top, #2bb4b0 0%, #23a19d 100%);
+	background: -o-linear-gradient(top, #2bb4b0 0%, #23a19d 100%);
+	background: -ms-linear-gradient(top, #2bb4b0 0%, #23a19d 100%);
+	background: linear-gradient(to bottom, #2bb4b0 0%, #23a19d 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2bb4b0', endColorstr='#23a19d', GradientType=0 );
+}
+#utilityNav > ul li a.facebookIcon {
+	background: url("../simages/twenty-twenty/neurology/pa-social-icons.gif") no-repeat left top transparent;
+}
+#utilityNav > ul li a.twitterIcon {
+	background: url("../simages/twenty-twenty/neurology/pa-social-icons.gif") no-repeat -25px top transparent;
+}
+#utilityNav > ul li a.googleplusIcon {
+	background: url("../simages/twenty-twenty/neurology/pa-social-icons.gif") no-repeat -75px top transparent;
+}
+#utilityNav > ul li a.linkedinIcon {
+	background: url("../simages/twenty-twenty/neurology/pa-social-icons.gif") no-repeat -50px top transparent;
+}
+#showSearchButton {
+	background: url('../simages/twenty-twenty/neurology/search-icon.png') no-repeat 50% 50% transparent;
+}
+.nav-search-wrapper {
+	background: url('../simages/twenty-twenty/neurology/search-gradient.png') no-repeat transparent;
+}
+#searchSubmit {
+	background: url('../simages/twenty-twenty/neurology/search-icon-active.png') no-repeat right 50% #FFF;
+}
+@media only screen and (max-width:768px) {
+	#navMobileDropArrow a {
+		background-image: url('../simages/twenty-twenty/neurology/mobile-nav-arrow.png');
+	}
+	#navMobileMore .nav-search-wrapper #searchSubmit {
+		background: url("../simages/twenty-twenty/neurology/search-icon.png") no-repeat top left transparent;
+	}
+}
+@media only screen and (max-width:400px) {
+	#globalFooter .footer-right #footerLogo {
+		background: url("../simages/twenty-twenty/neurology/logo-footer-mobile.png") no-repeat top left transparent;
+	}
+}

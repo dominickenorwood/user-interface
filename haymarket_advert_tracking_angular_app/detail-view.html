@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="adverttracking">
+    <head>
+        <title>Advert Details</title>
+        <link rel="stylesheet" href="content/styles.css" />
+    </head>
+<body ng-controller="RecentActivity" ng-class="showHideScroll">
+    <div id="wrapper">
+        <div id="recent-activity" ng-class="lineChart">
+            <div class="wrap">
+                <header>
+                    <h1>{{recentData.name}}</h1>
+                    <div class="btn btn-primary btn-lg pull-right" ng-click="backToDashboard()"><i class="fa fa-hand-o-left"></i> Back To Dashboard</div>
+                </header>
+                <div class="row date-time">
+                    <div class="col-md-4 date-picker-wrap">
+                        <div class="row">
+                            <div class="col-md-6 date-picker">
+                                <!-- <h2>From:</h2> -->
+                                <p class="input-group">
+                                    <span class="input-group-addon"><b>From</b></span>
+                                    <input type="text" class="form-control" datepicker-popup="{{format}}" ng-model="fromDate" is-open="fromOpened" min-date="" max-date="" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" ng-change="changed()" />
+                                    <span class="input-group-btn">
+                                        <button type="button" class="btn btn-default" ng-click="fromOpen($event)"><i class="fa fa-calendar"></i></button>
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="col-md-5 step-clock">
+                                <timepicker ng-model="fromDate" ng-change="changed()" hour-step="hstep" minute-step="mstep" show-meridian="ismeridian"></timepicker>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="row">
+                            <div class="col-md-7 date-picker">
+                                <!-- <h2>To:</h2> -->
+                                <p class="input-group">
+                                    <span class="input-group-addon"><b>To</b>  </span>
+                                    <input type="text" class="form-control" datepicker-popup="{{format}}" ng-model="toDate" is-open="toOpened" min-date="" max-date="" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" ng-change="changed()" />
+                                    <span class="input-group-btn">
+                                        <button type="button" class="btn btn-default" ng-click="toOpen($event)"><i class="fa fa-calendar"></i></button>
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="col-md-5 step-clock">
+                                <timepicker ng-model="toDate" ng-change="changed()" hour-step="hstep" minute-step="mstep" show-meridian="ismeridian"></timepicker>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="btn btn-success btn-lg submit-time" ng-class="disabledButton" ng-click="getOverallClicksAndViews()"><i class="fa fa-clock-o"></i> Submit Time</div>
+                    </div>
+                </div>
+                <section class="recent-activity-views-clicks" ng-controller="AdvertViewsClicksTableSortCtrl">
+                    <header>
+                        <h3>Adverts Views vs Clicks</h3>
+                        <p>Use this to view total Click and View counts per advert. Select on an individual advert (warning slow) to filter by advert in the recent user table. Hit export to download a CSV.</p>
+                    </header>
+                    <div class="table-wrap">
+                        <header>
+                            <div class="table-row">
+                                <div class="advert-name" ng-class="{current: selected == 100, ascending:toggle }"><span><a href="" ng-click="sort('Name'); toggle = !toggle; setSelectedAdvert(100)">Advert <i class="fa fa-chevron-down"></i></a></span></div>
+                                <div class="advert-views center-cell" ng-class="{current: selected == 101, ascending:toggle }"><span><a href="" ng-click="sort('Views'); toggle = !toggle; setSelectedAdvert(101)">Views <i class="fa fa-chevron-down"></i></a></span></div>
+                                <div class="advert-clicks center-cell" ng-class="{current: selected == 102, ascending:toggle }"><span><a href="" ng-click="sort('Clicks'); toggle = !toggle; setSelectedAdvert(102)">Clicks <i class="fa fa-chevron-down"></i></a></span></div>
+                            </div>
+                        </header>
+                        <div class="table-content-wrap">
+                            <section class="table-content">
+                                <div class="table-row" ng-repeat="advert in myData  | orderBy:predicate:reverse" ng-click="getAdvertRecentUsers(advert.LineItemId,$index)" ng-class="{ 'active': $index == selectedIndex }">
+                                    <div class="advert-name"><span>{{advert.Name}}</span></div>
+                                    <div class="advert-views center-cell"><span>{{advert.Views}}</span></div>
+                                    <div class="advert-clicks center-cell"><span>{{advert.Clicks}}</span></div>
+                                </div>
+                            </section>
+                            <div id="advert-table-spinner" ng-class="advertOverlay">
+                                <div class="wrap">
+                                    <div class="spinner">
+                                        <i class="fa fa-cog fa-spin"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="btn btn-success btn-lg pull-right" ng-click="downloadClicksViewsCSV()"><i class="fa fa-file"></i> Export CSV</div>
+                        </div>
+                    </div>
+                </section>
+                <section class="recent-users" ng-controller="RecentUsersTableSortCtrl">
+                    <header>
+                        <h3>Recent Users</h3>
+                        <p>Shows detailed advert statistics for individual users. Hit export to download a CSV.</p>
+                    </header>
+                    <div class="table-wrap">
+                        <header>
+                            <div class="table-row">
+                                <div class="user-email" ng-class="{current: selectedUser == 100, ascending:toggle  }"><span><a href="" ng-click="sort('User.Email'); toggle = !toggle; setSelectedUsers(100)">Email <i class="fa fa-chevron-down"></i></a></span></div>
+                                <div class="user-profession" ng-class="{current: selectedUser == 101, ascending:toggle  }"><span><a href="" ng-click="sort('User.Profession'); toggle = !toggle; setSelectedUsers(101)">Profession <i class="fa fa-chevron-down"></i></a></span></div>
+                                <div class="user-specialty" ng-class="{current: selectedUser == 102, ascending:toggle  }"><span><a href="" ng-click="sort('User.Specialty'); toggle = !toggle; setSelectedUsers(102)">Specialty <i class="fa fa-chevron-down"></i></a></span></div>
+                                <div class="user-state center-cell" ng-class="{current: selectedUser == 103, ascending:toggle  }"><span><a href="" ng-click="sort('User.State'); toggle = !toggle; setSelectedUsers(103)">State <i class="fa fa-chevron-down"></i></a></span></div>
+                                <div class="user-page" ng-class="{current: selectedUser == 104, ascending:toggle  }"><span><a href="" ng-click="sort('Page.PageName'); toggle = !toggle; setSelectedUsers(104)">Page <i class="fa fa-chevron-down"></i></a></span></div>
+                                <div class="user-advert"><span>Advert</span></div>
+                                <div class="user-timestamp"><span>Timestamp</span></div>
+                                <div class="user-event center-cell"><span>Event</span></div>
+                            </div>
+                        </header>
+                        <div class="table-content-wrap users-table">
+                            <section class="table-content">
+                                <div class="table-row" ng-repeat="user in recentUsers | orderBy:predicate:reverse">
+                                    <div class="user-email"><span>{{user.User.Email}}</span></div>
+                                    <div class="user-profession"><span>{{user.User.Profession}}</span></div>
+                                    <div class="user-specialty"><span>{{user.User.Specialty}}</span></div>
+                                    <div class="user-state center-cell"><span>{{user.User.State}}</span></div>
+                                    <div class="user-page"><span>{{user.Page.PageName}}</span></div>
+                                    <div class="user-advert"><span ng-repeat="advert in user.Advert">{{advert.Name}}</span></div>
+                                    <div class="user-timestamp"><span>{{jsonDateConversion(user.UtcTimestamp)}}</span></div>
+                                    <div class="user-event center-cell">
+                                        <span ng-if="user.EventType == 1">Viewed</span>
+                                        <span ng-if="user.EventType == 2">Clicked</span>
+                                    </div>
+                                </div>
+                            </section>
+                            <div id="user-table-spinner" ng-class="userOverlay">
+                                <div class="wrap">
+                                    <div class="spinner">
+                                        <i class="fa fa-cog fa-spin"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="btn btn-success btn-lg pull-right" ng-click="downloadRecentUsersCSV()"><i class="fa fa-file"></i> Export CSV</div>
+                        </div>
+                    </div>
+                </section>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="btn btn-primary btn-lg pull-right" ng-click="backToDashboard()"><i class="fa fa-hand-o-left"></i> Back To Dashboard</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/jquery-2.1.1.js"></script>
+    <script src="scripts/angular/angular.min.js"></script>
+    <script src="scripts/angular/angular-resource.min.js"></script>
+    <script src="scripts/angular/angular-route.min.js"></script>
+    <script src="scripts/angular/angular.easypiechart.min.js"></script>
+    <script src="scripts/angular/ui-bootstrap-tpls-0.11.0.min.js"></script>
+    <script src="scripts/routes/routes.js"></script>
+    <script src="scripts/filters/filters.js"></script>
+    <script src="scripts/directives/directives.js"></script>
+    <script src="scripts/services/services.js"></script>
+    <script src="scripts/controllers/controllers.js"></script>
+    <script src="content/bootstrap/js/bootstrap.min.js"></script>
+    <script type='text/javascript' src='https://www.google.com/jsapi'></script>
+</body>
+</html>

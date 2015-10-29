@@ -1,0 +1,63 @@
+#utilityNav > ul {
+	padding-left: 10px;
+	width:60%;
+}
+#utilityNav > ul > li:first-child {
+	width:100%;
+}
+.utilityNavLinks > div:first-child a{
+	margin-top:0;
+}
+#contentColumn .grid_4 > div.articleFormatInfo:first-child,
+#contentColumn .grid_5 > div.articleFormatInfo:first-child,
+#contentColumn .grid_6 > div.articleFormatInfo:first-child,
+#contentColumn .grid_7 > div.articleFormatInfo:first-child,
+#contentColumn .grid_8 > div.articleFormatInfo:first-child{
+	border-top:none;
+}
+#contentColumn .image-overlay-format ul > li{
+	border-top:solid 1px #d9d7d7;
+	border-bottom: none;
+}
+#globalHeader .welcome span,
+#globalFooter .welcome span {
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: normal;
+  color: #0067a5;
+  text-transform: uppercase;
+}
+#globalHeader .welcome > span:first-child,
+#globalFooter .welcome > span:first-child {
+  color: #4a4a48;
+  text-transform: none;
+}
+#contentColumn .sectionBox h2.sectionHeadline a,
+#contentColumn .sectionBox h2.sectionHeadlineBig a,
+#contentColumn .image-overlay-format a,
+#contentColumn .rawHTMLAsset .wrapper h1,
+#contentColumn .rawHTMLAsset .wrapper h2,
+#contentColumn .rawHTMLAsset .wrapper h3,
+#articleColumn h1.articleHeadline,
+#browseByList table a,
+.featuredArticle .sectionHeadlineBig a,
+.activityFormatContent h2 a,
+.featuredArticlesBottom h2 a,
+.headerArticleBox a{
+	font-family: 'Georgia','sans-serif';
+}
+#browseByList table tr.noBorder th{
+	text-align: left;
+}
+#browseByList table tr.noBorder th .addToMyListText{
+	text-align: right;
+}
+#contentColumn .rawHTMLAsset #drugSearchField {
+    position: relative;
+    top: 1px;
+    line-height: 45px;
+}
+nav#mainNav > ul > li:hover > a {
+    margin-bottom: -2px;
+}

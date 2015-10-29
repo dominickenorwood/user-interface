@@ -1,0 +1,1175 @@
+@import url("fonts.css");
+@import url("bootstrap/css/bootstrap.min.css");//HELLO
+html
+	background-color #f8f8f2
+body
+	background-color #f8f8f2
+	&.hide-scroll
+		overflow hidden
+		padding-right 15px
+	&.show-scroll
+		overflow auto
+#wrapper
+	width 1650px
+	background-color #f8f8f2
+	padding 20px
+	margin 0 auto
+h1
+h2
+h3
+h4
+p
+	font-family 'RobotoLightCondensed'
+	margin 0
+	padding 0
+h1
+	font-size 30px
+	line-height 30px
+	color #279CAF
+h2
+h3 
+	font-size 18px
+	line-height 20px
+	color #1A5089
+	text-transform uppercase
+h2
+	&.choose-website
+		padding-top 0
+h3
+	color #279CAF
+	margin-top 10px
+	&.top-specialties
+		margin-top 0
+		margin-bottom 10px
+h4
+	font-size 12px
+	color #34648C
+	text-align right
+	text-transform uppercase
+	margin 5px 0
+p 
+	padding 10px 0
+	color #34648C
+	font-size 15px
+	line-height 21px
+	margin-bottom 10px
+section
+	padding 10px 0
+	&.pie-section
+		padding-bottom 0
+hgroup
+	position relative
+	a 
+		display block
+		position absolute
+		right 0
+		top -13px
+		background-color #5cb85c
+		border-color #4cae4c
+		border-radius 4px
+		font-size 14px
+		color #FFF
+		padding 5px 16px
+		&:hover
+			background-color #47a447
+			color #FFF
+			text-decoration none
+.recent-activity-views-clicks
+	section
+		.table-row
+			transition:all 250ms ease;
+			-ms-transition:all 250ms ease;
+			-moz-transition:all 250ms ease;
+			-webkit-transition:all 250ms ease;
+			-o-transition:all 250ms ease;
+			&:hover
+			&:active
+			&:focus
+				background-color #5fa9d6 !important
+				cursor pointer
+				color #FFF
+				& > div
+					border-color #FFF
+	.advert-name
+		width 1200px
+		span
+			width 1200px
+	.advert-views
+	.advert-clicks 
+		width 213px
+		span
+			width 213px
+.recent-users
+	.user-email
+		width 218px
+		span
+			width 218px
+	.user-profession
+		width 160px
+		span
+			width 160px
+	.user-specialty
+		width 200px
+		span
+			width 200px
+	.user-state
+		width 90px
+		span
+			width 90px
+			text-transform uppercase
+	.user-event
+		width 122px
+		span
+			width 122px
+	.user-page
+		width 290px
+		span
+			width 290px
+	.user-timestamp
+		width 230px
+		span
+			width 230px
+	.user-advert
+		width 311px 
+		span
+			width 311px
+			border-top solid 1px #d1d1ca
+			&:first-child
+				border-top none
+	span
+		word-wrap break-word
+.table-wrap
+	border solid 1px #d1d1ca
+	margin-bottom 20px
+	.center-cell
+		text-align center
+		span
+			margin auto
+	span
+		display block
+		padding 10px	
+	header
+	section
+		display table
+		margin 0
+		padding 0
+		width 100%
+	header
+		background-color #b1e3e8
+		color #1a5089
+		text-transform uppercase
+		font-size 14px
+		line-height 20px
+		font-weight bold
+		.table-row
+			div
+				border-color #f8f8f2
+				transition:all 300ms ease;
+				-ms-transition:all 300ms ease;
+				-moz-transition:all 300ms ease;
+				-webkit-transition:all 300ms ease;
+				-o-transition:all 300ms ease;
+				span
+					padding 5px 10px
+					color #307177
+				a
+					color #307177
+					&:hover
+						color #000
+						text-decoration none
+				i 
+					transition:all 300ms ease;
+					-ms-transition:all 300ms ease;
+					-moz-transition:all 300ms ease;
+					-webkit-transition:all 300ms ease;
+					-o-transition:all 300ms ease;
+	.table-content-wrap
+		max-height 400px
+		min-height 140px
+		overflow auto
+		overflow-x: hidden
+		position relative
+		&.users-table
+			max-height 700px
+	section
+		width 1200px
+		padding-right 22px
+		.table-row
+			&:nth-child(odd)
+				background-color transparent
+			&:nth-child(even)
+				background-color #e5e5df
+			&.active
+				background-color #5cb85c
+				color #FFF
+				&:hover
+				&:active
+				&:focus
+					background-color #5cb85c !important
+	.table-row
+		display table-row 
+		&:last-child
+			div
+				border-bottom none
+		& > div
+			border-right solid 1px #d1d1ca
+			display table-cell
+			vertical-align middle
+			&:last-child
+				border-right none
+			&.current
+				background-color #14484d
+				span
+					a
+						color #FFF
+				&.ascending
+					i 
+						-webkit-transform rotate(-180deg)
+.pie-charts
+	margin-top 5px
+.pie-chart
+	width 80px
+	height 130px
+	float left
+	margin-right 10px
+	position relative
+	cursor pointer
+	&:hover 
+	&:focus
+	&:active
+		.pie-count
+			top -43px
+			opacity 1
+	h3
+		font-size 14px
+		text-align center
+		text-transform capitalize
+		color #34648C
+		line-height 17px
+		padding 3px 0
+		word-wrap break-word
+.pie-count
+	position absolute
+	top 20px
+	left 0
+	right 0
+	text-align center
+	z-index 1
+	opacity 0
+	transition:all 500ms ease;
+	-ms-transition:all 500ms ease;
+	-moz-transition:all 500ms ease;
+	-webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	&.current
+		top -43px
+		opacity 1
+		span
+			background-color #074972
+			color #C3E9F4
+		.fa-caret-down
+			color #074972
+	span
+		background-color #C3E9F4
+		display inline-block
+		padding 3px 20px
+		color #074972
+		font-size 18px
+		transition:all 500ms ease;
+		-ms-transition:all 500ms ease;
+		-moz-transition:all 500ms ease;
+		-webkit-transition:all 500ms ease;
+		-o-transition:all 500ms ease;
+	.fa-caret-down
+		border none
+		padding 0
+		margin 0
+		display block
+		color #C3E9F4
+		font-size 28px
+		top -10px
+		transition:all 500ms ease;
+		-ms-transition:all 500ms ease;
+		-moz-transition:all 500ms ease;
+		-webkit-transition:all 500ms ease;
+		-o-transition:all 500ms ease;
+.pie-chart-fill
+	width 65px
+	height 65px
+	border-radius 50%
+	background-color #0C6AAE
+	top 8px
+	left 8px
+	position absolute
+	z-index 2
+	transition:all 500ms ease;
+	-ms-transition:all 500ms ease;
+	-moz-transition:all 500ms ease;
+	-webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	&.current
+		background-color #D0ECF4 
+.pie-chart-border
+	width 78px
+	height 78px
+	position absolute
+	top 1px
+	left 1px
+	border-radius 50%
+	border solid 5px #58CAED
+	z-index 4
+	transition:all 500ms ease;
+	-ms-transition:all 500ms ease;
+	-moz-transition:all 500ms ease;
+	-webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	&.current
+		border-color #47A0B5
+.pie-chart-outer-border
+	width 84px
+	height 84px
+	background-color #FFF
+	position absolute
+	border-radius 50%
+	z-index 1
+	top -2px
+	left -2px
+.pie-charts
+	.chart
+		width 70px
+		height 70px
+		position relative
+		display block
+		z-index 3
+		top 5px
+		left 5px
+		.percent
+			display block
+			position absolute
+			width 75px
+			height 70px
+			line-height 70px
+			text-align center
+			font-size 18px
+			color #FFF
+			font-family 'RobotoLight'
+			&.current
+				color #074972
+	&.specialties
+		.pie-chart
+			width 72px
+			height 130px
+		.pie-chart-fill
+			width 55px
+			height 55px
+			background-color #5FA9D6
+		.pie-chart-border
+			width 68px
+			height 68px
+			top 2px
+			left 2px
+			border solid 5px #d7d7d7
+		.pie-chart-outer-border
+			width 72px
+			height 72px
+			top 0
+			left 0
+		.chart
+			width 60px
+			height 60px
+			top 6px
+			left 6px
+			.percent
+				width 65px
+				height 60px
+				line-height 60px
+				font-size 16px
+.advert-module
+	margin-top 15px
+.advert
+	border-bottom solid 1px #BED6ED
+	background-color #eef6f3
+	.col-md-7	
+		background-color #f8f8f2
+		padding-bottom 20px
+		padding-top 10px
+	.col-md-5
+		padding-top 10px
+	h1
+		color #34648C
+		font-size 16px
+		line-height 20px
+		text-transform uppercase
+		margin-left 5px
+	h2
+		text-align right
+		margin-right 5px
+		font-size 27px
+	h3
+		margin-top 0
+		text-transform capitalize
+		font-size 11px
+		line-height 17px
+		margin-left 5px
+.bar-chart
+	width 280px
+	height 160px
+	margin 0 0 70px 15px
+	padding-left 30px
+	.chart-lines
+		height 100%
+		width 10px
+		float left
+		border-left solid 1px #BED6ED
+		border-bottom solid 1px #BED6ED
+		position relative
+		.line-title
+			position absolute
+			left -127px
+			bottom 80px
+			text-transform uppercase
+			font-size 10px
+			display block
+			width 160px
+			text-align center
+			letter-spacing 1px
+			-webkit-transform rotate(-90deg)
+		.line 
+			display block
+			width 10px
+			height 1px
+			border-bottom solid 1px #BED6ED
+			position absolute
+			left -10px
+			&:nth-child(2)
+				top 3%
+			&:nth-child(3)
+				top 13%
+			&:nth-child(4)
+				top 23%
+			&:nth-child(5)
+				top 33%
+			&:nth-child(6)
+				top 43%
+			&:nth-child(7)
+				top 53%
+			&:nth-child(8)
+				top 63%
+			&:nth-child(9)
+				top 73%
+			&:nth-child(10)
+				top 83%
+			&:nth-child(11)
+				top 93%
+			span
+				display block
+				text-align right
+				width 30px
+				position absolute
+				left -33px
+				top -7px
+				font-size 10px
+				font-family 'RobotoLightCondensed'
+				color #34648C
+	.chart
+		width 240px
+		height 100%
+		float left
+	.chart-labels
+		div
+			width 18.5%
+			float left
+			position relative
+			margin-left 3px
+			height 100px
+			&:first-child
+				margin-left 0
+		span
+			position absolute
+			width 100px
+			bottom 40px
+			left -50px
+			display block
+			text-align right
+			color #34648C
+			font-size 11px
+			text-transform uppercase
+			-webkit-transform rotate(-60deg)
+			/*text-overflow: clip;
+			-webkit-transform: rotate(-60deg) translate3d( 0, 0, 0);
+			-webkit-backface-visibility:hidden;
+			backface-visibility:hidden;*/
+			z-index 1
+			letter-spacing 0.15em
+	.advert-bar
+		width 18.5%
+		float left
+		background-color #FFF
+		height 100%
+		position relative
+		margin-left 3px
+		&:first-child
+			margin-left 0
+		&:nth-child(1)
+			.bar
+				.fill
+					background-color #0C6AAE
+		&:nth-child(2)
+			.bar
+				.fill
+					background-color #327EAD
+		&:nth-child(3)
+			.bar
+				.fill
+					background-color #639BB7
+		&:nth-child(4)
+			.bar
+				.fill
+					background-color #84AAC1
+		&:nth-child(5)
+			.bar
+				.fill
+					background-color #ABC7D8
+	.bar 
+		width 100%
+		position absolute
+		bottom 0
+		cursor pointer
+		transition:all 500ms ease;
+		-ms-transition:all 500ms ease;
+		-moz-transition:all 500ms ease;
+		-webkit-transition:all 500ms ease;
+		-o-transition:all 500ms ease;
+		&:hover 
+		&:focus
+		&:active
+			.bar-count
+				top -43px
+				opacity 1
+		.fill 
+			width 100%
+			height 100%
+			position relative
+			z-index 2
+.bar-count
+	position absolute
+	top -20px
+	left 0
+	right 0
+	text-align center
+	z-index 1
+	opacity 0
+	transition:all 500ms ease;
+	-ms-transition:all 500ms ease;
+	-moz-transition:all 500ms ease;
+	-webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	span
+		background-color #C3E9F4
+		display inline-block
+		padding 3px 20px
+		color #074972
+		font-size 18px
+		transition:all 500ms ease;
+		-ms-transition:all 500ms ease;
+		-moz-transition:all 500ms ease;
+		-webkit-transition:all 500ms ease;
+		-o-transition:all 500ms ease;
+	.fa-caret-down
+		border none
+		padding 0
+		margin 0
+		display block
+		color #C3E9F4
+		font-size 28px
+		top -10px
+		transition:all 500ms ease;
+		-ms-transition:all 500ms ease;
+		-moz-transition:all 500ms ease;
+		-webkit-transition:all 500ms ease;
+		-o-transition:all 500ms ease;
+.ad-postions-wrapper
+	width 400px
+	margin 0
+.ad-positions
+	width 220px
+	background-color #FFF
+	padding 10px 20px 10px 10px
+	margin-top 40px
+	float left
+	.bullet
+		width 38px
+		height 38px
+		background-color rgba(255,255,255,0.3)
+		border-radius 50%
+		margin auto
+		.background
+			position relative
+		.dot
+			width 15px
+			height 15px
+			border-radius 50%
+			border solid 4px #5d8b9f
+			background-color #91d7f0
+			margin auto
+			position relative
+			top 12px
+			z-index 2
+		.line
+			display block
+			width 100px 
+			height 1px
+			background-color #bed6ed
+			position absolute
+			top 19px
+			left 15px
+			z-index 1
+	.section-1
+		.line
+			-webkit-transform rotate(-15deg)
+			top 3px
+			width 122px
+	.section-2
+		.line
+			-webkit-transform rotate(-5deg)
+			top 14px
+			width 120px
+	.section-3
+	.section-4
+		.line
+			width 60px
+	.section-5
+		.line
+			-webkit-transform rotate(10deg)
+			width 61px
+			top 25px
+	.section-6
+		.line
+			-webkit-transform rotate(15deg)
+			top 27px
+			width 61px
+	.section-7
+		.line
+			-webkit-transform rotate(25deg)
+			top 31px
+			width 64px
+	.section-8
+		.line
+			-webkit-transform rotate(35deg)
+			top 38px
+			width 66px
+	.section-9
+		.line
+			-webkit-transform rotate(25deg)
+			top 46px
+			width 125px
+.positions
+.liquid-slots
+	border solid 2px #b9cada
+	.block
+		transition:background-color 1.5s ease;
+		-ms-transition:background-color 1.5s ease;
+		-moz-transition:background-color 1.5s ease;
+		-webkit-transition:background-color 1.5s ease;
+		-o-transition:background-color 1.5s ease;
+	.slug
+		width 118px
+		height 318px
+		float left
+		background-color #FFF
+	.section-2
+		width 100%
+		height 30px
+		border solid 1px #19CFF9
+		clear both
+		.bullet
+			position relative
+			top -5px
+	.section-1
+	.section-9
+		width 100%
+		height 50px
+		border solid 1px #19CFF9
+		clear both
+		.bullet
+			position relative
+			top 5px
+	.section-3
+	.section-4
+	.section-5
+	.section-6
+	.section-7
+	.section-8
+		width 68px
+		height 53px
+		border solid 1px #19CFF9
+		float left
+		position relative
+		.bullet
+			position relative
+			top 7px
+	.heat-max
+		background-color #f13333
+	.heat-high 
+		background-color #f46414
+	.heat-md-high
+		background-color #ef9325
+	.heat-medium
+		background-color #f7d39a
+	.heat-md-low
+		background-color #f4eea6
+	.heat-low
+		background-color #f8f8d1
+.ad-positions-percentages
+	background-color #eef6f3
+	float left
+	position relative
+	z-index 3
+	& > div
+		border-bottom solid 1px #dde8f0
+		&:last-child
+			border-bottom none
+	.percentage
+		text-align center
+	.box
+		padding 5px 10px 5px 5px
+		border-left solid 10px #f1f8f8
+	h1
+		margin 0
+		font-size 15px
+		color #639BB7
+		line-height 18px
+	h3
+		margin 0
+		font-size 28px
+		line-height 34px
+		color #34648C
+.liquid-slots
+	margin-top 15px
+	border none
+	& > .block
+		border solid 1px #19CFF9
+		width 50%
+		margin 10px auto 0 auto
+	.section-10
+		.line
+			-webkit-transform rotate(25deg)
+			width 125px
+			top 47px
+	.section-11
+		.line
+			-webkit-transform rotate(30deg)
+			top 54px
+			width 130px
+.platform
+	width:257px
+	padding-left 30px
+	margin 0 0 110px 0
+	.percentages 
+		h1
+			font-size 30px
+			color #34648C
+			background-color #FFF
+			padding 10px
+			float left
+			margin -40px 5px 0 20px
+			padding-top 60px
+			width 80px
+			text-align center
+			&:nth-child(2)
+				margin-left 24px
+.devices
+	border-bottom solid 1px #bed6ed
+	padding-bottom 20px
+	position relative
+	.mobile
+		position relative
+.desktop
+	width 120px
+	.screen
+		width 110px
+		height 72px
+		padding 5px 5px 13px 5px
+		background-color #1C558E
+		border-radius 3px
+	.box
+		width 100%
+		height 100%
+		background-color #7BC9C7
+		position relative
+		overflow hidden
+	.highlight
+		width 200%
+		height 200%
+		position absolute
+		background-color #B1E3E8
+		-webkit-transform rotate(-40deg)
+		left -80px
+		top -56px
+	.stand
+		background-color #1C558E
+		width 20px
+		height 17px
+		margin auto
+	.base
+		background-color #1C558E
+		width 56px
+		height 2px
+		margin auto
+.tablet
+	width 70px
+	.screen
+		width 60px
+		height 83px
+		padding 7px 5px 10px 5px
+		background-color #1C558E
+		border-radius 3px
+	.box
+		width 100%
+		height 100%
+		background-color #7BC9C7
+		position relative
+		overflow hidden
+	.highlight
+		width 200%
+		height 200%
+		position absolute
+		background-color #B1E3E8
+		-webkit-transform rotate(-60deg)
+		left -75px
+		top -60px
+.phone
+	width 40px
+	position absolute
+	right 25px
+	bottom -8px
+	.screen
+		width 36px
+		height 55px
+		padding 7px 2px 10px 2px
+		background-color #1C558E
+		border-radius 3px
+	.box
+		width 100%
+		height 100%
+		background-color #7BC9C7
+		position relative
+		overflow hidden
+	.highlight
+		width 200%
+		height 200%
+		position absolute
+		background-color #B1E3E8
+		-webkit-transform rotate(-60deg)
+		left -50px
+		top -30px
+.map 
+	position relative
+	width 400px
+	margin 20px auto 20px auto
+	h1 
+		float left
+		text-align center
+		font-size 26px
+		line-height 26px
+		color #34648C
+		background-color #FFF
+		width 90px
+		margin-left 5px
+		padding-top 240px
+		padding-bottom 5px
+		span
+			color #639BB7
+			display block
+			font-size 15px
+			line-height 13px
+			padding-bottom 5px
+#chart_div
+	position absolute
+	& + h1
+		margin-left 7px
+.website-select
+	h2
+		text-align right
+	select 
+		background transparent
+		padding 5px 45px 5px 5px
+		font-size 18px
+		line-height 20px
+		border 0
+		border-radius 0
+		height 40px
+		-webkit-appearance none
+		-moz-appearance window
+		color #1a5089
+		position relative
+		z-index 2
+		&:focus
+			outline none
+	.col-md-9
+		div
+			background-color #b1e3e8
+			float left
+.chrono
+	h2
+		text-align right
+		padding-top 0
+.fa-caret-down 
+	color #1a5089
+	border-left solid 1px #1a5089
+	padding 0 10px
+	position relative
+	top 3px
+	margin-left -35px
+	z-index 1
+.hello, 
+.goodbye
+{ 
+	-webkit-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+	-moz-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+	-ms-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+	-o-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+	transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+	position: relative;
+	display: block;
+	/*overflow: hidden;*/
+	text-overflow: clip;
+	-webkit-backface-visibility:hidden; /* Chrome, Safari, Opera */
+	backface-visibility:hidden;
+} 
+
+.goodbye {
+	-webkit-transform: rotateY(130deg); /* Chrome, Safari, Opera */
+    transform: rotateY(130deg);
+    z-index 1
+}
+
+.hello {
+	-webkit-transform: rotateY(0deg); /* Chrome, Safari, Opera */
+    transform: rotateY(0deg);
+    z-index 2
+}
+#overlay-spinner
+	position absolute
+	left 0
+	right 0
+	top 0
+	bottom 0
+	display table
+	width 100%
+	height 100%
+	z-index 100
+	background-color rgba(248,248,242,0.7)
+	.wrap
+		display table-cell
+		vertical-align middle
+		text-align center
+		font-size 250px
+		color #737364
+	&.show-overlay
+		display table
+	&.hide-overlay
+		display none
+#advert-table-spinner
+#user-table-spinner
+	position absolute
+	left 0
+	right 0
+	top 0
+	bottom 0
+	z-index 100
+	background-color rgba(248,248,242,0.7)
+	font-size 100px
+	line-height 100px
+	&.hide-overlay
+		display none
+#recent-activity #advert-table-spinner .wrap
+#recent-activity #user-table-spinner .wrap
+	display table
+	width 100%
+	height 100%
+	padding 0
+#recent-activity #advert-table-spinner .spinner
+#recent-activity #user-table-spinner .spinner
+		display table-cell
+		vertical-align middle
+		text-align center
+#recent-activity
+	.wrap
+		text-align left
+		padding 20px 10px
+		/*width 1350px*/
+		width 1650px
+		margin auto
+	header
+		position relative
+		h1
+			margin-bottom 20px
+		h2 
+			display inline
+			margin-right 15px
+		.btn-primary
+			position absolute
+			top -10px
+			right 0
+	h2
+		font-weight bold
+#dashboard
+	position relative
+.dashboard-header
+	border-bottom solid 2px #bed6ed
+	padding-bottom 20px
+.row-border
+	border-right solid 2px #bed6ed
+	border-left solid 2px #bed6ed
+	padding-bottom 15px
+	margin-bottom 15px
+.row-bottom-border
+	border-bottom solid 2px #bed6ed
+	margin-top 15px
+.btn-group
+	button
+		&.selected
+			background-color #b1e3e8
+			color #1a5089
+button
+	i 
+		margin-right 
+.date-time
+	margin-bottom -10px
+	button.btn-lg
+		margin-top 4px
+.date-picker-wrap
+	margin-right -90px
+.date-picker
+	padding-right 5px
+.step-clock
+	padding-left 0
+	margin-top -24px
+	td.form-group
+		padding 0 2px
+#login-register
+	position absolute
+	left 0
+	right 0
+	top 0
+	bottom 0
+	display table
+	width 100%
+	height 100%
+	.wrap
+		display table-cell
+		vertical-align middle	
+	.row 
+		width 400px
+		background-color #FFF
+		padding 30px 40px
+		box-shadow rgba(0, 0, 0, 0.2) 1px 1px 2px
+		margin auto
+	h1
+		text-transform uppercase
+		font-size 20px
+		line-height 26px
+		margin-bottom 20px
+		&.register-heading
+			margin-bottom 0
+	span
+	input
+		font-size 16px
+	span
+		i
+			width 20px
+	p 
+		padding 0
+		margin 15px 0 0 0
+	.input-group
+		margin 15px 0
+	.field-validation-error
+		color #F00
+		font-size 12px
+		line-height 18px
+		font-style italic
+		margin-top -10px
+		display block
+	.checkbox
+		padding-top 0
+	.btn 
+		margin-top 15px
+	.form-group
+		margin-left 0
+		margin-right 0
+		label 
+			margin-bottom 5px
+			font-family 'RobotoLightCondensed'
+			font-size 14px
+			line-height 20px
+			color #1A5089
+			text-transform uppercase
+	.validation-summary-errors
+		ul 
+			margin 0 0 5px 0
+			padding-left 17px
+			color #F00
+		li 
+			padding-top 5px
+.google-visualization-tooltip
+	width auto !important
+.google-visualization-tooltip-item-list
+	& > li 
+		&:first-child
+			display none
+.submit-time
+	margin-top 5px
+//ANIMATIONS
+.pie-chart.show-pie,
+.pie-charts.specialties .pie-chart.show-pie{
+	-webkit-animation: enter 600ms cubic-bezier(0.445, 0.050, 0.550, 0.950);
+    animation: enter 600ms cubic-bezier(0.445, 0.050, 0.550, 0.950);
+    left: 0px;
+    opacity: 1;
+    height: 130px;
+}
+@-webkit-keyframes enter {
+    from {
+        opacity: 0;
+        height: 0px;
+        left: -80px;
+    }
+    75% {
+        left: 15px;
+    }
+    to {
+        opacity: 1;
+        height: 130px;
+        left: 0px;
+    }
+}
+.pie-chart.hide-pie,
+.pie-charts.specialties .pie-chart.hide-pie{
+	-webkit-animation: leave 600ms cubic-bezier(0.445, 0.050, 0.550, 0.950);
+    animation: leave 600ms cubic-bezier(0.445, 0.050, 0.550, 0.950);
+    left: -80px;
+    opacity: 0;
+    height: 0px;
+}
+@-webkit-keyframes leave {
+    to {
+        opacity: 0;
+        height: 0px;
+        left: -80px;
+    }
+    25% {
+        left: 15px;
+    }
+    from {
+        opacity: 1;
+        height: 130px;
+        left: 0px;
+    }
+}
+.fa-spin {
+  -webkit-animation: spin 1.5s infinite linear;
+  -moz-animation: spin 1.5s infinite linear;
+  -o-animation: spin 1.5s infinite linear;
+  animation: spin 1.5s infinite linear; 
+}

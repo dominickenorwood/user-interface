@@ -1,0 +1,622 @@
+@media only screen and (max-width:768px) {
+	/* NAVIGATION FOR TABLET TO PHONE */
+	#browseBy,
+	.adZoneBreadcrumbSponsorContainer,
+	.adZoneStandardContainer {
+		margin: 0 1.7123287671233%;
+		width: 96.575342465753%;
+	}
+	#accountPageWrapper {
+		width: 100%;
+	}
+	.adZoneStandardContainer,
+	.adZoneBreadcrumbSponsorContainer {
+		margin-bottom: 20px;
+	}
+	.adZoneStandardContainer img,
+	.adZoneStandardContainer a,
+	.adZoneBreadcrumbSponsorContainer img,
+	#headerAdWrapper.grid_10 img {
+		width: 100% !important;
+		height: auto !important;
+	}
+	.adZoneStandardContainer {
+		margin: 20px 0;
+	}
+	nav#mainNav {
+		margin: 0 1.7123287671233%;
+		width: 96.575342465753%;
+		padding-right: 1px;
+	}
+	nav#mainNav a {
+		font-size: 13px;
+		padding: 0 8px;
+	}
+	nav#mainNav ul.grid_10 {
+		width: 100%;
+		float: none;
+		margin: 0;
+	}
+	nav#mainNav > ul > li > a {
+		color: #FFF;
+		padding: 10px 6px;
+	}
+	nav#mainNav > ul > li:hover {
+		background-color: transparent;
+	}
+	nav#mainNav > ul > li:hover > a {
+		background-color: #EEE;
+		color: #666;
+		padding: 10px 6px;
+		margin-bottom: 0;
+		border: none;
+	}
+	nav#mainNav > ul > li#navMobileDropArrow:hover,
+	nav#mainNav > ul > li#navMobileDropArrow:hover a {
+		background-color: transparent;
+		border: none;
+	}
+	#navMobileDropArrow a {
+		width: 36px;
+		height: 35px;
+		background-repeat: no-repeat;
+		background-position: -2px -9px;
+		padding: 0 !important;
+		margin-top: 1px;
+	}
+	#navMobileDropArrow a.open {
+		background-position: -42px -11px;
+	}
+	#navMobileMore {
+		display: none;
+		background-color: #e7e7e7;
+	}
+	#navMobileMore.grid_12 {
+		float: none;
+		width: auto;
+		margin: 0;
+		clear: both;
+		background-color: #EEE;
+	}
+	#navMobileMore .grid_12 {
+		width: 100%;
+		margin: 0;
+	}
+	#navMobileMore ul > li:last-child a {
+		border: none;
+	}
+	#navMobileMore a {
+		display: block;
+		padding: 10px;
+		border-bottom: solid 1px #cbc9c9;
+		font-family: 'LatoBold';
+		text-transform: uppercase;
+		text-decoration: none;
+		color: #333;
+		font-size: 12px;
+		line-height: 18px;
+	}
+	#navMobileMore a:hover,
+	#navMobileMore a:focus,
+	#navMobileMore a:active {
+		background-color: #ffffff;
+	}
+	.navMobileMoreItems {
+		border-bottom: solid 1px #cbc9c9;
+		border-top: solid 1px #cbc9c9;
+	}
+	.navMobileMoreItems.grid_12 {
+		float: none;
+		margin: 0;
+		width: auto;
+		clear: both;
+	}
+	#navMobileMore .nav-search-wrapper.grid_12 {
+		margin: 5px 1.7123287671233%;
+		width: 96.575342465753%;
+		background-color: #fff;
+		float: left;
+		padding: 10px 0;
+		position: static;
+		overflow: visible;
+		display: block;
+		background-color: #FFF;
+		background-image: none;
+	}
+	#navMobileMore .nav-search-wrapper input {
+		border: none;
+	}
+	#navMobileMore .nav-search-wrapper #searchField {
+		margin-left: 10px;
+		font-size: 12px;
+		line-height: 12px;
+		background-color: #FFF;
+		width: 80%;
+		margin-top: 5px;
+	}
+	#navMobileMore .nav-search-wrapper #searchSubmit {
+		float: right;
+		margin-right: 10px;
+		width: 24px;
+		height: 24px;
+		text-indent: -9999px;
+		cursor: pointer;
+		padding: 0;
+		margin-top: -2px;
+	}
+	.headerArticles {
+		display: none;
+	}
+	.container {
+		width: 100%;
+		margin: 0;
+	}
+	#globalHeader .grid_12.omega {
+		padding: 20px 1.7123287671233%;
+	}
+	#headerAdWrapper.grid_10 {
+		padding: 0 1.7123287671233%;
+		width: 96.575342465753%;
+		margin-top: 10px;
+	}
+	#utilityNav {
+		float: none;
+	}
+	#utilityNav > ul {
+		width: 60%;
+		float: left;
+	}
+	#utilityNav > ul li {
+		margin-left: 0;
+		margin-right: 5px;
+	}
+	#utilityNav > ul li:nth-child(1),
+	#utilityNav > ul li:nth-child(2) {
+		padding-left: 0;
+	}
+	#utilityNav > div {
+		width: 40%;
+		margin-top: 0;
+		float: right;
+		clear: none;
+		padding-top: 0;
+	}
+	.utilityNavLinks .rightTableCol {
+		padding-right: 5px;
+	}
+	#headerTop {
+		padding: 10px;
+	}
+	#headerBottom {
+		padding: 0 10px;
+	}
+	.mobile-nav {
+		background-color: #cb0000;
+		margin: 10px 0 10px 0;
+	}
+	#contentColumn.grid_8 {
+		margin: 0 1.7123287671233%;
+		width: 96.3%;
+	}
+	#rightColumn {
+		max-width: 100%;
+		display: none;
+	}
+	#rightColumn.grid_4 {
+		margin: 0 1.7123287671233%;
+		width: 96.575342465753%;
+	}
+	#globalFooter:before {
+		display: table;
+		content: " ";
+		clear: both;
+	}
+	#globalFooter .rawHTMLAsset {
+		margin-top: 20px;
+	}
+	#globalFooter .wrapper,
+	#globalFooter .copyrightText {
+		padding: 0 1.7123287671233%;
+		width: 96.575342465753%;
+	}
+	#globalFooter .wrapper {
+		padding-top: 20px;
+	}
+	#globalFooter .copyrightText {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	#breadCrumbs.grid_12 {
+		margin: 0 1.7123287671233% 5px 1.7123287671233%;
+		width: 96.575342465753%;
+	}
+	.featuredArticlesBottom {
+		padding: 20px 1.7123287671233%;
+		border-bottom: solid 1px #d9d7d7;
+	}
+	.featuredArticlesBottom img {
+		float: none;
+		margin: 0 0 5px 0;
+	}
+	#plainLayoutColumn {
+		margin: 0 1.7123287671233%;
+		width: 96.575342465753%;
+	}
+	#drugCompareHeader {
+		left: 0 !important;
+		margin: 0 1.7123287671233%;
+		width: 96.575342465753% !important;
+	}
+	.monographHeader {
+		background-image: none;
+	}
+	#searchResultsTabs span {
+		margin-left: 0;
+	}
+	#paginationWrapper {
+		float: none;
+	}
+	.paginationNumbers {
+		top: 20px;
+	}
+	#paginationList {
+		left: 0;
+	}
+	#plainLayoutColumn #gatedContentOverlay {
+		width: auto;
+	}
+	#plainLayoutColumn #gatedColumnText {
+		width: auto;
+	}
+	.rightAdContainer {
+		margin: 10px auto;
+		padding: 0 10px;
+		width: 250px;
+	}
+	.printContainer {
+		background-color: #fff;
+		width: 90%;
+		margin: 0 auto;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 12px;
+		line-height: 18px;
+	}
+	.featuredArticle img {
+		padding: 0;
+		margin: 10px auto;
+		float: none;
+		text-align: center;
+	}
+	.featuredArticle > a {
+		display: block;
+		text-align: center;
+	}
+	.dynamicLightboxMVC {
+		width: 98% !important;
+		top: 15px !important;
+		left: 0 !important;
+	}
+	#lightboxContent {
+		width: 95.5%;
+		float: left;
+		padding: 0 0 0 17px;
+		margin-top: 17px;
+	}
+	#lightboxHeader {
+		width: 90%;
+	}
+	#lightboxHeader h3,
+	#lightboxEmailHeader h3 {
+		color: #333;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 12px;
+	}
+	#lightboxContent p.intro {
+		margin-bottom: 10px;
+		width: 90.5%;
+		display: none;
+	}
+	#lightboxFormWrapper {
+		width: 90.5%;
+		min-height: 185px;
+		float: left;
+		display: block;
+		padding: 0 0 0 0;
+		border-right: none !important;
+	}
+	#lightboxRightCol {
+		width: 90.5%;
+		float: left;
+		padding-left: 0;
+		margin-top: 10px;
+	}
+	.lightboxHelpText {
+		margin-top: 20px;
+	}
+	#globalHeader #logoWrapper.grid_3 {
+		width: auto;
+	}
+}
+@media only screen and (max-width:720px) {
+	#globalHeader .welcome {
+		float: none;
+		margin: 0 0 10px 0;
+	}
+	#globalHeader .welcome span {
+		display: inline;
+	}
+	nav#sub-nav li:nth-child(1) {
+		display: none;
+	}
+	nav#sub-nav a {
+		padding: 10px;
+	}
+	#globalFooter .footer-right .footer_col ul {
+		padding: 0;
+	}
+	#globalFooter .footer-right #footerLogo {
+		margin: 0;
+	}
+	#contentColumn .rawHTMLAsset #drugSearchAsset > div {
+		float: none;
+		width: 100%;
+	}
+	.drugSearchFieldWrapper #subform {
+		margin-right: 0;
+	}
+}
+@media only screen and (max-width:630px) {
+	#contentColumn > .grid_6 {
+		border-right: none;
+		display: block;
+		width: 100%;
+	}
+	.browserByDiseaseAccordian {
+		float: none;
+	}
+	.browserByDiseaseItems {
+		float: none;
+	}
+}
+@media only screen and (max-width:570px) {
+	#contentColumn .grid_row {
+		display: block;
+	}
+	#contentColumn .grid_row .grid_4,
+	#contentColumn .grid_row .grid_5,
+	#contentColumn .grid_row .grid_6,
+	#contentColumn .grid_row .grid_7,
+	#contentColumn .grid_row .grid_8,
+	.featuredArticlesBottom > .grid_4 {
+		display: block;
+		width: 100%;
+		border: none;
+	}
+	#contentColumn .grid_row > .grid_4,
+	#contentColumn .grid_row > .grid_5,
+	#contentColumn .grid_row > .grid_6:nth-child(2) {
+		border-top: solid 1px #d3d3d3;
+	}
+	.featuredArticlesBottom > .grid_4 {
+		margin-bottom: 10px;
+	}
+	.featuredArticlesBottom img {
+		float: right;
+		margin: 0 0 5px 5px;
+	}
+	#globalFooter .footer-right .footer_col {
+		width: 33.333333333333%;
+	}
+	#globalFooter .clear-3 {
+		clear: both;
+	}
+	.header-logo {
+		width: 100%;
+		height: auto;
+	}
+	#articleColumn .articleImage-right {
+		float: none;
+		margin: 0 auto 5px auto;
+	}
+	#monographIndications.ui-tabs {
+		display: block;
+	}
+	#monographIndications.ui-tabs .grid_4 {
+		width: 100%;
+		display: block;
+	}
+	#articleColumn .articleImage-right {
+		clear: both;
+	}
+	#contentColumn .rawHTMLAsset .drug-listings .row a {
+		width: 82%;
+	}
+	.drug-listings .row .left {
+		float: none;
+	}
+	.drug-listings .row .right {
+		float: none;
+	}
+}
+@media only screen and (max-width:500px) {
+	#contentColumn #browseByDrugListNav .relatedDrugsTop > p,
+	#contentColumn #browseByDrugListNav .relatedDrugsTop > div,
+	#contentColumn #monographDrugListNav .relatedDrugsTop > p,
+	#contentColumn #monographDrugListNav .relatedDrugsTop > div {
+		display: block;
+	}
+	#contentColumn #browseByDrugListNav .dropBtnActions,
+	#contentColumn #monographDrugListNav .dropBtnActions {
+		float: none;
+		margin-top: 5px;
+	}
+	#monographDrugListNav .dropBtnWrap .dropBtnContent {
+		top: 60px;
+	}
+	.accountLabelWrap {
+		width: 100%;
+		float: none;
+		margin-top: 7px;
+	}
+	.accountFieldWrap {
+		width: 100%;
+		float: none;
+		margin-top: 5px;
+	}
+	.twoColField {
+		width: 96%;
+		float: none;
+	}
+	.twoColFieldRight {
+		width: 96%;
+		float: none;
+		margin-left: 0;
+		margin-top: 7px;
+	}
+	select.stateSelect {
+		float: none;
+		width: 100% !important;
+	}
+	#accountTopics {
+		width: 96%;
+	}
+}
+
+/* MOBILE PHONE VIEW */
+@media only screen and (max-width:400px) {
+	#globalFooter {
+		border: none;
+	}
+	#globalFooter .footer-right .footer_col {
+		width: 50%;
+	}
+	#globalFooter #footerIcons {
+		float: none;
+		margin-top: 5px;
+	}
+	#globalFooter #footerLogo {
+		float: none;
+	}
+	#globalFooter .clear-3 {
+		clear: none;
+	}
+	#globalFooter .clear-2 {
+		clear: both;
+	}
+	#globalFooter .footer-right #footerLogo {
+		width: 270px;
+		height: 25px;
+		margin-bottom: 10px;
+	}
+	#articleColumn .articleImage-right {
+		float: none;
+		margin: 0 1.7123287671233% 5px 1.7123287671233%;
+		width: 96.575342465753% !important;
+	}
+	#contentColumn #browseByDrugListNav #viewDrugBtn {
+		width: 75%;
+	}
+	#contentColumn #browseByDrugListNav #relatedDrugsLeftCol,
+	#contentColumn #browseByDrugListNav #relatedDrugsRightCol,
+	#contentColumn #monographDrugListNav #relatedDrugsLeftCol,
+	#contentColumn #monographDrugListNav #relatedDrugsRightCol {
+		float: none;
+		width: 100%;
+	}
+	#contentColumn #browseByDrugListNav #relatedDrugsRightCol table,
+	#contentColumn #monographDrugListNav #relatedDrugsRightCol table {
+		float: none;
+	}
+	.drugSearchBrowseBy a {
+		float: none;
+		margin-bottom: 10px;
+		margin-right: 0;
+		text-align: center;
+	}
+	#contentColumn .relatedArticles.grid_6 {
+		display: block;
+		width: 100%;
+	}
+	.headerArticles {
+		display: none;
+	}
+	#contentColumn .rawHTMLAsset #drugSearchAsset .drugSearchBrowseBy {
+		float: none;
+		margin: 15px 0 0 0;
+		width: auto;
+	}
+	#contentColumn .rawHTMLAsset #drugSearchAsset .drugSearchBrowseBy .wrapper {
+		padding: 0;
+	}
+	#contentColumn .rawHTMLAsset #drugSearchAsset .drugSearchBrowseBy .box {
+		padding: 0;
+		border: none;
+	}
+	#contentColumn .rawHTMLAsset #drugSearchAsset .drugSearchFieldWrapper {
+		float: none;
+		width: auto;
+	}
+	#contentColumn .rawHTMLAsset #drugSearchAsset p {
+		width: auto;
+	}
+	#contentColumn .rawHTMLAsset #drugSearchField {
+		width: 150px;
+		margin-right: 8px;
+	}
+	#contentColumn .rawHTMLAsset #drugSearchAsset .footer {
+		margin-right: 20px;
+	}
+	.page-heading .wrapper {
+		padding: 0;
+		margin-top: -10px;
+	}
+	
+	/* DERMDX SLIDESHOW */
+	#dermDX-content {
+		margin-top: 0;
+	}
+	#dermDX-tabs {
+		float: none;
+		width: 100%;
+	}
+	#dermDX-tabs ul.dermDX-tabs-nav {
+		padding: 18px 0 0 0;
+	}
+	#dermDX-tabs ul.dermDX-tabs-nav {
+		width: 100%;
+		float: none;
+	}
+	#dermDX-tabs ul.dermDX-tabs-nav li {
+		display: block;
+	}
+	#dermDX-tabs ul.dermDX-tabs-nav li a {
+		display: block;
+		padding: 20px 10px;
+		border-right: none;
+		border-left: none;
+	}
+	div.dermDX-tabs-text {
+		height: auto;
+		width: auto;
+		padding: 15px;
+		margin: 0;
+	}
+	#dermDx-poll {
+		width: 100%;
+	}
+	#dermDX-tabs ul.dermDX-tabs-nav li.explanationTab {
+		margin-left: 0;
+	}
+    .rightAdContainer {
+        position: static;
+        z-index: 0;
+    }
+}
+@media only screen and (max-width:330px) {
+	#navMobileMore .nav-search-wrapper #searchField {
+		width: 70%;
+	}
+	.drugSearchFieldWrapper #drugSearchSubmit {
+		font-size: 12px;
+	}
+}

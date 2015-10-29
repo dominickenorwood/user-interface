@@ -1,0 +1,1584 @@
+/* ! normalize.css v3.0.1 | MIT License | git.io/normalize */
+
+/** * 1. Set default font family to sans-serif.
+* 2. Prevent iOS text size adjust after orientation change,
+without disabling
+*    user zoom. */
+
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/** * Remove default margin. */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+========================================================================== */
+/** * Correct `block` display not defined for any HTML5 element in IE 8/9.
+* Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
+* Correct `block` display not defined for `main` in IE 11. */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/** * 1. Correct `inline-block` display not defined in IE 8/9.
+* 2. Normalize vertical alignment of `progress` in Chrome,
+Firefox,
+and Opera. */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+/** * Prevent modern browsers from displaying `audio` without controls.
+* Remove excess height in iOS 5 devices. */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/** * Address `[hidden]` styling not present in IE 8/9/10.
+* Hide the `template` element in IE 8/9/11,
+Safari,
+and Firefox < 22. */
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+========================================================================== */
+/** * Remove the gray background color from active links in IE 10. */
+
+a {
+  background: transparent;
+}
+
+/** * Improve readability when focused and also mouse hovered in all browsers. */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+========================================================================== */
+/** * Address styling not present in IE 8/9/10/11,
+Safari,
+and Chrome. */
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/** * Address style set to `bolder` in Firefox 4+,
+Safari,
+and Chrome. */
+b,
+strong {
+  font-weight: bold;
+}
+
+/** * Address styling not present in Safari and Chrome. */
+dfn {
+  font-style: italic;
+}
+
+/** * Address variable `h1` font-size and margin within `section` and `article`
+* contexts in Firefox 4+,
+Safari,
+and Chrome. */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/** * Address styling not present in IE 8/9. */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/** * Address inconsistent and variable font size in all browsers. */
+small {
+  font-size: 80%;
+}
+
+/** * Prevent `sub` and `sup` affecting `line-height` in all browsers. */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+========================================================================== */
+/** * Remove border when inside `a` element in IE 8/9/10. */
+
+img {
+  border: 0;
+}
+
+/** * Correct overflow not hidden in IE 9/10/11. */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+========================================================================== */
+/** * Address margin not present in IE 8/9 and Safari. */
+
+figure {
+  margin: 1em 40px;
+}
+
+/** * Address differences between Firefox and other browsers. */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/** * Contain overflow in all browsers. */
+pre {
+  overflow: auto;
+}
+
+/** * Address odd `em`-unit font size rendering in all browsers. */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+========================================================================== */
+/** * Known limitation:by default,
+Chrome and Safari on OS X allow very limited
+* styling of `select`,
+unless a `border` property is set. */
+
+/** * 1. Correct color not being inherited.
+*    Known issue:affects color of disabled elements.
+* 2. Correct font properties not being inherited.
+* 3. Address margins set differently in Firefox 4+,
+Safari,
+and Chrome. */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit; /* 1 */
+  font: inherit; /* 2 */
+  margin: 0; /* 3 */
+}
+
+/** * Address `overflow` set to `hidden` in IE 8/9/10/11. */
+button {
+  overflow: visible;
+}
+
+/** * Address inconsistent `text-transform` inheritance for `button` and `select`.
+* All other form control elements do not inherit `text-transform` values.
+* Correct `button` style inheritance in Firefox,
+IE 8/9/10/11,
+and Opera.
+* Correct `select` style inheritance in Firefox. */
+button,
+select {
+  text-transform: none;
+}
+
+/** * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+*    and `video` controls.
+* 2. Correct inability to style clickable `input` types in iOS.
+* 3. Improve usability and consistency of cursor style between image-type
+*    `input` and others. */
+button,
+html input[type="button"],
+/* 1 */
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+  cursor: pointer; /* 3 */
+}
+
+/** * Re-set default cursor for disabled elements. */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/** * Remove inner padding and border in Firefox 4+. */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/** * Address Firefox 4+ setting `line-height` on `input` using ` !important` in
+* the UA stylesheet. */
+input {
+  line-height: normal;
+}
+
+/** * It's recommended that you don't attempt to style these elements.
+* Firefox's implementation doesn't respect box-sizing,
+padding,
+or width.
+*
+* 1. Address box sizing set to `content-box` in IE 8/9/10.
+* 2. Remove excess padding in IE 8/9/10. */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/** * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+* `font-size` values of the `input`,
+it causes the cursor style of the
+* decrement button to change from `default` to `text`. */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/** * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+* 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+*    (include `-moz` to future-proof). */
+input[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box; /* 2 */
+  box-sizing: content-box;
+}
+
+/** * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+* Safari (but not Chrome) clips the cancel button when the search input has
+* padding (and `textfield` appearance). */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/** * Define consistent border,
+margin,
+and padding. */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/** * 1. Correct `color` not being inherited in IE 8/9/10/11.
+* 2. Remove padding so people aren't caught out if they zero out fieldsets. */
+legend {
+  border: 0; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/** * Remove default vertical scrollbar in IE 8/9/10/11. */
+textarea {
+  overflow: auto;
+}
+
+/** * Don't inherit the `font-weight` (applied by a rule above).
+* NOTE:the default cannot safely be changed in Chrome and Safari on OS X. */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+========================================================================== */
+/** * Remove most spacing between table cells. */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+}
+
+/* FONTS */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/font-awesome/fontawesome-webfont.eot');
+  src: url('../fonts/font-awesome/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/font-awesome/fontawesome-webfont.woff') format('woff'), url('../fonts/font-awesome/fontawesome-webfont.ttf') format('truetype'), url('../fonts/font-awesome/fontawesome-webfont.svg#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSansCondLight';
+  src: url("../fonts/opensans-cond/opensans-condlight-webfont.eot");
+  src: url("../fonts/opensans-cond/opensans-condlight-webfont.ttf") format('truetype'), url("../fonts/opensans-cond/opensans-condlight-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/opensans-cond/opensans-condlight-webfont.woff") format('woff'), url("../fonts/opensans-cond/opensans-condlight-webfont.svg#OpenSansCondLight") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSansCondLightItalic';
+  src: url("../fonts/opensans-cond/opensans-condlightitalic-webfont.eot");
+  src: url("../fonts/opensans-cond/opensans-condlightitalic-webfont.ttf") format('truetype'), url("../fonts/opensans-cond/opensans-condlightitalic-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/opensans-cond/opensans-condlightitalic-webfont.woff") format('woff'), url("../fonts/opensans-cond/opensans-condlightitalic-webfont.svg#OpenSansCondLightItalic") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSansCondLightBold';
+  src: url("../fonts/opensans-cond/opensans-condbold-webfont.eot");
+  src: url("../fonts/opensans-cond/opensans-condbold-webfont.ttf") format('truetype'), url("../fonts/opensans-cond/opensans-condbold-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/opensans-cond/opensans-condbold-webfont.woff") format('woff'), url("../fonts/opensans-cond/opensans-condbold-webfont.svg#OpenSansCondLightBold") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.fa-facebook-square:before {
+  content: "\f082";
+}
+.fa-twitter-square:before {
+  content: "\f081";
+}
+.fa-linkedin-square:before {
+  content: "\f08c";
+}
+.fa-google-plus-square:before {
+  content: "\f0d4";
+}
+.fa-envelope:before {
+  content: "\f0e0";
+}
+.fa-comment:before {
+  content: "\f075";
+}
+.fa-print:before {
+  content: "\f02f";
+}
+
+/* GRID RESET */
+.container {
+  margin: 0;
+  background-color: transparent;
+}
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12 {
+  margin: 0;
+  float: none;
+  width: auto;
+}
+.grid_row {
+  width: auto;
+  clear: none;
+  float: none;
+}
+#rightNewsLetterAsset {
+  width: auto;
+  float: none;
+  clear: none;
+}
+#rightEmailAlerts #ddlNewsletterCountryCode {
+  margin-left: 0;
+}
+#sectionRSS {
+  display: none;
+}
+#breadCrumbs {
+  display: none;
+}
+
+/* BASE STYLES */
+html {
+  background: url("../simages/sccongress/html-bkg.png") repeat 50% 50% #313a48;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: normal;
+  color: #333;
+  text-transform: uppercase;
+  font-family: 'OpenSansCondLight';
+}
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: normal;
+  color: #333;
+  font-family: 'OpenSansCondLight';
+  font-size: 20px;
+  line-height: 26px;
+}
+h1 {
+  font-size: 36px;
+  line-height: 42px;
+  padding: 0 0 10px 0;
+}
+h2 {
+  font-size: 30px;
+  line-height: 36px;
+}
+h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-family: 'OpenSansCondLightBold';
+}
+a {
+  text-decoration: none;
+  transition: all 100ms linear;
+  -ms-transition: all 100ms linear;
+  -moz-transition: all 100ms linear;
+  -webkit-transition: all 100ms linear;
+  -o-transition: all 100ms linear;
+}
+p {
+  font-size: 14px;
+  line-height: 20px;
+  padding: 5px 0;
+}
+ul li,
+ol li {
+  font-size: 14px;
+  line-height: 20px;
+}
+#utilityNav,
+.nav-search-wrapper {
+  display: none;
+}
+.main-content-background {
+  width: 100%;
+  background-color: transparent;
+  height: 800px;
+  background-size: cover;
+  background-position: 50% top;
+  background-repeat: no-repeat;
+  margin-bottom: -800px;
+  position: relative;
+  z-index: 0;
+}
+.container {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+.wrapper {
+  width: 1000px;
+  margin: 0 auto;
+}
+#globalHeader {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#headerBottom {
+  padding: 15px 0;
+}
+#headerAdWrapper {
+  float: left;
+  width: 728px;
+}
+.header-countdown-clock {
+  float: left;
+  width: 272px;
+}
+.header-countdown-clock h2 {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  margin-top: 3px;
+}
+.final-countdown ul {
+  margin-bottom: 0;
+}
+.final-countdown li {
+  width: 65px;
+  margin-top: 3px;
+}
+.final-countdown span {
+  font-family: 'OpenSansCondLight';
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 15px;
+}
+.final-countdown span.count {
+  font-family: 'OpenSansCondLightBold';
+  background-color: transparent;
+  font-size: 38px;
+  height: 40px;
+  line-height: 40px;
+}
+#headerTop {
+  background: url("../simages/sccongress/html-bkg.png") repeat 50% 50% #313a48;
+  padding: 15px 0;
+}
+#logoWrapper {
+  width: 408px;
+  height: 66px;
+  float: left;
+}
+#mainNav {
+  float: right;
+  margin-top: 15px;
+}
+#mainNav ul {
+  margin: 0;
+  padding: 0;
+}
+#mainNav ul > li:last-child a {
+  background-color: #2e333b;
+  color: #c3c3c3;
+}
+#mainNav li {
+  float: left;
+  list-style-type: none;
+}
+#mainNav a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 21px;
+  padding: 10px 15px;
+  font-family: 'OpenSansCondLightBold';
+}
+.main-content-header {
+  margin-top: 15px;
+  position: relative;
+  z-index: 1;
+}
+.main-content-header img {
+  margin-top: -20px;
+  margin-bottom: -20px;
+}
+.main-content-header header {
+  color: #fff;
+  background: #000;
+  padding-top: 10px;
+  background: -moz-linear-gradient(top, #000 0%, #424242 96%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #000), color-stop(96%, #424242));
+  background: -webkit-linear-gradient(top, #000 0%, #424242 96%);
+  background: -o-linear-gradient(top, #000 0%, #424242 96%);
+  background: -ms-linear-gradient(top, #000 0%, #424242 96%);
+  background: linear-gradient(to bottom, #000 0%, #424242 96%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#424242', GradientType=0 );
+}
+.main-content-header header h3 {
+  color: #fff;
+  text-transform: none;
+  font-size: 30px;
+  line-height: 36px;
+  border-bottom: solid 1px #8d8c8c;
+  padding-bottom: 10px;
+  float: left;
+  margin-top: 25px;
+  font-family: 'OpenSansCondLightBold';
+}
+.main-content-header header p {
+  padding: 2px 0;
+  margin: 0;
+}
+.main-content-header header .register {
+  float: right;
+}
+.main-content-header header .register img {
+  margin-top: 7px;
+  margin-bottom: 0;
+  float: left;
+}
+.main-content-header header .register .register-now-button {
+  width: 270px;
+  margin-left: 30px;
+  float: left;
+}
+.main-content-header header .content {
+  border-top: solid 2px #fff;
+}
+.main-content-header header .content .wrap {
+  padding: 15px 35px 15px 35px;
+}
+.main-content-header .slug {
+  height: 300px;
+}
+.ticker {
+  position: relative;
+  z-index: 1;
+}
+.ticker .ticker-content {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 0;
+}
+.ticker .ticker-content p {
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  color: #fff;
+}
+.tickercontainer {
+  border: none;
+  background: transparent;
+  width: 1000px;
+  /* height: 27px;
+  */
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.tickercontainer .mask {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 1000px;
+  overflow: hidden;
+}
+ul.newsticker {
+  position: relative;
+  left: 1000px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ul.newsticker li {
+  float: left;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 26px;
+  font-family: 'OpenSansCondLight';
+  line-height: 26px;
+}
+ul.newsticker a {
+  white-space: nowrap;
+  padding: 0;
+  margin: 0 50px 0 0;
+}
+ul.newsticker a:hover {
+  color: #AAA;
+}
+ul.newsticker span {
+  margin: 0 10px 0 0;
+}
+.main-content {
+  background-color: #fff;
+  padding: 35px 35px;
+  width: 930px;
+  position: relative;
+  z-index: 1;
+}
+#contentColumn {
+  width: 610px;
+  float: left;
+}
+#contentColumn header {
+  border-bottom: solid 1px #cbcbcb;
+  margin-bottom: 5px;
+}
+#contentColumn header.no-border {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+#contentColumn header.no-border h1 {
+  padding-bottom: 0;
+}
+#contentColumn header.no-margin {
+  margin-bottom: 0;
+}
+#contentColumn header .register-now-button {
+  float: right;
+  color: #ffffff;
+  width: 270px;
+}
+#contentColumn header .register-now-button:hover {
+  color: #ffffff;
+}
+#contentColumn .register-now-button.mobile {
+  display: none;
+}
+#contentColumn .register-now-button.mobile,
+#contentColumn .register-now-button.mobile:hover {
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+#contentColumn p {
+  padding: 10px 0;
+  margin: 0;
+}
+#contentColumn a:hover {
+  color: #333;
+}
+#contentColumn ul a:hover,
+#contentColumn p a:hover {
+  text-decoration: underline;
+}
+#contentColumn .sponsors h3 {
+  border-bottom: solid 1px #d5d5d5;
+  font-size: 26px;
+  line-height: 32px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-family: 'OpenSansCondLight';
+}
+#contentColumn .sponsors table {
+  width: 100%;
+}
+#contentColumn .sponsors table tr > td:first-child {
+  border-right: solid 1px #ececec;
+}
+#contentColumn .sponsors table tr:last-child td {
+  border-bottom: none;
+}
+#contentColumn .sponsors td {
+  vertical-align: middle;
+  text-align: center;
+  padding: 20px 10px;
+  border-bottom: solid 1px #ececec;
+}
+.header-date {
+  font-size: 27px;
+  line-height: 33px;
+  color: #72ba62;
+  padding: 0 0 15px 0;
+  font-family: 'OpenSansCondLight';
+}
+.video {
+  width: 597px;
+  height: 549px;
+  margin-left: -35px;
+  padding-left: 35px;
+  background: url("../simages/sccongress/video-bkg.jpg") repeat left top #fff;
+}
+.video h2 {
+  padding-left: 50px;
+  padding-top: 60px;
+  font-family: 'OpenSansCondLightBold';
+  color: #333 !important;
+}
+.video-wrap{
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px; 
+  height: 0; 
+  overflow: hidden;
+  width: 500px;
+  margin: 20px auto 0 auto;
+}
+.video-wrap iframe,
+.video-wrap object,
+.video-wrap embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.speaker-bio .video {
+  width: auto;
+  height: auto;
+  margin-left: 0;
+  padding-left: 0;
+  background: none;
+}
+.speaker-bio .video .video-wrap {
+  width: 442px;
+}
+.speaker-agenda{
+  margin-top:20px;
+}
+#contentColumn .speaker-agenda .agenda .left{
+  padding-right:20px;
+  width:140px;
+}
+#contentColumn .speaker-agenda .agenda .right{
+  width: 450px;
+}
+#contentColumn .speaker-agenda .agenda .right .wrap{
+  padding-left:0;
+}
+#rightColumn {
+  width: 300px;
+  float: right;
+}
+#rightColumn .rawHTMLAsset,
+#rightColumn .rightAdContainer {
+  margin-bottom: 35px;
+}
+#rightColumn .sponsors {
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+#rightColumn .sponsors h3 {
+  font-size: 17px;
+  line-height: 23px;
+  text-align: center;
+  margin: 10px 0;
+  font-family: 'OpenSansCondLightBold';
+}
+#rightColumn .sponsors img {
+  width: 100%;
+  height: auto;
+  border: solid 1px #e8e8e8;
+  margin-bottom: 10px;
+}
+.register-now-button {
+  display: block;
+  color: #fff;
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 33px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 25px 15px;
+  font-family: 'OpenSansCondLightBold';
+}
+#rightNewsLetterAsset {
+  margin-bottom: 35px;
+  padding: 15px;
+}
+#rightNewsLetterAsset h3 {
+  color: #fff;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 21px;
+  text-align: center;
+  font-family: 'OpenSansCondLightBold';
+}
+#rightNewsLetterAsset label {
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+}
+#rightNewsLetterAsset label input {
+  position: relative;
+  top: 2px;
+}
+#rightNewsLetterAsset select {
+  margin: 5px 0;
+  background-color: #f5f5f5;
+  outline: none;
+  border: 1px solid #cdcdcd;
+  padding: 7px 0 7px 5px;
+  border-radius: 4px;
+  width: 100%;
+}
+#rightNewsLetterAsset table {
+  margin-bottom: 10px;
+}
+#rightNewsLetterAsset td {
+  padding-top: 5px;
+}
+#emailAlertsWrapper {
+  background-color: #fff;
+  padding: 5px 10px;
+}
+#emailAlertsFieldWrapper {
+  width: 180px;
+  float: left;
+  margin-top: 7px;
+}
+#emailAlertsFieldWrapper input {
+  width: 95%;
+  border: none;
+}
+#emailAlertsFieldWrapper input:focus {
+  outline: none;
+}
+#emailAlertsSubmit {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+  text-transform: uppercase;
+  padding: 8px 0 8px 8px;
+  border-left: solid 1px #333;
+}
+.speaker {
+  padding: 25px 0 20px 0;
+  border-bottom: solid 1px #cbcbcb;
+}
+.speaker.speaker-bio{
+  border-bottom: 0;
+}
+.speaker header {
+  border: none !important;
+}
+.rawHTMLAsset > .speaker:last-child {
+  border: none;
+}
+.speaker h3 {
+  text-transform: none;
+  font-size: 28px;
+  line-height: 34px;
+  margin: 0 !important;
+  padding: 0;
+  font-weight: bold;
+  padding-right: 20px;
+  padding-bottom: 3px;
+  font-family: 'OpenSansCondLight';
+}
+.speaker h4 {
+  text-transform: none;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+.speaker .left {
+  width: 124px;
+  float: left;
+}
+.speaker .left img {
+  width: 100%;
+  height: auto;
+}
+.speaker .right {
+  width: 486px;
+  float: left;
+}
+.speaker .right .wrap {
+  padding-left: 40px;
+}
+.speaker .twitter-follow-button {
+  float: right;
+  margin-top: 5px;
+}
+#contentColumn .agenda {
+  padding: 15px 0;
+  border-bottom: solid 1px #cbcbcb;
+}
+#contentColumn .grid_row > div > div:last-child .agenda {
+  border: none;
+}
+#contentColumn .agenda p {
+  padding: 5px 0;
+}
+#contentColumn .agenda h3 {
+  text-transform: none;
+  font-size: 26px;
+  line-height: 32px;
+  margin-top: -1px;
+  font-family: 'OpenSansCondLight';
+}
+#contentColumn .agenda h4 {
+  font-weight: normal;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-family: 'OpenSansCondLightBold';
+}
+#contentColumn .agenda ul {
+  margin: 5px 0 8px 0;
+  padding: 0;
+}
+#contentColumn .agenda li {
+  list-style-type: none;
+  padding-bottom: 7px;
+}
+#contentColumn .agenda .left {
+  width: 160px;
+  float: left;
+  font-family: 'OpenSansCondLight';
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 26px;
+}
+#contentColumn .agenda .right {
+  width: 770px;
+  float: left;
+}
+#contentColumn .agenda .right .wrap {
+  padding-left: 20px;
+}
+#contentColumn .agenda .box {
+  padding-bottom: 10px;
+}
+#contentColumn .agenda .box ul {
+  margin-bottom: -5px;
+}
+#contentColumn .agenda .box p.session-sponsor {
+  color: #999;
+}
+#contentColumn .agenda .box p.session-sponsor span {
+  text-transform: uppercase;
+  color: #333 !important;
+}
+#contentColumn .agenda .session-title {
+  font-size: 17px;
+}
+.rawHTMLAsset h1,
+.rawHTMLAsset h2,
+.rawHTMLAsset h3 {
+  padding-bottom: 0;
+  margin: 15px 0 0 0;
+}
+.rawHTMLAsset header h1 {
+  margin-top: 0;
+  padding-bottom: 10px;
+}
+.rawHTMLAsset ul,
+.rawHTMLAsset ol {
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+.rawHTMLAsset ul li,
+.rawHTMLAsset ol li {
+  padding: 3px 0;
+}
+.rawHTMLAsset ol li {
+  list-style-type: decimal;
+  margin-left: 20px;
+}
+.rawHTMLAsset ul li:before {
+  content: "\2022";
+  font-size: 1.5em;
+  padding-right: .25em;
+  position: relative;
+  top: .1em;
+}
+.rawHTMLAsset p + ul {
+  margin-top: -3px;
+}
+#globalFooter {
+  padding-bottom: 50px;
+  color: #fff;
+}
+#globalFooter a {
+  color: #fff;
+}
+#globalFooter ul {
+  padding: 5px 0;
+}
+#globalFooter li {
+  list-style-type: none;
+  margin-bottom: 15px;
+  padding: 0;
+}
+#globalFooter .rawHTMLAsset  ul {
+  margin: 0;
+}
+#globalFooter .rawHTMLAsset  ul li:before {
+  content: "";
+  padding: 0;
+}
+#globalFooter .wrapper {
+  padding: 35px 35px;
+  width: 930px;
+}
+#globalFooter header {
+  position: relative;
+}
+#globalFooter .logo {
+  display: block;
+  width: 250px;
+  height: 24px;
+  background: url("../simages/sccongress/footer-logo.png") repeat left top transparent;
+  text-indent: -9999px;
+}
+#globalFooter .back-to-top {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-transform: uppercase;
+  font-family: 'OpenSansCondLightBold';
+}
+#globalFooter .left-content {
+  width: 605px;
+  float: left;
+  border-right: solid 1px #727171;
+  padding-right: 35px;
+  padding: 10px 35px 10px 0;
+}
+#globalFooter .right-content {
+  width: 254px;
+  padding-left: 35px;
+  float: left;
+  padding: 10px 0 10px 35px;
+}
+#globalFooter .social-links {
+  padding-top: 5px;
+}
+#globalFooter .social-links ul {
+  padding: 0;
+  margin: 0;
+}
+#globalFooter .social-links li {
+  float: left;
+  margin-right: 15px;
+}
+#globalFooter .social-links a {
+  display: block;
+  width: 28px;
+  height: 27px;
+  background: url("../simages/sccongress/social-icons.png") no-repeat left top transparent;
+  text-indent: -9999px;
+}
+#globalFooter .social-links a.twitter {
+  background-position: -28px top;
+}
+#globalFooter .social-links a.linkedin {
+  background-position: -56px top;
+}
+#globalFooter .social-links a.google {
+  background-position: -84px top;
+}
+
+/* MOBILE */
+#globalHeader.mobile {
+  background-color: transparent;
+}
+#globalHeader.mobile .logo-main-nav-wrap {
+  background-color: rgba(74, 85, 105, 1);
+  border-bottom: none;
+  padding: 15px 0 5px 0;
+}
+#globalHeader.mobile .logo {
+  display: block;
+  width: 250px;
+  height: 24px;
+  background: url("../simages/sccongress/footer-logo.png") repeat left top transparent;
+  text-indent: -9999px;
+  margin: 0 auto;
+}
+#globalHeader.mobile #mainNav {
+  float: none;
+  padding: 5px 0 0 0;
+  margin: 0;
+  background-color: rgba(74, 85, 105, 1);
+  border-bottom: solid 1px #353331;
+}
+#globalHeader.mobile #mainNav ul {
+  text-align: center;
+}
+#globalHeader.mobile #mainNav li {
+  float: none;
+  display: inline;
+}
+#globalHeader.mobile #mainNav a {
+  display: inline-block;
+}
+#navMobileMore {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+#navMobileMore a {
+  display: block;
+  text-align: center;
+  font-family: 'OpenSansCondLightBold';
+  border-top: solid 1px #353331;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px 15px;
+}
+#navMobileMore ul > li:last-child a {
+  padding-bottom: 15px;
+}
+#navMobileMore a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+#navMobileDropArrow {
+  border-left: solid 1px #FFF;
+  padding-left: 12px;
+}
+#navMobileDropArrow a {
+  width: 16px;
+  height: 14px;
+  padding: 0;
+  position: relative;
+  top: 1px;
+  background: url("../simages/sccongress/mobile-nav-arrow.png") repeat left bottom transparent !important;
+}
+#navMobileDropArrow a.open {
+  background-position: left top !important;
+}
+#globalHeader.mobile .header-countdown-clock {
+  float: none;
+  text-align: center;
+}
+#globalHeader.mobile .header-countdown-clock .wrapper {
+  width: 100%;
+}
+.header-countdown-clock.mobile {
+  width: 100%;
+  padding: 10px 0;
+}
+.user-tools {
+  border-bottom: solid 1px #cbcbcb;
+  padding: 3px 0 8px 0;
+}
+.user-tools ul {
+  padding: 0;
+  margin: 0;
+}
+.user-tools li {
+  list-style-type: none;
+  float: left;
+}
+.user-tools li span {
+  text-indent: -9999px;
+  display: block;
+  height: 0;
+  width: 0;
+}
+.share-tools li {
+  margin-right: 8px;
+}
+.share-tools a {
+  font-size: 32px;
+  line-height: 32px;
+}
+.utility-tools {
+  float: right;
+}
+.utility-tools li {
+  margin-left: 8px;
+  margin-top: 4px;
+}
+.utility-tools a {
+  font-size: 22px;
+  line-height: 22px;
+}
+#contentColumn .share-facebook a {
+  color: #0c7bb0;
+}
+#contentColumn .share-twitter a {
+  color: #37b7e6;
+}
+#contentColumn .share-linkedin a {
+  color: #328eb8;
+}
+#contentColumn .share-googleplus a {
+  color: #dc5c38;
+}
+#contentColumn .utility-tools a {
+  color: #cacaca;
+}
+.rawHTMLAsset .user-tools ul li:before {
+  display: none;
+}
+#globalFooter .user-tools {
+  border: none;
+  padding: 0;
+}
+#globalFooter .user-tools a {
+  color: #FFF;
+}
+@media only screen and (max-width:400px) {
+  h1 {
+    font-size: 28px;
+    line-height: 34px;
+    padding-bottom: 5px;
+  }
+  .wrapper {
+    width: auto;
+    margin: 0;
+  }
+  #contentColumn {
+    float: none;
+    width: 100%;
+  }
+  .main-content-background {
+    height: 200px;
+    margin-bottom: -200px;
+  }
+  .main-content-background.mobile-extended {
+    height: 600px;
+    margin-bottom: -600px;
+  }
+  .main-content-header .slug {
+    height: 200px;
+  }
+  .main-content-header {
+    margin-top: 0;
+  }
+  .main-content-header header {
+    background: rgba(0, 0, 0, 0.75);
+    padding: 15px 0;
+  }
+  .main-content-header header .content {
+    border-top: none;
+  }
+  .main-content-header header .content .wrap {
+    padding: 0 15px;
+  }
+  .main-content-header header img {
+    display: none;
+  }
+  .main-content-header header .register {
+    float: none;
+    margin-bottom: 15px;
+  }
+  .main-content-header header h3 {
+    font-family: 'OpenSansCondLight';
+    font-size: 28px;
+    line-height: 34px;
+    border-bottom: none;
+    float: none;
+    margin: 0;
+    padding-bottom: 15px;
+  }
+  .main-content-header header .register .register-now-button {
+    width: auto;
+    margin-left: 0;
+    float: none;
+  }
+  .main-content-header header p {
+    font-size: 15px;
+    line-height: 21px;
+  }
+  .main-content-header img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 15px 0;
+  }
+  .main-content {
+    width: auto;
+    padding: 15px;
+  }
+  #contentColumn header .register-now-button {
+    float: none;
+    width: auto;
+    margin-bottom: 15px;
+  }
+  .header-date {
+    font-size: 22px;
+    line-height: 28px;
+    padding-bottom: 10px;
+  }
+  #contentColumn .agenda .left {
+    width: auto;
+    float: none;
+    margin-bottom: 5px;
+  }
+  #contentColumn .agenda .right {
+    width: auto;
+    float: none;
+  }
+  #contentColumn .agenda .right .wrap {
+    padding-left: 0;
+  }
+  #globalFooter .wrapper {
+    width: auto;
+    padding: 35px 15px;
+  }
+  #globalFooter header {
+    margin-bottom: 15px;
+  }
+  #globalFooter .left-content {
+    width: auto;
+    float: none;
+    border-right: none;
+    padding: 0 0 15px 0;
+  }
+  #globalFooter .right-content {
+    width: auto;
+    padding: 15px 0 0 0;
+    float: none;
+    border-top: solid 1px #AAA;
+  }
+  #globalFooter .logo {
+    margin-bottom: 10px;
+  }
+  #globalFooter .back-to-top {
+    position: static;
+  }
+  .tickercontainer,
+  .tickercontainer .mask {
+    width: auto;
+  }
+  ul.newsticker {
+    left: 400px;
+  }
+  #rightColumn {
+    width: auto;
+    float: none;
+    margin-top: 20px;
+    max-width: 100%;
+  }
+  .video {
+    width: auto;
+    height: auto;
+    background: none;
+    margin: 20px 0;
+    padding: 0;
+  }
+  .video h2 {
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  .video-wrap {
+    width: auto;
+    margin: 0 0 20px 0;
+  }
+  .speaker-bio .video .video-wrap {
+    width: auto;
+  }
+  #emailAlertsFieldWrapper {
+    width: 70%;
+  }
+  .twitter-timeline {
+    width: 100% !important;
+  }
+  ul.newsticker li {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .speaker .left {
+    width: 30%;
+  }
+  .speaker .right {
+    width: 70%;
+  }
+  .speaker .twitter-follow-button {
+    float: none;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  .speaker .right .wrap {
+    padding-left: 15px;
+  }
+  .speaker h3 {
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .speaker.speaker-bio{
+    padding-top:15px;
+  }
+  .speaker.speaker-bio .left {
+    width: 70%;
+    float:none;
+    margin:0 auto 15px auto;
+  }
+  .speaker.speaker-bio .right {
+    width: auto;
+    float:none;
+  }
+  .speaker.speaker-bio .right .wrap{
+    padding-left:0;
+  }
+  #contentColumn .speaker-agenda .agenda{
+    padding-top:5px;
+  }
+  #contentColumn .speaker-agenda .agenda .left{
+    width:auto;
+    padding-right: 0;
+  }
+  #contentColumn .speaker-agenda .agenda .right{
+    width:auto;
+  }
+  #contentColumn .sponsors table {
+    margin-bottom: 30px;
+  }
+  .sponsors table,
+  .sponsors tbody,
+  .sponsors tr,
+  .sponsors td {
+    display: block;
+  }
+  #contentColumn .sponsors table tr > td:first-child {
+    border-right: none;
+  }
+  #contentColumn .sponsors table tr:last-child td {
+    border-bottom: solid 1px #ececec;
+  }
+  #contentColumn .sponsors table tr:last-child > td:last-child {
+    border-bottom: none;
+  }
+  #contentColumn .register-now-button.mobile {
+    display: block;
+  }
+}
+@media only screen and (max-width:330px) {
+  #emailAlertsFieldWrapper {
+    width: 63%;
+  }
+}
+@media only screen and (max-width:280px) {
+  #emailAlertsFieldWrapper {
+    width: 60%;
+  }
+}
+
+/* SC CONGRESS NEW YORK STYLES */
+h1 span,
+.header-countdown-clock h2,
+#mainNav ul > li:last-child a:hover,
+#mainNav ul > li:last-child a.current,
+#mainNav a:hover,
+#mainNav a.current,
+ul.newsticker a,
+#contentColumn a,
+#emailAlertsSubmit,
+#contentColumn .agenda h3,
+#contentColumn .agenda .session-title,
+.rawHTMLAsset h2,
+#globalFooter a:hover,
+.rawHTMLAsset ul li:before,
+#navMobileMore a:hover,
+#contentColumn .share-facebook a:hover,
+#contentColumn .share-twitter a:hover,
+#contentColumn .share-linkedin a:hover,
+#contentColumn .share-googleplus a:hover,
+#contentColumn .utility-tools a:hover {
+  color: #6eb55e;
+}
+.register-now-button:hover {
+  background-color: #4a8a3c;
+}
+.register-now-button,
+#rightNewsLetterAsset {
+  background-color: #6eb55e;
+}
+.final-countdown span.count,
+#emailAlertsSubmit {
+  border-color: #6eb55e;
+}
